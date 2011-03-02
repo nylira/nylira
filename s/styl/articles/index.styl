@@ -4,13 +4,10 @@ body.articles
       col 8
       pl c*4
 
-      h1
-        margin 0 0 m*2
-
       ul.articles
         li.article
-          margin 0 0 m
-          bb 1px solid #ddd
+          padding 1em 0 1.5em
+          bt 1px solid #ddd
 
           article
             time
@@ -20,17 +17,43 @@ body.articles
               text-align right
               color accent
               font-size 85%
-            section.summary
-              margin 0 0 m
+
 
 body.article
   #content
     article
-      pad 2em 0 2em c*4
       col 8
+      pad 2em 0 2em c*4
+
+      h1
+        mar 0
+
+      menu.switch
+        col 4
+        ml - c*4 - m
+        font-size 85%
+        ul
+          float right
+          li
+            float left
+            &.prev:after
+              content '|'
+              display inline-block
+              width .75em
+              text-align center
+
+      h2
+        color txt
+        font 130%/1.5 serif
+        text-transform none
+        mar m*2 0 m
 
       p
         mar 0 0 m
         &.meta
           font-size 85%
           margin 0 0 m*2
+
+    p.all.articles
+      col 8
+      pl c*4
