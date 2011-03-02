@@ -1,11 +1,22 @@
-<footer class="index">
-  <p class="copyright">&copy; 2011 <a href="/">Nylira, LLC</a>
-  <nav class="index">
+</div>
+
+<footer class='index'>
+  <p class='copyright'>&copy; 2011 <a href='/'>Nylira, LLC</a>
+  <nav class='index'>
     <ul>
-      <li>Nylira, LLC is a one-man operation run by Peng Zhong. <a href="#">Contact page</a>
+      <li>Nylira, LLC is a one-man operation run by Peng Zhong. <a href='#'>Contact page</a>
       <li>
-        <a href="mailto:hello@nylira.com">hello@nylira.com</a> &middot;
-        <a href="tel:+17076338539">+1 (707) 633-8539</a>
+        <a href='mailto:hello@nylira.com'>hello@nylira.com</a> &middot;
+        <a href='tel:+17076338539'>+1 (707) 633-8539</a>
     </ul>
   </nav>
 </footer>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'></script>
+<script src='/s/js/jquery.timeago.js'></script>
+
+<script>
+$(document).ready(function() {
+  jQuery('time.timeago').timeago();
+});
+</script>

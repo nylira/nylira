@@ -1,1 +1,6 @@
 auto: true
+permalink: /:title
+exclude: 
+  - README.markdown
+  - .git
+  - styl
