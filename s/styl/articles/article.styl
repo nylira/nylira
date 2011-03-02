@@ -1,0 +1,38 @@
+body.article
+  #content
+    article
+      col 8
+      pl c*4
+
+      h1
+        mar 0
+
+      menu.switch
+        col 4
+        ml - c*4 - m
+        font-size 85%
+        ul
+          float right
+          li
+            float left
+            &.prev:after
+              content '|'
+              display inline-block
+              width .75em
+              text-align center
+
+      h2
+        color txt
+        font 130%/1.5 serif
+        text-transform none
+        mar m*2 0 m
+
+      p
+        mar 0 0 m
+        &.meta
+          font-size 85%
+          margin 0 0 m*2
+
+    p.all.articles
+      col 8
+      pl c*4

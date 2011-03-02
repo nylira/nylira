@@ -11,22 +11,22 @@ clear()
     clear both
     content ''
 
-span(n)
-  width c * n
+span()
+  width c * arguments
 
-cnt(n = 12)
-  span n
+cnt(arguments = 12)
+  span arguments
   margin 0 auto
   clear()
 
-col(n)
-  span n
+col()
+  span arguments
   float left
 
-colm(n)
-  col n - gutter
+colm()
+  col arguments - gutter
   margin 0 gut
 
-colp(n)
-  col n - gutter
+colp()
+  col arguments - gutter
   padding 0 gut
