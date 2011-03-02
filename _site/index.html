@@ -6,6 +6,20 @@
   <link rel='stylesheet' href='/s/css/screen.css'>
   <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12283857-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
 <body class="home">
 <header class='index'>
   <h1><a href='/'>Nylira</a></h1>
@@ -32,7 +46,6 @@
 </header>
 
 <div id='content'>
-
 
 
 <header class='main'>
@@ -64,8 +77,6 @@
   <p class="more articles"><a href="/articles">All Articles</a>
 </section>
 
-
-
 </div>
 
 <footer class='index'>
@@ -76,6 +87,7 @@
       <li>
         <a href='mailto:hello@nylira.com'>hello@nylira.com</a> &middot;
         <a href='tel:+17076338539'>+1 (707) 633-8539</a>
+      <li><a href='//twitter.com/zcpeng'>@zcpeng</a> &middot; <a href='//blog.nylira.com'>blog.nylira.com</a>
     </ul>
   </nav>
 </footer>
@@ -84,8 +96,10 @@
 <script src='/s/js/jquery.timeago.js'></script>
 
 <script>
-$(document).ready(function() {
-  jQuery('time.timeago').timeago();
-});
+  $(document).ready(function() {
+    jQuery('time.timeago').timeago();
+  });
 </script>
+
+<script type='text/javascript'> var mp_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://'); document.write(unescape('%3Cscript src="' + mp_protocol + 'api.mixpanel.com/site_media/js/api/mixpanel.js" type="text/javascript"%3E%3C/script%3E')); </script> <script type='text/javascript'> try {  var mpmetrics = new MixpanelLib('35ad0f18a172715c3f8f9ce5465eb9c9'); } catch(err) { null_fn = function () {}; var mpmetrics = {  track: null_fn,  track_funnel: null_fn,  register: null_fn,  register_once: null_fn, register_funnel: null_fn }; } </script>
 
