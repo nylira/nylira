@@ -1,9 +1,32 @@
 {% include html_head.html %}
 <body class='contact'>
 {% include header.html %}
+    <section class='contact'>
+      <h1>{{ page.title }}</h1>
+      <div class="details">
+        <dl>
+          <dt>Mail</dt>
+          <dd><a href="mailto:hello@nylira.com">hello@nylira.com</a>
+          <dt>Twitter</dt>
+          <dd><a href="//twitter.com/nyliraUX">@nyliraUX</a>
+          <dt>LinkedIn</dt>
+          <dd><a href="http://www.linkedin.com/pub/peng-zhong/26/839/a29">Peng Zhong</a>
+        </dl>
 
-<section class='contact'>
-  <h1>Contact</h1>
-</section>
+        <p><a href="//nylira.com">Nylira, LLC.</a>
 
+        <ul class="address">
+          <li>Moltkestraße 31a
+          <li>12203 Berlin
+          <li>Deutschland
+        </ul>
+      </div>
+
+      <div class="map">
+        <iframe width="638" height="638" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/?ie=UTF8&amp;hq=&amp;hnear=Moltkestra%C3%9Fe+31,+Berlin+12203+Berlin,+Germany&amp;ll=52.44076,13.31577&amp;spn=0.008803,0.022724&amp;z=16&amp;output=embed"></iframe>
+
+        <p><a href="http://maps.google.com/?ie=UTF8&amp;hq=&amp;hnear=Moltkestra%C3%9Fe+31,+Berlin+12203+Berlin,+Germany&amp;ll=52.44076,13.31577&amp;spn=0.008803,0.022724&amp;z=16&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a>
+      </div>
+
+    </section>
 {% include footer.html %}

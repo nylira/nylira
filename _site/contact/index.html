@@ -2,7 +2,7 @@
 <html lang='en' dir='ltr'>
 <head>
   <meta charset='utf-8'>
-  <title>Get in touch &mdash; Nylira</title>
+  <title>Contact &mdash; Nylira</title>
   <link rel='stylesheet' href='/s/css/screen.css'>
   <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
@@ -21,60 +21,82 @@
   </script>
 
 <body class='contact'>
-<header class='index'>
-  <h1><a href='/'>Nylira</a></h1>
-  <nav class='indices'>
-    <ul>
-      <li class='index profile'><a href='/profile'>
-        <h2>Profile</h2>
-        <p>An insight </p>
-      </a>
-      <li class='index projects'><a href='/projects'>
-        <h2>Projects</h2>
-        <p>An offering</p>
-      </a>
-      <li class='index articles'><a href='/articles'>
-        <h2>Articles</h2>
-        <p>An understanding</p>
-      </a>
-      <li class='index contact'><a href='/contact'>
-        <h2>Contact</h2>
-        <p>An introduction</p>
-      </a>
-    </ul>
-  </nav>
-</header>
+  <header class='index'>
+    <h1><a href='/'>Nylira</a></h1>
+    <nav class='indices'>
+      <ul>
+        <li class='index profile'><a href='/profile'>
+          <h2>Profile</h2>
+          <p>An insight </p>
+        </a>
+        <li class='index projects'><a href='/projects'>
+          <h2>Projects</h2>
+          <p>An offering</p>
+        </a>
+        <li class='index articles'><a href='/articles'>
+          <h2>Articles</h2>
+          <p>An understanding</p>
+        </a>
+        <li class='index contact'><a href='/contact'>
+          <h2>Contact</h2>
+          <p>An introduction</p>
+        </a>
+      </ul>
+    </nav>
+  </header>
 
-<div id='content'>
+  <div id='content'>
 
+    <section class='contact'>
+      <h1>Contact</h1>
+      <div class="details">
+        <dl>
+          <dt>Mail</dt>
+          <dd><a href="mailto:hello@nylira.com">hello@nylira.com</a>
+          <dt>Twitter</dt>
+          <dd><a href="//twitter.com/nyliraUX">@nyliraUX</a>
+          <dt>LinkedIn</dt>
+          <dd><a href="http://www.linkedin.com/pub/peng-zhong/26/839/a29">Peng Zhong</a>
+        </dl>
 
-<section class='contact'>
-  <h1>Contact</h1>
-</section>
+        <p><a href="//nylira.com">Nylira, LLC.</a>
 
-</div>
+        <ul class="address">
+          <li>Moltkestraße 31a
+          <li>12203 Berlin
+          <li>Deutschland
+        </ul>
+      </div>
 
-<footer class='index'>
-  <p class='copyright'>&copy; 2011 <a href='/'>Nylira, LLC</a>
-  <nav class='index'>
-    <ul>
-      <li>Nylira, LLC is a one-man operation run by Peng Zhong. <a href='#'>Contact page</a>
-      <li>
-        <a href='mailto:hello@nylira.com'>hello@nylira.com</a> &middot;
-        <a href='tel:+17076338539'>+1 (707) 633-8539</a>
-      <li><a href='//twitter.com/zcpeng'>@zcpeng</a> &middot; <a href='//blog.nylira.com'>blog.nylira.com</a>
-    </ul>
-  </nav>
-</footer>
+      <div class="map">
+        <iframe width="638" height="638" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/?ie=UTF8&amp;hq=&amp;hnear=Moltkestra%C3%9Fe+31,+Berlin+12203+Berlin,+Germany&amp;ll=52.44076,13.31577&amp;spn=0.008803,0.022724&amp;z=16&amp;output=embed"></iframe>
 
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'></script>
-<script src='/s/js/jquery.timeago.js'></script>
+        <p><a href="http://maps.google.com/?ie=UTF8&amp;hq=&amp;hnear=Moltkestra%C3%9Fe+31,+Berlin+12203+Berlin,+Germany&amp;ll=52.44076,13.31577&amp;spn=0.008803,0.022724&amp;z=16&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a>
+      </div>
 
-<script>
-  $(document).ready(function() {
-    jQuery('time.timeago').timeago();
-  });
-</script>
+    </section>
+  </div>
 
-<script type='text/javascript'> var mp_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://'); document.write(unescape('%3Cscript src="' + mp_protocol + 'api.mixpanel.com/site_media/js/api/mixpanel.js" type="text/javascript"%3E%3C/script%3E')); </script> <script type='text/javascript'> try {  var mpmetrics = new MixpanelLib('35ad0f18a172715c3f8f9ce5465eb9c9'); } catch(err) { null_fn = function () {}; var mpmetrics = {  track: null_fn,  track_funnel: null_fn,  register: null_fn,  register_once: null_fn, register_funnel: null_fn }; } </script>
+  <footer class='index'>
+    <p class='copyright'>&copy; 2011 <a href='/'>Nylira, LLC</a>
+    <nav class='index'>
+      <ul>
+        <li>Nylira, LLC is a one-man operation run by Peng Zhong. <a href='/contact'>Contact page</a>
+        <li>
+          <a href='mailto:hello@nylira.com'>hello@nylira.com</a> &middot;
+          <a href='//twitter.com/nyliraUX'>@nyliraUX</a>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'></script>
+  <script src='/s/js/jquery.timeago.js'></script>
+
+  <script>
+    $(document).ready(function() {
+      jQuery('time.timeago').timeago();
+    });
+  </script>
+
+  <script type='text/javascript'> var mp_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://'); document.write(unescape('%3Cscript src="' + mp_protocol + 'api.mixpanel.com/site_media/js/api/mixpanel.js" type="text/javascript"%3E%3C/script%3E')); </script> <script type='text/javascript'> try {  var mpmetrics = new MixpanelLib('35ad0f18a172715c3f8f9ce5465eb9c9'); } catch(err) { null_fn = function () {}; var mpmetrics = {  track: null_fn,  track_funnel: null_fn,  register: null_fn,  register_once: null_fn, register_funnel: null_fn }; } </script>
 

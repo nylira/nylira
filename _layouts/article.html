@@ -1,16 +1,12 @@
 {% include html_head.html %}
 <body class='article'>
 {% include header.html %}
+    <article>
+      <h1>{{ page.title }}</h1>
 
-<article>
-  <h1>{{ page.title }}</h1>
-
-  <p class="meta">
-    <time class='timeago' datetime='{{ page.date }}'>{{ page.date }}</time>
-    by <cite>Peng Zhong</cite>
-
-  {{ content }}
-</article>
-
-
+      <p class="meta">
+        <time class='timeago' datetime='{{ page.date }}'>{{ page.date }}</time>
+        by <cite>Peng Zhong</cite>
+      {{ content }}
+    </article>
 {% include footer.html %}

@@ -1,26 +1,22 @@
 {% include html_head.html %}
 <body class="home">
 {% include header.html %}
+    <header class='main'>
+      <aside>Interface design for <a href='/profile'>developers</a>.</aside>
+    </header>
 
-<header class='main'>
-  <aside>Interface design for <a href='#'>developers</a>.</aside>
-</header>
+    <section class='about'>
+      <h2>About Nylira</h2>
+      <p>We build interfaces. <a href='/profile'>Learn more</a>
+    </section>
 
-<section class='about'>
-  <h2>About Nylira</h2>
-  <p>We build interfaces. <a href='#'>Learn more</a>
-</section>
-
-<section class='articles'>
-  <h2>Latest articles</h2>
-  <ul class='articles'>
-    {% for post in site.categories.articles %}
-      <li class='article'>
-        <h3><a href='{{ post.url }}'>{{ post.title }}</a></h3>
-        {{ post.body }}
-    {% endfor %}
-  </ul>
-  <p class="more articles"><a href="/articles">All Articles</a>
-</section>
-
+    <section class='articles'>
+      <h2>Latest articles</h2>
+      <ul class='articles'>
+        {% for post in site.categories.articles %}<li class='article'>
+            <h3><a href='{{ post.url }}'>{{ post.title }}</a></h3>
+        {% endfor %}
+      </ul>
+      <p class="more articles"><a href="/articles">All Articles</a>
+    </section>
 {% include footer.html %}

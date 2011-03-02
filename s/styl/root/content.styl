@@ -1,5 +1,6 @@
 #content
   cnt()
+  pad 1em 0 4em
 
   h1
     font 200%/1.5 serif
@@ -10,6 +11,11 @@
   h3
     font 150%/1.5 serif
     margin 0 0 m
+    a
+      color txt
+      bb none
+      &:hover
+        bb 1px solid txt
 
   a
     text-decoration none
@@ -38,20 +44,14 @@
         &:hover
           color anchor
 
+body.home
   section
-    pad 2em 0
+    &.about, &.articles
+      pad 2em 0 0
     &.about
-      col(4)
+      col 4
 
     &.articles
-      col(8)
+      col 8
       ul.articles
-        mar 0 0 4em
-        li.article
-          h3
-            a
-              color txt
-              bb none
-              &:hover
-                bb 1px solid txt
-
+        mar 0 0 2em

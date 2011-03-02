@@ -1,0 +1,36 @@
+body.contact
+  #content
+    section.contact
+      col 8
+      pl c*4
+
+      h1
+        mb m*2
+
+      .details
+        col 4
+        ml - c*4
+        dl
+          margin 0 0 m
+          dt
+            float left
+            display block
+            clear left
+            padding-right .33em
+            &:after
+              display inline
+              content ':'
+
+          dd
+            display block
+
+        p
+          margin 0 0 m
+
+      .map
+        iframe
+          display block
+          mb m
+          border 1px solid #999
+        a
+          color anchor !important

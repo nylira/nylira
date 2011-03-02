@@ -1,20 +1,33 @@
 body.articles
   #content
     section.articles
-      pad 2em 0 2em c*4
+      pad 2em 0 0 c*4
 
       h1
         margin 0 0 m*2
 
       ul.articles
+        margin 0
         li.article
           margin 0 0 m
+          bb 1px solid #ddd
+
+          article
+            time
+              display block
+              col 4
+              ml - c4 - m
+              text-align right
+              color accent
+              font-size 85%
+            section.summary
+              margin 0 0 m
 
 body.article
   #content
     article
       pad 2em 0 2em c*4
-      col(8)
+      col 8
 
       p
         mar 0 0 m

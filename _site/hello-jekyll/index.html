@@ -21,67 +21,62 @@
   </script>
 
 <body class='article'>
-<header class='index'>
-  <h1><a href='/'>Nylira</a></h1>
-  <nav class='indices'>
-    <ul>
-      <li class='index profile'><a href='/profile'>
-        <h2>Profile</h2>
-        <p>An insight </p>
-      </a>
-      <li class='index projects'><a href='/projects'>
-        <h2>Projects</h2>
-        <p>An offering</p>
-      </a>
-      <li class='index articles'><a href='/articles'>
-        <h2>Articles</h2>
-        <p>An understanding</p>
-      </a>
-      <li class='index contact'><a href='/contact'>
-        <h2>Contact</h2>
-        <p>An introduction</p>
-      </a>
-    </ul>
-  </nav>
-</header>
+  <header class='index'>
+    <h1><a href='/'>Nylira</a></h1>
+    <nav class='indices'>
+      <ul>
+        <li class='index profile'><a href='/profile'>
+          <h2>Profile</h2>
+          <p>An insight </p>
+        </a>
+        <li class='index projects'><a href='/projects'>
+          <h2>Projects</h2>
+          <p>An offering</p>
+        </a>
+        <li class='index articles'><a href='/articles'>
+          <h2>Articles</h2>
+          <p>An understanding</p>
+        </a>
+        <li class='index contact'><a href='/contact'>
+          <h2>Contact</h2>
+          <p>An introduction</p>
+        </a>
+      </ul>
+    </nav>
+  </header>
 
-<div id='content'>
+  <div id='content'>
 
+    <article>
+      <h1>Built with git, vi, and Jekyll.</h1>
 
-<article>
-  <h1>Built with git, vi, and Jekyll.</h1>
+      <p class="meta">
+        <time class='timeago' datetime='2011-03-01 00:00:00 +0100'>2011-03-01 00:00:00 +0100</time>
+        by <cite>Peng Zhong</cite>
+      <p>I&#8217;ve migrated this site to <a href='https://github.com/mojombo/jekyll'>Jekyll</a>.</p>
+    </article>
+  </div>
 
-  <p class="meta">
-    <time class='timeago' datetime='2011-03-01 00:00:00 +0100'>2011-03-01 00:00:00 +0100</time>
-    by <cite>Peng Zhong</cite>
+  <footer class='index'>
+    <p class='copyright'>&copy; 2011 <a href='/'>Nylira, LLC</a>
+    <nav class='index'>
+      <ul>
+        <li>Nylira, LLC is a one-man operation run by Peng Zhong. <a href='/contact'>Contact page</a>
+        <li>
+          <a href='mailto:hello@nylira.com'>hello@nylira.com</a> &middot;
+          <a href='//twitter.com/nyliraUX'>@nyliraUX</a>
+      </ul>
+    </nav>
+  </footer>
 
-  <p>I&#8217;ve migrated this site to <a href='https://github.com/mojombo/jekyll'>Jekyll</a>.</p>
-</article>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'></script>
+  <script src='/s/js/jquery.timeago.js'></script>
 
+  <script>
+    $(document).ready(function() {
+      jQuery('time.timeago').timeago();
+    });
+  </script>
 
-</div>
-
-<footer class='index'>
-  <p class='copyright'>&copy; 2011 <a href='/'>Nylira, LLC</a>
-  <nav class='index'>
-    <ul>
-      <li>Nylira, LLC is a one-man operation run by Peng Zhong. <a href='#'>Contact page</a>
-      <li>
-        <a href='mailto:hello@nylira.com'>hello@nylira.com</a> &middot;
-        <a href='tel:+17076338539'>+1 (707) 633-8539</a>
-      <li><a href='//twitter.com/zcpeng'>@zcpeng</a> &middot; <a href='//blog.nylira.com'>blog.nylira.com</a>
-    </ul>
-  </nav>
-</footer>
-
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'></script>
-<script src='/s/js/jquery.timeago.js'></script>
-
-<script>
-  $(document).ready(function() {
-    jQuery('time.timeago').timeago();
-  });
-</script>
-
-<script type='text/javascript'> var mp_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://'); document.write(unescape('%3Cscript src="' + mp_protocol + 'api.mixpanel.com/site_media/js/api/mixpanel.js" type="text/javascript"%3E%3C/script%3E')); </script> <script type='text/javascript'> try {  var mpmetrics = new MixpanelLib('35ad0f18a172715c3f8f9ce5465eb9c9'); } catch(err) { null_fn = function () {}; var mpmetrics = {  track: null_fn,  track_funnel: null_fn,  register: null_fn,  register_once: null_fn, register_funnel: null_fn }; } </script>
+  <script type='text/javascript'> var mp_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://'); document.write(unescape('%3Cscript src="' + mp_protocol + 'api.mixpanel.com/site_media/js/api/mixpanel.js" type="text/javascript"%3E%3C/script%3E')); </script> <script type='text/javascript'> try {  var mpmetrics = new MixpanelLib('35ad0f18a172715c3f8f9ce5465eb9c9'); } catch(err) { null_fn = function () {}; var mpmetrics = {  track: null_fn,  track_funnel: null_fn,  register: null_fn,  register_once: null_fn, register_funnel: null_fn }; } </script>
 
