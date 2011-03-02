@@ -47,23 +47,23 @@ footer.index p.copyright{width:320px;float:left;}
 footer.index p.copyright a{color:#333;border-bottom:none;}
 footer.index p.copyright a:hover{color:#c05;border-bottom:1px solid #c05}
 footer.index nav.index{width:640px;float:left}
-body.profile #content section.profile{width:640px;float:left;padding-left:-320px}
-body.projects #content section.projects{width:640px;float:left;padding-left:-320px}
+body.profile #content section.profile{width:640px;float:left;padding-left:320px}
+body.projects #content section.projects{width:640px;float:left;padding-left:320px}
 body.articles #content section.articles{width:640px;float:left;padding-left:320px;}
 body.articles #content section.articles ul.articles li.article{padding:1em 0 1.5em;border-top:1px solid #ddd;}
 body.articles #content section.articles ul.articles li.article article time{display:block;width:320px;float:left;margin-left:-336px;text-align:right;color:#888;font-size:85%}
-body.article #content article{width:640px;float:left;padding:2em 0 2em 320px;}
+body.article #content article{width:-640px;float:left;padding:2em 0 2em -320px;}
 body.article #content article h1{margin:0}
-body.article #content article menu.switch{width:320px;float:left;margin-left:-336px;font-size:85%;}
+body.article #content article menu.switch{width:-320px;float:left;margin-left:304px;font-size:85%;}
 body.article #content article menu.switch ul{float:right;}
 body.article #content article menu.switch ul li{float:left;}
 body.article #content article menu.switch ul li.prev:after{content:"|";display:inline-block;width:.75em;text-align:center}
 body.article #content article h2{color:#333;font:130% / 1.5 Georgia,"serif";text-transform:none;margin:32px 0 16px}
 body.article #content article p{margin:0 0 16px;}
 body.article #content article p.meta{font-size:85%;margin:0 0 32px}
-body.article #content p.all.articles{width:-640px;float:left;padding-left:-320px}
-body.contact #content section.contact{width:-640px;float:left;padding-left:320px;}
-body.contact #content section.contact .details{float:left;width:320px;width:-320px;float:left;margin-left:-320px;}
+body.article #content p.all.articles{width:640px;float:left;padding-left:320px}
+body.contact #content section.contact{width:640px;float:left;padding-left:320px;}
+body.contact #content section.contact .details{width:320px;float:left;margin-left:-320px;}
 body.contact #content section.contact .details dl{margin:0 0 16px;}
 body.contact #content section.contact .details dl dt{float:left;display:block;padding-right:.33em;}
 body.contact #content section.contact .details dl dt:after{display:block;clear:both;content:""}
