@@ -1,0 +1,33 @@
+m = 16px
+txt = #333
+accent = #777
+
+anchor = #c05
+
+a
+  color anchor
+  text-decoration none
+  bb 1px solid anchor
+  &:hover
+    bb none
+
+default-font()
+  font-family serif
+  font-size m
+  line-height 150%
+  color txt
+
+html>body
+  overflow-y scroll
+
+body
+  default-font()
+  text-rendering optimizeLegibility
+  background #fff
+  border-top 4px solid #000
+
+h2
+  color anchor
+  text-transform uppercase
+  font-size 75%
+  letter-spacing 1px

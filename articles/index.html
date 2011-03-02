@@ -1,0 +1,17 @@
+---
+layout: articles
+title: Articles
+---
+
+<section class='articles'>
+  <h1>Articles</h2>
+  <ul class='articles'>
+    {% for post in site.categories.articles %}
+      <li class='article'>
+        <article>
+          <h3><a href='{{ post.url }}'>{{ post.title }}</a></h3>
+          {{ post.body }}
+        </article>
+    {% endfor %}
+  </ul>
+</section>
