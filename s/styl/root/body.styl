@@ -1,8 +1,10 @@
 m = 16px
 txt = #333
-accent = #888
 
-anchor = #c05
+hue = 335
+anchor = hsl(hue,100,46)
+
+accent = #888
 
 a
   color anchor
@@ -23,7 +25,7 @@ html>body
 body
   default-font()
   text-rendering optimizeLegibility
-  background m242
+  background #fff
   border-top 4px solid #000
 
 code
@@ -37,8 +39,6 @@ pre
 
 h2
   color anchor
-  font-family sans
-  font-weight bold
   text-transform uppercase
   font-size 75%
   letter-spacing 1px

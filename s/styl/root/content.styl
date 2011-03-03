@@ -1,6 +1,8 @@
 #content
   cnt()
   pad 2em 0 4em
+  bt 1px solid #fff
+  bb 1px solid #ddd
 
   h1
     font 200%/1.5 serif
@@ -18,32 +20,24 @@
       &:hover
         bb 1px solid txt
 
-  a
-    text-decoration none
-    bb 1px solid anchor
-    border none
-    &:hover
-      bb none
-      text-decoration none
-
-
 body.home
   #content
     header.main
       pb 2em
-      bb 1px solid #ddd
+      bt 1px solid #fff
+      bb 1px solid #ccc
      
       aside
         padding m*8 0
         font bold 400%/1 sans
         letter-spacing -3px
         text-align center
-        color #999
+        color #666
         text-smoothing()
-        background #fff
-        box-shadow b20 0 5px 10px
+        bg #000
+        border 2px solid #fff
         a
-          color txt
+          color #fff
           bb 4px solid anchor
           text-decoration none
           transition()
@@ -52,6 +46,7 @@ body.home
 
     section
       &.about, &.articles
+        bt 1px solid #fff
         pad 2em 0 0
       &.about
         col 4

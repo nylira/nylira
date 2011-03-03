@@ -15,35 +15,36 @@ header.index
       &:hover
         border-bottom: 3px solid anchor
   
-  nav.indices
+  nav
     col(8)
     ul
-      li.index
+      li.menu
         float: left
         col(2)
-        a
-          color #000
-          bb none
-          &:hover
-            p
-              bb 1px solid txt
-          p
-            font-size 85%
-            position relative
-            display inline-block
+        &.i18n
+          pt 1.5em
+        menu
+          ul
+            li.index
+              a
+                display block
+                font-size 85%
+                color #000
+                bb none
+                position relative
+                &:hover p
+                  border-bottom 1px solid txt
 
-
-body.home li.index.home
 body.profile li.index.profile
 body.articles li.index.articles
 body.article li.index.articles
 body.contact li.index.contact
-  a
-    p:before
-      display block
-      content: '\BB'
-      width m
-      height m
-      position absolute
-      top 0
-      left -1em
+li.index.active
+  a:before
+    display block
+    content: '\203A'
+    width m
+    height m
+    position absolute
+    top 0
+    left -1em

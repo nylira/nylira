@@ -5,56 +5,54 @@ ol,ul{list-style:none}
 blockquote,q{quotes:none}
 blockquote:before,blockquote:after,q:before,q:after{content:none}
 table{border-collapse:collapse;border-spacing:0}
-a{color:#c05;text-decoration:none;border-bottom:1px solid #c05;}
+a{color:#eb0062;text-decoration:none;border-bottom:1px solid #eb0062;}
 a:hover{border-bottom:none}
 html>body{overflow-y:scroll}
-body{font-family:Georgia,"serif";font-size:16px;line-height:150%;color:#333;text-rendering:optimizeLegibility;background:#f2f2f2;border-top:4px solid #000}
+body{font-family:Georgia,"serif";font-size:16px;line-height:150%;color:#333;text-rendering:optimizeLegibility;background:#fff;border-top:4px solid #000}
 code{font-family:Consolas,"Lucida Console",Monaco,Courier New,monospace;font-size:90%;background:#eee;padding:0 .2em}
 pre{margin:0 0 16px}
-h2{color:#c05;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;font-weight:bold;text-transform:uppercase;font-size:75%;letter-spacing:1px}
+h2{color:#eb0062;text-transform:uppercase;font-size:75%;letter-spacing:1px}
 header.index{width:960px;margin:0 auto;padding:4em 0 2em;border-bottom:1px solid #ccc;}
 header.index:after{display:block;clear:both;content:""}
 header.index h1{width:320px;float:left;padding:1em 0 0;text-transform:lowercase;}
 header.index h1 a{font:bold 2em / 1 "Helvetica Neue",Arial,Helvetica,sans-serif;color:#000;border-bottom:none;letter-spacing:-1px;}
-header.index h1 a:hover{border-bottom:3px solid #c05}
-header.index nav.indices{width:640px;float:left;}
-header.index nav.indices ul li.index{float:left;width:160px;float:left;}
-header.index nav.indices ul li.index a{color:#000;border-bottom:none;}
-header.index nav.indices ul li.index a:hover p{border-bottom:1px solid #333}
-header.index nav.indices ul li.index a p{font-size:85%;position:relative;display:inline-block}
-body.home li.index.home a p:before,body.profile li.index.profile a p:before,body.articles li.index.articles a p:before,body.article li.index.articles a p:before,body.contact li.index.contact a p:before{display:block;content:"\BB";width:16px;height:16px;position:absolute;top:0;left:-1em}
-#content{width:960px;margin:0 auto;padding:2em 0 4em;}
+header.index h1 a:hover{border-bottom:3px solid #eb0062}
+header.index nav{width:640px;float:left;}
+header.index nav ul li.menu{float:left;width:160px;float:left;}
+header.index nav ul li.menu.i18n{padding-top:1.5em}
+header.index nav ul li.menu menu ul li.index a{display:block;font-size:85%;color:#000;border-bottom:none;position:relative;}
+header.index nav ul li.menu menu ul li.index a:hover p{border-bottom:1px solid #333}
+body.profile li.index.profile a:before,body.articles li.index.articles a:before,body.article li.index.articles a:before,body.contact li.index.contact a:before,li.index.active a:before{display:block;content:"\203A";width:16px;height:16px;position:absolute;top:0;left:-1em}
+#content{width:960px;margin:0 auto;padding:2em 0 4em;border-top:1px solid #fff;border-bottom:1px solid #ddd;}
 #content:after{display:block;clear:both;content:""}
 #content h1{font:200% / 1.5 Georgia,"serif";margin:0 0 32px}
 #content h2{margin:0 0 16px}
 #content h3{font:130% / 1.5 Georgia,"serif";margin:0 0 12px;}
 #content h3 a{color:#333;border-bottom:none;}
 #content h3 a:hover{border-bottom:1px solid #333}
-#content a{text-decoration:none;border-bottom:1px solid #c05;border:none;}
-#content a:hover{border-bottom:none;text-decoration:none}
-body.home #content header.main{padding-bottom:2em;border-bottom:1px solid #ddd;}
-body.home #content header.main aside{padding:128px 0;font:bold 400% / 1 "Helvetica Neue",Arial,Helvetica,sans-serif;letter-spacing:-3px;text-align:center;color:#999;-webkit-font-smoothing:antialiased;background:#fff;-webkit-box-shadow:rgba(0,0,0,0.2) 0 5px 10px;-moz-box-shadow:rgba(0,0,0,0.2) 0 5px 10px;-o-box-shadow:rgba(0,0,0,0.2) 0 5px 10px;box-shadow:rgba(0,0,0,0.2) 0 5px 10px;}
-body.home #content header.main aside a{color:#333;border-bottom:4px solid #c05;text-decoration:none;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;}
-body.home #content header.main aside a:hover{color:#c05}
-body.home #content section.about,body.home #content section.articles{padding:2em 0 0}
+body.home #content header.main{padding-bottom:2em;border-top:1px solid #fff;border-bottom:1px solid #ccc;}
+body.home #content header.main aside{padding:128px 0;font:bold 400% / 1 "Helvetica Neue",Arial,Helvetica,sans-serif;letter-spacing:-3px;text-align:center;color:#666;-webkit-font-smoothing:antialiased;background:#000;border:2px solid #fff;}
+body.home #content header.main aside a{color:#fff;border-bottom:4px solid #eb0062;text-decoration:none;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;}
+body.home #content header.main aside a:hover{color:#eb0062}
+body.home #content section.about,body.home #content section.articles{border-top:1px solid #fff;padding:2em 0 0}
 body.home #content section.about{width:320px;float:left}
 body.home #content section.articles{width:640px;float:left;}
 body.home #content section.articles ul.articles{margin:0 0 32px;}
 body.home #content section.articles ul.articles li.article{margin:0 0 32px}
-footer.index{padding:2em 0;width:960px;margin:0 auto;border-top:1px solid #ccc;font-size:85%;}
+footer.index{padding:2em 0;width:960px;margin:0 auto;border-top:1px solid #fff;font-size:85%;}
 footer.index:after{display:block;clear:both;content:""}
 footer.index p.copyright{width:320px;float:left;}
 footer.index p.copyright a{color:#333;border-bottom:none;}
-footer.index p.copyright a:hover{color:#c05;border-bottom:1px solid #c05}
+footer.index p.copyright a:hover{color:#eb0062;border-bottom:1px solid #eb0062}
 footer.index nav.index{width:640px;float:left}
 body.profile #content section.profile{width:640px;float:left;padding-left:320px}
 body.projects #content section.projects{width:640px;float:left;padding-left:320px}
 body.articles #content section.articles{width:640px;float:left;padding-left:320px;}
 body.articles #content section.articles ul.articles li.article{padding:1em 0 1.5em;border-top:1px solid #ddd;}
 body.articles #content section.articles ul.articles li.article article time{display:block;width:320px;float:left;margin-left:-336px;text-align:right;color:#888;font-size:85%}
-body.article #content article{width:-640px;float:left;padding-left:-320px;}
+body.article #content article{width:-640px;float:left;padding-left:320px;margin:0 0 2em;}
 body.article #content article h1{margin:0}
-body.article #content article menu.switch{width:-320px;float:left;margin-left:304px;font-size:85%;}
+body.article #content article menu.switch{width:320px;float:left;margin-left:-336px;font-size:85%;}
 body.article #content article menu.switch ul{float:right;}
 body.article #content article menu.switch ul li{float:left;}
 body.article #content article menu.switch ul li.prev:after{content:"|";display:inline-block;width:.75em;text-align:center}
@@ -71,4 +69,4 @@ body.contact #content section.contact .details dl dt:after{display:inline;conten
 body.contact #content section.contact .details dl dd{display:block}
 body.contact #content section.contact .details p{margin:0 0 16px}
 body.contact #content section.contact .map iframe{display:block;margin-bottom:16px;border:1px solid #999}
-body.contact #content section.contact .map a{color:#c05 !important}
+body.contact #content section.contact .map a{color:#eb0062 !important}
