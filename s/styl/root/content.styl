@@ -1,30 +1,36 @@
 #content
   padding m*2 + 4px + 39px 0 0
   cnt()
-  text-smoothing()
 
   h1
     font bold 200%/1.5 sans
     margin 0 0 m*2
 
   h2
-    margin 0 0 m
+    mar 0 0 m
+
+  h3
+    font bold 130%/1.5 sans
+    a
+      color txt
+      transition
+      bb 1px solid transparent
+      &:hover
+        bc anchor
 
 body.home
   header.main
     pb 2em
-    bt 1px solid #fff
-    bb 1px solid #ccc
+    bb 1px solid w10
    
     aside
       padding m*8 0
       font bold 400%/1 sans
       letter-spacing -3px
       text-align center
-      color #666
+      color m90
       text-smoothing()
-      bg #000
-      border 2px solid #fff
+      bg m50
       a
         color #fff
         bb 4px solid anchor
@@ -35,7 +41,6 @@ body.home
 
   section
     &.about, &.articles
-      bt 1px solid #fff
       pad 2em 0 0
     &.about
       col 4

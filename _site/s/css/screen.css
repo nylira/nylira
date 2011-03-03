@@ -7,11 +7,11 @@ blockquote:before,blockquote:after,q:before,q:after{content:none}
 table{border-collapse:collapse;border-spacing:0}
 a{color:#eb0062;text-decoration:none;}
 a:hover{color:#fff}
-html>body,body{font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;font-size:16px;line-height:150%;color:#ccc;text-rendering:optimizeLegibility;background:#282828}
+html>body,body{font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;font-size:16px;line-height:150%;color:#ccc;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;background:#1e1e1e}
 code{font-family:Consolas,"Lucida Console",Monaco,Courier New,monospace;font-size:90%;background:#eee;padding:0 .2em}
 pre{margin:0 0 16px}
 h2{color:#eb0062;text-transform:uppercase;font-size:75%;letter-spacing:1px}
-header.index{width:960px;padding-left:4em;-webkit-font-smoothing:antialiased;width:100%;position:fixed;top:0;left:0;border-bottom:1px solid rgba(255,255,255,0.1);border-top:3px solid #000;background:rgba(51,51,51,0.6);}
+header.index{width:960px;padding-left:64px;width:100%;position:fixed;top:0;left:0;background:rgba(48,48,48,0.9);border-bottom:1px solid rgba(255,255,255,0.1);border-top:3px solid #000;}
 header.index:after{display:block;clear:both;content:""}
 header.index:after{display:block;clear:both;content:""}
 header.index a{font-size:13px;line-height:150%;color:#999;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;border-top:3px solid transparent;position:relative;top:-3px;}
@@ -23,26 +23,30 @@ header.index nav ul li{width:160px;float:left;width:159px;border-left:1px solid 
 header.index nav ul li a{font-weight:bold;display:block;line-height:39px;text-align:center;text-transform:uppercase;letter-spacing:1px}
 header.index menu li{float:left}
 body.home h1.index.home a,body.projects li.index.projects a,body.articles li.index.articles a,body.article li.index.articles a,body.profile li.index.profile a,body.contact li.index.contact a,li.index.active a{border-color:#eb0062}
-#content{padding:75px 0 0;width:960px;padding-left:4em;-webkit-font-smoothing:antialiased;}
+#content{padding:75px 0 0;width:960px;padding-left:64px;}
 #content:after{display:block;clear:both;content:""}
 #content h1{font:bold 200% / 1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;margin:0 0 32px}
 #content h2{margin:0 0 16px}
-body.home header.main{padding-bottom:2em;border-top:1px solid #fff;border-bottom:1px solid #ccc;}
-body.home header.main aside{padding:128px 0;font:bold 400% / 1 "Helvetica Neue",Arial,Helvetica,sans-serif;letter-spacing:-3px;text-align:center;color:#666;-webkit-font-smoothing:antialiased;background:#000;border:2px solid #fff;}
+#content h3{font:bold 130% / 1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;}
+#content h3 a{color:#ccc;border-bottom:1px solid transparent;}
+#content h3 a:hover{border-color:#eb0062}
+body.home header.main{padding-bottom:2em;border-bottom:1px solid rgba(255,255,255,0.1);}
+body.home header.main aside{padding:128px 0;font:bold 400% / 1 "Helvetica Neue",Arial,Helvetica,sans-serif;letter-spacing:-3px;text-align:center;color:#5a5a5a;-webkit-font-smoothing:antialiased;background:#323232;}
 body.home header.main aside a{color:#fff;border-bottom:4px solid #eb0062;text-decoration:none;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;}
 body.home header.main aside a:hover{color:#eb0062}
-body.home section.about,body.home section.articles{border-top:1px solid #fff;padding:2em 0 0}
+body.home section.about,body.home section.articles{padding:2em 0 0}
 body.home section.about{width:320px;float:left}
 body.home section.articles{width:640px;float:left;}
 body.home section.articles ul.articles{margin:0 0 32px;}
 body.home section.articles ul.articles li.article{margin:0 0 32px}
-footer.index{padding:2em 0;width:960px;padding-left:4em;font-size:85%;}
+footer.index{padding:2em 0;width:960px;padding-left:64px;font-size:85%;}
 footer.index:after{display:block;clear:both;content:""}
 footer.index p.copyright{width:320px;float:left;}
 footer.index p.copyright a{color:#ccc;border-bottom:none;}
 footer.index p.copyright a:hover{color:#eb0062;border-bottom:1px solid #eb0062}
 footer.index nav.index{width:640px;float:left}
 body.profile #content section.profile{width:640px;float:left;padding-left:320px}
+body.projects{font-size:81.25%;}
 body.projects #content{padding:0;min-width:200%;}
 body.projects #content ol.projects{white-space:nowrap;}
 body.projects #content ol.projects:after{display:block;clear:both;content:""}
@@ -55,7 +59,7 @@ body.projects #content ol.projects a:after{display:inline;content:"\0020\21B5"}
 body.projects #content ol.projects a:hover{color:#fff}
 body.projects footer.index{display:none}
 body.articles #content section.articles{width:640px;float:left;padding-left:320px;}
-body.articles #content section.articles ul.articles li.article{padding:1em 0 1.5em;border-top:1px solid #ddd;}
+body.articles #content section.articles ul.articles li.article{padding:1em 0 1.5em;border-top:1px solid rgba(255,255,255,0.1);}
 body.articles #content section.articles ul.articles li.article article time{display:block;width:320px;float:left;margin-left:-336px;text-align:right;color:#888;font-size:85%}
 body.article #content article{width:-640px;float:left;padding-left:320px;margin:0 0 2em;}
 body.article #content article h1{margin:0}

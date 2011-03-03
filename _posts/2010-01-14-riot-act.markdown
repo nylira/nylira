@@ -1,7 +1,0 @@
----
-layout: project
-title: Riot Act
-category: projects
----
-
-Riot Act is an awesome guild.

@@ -1,5 +1,85 @@
-<p>I&#8217;ve migrated this site to <a href='https://github.com/mojombo/jekyll'>Jekyll</a>. It seems much easier to use than ExpressionEngine. Of course, you have to be comfortable in text editors and SSH. I can&#8217;t stand textareas on the web anymore. It feels so slow and unwieldy. Developer notes follow.</p>
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+<head>
+  <meta charset='utf-8'>
+  <title>Built with git, vi, and Jekyll. &mdash; Nylira</title>
+  <link rel='stylesheet' href='/s/css/screen.css'>
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12283857-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+<body class='en article'>
+  <header class='index'>
+    <h1 class="index home"><a href='/en'>Nylira</a></h1>
+
+    <nav>
+      <ul>
+        <li class="index profile"><a href='/en/profile'>Profile</a>
+        <li class="index projects"><a href='/en/projects'>UI Projects</a>
+        <li class="index articles"><a href='/en/articles'>Articles</a>
+        <li class="index contact"><a href='/en/contact'>Contact</a>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div id='content'>
+
+    <article>
+      <h1>Built with git, vi, and Jekyll.</h1>
+
+      <menu class='switch'>
+        <ul>
+          <li class="prev">
+            <a rel='prev' href='/intuition-is-bullshit' title='View Intuition is Bullshit'> &laquo; Previous</a>
+          
+          <li class="next">Next &raquo;
+        </ul>
+      </menu>
+
+      <p class='meta'>
+        <time class='timeago' datetime='2011-03-01 00:00:00 +0100'>2011-03-01 00:00:00 +0100</time>
+        by <cite>Peng Zhong</cite>
+      <p>I&#8217;ve migrated this site to <a href='https://github.com/mojombo/jekyll'>Jekyll</a>. It seems much easier to use than ExpressionEngine. Of course, you have to be comfortable in text editors and SSH. I can&#8217;t stand textareas on the web anymore. It feels so slow and unwieldy. Developer notes follow.</p>
 
 <h2 id='blog_summaries'>Blog Summaries</h2>
 
 <p>Why are post summaries so difficult to pull off? I might have to migrate to Nanoc instead. QQ.</p>
+    </article>
+
+    <p class='all articles'><a href='/articles'>All Articles</a>
+  </div>
+
+  <footer class='index'>
+    <p class='copyright'>&copy; 2011 <a href='/'>Nylira, LLC</a>
+    <nav class='index'>
+      <ul>
+        <li>Nylira, LLC is a one-man operation run by Peng Zhong. <a href='/contact'>Contact page</a>
+        <li>
+          <a href='mailto:hello@nylira.com'>hello@nylira.com</a> &middot;
+          <a href='//twitter.com/nyliraUX'>@nyliraUX</a>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'></script>
+  <script src='/s/js/jquery.timeago.js'></script>
+
+  <script>
+    $(document).ready(function() {
+      jQuery('time.timeago').timeago();
+    });
+  </script>
+

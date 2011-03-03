@@ -1,6 +1,6 @@
 ---
-layout: article
-category: articles
+layout: en-article
+category: en-articles
 title: Intuition is Bullshit
 ---
 
