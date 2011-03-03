@@ -8,28 +8,27 @@ table{border-collapse:collapse;border-spacing:0}
 a{color:#eb0062;text-decoration:none;border-bottom:1px solid #eb0062;}
 a:hover{border-bottom:none}
 html>body{overflow-y:scroll}
-body{font-family:Georgia,"serif";font-size:16px;line-height:150%;color:#333;text-rendering:optimizeLegibility;background:#fff;border-top:4px solid #000}
+body{font-family:Georgia,"serif";font-size:16px;line-height:150%;color:#ccc;text-rendering:optimizeLegibility;background:#4d4d4d}
 code{font-family:Consolas,"Lucida Console",Monaco,Courier New,monospace;font-size:90%;background:#eee;padding:0 .2em}
 pre{margin:0 0 16px}
 h2{color:#eb0062;text-transform:uppercase;font-size:75%;letter-spacing:1px}
-header.index{width:960px;margin:0 auto;padding:4em 0 2em;border-bottom:1px solid #ccc;}
+header.index{background:#323232;-webkit-box-shadow:rgba(0,0,0,0.3) 0 5px 10px;-moz-box-shadow:rgba(0,0,0,0.3) 0 5px 10px;-o-box-shadow:rgba(0,0,0,0.3) 0 5px 10px;box-shadow:rgba(0,0,0,0.3) 0 5px 10px;}
 header.index:after{display:block;clear:both;content:""}
-header.index h1{width:320px;float:left;padding:1em 0 0;text-transform:lowercase;}
-header.index h1 a{font:bold 2em / 1 "Helvetica Neue",Arial,Helvetica,sans-serif;color:#000;border-bottom:none;letter-spacing:-1px;}
+header.index h1{width:160px;float:left;text-transform:lowercase;}
+header.index h1 a{font:bold 2em / 1 "Helvetica Neue",Arial,Helvetica,sans-serif;line-height:48px;color:#fff;border-bottom:none;letter-spacing:-1px;}
 header.index h1 a:hover{border-bottom:3px solid #eb0062}
 header.index nav{width:640px;float:left;}
-header.index nav ul li.menu{float:left;width:160px;float:left;}
-header.index nav ul li.menu.i18n{padding-top:1.5em}
-header.index nav ul li.menu menu ul li.index a{display:block;font-size:85%;color:#000;border-bottom:none;position:relative;}
-header.index nav ul li.menu menu ul li.index a:hover p{border-bottom:1px solid #333}
-body.profile li.index.profile a:before,body.articles li.index.articles a:before,body.article li.index.articles a:before,body.contact li.index.contact a:before,li.index.active a:before{display:block;content:"\203A";width:16px;height:16px;position:absolute;top:0;left:-1em}
+header.index nav ul li{width:80px;float:left;}
+header.index nav ul li a{display:block;line-height:3em}
+header.index menu li{float:left}
+body.home li.index.profile a:before,body.articles li.index.articles a:before,body.article li.index.articles a:before,body.contact li.index.contact a:before,li.index.active a:before{display:block;content:"\203A";width:16px;height:16px;position:absolute;top:0;left:-1em}
 #content{width:960px;margin:0 auto;padding:2em 0 4em;border-top:1px solid #fff;border-bottom:1px solid #ddd;}
 #content:after{display:block;clear:both;content:""}
 #content h1{font:200% / 1.5 Georgia,"serif";margin:0 0 32px}
 #content h2{margin:0 0 16px}
 #content h3{font:130% / 1.5 Georgia,"serif";margin:0 0 12px;}
-#content h3 a{color:#333;border-bottom:none;}
-#content h3 a:hover{border-bottom:1px solid #333}
+#content h3 a{color:#ccc;border-bottom:none;}
+#content h3 a:hover{border-bottom:1px solid #ccc}
 body.home #content header.main{padding-bottom:2em;border-top:1px solid #fff;border-bottom:1px solid #ccc;}
 body.home #content header.main aside{padding:128px 0;font:bold 400% / 1 "Helvetica Neue",Arial,Helvetica,sans-serif;letter-spacing:-3px;text-align:center;color:#666;-webkit-font-smoothing:antialiased;background:#000;border:2px solid #fff;}
 body.home #content header.main aside a{color:#fff;border-bottom:4px solid #eb0062;text-decoration:none;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;}
@@ -42,7 +41,7 @@ body.home #content section.articles ul.articles li.article{margin:0 0 32px}
 footer.index{padding:2em 0;width:960px;margin:0 auto;border-top:1px solid #fff;font-size:85%;}
 footer.index:after{display:block;clear:both;content:""}
 footer.index p.copyright{width:320px;float:left;}
-footer.index p.copyright a{color:#333;border-bottom:none;}
+footer.index p.copyright a{color:#ccc;border-bottom:none;}
 footer.index p.copyright a:hover{color:#eb0062;border-bottom:1px solid #eb0062}
 footer.index nav.index{width:640px;float:left}
 body.profile #content section.profile{width:640px;float:left;padding-left:320px}
@@ -56,7 +55,7 @@ body.article #content article menu.switch{width:320px;float:left;margin-left:-33
 body.article #content article menu.switch ul{float:right;}
 body.article #content article menu.switch ul li{float:left;}
 body.article #content article menu.switch ul li.prev:after{content:"|";display:inline-block;width:.75em;text-align:center}
-body.article #content article h2{color:#333;font:130% / 1.5 Georgia,"serif";text-transform:none;margin:32px 0 16px}
+body.article #content article h2{color:#ccc;font:130% / 1.5 Georgia,"serif";text-transform:none;margin:32px 0 16px}
 body.article #content article p{margin:0 0 16px;}
 body.article #content article p.meta{font-size:85%;margin:0 0 32px}
 body.article #content p.all.articles{width:640px;float:left;padding-left:320px}

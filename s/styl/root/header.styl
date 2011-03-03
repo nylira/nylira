@@ -1,15 +1,16 @@
 header.index
-  cnt()
-  pad 4em 0 2em
-  bb 1px solid #ccc
+  background m50
+  font-smoothing()
+  box-shadow b30 0 5px 10px
+  clear()
 
   h1 
-    col(4)
-    pad 1em 0 0
+    col(2)
     text-transform lowercase
     a
       font bold 2em/1 sans
-      color #000
+      line-height m*3
+      color w100
       bb none
       letter-spacing -1px
       &:hover
@@ -18,24 +19,16 @@ header.index
   nav
     col(8)
     ul
-      li.menu
-        float: left
-        col(2)
-        &.i18n
-          pt 1.5em
-        menu
-          ul
-            li.index
-              a
-                display block
-                font-size 85%
-                color #000
-                bb none
-                position relative
-                &:hover p
-                  border-bottom 1px solid txt
+      li
+        col(1)
+        a
+          display block
+          line-height 3em
+  menu
+    li
+      float left
 
-body.profile li.index.profile
+body.home li.index.profile
 body.articles li.index.articles
 body.article li.index.articles
 body.contact li.index.contact
