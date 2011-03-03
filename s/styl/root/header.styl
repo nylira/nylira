@@ -1,6 +1,5 @@
 header.index
   cnt()
-  clear()
   width 100%
   position fixed
   top 0
@@ -8,12 +7,10 @@ header.index
   bg rgba(48,48,48,.9)
   border-bottom 1px solid w10
   border-top 3px solid #000
-
-  m = 13px
+  font-size 81.25%
+  text-smoothing()
 
   a
-    font-size m
-    line-height 150%
     color #999
     transition()
     bt 3px solid transparent
@@ -27,22 +24,24 @@ header.index
     col(4)
     a
       display block
-      font bold 1.5em/2 sans
-      line-height m*3 - 3px
+      font bold 1.5em sans
+      line-height 2em
       color #ccc
+      text-transform lowercase
   
   nav
     col(8)
     ul
+      clear()
       li
         col(2)
         width c*2 - 1px
         border-left 1px solid w10
-        height m*3
+        clear()
         a
           font-weight bold
           display block
-          line-height m*3
+          line-height 3em
           text-align center
           text-transform uppercase
           letter-spacing 1px

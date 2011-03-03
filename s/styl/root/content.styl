@@ -1,16 +1,18 @@
 #content
-  padding m*2 + 4px + 39px 0 0
+  padding m*4 + 4px + 39px 0 4em
   cnt()
 
   h1
     font bold 200%/1.5 sans
     margin 0 0 m*2
+    text-smoothing()
 
   h2
     mar 0 0 m
 
   h3
     font bold 130%/1.5 sans
+    text-smoothing()
     a
       color txt
       transition
@@ -19,35 +21,39 @@
         bc anchor
 
 body.home
-  header.main
-    pb 2em
-    bb 1px solid w10
-   
-    aside
-      padding m*8 0
-      font bold 400%/1 sans
-      letter-spacing -3px
-      text-align center
-      color m90
-      text-smoothing()
-      bg m50
-      a
-        color #fff
-        bb 4px solid anchor
-        text-decoration none
-        transition()
-        &:hover
-          color anchor
+  #content
+    pt m*2 + 4px + 39px
 
-  section
-    &.about, &.articles
-      pad 2em 0 0
-    &.about
-      col 4
+    header.main
+      pad 2em 0
+      bt 1px solid w10
+      bb 1px solid w10
+     
+      aside
+        padding m*8 0
+        font bold 400%/1 sans
+        letter-spacing -3px
+        text-align center
+        color m90
+        text-smoothing()
+        bg m50
+        a
+          color #fff
+          bb 4px solid anchor
+          text-decoration none
+          transition()
+          &:hover
+            color anchor
 
-    &.articles
-      col 8
-      ul.articles
-        mar 0 0 m*2
-        li.article
+    section
+      &.about, &.articles
+        pad 2em 0 0
+      &.about
+        col 4
+
+      &.articles
+        col 8
+        ul.articles
           mar 0 0 m*2
+          li.article
+            mar 0 0 m*2

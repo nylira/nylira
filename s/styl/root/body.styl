@@ -18,19 +18,21 @@ default-font()
   line-height 150%
   color txt
 
-html>body
+/*
+  html>body
+    overflow-y scroll
+*/
 
 body
   default-font()
   text-rendering optimizeLegibility
-  text-smoothing()
   background m30
 
 code
   font-family mono
   font-size 90%
-  background #eee
-  padding 0 .2em
+  background w7
+  padding 0 .4em
 
 pre
   mar 0 0 m
@@ -38,5 +40,7 @@ pre
 h2
   color anchor
   text-transform uppercase
-  font-size 75%
+  font-size 81.25%
+  font-weight bold
+  text-smoothing()
   letter-spacing 1px
