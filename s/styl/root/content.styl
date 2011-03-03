@@ -1,6 +1,5 @@
 #content
   mt 3em
-  padding 2em 0 0
 
   h1
     font 200%/1.5 serif
@@ -14,33 +13,21 @@ body.home
   #content
     min-width 200%
 
-    section.colophon
-      border-right 1px solid m60
-      background m70
-      height 100%
-      width 200px
-      position fixed
-      top 0
-      left 0
-      display none
-
     ol.projects
       clear()
       white-space nowrap
       
       li.project
         display inline-block
-        br 1px solid m60
-        be 1px solid m60
-        pad 2em
+        pad 3em 4em 2em
+        border-right 1px solid w10
+        border-bottom 1px solid w10
 
         iframe
           display block
-          width 1024px
-          height 600px
           background m100
-          box-shadow b50 3px 3px 5px
-          margin 0 0 1em
+          box-shadow b30 0 3px 10px
+          margin 0 0 1.5em
           overflow hidden
 
        h3, time
@@ -51,12 +38,18 @@ body.home
         display inline
 
       time
-        color #666
+        color #555
    
       a
         display block
         float right
-        color #ccc
+        color #555
+        transition()
+        &:after
+          display inline
+          content: '\0020\21B5'
+        &:hover
+          color #fff
       
 
     header.main

@@ -1,32 +1,28 @@
 header.index
-  bg -webkit-linear-gradient(top, hsl(0,0,40) 0%, hsl(0,0,30) 50%, hsl(0,0,25) 50%, hsl(0,0,20) 100%)
   text-smoothing()
   clear()
   width 100%
   position fixed
   top 0
   left 0
-  bt 1px solid w10
-  bb 1px solid b50
+  border-bottom 1px solid w10
 
   a
-    color #ccc
-    text-shadow b20 0 1px 0
+    color #999
+    transition()
+    bt 3px solid transparent
+    &:hover
+      color #ccc
+      border-color anchor
 
   h1 
-    col(2)
-    width c*2 - 1px
-    text-transform lowercase
-    border-left 1px solid b20
+    col(4)
     a
       display block
       font bold 1.5em/2 sans
-      line-height m*3 - 2px
-      color w100
-      bs 1px solid w12
-      padding-left m*2
-      &:hover
-        border-bottom: 3px solid anchor
+      line-height m*3 - 3px
+      padding-left m*4
+      color #ccc
   
   nav
     col(8)
@@ -34,13 +30,14 @@ header.index
       li
         col(2)
         width c*2 - 1px
-        border-left 1px solid b20
+        border-left 1px solid w10
         a
           font-weight bold
           display block
-          line-height m*3 - 2px
-          bs 1px solid w12
+          line-height m*3 - 3px
           text-align center
+          text-transform uppercase
+          letter-spacing 1px
   menu
     li
       float left
