@@ -1,6 +1,8 @@
+
 header.index
-  text-smoothing()
+  cnt()
   clear()
+  text-smoothing()
   width 100%
   position fixed
   top 0
@@ -9,7 +11,11 @@ header.index
   border-top 3px solid #000
   bg rgba(51,51,51,.6)
 
+  m = 13px
+
   a
+    font-size m
+    line-height 150%
     color #999
     transition()
     bt 3px solid transparent
@@ -25,7 +31,6 @@ header.index
       display block
       font bold 1.5em/2 sans
       line-height m*3 - 3px
-      padding-left m*4
       color #ccc
   
   nav
@@ -35,6 +40,7 @@ header.index
         col(2)
         width c*2 - 1px
         border-left 1px solid w10
+        height m*3
         a
           font-weight bold
           display block
@@ -46,7 +52,8 @@ header.index
     li
       float left
 
-body.home li.index.projects a
+body.home h1.index.home a
+body.projects li.index.projects a
 body.articles li.index.articles a
 body.article li.index.articles a
 body.profile li.index.profile a

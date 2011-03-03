@@ -1,88 +1,48 @@
 #content
+  padding m*2 + 4px + 39px 0 0
+  cnt()
+  text-smoothing()
 
   h1
-    font 200%/1.5 serif
+    font bold 200%/1.5 sans
     margin 0 0 m*2
 
   h2
     margin 0 0 m
 
-
 body.home
-  #content
-    min-width 200%
-
-    ol.projects
-      clear()
-      white-space nowrap
-      
-      li.project
-        display inline-block
-        pad 6em 4em 2em
-        border-right 1px solid w10
-        border-bottom 1px solid w10
-
-        iframe
-          display block
-          background m100
-          box-shadow b30 0 3px 10px
-          margin 0 0 1.5em
-          overflow hidden
-
-       h3, time
-        font bold 125%/1.5 sans
-        text-smoothing()
-        text-transform uppercase
-        letter-spacing 1px
-        display inline
-
-      time
-        color #555
+  header.main
+    pb 2em
+    bt 1px solid #fff
+    bb 1px solid #ccc
    
+    aside
+      padding m*8 0
+      font bold 400%/1 sans
+      letter-spacing -3px
+      text-align center
+      color #666
+      text-smoothing()
+      bg #000
+      border 2px solid #fff
       a
-        display block
-        float right
-        color #555
+        color #fff
+        bb 4px solid anchor
+        text-decoration none
         transition()
-        &:after
-          display inline
-          content: '\0020\21B5'
         &:hover
-          color #fff
-      
+          color anchor
 
-    header.main
-      pb 2em
+  section
+    &.about, &.articles
       bt 1px solid #fff
-      bb 1px solid #ccc
-     
-      aside
-        padding m*8 0
-        font bold 400%/1 sans
-        letter-spacing -3px
-        text-align center
-        color #666
-        text-smoothing()
-        bg #000
-        border 2px solid #fff
-        a
-          color #fff
-          bb 4px solid anchor
-          text-decoration none
-          transition()
-          &:hover
-            color anchor
+      pad 2em 0 0
+    &.about
+      col 4
 
-    section
-      &.about, &.articles
-        bt 1px solid #fff
-        pad 2em 0 0
-      &.about
-        col 4
-
-      &.articles
-        col 8
-        ul.articles
+    &.articles
+      col 8
+      ul.articles
+        mar 0 0 m*2
+        li.article
           mar 0 0 m*2
-          li.article
-            mar 0 0 m*2

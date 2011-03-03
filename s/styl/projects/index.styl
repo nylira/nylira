@@ -1,5 +1,45 @@
 body.projects
   #content
-    section.projects
-      col 8
-      pl c*4
+    padding 0
+    min-width 200%
+
+    ol.projects
+      clear()
+      white-space nowrap
+      
+      li.project
+        display inline-block
+        pad 6em 4em 2em
+        border-right 1px solid w10
+        border-bottom 1px solid w10
+
+        iframe
+          display block
+          background m100
+          box-shadow b30 0 3px 10px
+          margin 0 0 1.5em
+          overflow hidden
+
+       h3, time
+        font bold 125%/1.5 sans
+        text-smoothing()
+        text-transform uppercase
+        letter-spacing 1px
+        display inline
+
+      time
+        color #555
+   
+      a
+        display block
+        float right
+        color #555
+        transition()
+        &:after
+          display inline
+          content: '\0020\21B5'
+        &:hover
+          color #fff
+
+  footer.index
+    display none
