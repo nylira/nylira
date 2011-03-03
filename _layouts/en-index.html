@@ -1,6 +1,62 @@
 {% include en-html-head.html %}
-<body class="en home">
+<body class='en home'>
 {% include en-header.html %}
+  <section class='colophon'>
+    Yo!
+  </section>
+
+    <ol class='projects'>
+      <li class='project'><iframe src='//gwdev.com' width='1024' height='600' scrolling='no'></iframe>
+        <h3 class='title'>Guildwork</h3>
+        <time class='timeago' datetime='2011-01-30'>January 2011</time>
+        <a target='_blank' href='//guildwork.com'>Visit site &raquo;</a>
+
+      <li class='project'><iframe src='//threecoins.com/company/news' width='1024' height='600' scrolling='no'>
+        <h3 class='title'>Three Coins</h3>
+        <time class='timeago' datetime='2010-07-18'>July 2010</time>
+        <a target='_blank' href='//threecoins.com/'>Visit site &raquo;</a>
+
+      <li class='project'><iframe src='//nylira.com/p/ruby' width='1024' height='600' scrolling='no'>
+        <h3 class='title'>Ruby</h3>
+        <time class='timeago' datetime='2010-03-17'>March 2010</time>
+        <a target='_blank' href='//nylira.com/p/ruby'>Visit site &raquo;</a>
+
+      <li class='project'><iframe src='//nylira.com/p/slashdot' width='1024' height='600' scrolling='no'></iframe>
+        <h3 class='title'>Slashdot</h3>
+        <time class='timeago' datetime='2010-03-05'>March 2010</time>
+        <a target='_blank' href='//nylira.com/p/slashdot'>Visit site &raquo;</a>
+
+      <li class='project'><iframe src='//riotactguild.com' width='1024' height='600' scrolling='no'></iframe>
+        <h3 class='title'>Riot Act</h3>
+        <time class='timeago' datetime='2010-01-13'>January 2010</time>
+        <a target='_blank' href='//riotactguild.com/'>Visit site &raquo;</a>
+
+      <li class='project'><iframe src='//nylira.com/p/manywhelps' width='1024' height='600' scrolling='no'></iframe>
+        <h3 class='title'>Many Whelps</h3>
+        <time class='timeago' datetime='2009-12-23'>December 2009</time>
+        <a target='_blank' href='//nylira.com/p/manywhelps'>Visit site &raquo;</a>
+
+      <li class='project'>
+        <iframe src='//nylira.com/p/2009' width='1024' height='600' scrolling='no'></iframe>
+        <h3 class='title'>Nylira</h3>
+        <time class='timeago' datetime='2009-10-11'>October 2009</time>
+        <a target='_blank' href='//nylira.com/p/2009'>Visit site &raquo;</a>
+
+      <li class='project'>
+        <iframe src='//nylira.com/p/corianderx' width='1024' height='600' scrolling='no'></iframe>
+        <h3 class='title'>Corianderx</h3>
+        <time class='timeago' datetime='2009-12-23'>December 2009</time>
+        <a target='_blank' href='//nylira.com/p/corianderx'>Visit site &raquo;</a>
+
+      <li class='project'>
+        <iframe src='//nylira.com/p/cv' width='1024' height='600' scrolling='no'></iframe>
+        <h3 class='title'>Peng Zhong</h3>
+        <time class='timeago' datetime='2009-06-08'>June 2009</time>
+        <a target='_blank' href='//nylira.com/p/cv'>Visit site &raquo;</a>
+
+    </ol>
+
+  <div style='display:none'>
     <header class='main'>
       <aside>Interface design for <a href='/profile'>developers</a>.</aside>
     </header>
@@ -15,12 +71,13 @@
       <ul class='articles'>
         {% for post in site.categories.articles %}<li class='article'>
           <h3><a href='{{ post.url }}'>{{ post.title }}</a></h3>
-          <section class="summary">
+          <section class='summary'>
             {{ post.summary }}
             <a href='{{ post.url }}'>Read more</a>
           </section>
         {% endfor %}
       </ul>
-      <p class="more articles"><a href="/articles">All Articles</a>
+      <p class='more articles'><a href='/articles'>All Articles</a>
     </section>
+  </div>
 {% include en-footer.html %}
