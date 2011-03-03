@@ -6,11 +6,15 @@ header.index
   top 0
   left 0
   border-bottom 1px solid w10
+  border-top 3px solid #000
+  bg rgba(51,51,51,.6)
 
   a
     color #999
     transition()
     bt 3px solid transparent
+    position relative
+    top -3px
     &:hover
       color #ccc
       border-color anchor
@@ -34,7 +38,7 @@ header.index
         a
           font-weight bold
           display block
-          line-height m*3 - 3px
+          line-height m*3
           text-align center
           text-transform uppercase
           letter-spacing 1px
@@ -42,16 +46,10 @@ header.index
     li
       float left
 
-body.home li.index.profile
-body.articles li.index.articles
-body.article li.index.articles
-body.contact li.index.contact
-li.index.active
-  a:before
-    display block
-    content: '\203A'
-    width m
-    height m
-    position absolute
-    top 0
-    left -1em
+body.home li.index.projects a
+body.articles li.index.articles a
+body.article li.index.articles a
+body.profile li.index.profile a
+body.contact li.index.contact a
+li.index.active a
+  border-color anchor
