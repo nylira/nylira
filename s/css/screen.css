@@ -56,15 +56,22 @@ body.profile #content section.profile p{margin:0 0 1.5em;}
 body.profile #content section.profile p:first-of-type{font:150% / 1.5 DIN,"Helvetica Neue",Arial,Helvetica,sans-serif}
 body.projects header.index{position:fixed;top:0;left:0}
 body.projects #content{padding:0;min-width:200%;}
+body.projects #content section.projects menu.past-clients{padding:80px 0 0 64px;width:320px;float:left;height:665px;border-bottom:1px solid rgba(255,255,255,0.1);}
+body.projects #content section.projects menu.past-clients h3{margin:0 0 32px}
+body.projects #content section.projects menu.past-clients ul li{color:#555;}
+body.projects #content section.projects menu.past-clients ul li a{display:block;color:#ccc;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;}
+body.projects #content section.projects menu.past-clients ul li a:hover{color:#fff;}
+body.projects #content section.projects menu.past-clients ul li a:hover:after{display:inline;content:"\0020\2192"}
 body.projects #content ol.projects{white-space:nowrap;}
 body.projects #content ol.projects:after{display:block;clear:both;content:""}
-body.projects #content ol.projects li.project{display:inline-block;padding:80px 64px 32px;border-right:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1);}
+body.projects #content ol.projects li.project{display:inline-block;padding:80px 64px 24px;border-left:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1);}
+body.projects #content ol.projects li.project:first-of-type{padding-left:0;border-left:none}
 body.projects #content ol.projects li.project iframe,body.projects #content ol.projects li.project img{display:block;background:#646464;-webkit-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;-moz-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;-o-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;box-shadow:rgba(0,0,0,0.3) 0 3px 10px;margin:0 0 16px;overflow:hidden}
-body.projects #content ol.projects h3,body.projects #content ol.projects time{float:left;font-weight:bold;font-size:16px;-webkit-font-smoothing:antialiased;text-transform:uppercase;letter-spacing:1px;display:inline}
-body.projects #content ol.projects time{color:#555;margin-left:.3em}
-body.projects #content ol.projects a{display:block;float:right;color:#555;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;}
-body.projects #content ol.projects a:after{display:inline;content:"\0020\21B5"}
-body.projects #content ol.projects a:hover{color:#fff}
+body.projects #content ol.projects li.project h3,body.projects #content ol.projects li.project time{float:left;font-weight:bold;font-size:16px;-webkit-font-smoothing:antialiased;text-transform:uppercase;letter-spacing:1px;display:inline}
+body.projects #content ol.projects li.project time{color:#555;margin-left:.3em}
+body.projects #content ol.projects li.project a{display:block;float:right;color:#555;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;}
+body.projects #content ol.projects li.project a:after{display:inline;content:"\0020\21B5"}
+body.projects #content ol.projects li.project a:hover{color:#fff}
 body.projects footer.index{display:none}
 body.articles #content section.articles{width:640px;float:left;padding-left:320px;}
 body.articles #content section.articles ul.articles li.article time{display:block;width:240px;float:left;margin-left:-353px;text-align:right;font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:24px;text-transform:uppercase;-webkit-font-smoothing:antialiased;color:#555;letter-spacing:1px}
