@@ -72,7 +72,7 @@ body.article #content article header menu.switch{width:240px;float:left;margin-l
 body.article #content article header menu.switch ul{float:right;}
 body.article #content article header menu.switch ul li{font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:24px;text-transform:uppercase;-webkit-font-smoothing:antialiased;color:#555;letter-spacing:1px;float:left;}
 body.article #content article header menu.switch ul li.prev:after{content:"|";display:inline-block;width:1em;text-align:center}
-body.article #content article header p.meta{font-size:13px}
+body.article #content article header p.meta{font-size:13px;color:#555}
 body.article #content article section.body h2{font:150% / 1.5 DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;color:#ccc;text-transform:none;margin:32px 0 16px;letter-spacing:0;-webkit-font-smoothing:auto}
 body.article #content article section.body p,body.article #content article section.body ul,body.article #content article section.body ol,body.article #content article section.body img,body.article #content article section.body pre,body.article #content article section.body blockquote{margin:0 0 1.5em}
 body.article #content article section.body p:first-of-type{font:150% / 1.5 DIN,"Helvetica Neue",Arial,Helvetica,sans-serif}
