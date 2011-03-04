@@ -8,7 +8,7 @@ I've migrated this site to [Jekyll](https://github.com/mojombo/jekyll). It seems
 
 March 3rd: Why are post summaries so difficult to pull off? I might have to migrate to Nanoc instead. Update: for the meantime, I've decided to not use post summaries.
 
-March 4th: Lightboxes fundamentally broken
+## Lightboxes fundamentally broken
 
 March 4th: A bit of a tangent, but I'm finding that lightbox scripts are fundamentally broken. The popup windows don't respond to keyboard shortcuts, and images never show up until they're 100% loaded. I don't think script writers understand how nice it is to see part of an image as it loads.
 

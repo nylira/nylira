@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2011-03-04T21:20:47+01:00</updated>
+ <updated>2011-03-04T21:21:39+01:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -21,7 +21,7 @@
 
 &lt;p&gt;March 3rd: Why are post summaries so difficult to pull off? I might have to migrate to Nanoc instead. Update: for the meantime, I&amp;#8217;ve decided to not use post summaries.&lt;/p&gt;
 
-&lt;p&gt;March 4th: Lightboxes fundamentally broken&lt;/p&gt;
+&lt;h2 id='lightboxes_fundamentally_broken'&gt;Lightboxes fundamentally broken&lt;/h2&gt;
 
 &lt;p&gt;March 4th: A bit of a tangent, but I&amp;#8217;m finding that lightbox scripts are fundamentally broken. The popup windows don&amp;#8217;t respond to keyboard shortcuts, and images never show up until they&amp;#8217;re 100% loaded. I don&amp;#8217;t think script writers understand how nice it is to see part of an image as it loads.&lt;/p&gt;
 
