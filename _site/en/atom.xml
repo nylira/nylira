@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2011-03-04T21:10:53+01:00</updated>
+ <updated>2011-03-04T21:20:47+01:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -19,9 +19,17 @@
    <id>http://nylira.com/hello-jekyll</id>
    <content type="html">&lt;p&gt;I&amp;#8217;ve migrated this site to &lt;a href='https://github.com/mojombo/jekyll'&gt;Jekyll&lt;/a&gt;. It seems much easier to use than ExpressionEngine. Of course, you have to be comfortable in text editors and SSH. I can&amp;#8217;t stand textareas on the web anymore. It feels so slow and unwieldy. Developer notes follow.&lt;/p&gt;
 
-&lt;h2 id='blog_summaries'&gt;Blog Summaries&lt;/h2&gt;
+&lt;p&gt;March 3rd: Why are post summaries so difficult to pull off? I might have to migrate to Nanoc instead. Update: for the meantime, I&amp;#8217;ve decided to not use post summaries.&lt;/p&gt;
 
-&lt;p&gt;Why are post summaries so difficult to pull off? I might have to migrate to Nanoc instead. QQ.&lt;/p&gt;</content>
+&lt;p&gt;March 4th: Lightboxes fundamentally broken&lt;/p&gt;
+
+&lt;p&gt;March 4th: A bit of a tangent, but I&amp;#8217;m finding that lightbox scripts are fundamentally broken. The popup windows don&amp;#8217;t respond to keyboard shortcuts, and images never show up until they&amp;#8217;re 100% loaded. I don&amp;#8217;t think script writers understand how nice it is to see part of an image as it loads.&lt;/p&gt;
+
+&lt;p&gt;It lets you decided whether to finish loading or skip ahead to another picture. A loading GIF doesn&amp;#8217;t give any information at all, and just pisses people off.&lt;/p&gt;
+
+&lt;p&gt;The popup effect also takes you out of the flow of the original article. Usually, a lightboxed image is in reference to something you&amp;#8217;re reading. But by clicking on it, you&amp;#8217;re effectively hiding the content for the picture.&lt;/p&gt;
+
+&lt;p&gt;It&amp;#8217;s a pain, and that&amp;#8217;s why almost all power users open images in new tabs instead. Sure, it can get can confusing trying to link an image tab to what you&amp;#8217;re reading. But at least it doesn&amp;#8217;t obscure everything.&lt;/p&gt;</content>
  </entry>
  
  <entry>
