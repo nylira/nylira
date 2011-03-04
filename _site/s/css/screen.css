@@ -59,7 +59,7 @@ body.projects #content{padding:0;min-width:200%;}
 body.projects #content ol.projects{white-space:nowrap;}
 body.projects #content ol.projects:after{display:block;clear:both;content:""}
 body.projects #content ol.projects li.project{display:inline-block;padding:80px 64px 32px;border-right:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1);}
-body.projects #content ol.projects li.project iframe{display:block;background:#646464;-webkit-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;-moz-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;-o-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;box-shadow:rgba(0,0,0,0.3) 0 3px 10px;margin:0 0 16px;overflow:hidden}
+body.projects #content ol.projects li.project iframe,body.projects #content ol.projects li.project img{display:block;background:#646464;-webkit-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;-moz-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;-o-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;box-shadow:rgba(0,0,0,0.3) 0 3px 10px;margin:0 0 16px;overflow:hidden}
 body.projects #content ol.projects h3,body.projects #content ol.projects time{float:left;font-weight:bold;font-size:16px;-webkit-font-smoothing:antialiased;text-transform:uppercase;letter-spacing:1px;display:inline}
 body.projects #content ol.projects time{color:#555;margin-left:.3em}
 body.projects #content ol.projects a{display:block;float:right;color:#555;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;}
