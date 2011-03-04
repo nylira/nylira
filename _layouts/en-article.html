@@ -2,23 +2,29 @@
 <body class='en article'>
 {% include en-header.html %}
     <article>
-      <h1>{{ page.title }}</h1>
+      <header>
+        <h1>{{ page.title }}</h1>
 
-      <menu class='switch'>
-        <ul>
-          <li class="prev">{% if page.previous %}
-            <a rel='prev' href='{{ page.previous.url }}' title='View {{ page.previous.title }}'> &laquo; Previous</a>
-          {% else %}&laquo; Previous{% endif %}
-          <li class="next">{% if page.next %}
-            <a rel='next' href='{{ page.next.url }}' title='View {{ page.next.title }}'>Next &raquo;</a>
-          {% else %}Next &raquo;{% endif %}
-        </ul>
-      </menu>
+        <menu class='switch'>
+          <ul>
+            <li class="prev">{% if page.previous %}
+              <a rel='prev' href='{{ page.previous.url }}' title='View {{ page.previous.title }}'> &laquo; Previous</a>
+            {% else %}&laquo; Previous{% endif %}
+            <li class="next">{% if page.next %}
+              <a rel='next' href='{{ page.next.url }}' title='View {{ page.next.title }}'>Next &raquo;</a>
+            {% else %}Next &raquo;{% endif %}
+          </ul>
+        </menu>
 
-      <p class='meta'>
-        <time class='timeago' datetime='{{ page.date }}'>{{ page.date }}</time>
-        by <cite>Peng Zhong</cite>
-      {{ content }}
+        <p class='meta'>
+          <time class='timeago' datetime='{{ page.date }}'>{{ page.date }}</time>
+          by <cite>Peng Zhong</cite>
+      </header>
+
+      <section class="body">
+        {{ content }}
+      </section>
+
     </article>
 
     <p class='all articles'><a href='/en/articles'>All Articles</a>

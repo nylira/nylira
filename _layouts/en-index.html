@@ -14,7 +14,7 @@
     <section class='articles'>
       <h2>Latest articles</h2>
       <ul class='articles'>
-        {% for post in site.categories.en-articles %}<li class='article'>
+        {% for post in site.categories.en-articles limit:3 %}<li class='article'>
           <a href='{{ post.url }}'>
             <h3>{{ post.title }}</h3>
             <section class='summary'>

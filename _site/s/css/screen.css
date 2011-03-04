@@ -13,13 +13,11 @@ body{font-family:DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;font-size:16px;
 #content{padding:107px 0 4em;width:960px;padding-left:64px;}
 #content:after{display:block;clear:both;content:""}
 #content h1{font:bold 200% / 1.5 DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;margin:0 0 32px;-webkit-font-smoothing:antialiased}
-#content h2{font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;color:#ff006a;text-transform:uppercase;-webkit-font-smoothing:antialiased;letter-spacing:1px;margin:0 0 16px}
-#content h3{font:125% DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:32px;}
+#content h2{font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:24px;text-transform:uppercase;-webkit-font-smoothing:antialiased;color:#555;letter-spacing:1px;color:#ff006a;margin:0 0 16px}
+#content h3{font:150% / 1.5 DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;}
 #content h3 a{color:#ccc;border-bottom:1px solid transparent;}
 #content h3 a:hover{border-color:#ff006a}
 #content code{font-family:Consolas,"Lucida Console",Monaco,Courier New,monospace;font-size:90%;background:rgba(255,255,255,0.07);padding:0 .4em}
-#content pre{display:block;margin:0 0 16px;background:rgba(255,255,255,0.05);padding:.75em 1em;}
-#content pre code{background:none}
 #content ul.articles li.article{margin:0 0 32px;}
 #content ul.articles li.article a{display:block;border:1px solid rgba(255,255,255,0.1);padding:1.5em 2em;}
 #content ul.articles li.article a h3{color:#ccc}
@@ -66,19 +64,23 @@ body.projects #content ol.projects a:after{display:inline;content:"\0020\21B5"}
 body.projects #content ol.projects a:hover{color:#fff}
 body.projects footer.index{display:none}
 body.articles #content section.articles{width:640px;float:left;padding-left:320px;}
-body.articles #content section.articles ul.articles li.article time{display:block;width:240px;float:left;margin-left:-353px;text-align:right;color:#555;font-weight:bold;font-size:13px;text-transform:uppercase;letter-spacing:1px;-webkit-font-smoothing:antialiased}
+body.articles #content section.articles ul.articles li.article time{display:block;width:240px;float:left;margin-left:-353px;text-align:right;font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:24px;text-transform:uppercase;-webkit-font-smoothing:antialiased;color:#555;letter-spacing:1px}
 body.article #content article{width:-640px;float:left;padding-left:320px;margin:0 0 2em;}
-body.article #content article h1{margin:0}
-body.article #content article menu.switch{width:320px;float:left;margin-left:-336px;font-size:85%;}
-body.article #content article menu.switch ul{float:right;}
-body.article #content article menu.switch ul li{float:left;}
-body.article #content article menu.switch ul li.prev:after{content:"|";display:inline-block;width:.75em;text-align:center}
-body.article #content article h2{font:bold 125% DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:32px;color:#ccc;text-transform:none;margin:48px 0 24px;letter-spacing:auto}
-body.article #content article p,body.article #content article ul,body.article #content article ol,body.article #content article img,body.article #content article pre,body.article #content article blockquote{margin:0 0 1.5em}
-body.article #content article p.meta{font-size:85%;margin:0 0 48px}
-body.article #content article img{margin:0 0 1.5em}
-body.article #content article pre{background:rgba(255,255,255,0.05);padding:.75em 1em;}
-body.article #content article pre code{background:none}
+body.article #content article header{margin:0 0 3em;}
+body.article #content article header h1{margin:0}
+body.article #content article header menu.switch{width:240px;float:left;margin-left:-320px;font-size:13px;}
+body.article #content article header menu.switch ul{float:right;}
+body.article #content article header menu.switch ul li{font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:24px;text-transform:uppercase;-webkit-font-smoothing:antialiased;color:#555;letter-spacing:1px;float:left;}
+body.article #content article header menu.switch ul li.prev:after{content:"|";display:inline-block;width:1em;text-align:center}
+body.article #content article header p.meta{font-size:13px}
+body.article #content article section.body h2{font:150% / 1.5 DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;color:#ccc;text-transform:none;margin:32px 0 16px;letter-spacing:0;-webkit-font-smoothing:auto}
+body.article #content article section.body p,body.article #content article section.body ul,body.article #content article section.body ol,body.article #content article section.body img,body.article #content article section.body pre,body.article #content article section.body blockquote{margin:0 0 1.5em}
+body.article #content article section.body p:first-of-type{font:150% / 1.5 DIN,"Helvetica Neue",Arial,Helvetica,sans-serif}
+body.article #content article section.body ul{list-style:square}
+body.article #content article section.body ol{list-style:decimal}
+body.article #content article section.body img{margin:0 0 1.5em}
+body.article #content article section.body pre{background:rgba(255,255,255,0.05);padding:.75em 1em;}
+body.article #content article section.body pre code{background:none}
 body.article #content p.all.articles{width:640px;float:left;padding-left:320px}
 body.contact #content section.contact{width:640px;float:left;padding-left:320px;}
 body.contact #content section.contact .details{width:320px;float:left;margin-left:-320px;}

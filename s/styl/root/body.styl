@@ -20,6 +20,14 @@ default-font()
   line-height 160%
   color txt
 
+alt-font()
+  font bold sm sans
+  line-height m*1.5
+  text-transform uppercase
+  text-smoothing()
+  color accent
+  letter-spacing 1px
+
 /* since the site isn't center aligned, this isn't necessary
   html>body
     overflow-y scroll
@@ -29,7 +37,6 @@ body
   default-font()
   text-rendering optimizeLegibility
   background m30
-
 
 #content
   padding m*4 + 4px + 39px 0 4em
@@ -41,16 +48,12 @@ body
     text-smoothing()
 
   h2
-    font bold sm sans
+    alt-font()
     color anchor
-    text-transform uppercase
-    text-smoothing()
-    letter-spacing 1px
     mar 0 0 m
 
   h3
-    font 125% sans
-    line-height m*2
+    font 150%/1.5 sans
     a
       color txt
       transition
@@ -63,14 +66,6 @@ body
     font-size 90%
     background w7
     padding 0 .4em
-
-  pre
-    display block
-    mar 0 0 m
-    background w5
-    padding .75em 1em
-    code
-      background none
 
   ul.articles
     li.article
