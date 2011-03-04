@@ -14,15 +14,15 @@ body{font-family:DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;font-size:16px;
 #content:after{display:block;clear:both;content:""}
 #content h1{font:bold 200% / 1.5 DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;margin:0 0 32px;-webkit-font-smoothing:antialiased}
 #content h2{font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:24px;text-transform:uppercase;-webkit-font-smoothing:antialiased;color:#555;letter-spacing:1px;color:#ff006a;margin:0 0 16px}
-#content h3{font:150% / 1.5 DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;}
-#content h3 a{color:#ccc;border-bottom:1px solid transparent;}
-#content h3 a:hover{border-color:#ff006a}
+#content h3,#content .h3{font:150% / 1.5 DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;display:block;}
+#content h3 a,#content .h3 a{color:#ccc;border-bottom:1px solid transparent;}
+#content h3 a:hover,#content .h3 a:hover{border-color:#ff006a}
 #content code{font-family:Consolas,"Lucida Console",Monaco,Courier New,monospace;font-size:90%;background:rgba(255,255,255,0.07);padding:0 .4em}
 #content ul.articles li.article{margin:0 0 32px;}
 #content ul.articles li.article a{display:block;border:1px solid rgba(255,255,255,0.1);padding:1.5em 2em;}
-#content ul.articles li.article a h3{color:#ccc}
+#content ul.articles li.article a h3,#content ul.articles li.article a .h3{color:#ccc}
 #content ul.articles li.article a:hover{border-color:#ff006a;}
-#content ul.articles li.article a:hover p{color:#ff006a}
+#content ul.articles li.article a:hover p.read.more,#content ul.articles li.article a:hover span.read.more{color:#ff006a}
 header.index{width:960px;padding-left:64px;width:100%;position:fixed;top:0;left:0;background:rgba(48,48,48,0.9);border-bottom:1px solid rgba(255,255,255,0.1);border-top:3px solid #000;font-size:13px;-webkit-font-smoothing:antialiased;}
 header.index:after{display:block;clear:both;content:""}
 header.index a{color:#999;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;border-top:3px solid transparent;margin-top:-3px;}

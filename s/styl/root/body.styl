@@ -52,8 +52,9 @@ body
     color anchor
     mar 0 0 m
 
-  h3
+  h3, .h3
     font 150%/1.5 sans
+    display block
     a
       color txt
       transition
@@ -74,9 +75,9 @@ body
         display block
         border 1px solid edge
         padding 1.5em 2em
-        h3
+        h3, .h3
           color txt
         &:hover
           border-color anchor
-          p
+          p.read.more, span.read.more
             color anchor

@@ -8,7 +8,7 @@
 
     <section class='about'>
       <h2>About Nylira</h2>
-      <p>We build interfaces. <a href='/en/profile'>Learn more</a>
+      <p>We build interfaces. <a href='/en/profile'>Learn more</a></p>
     </section>
 
     <section class='articles'>
@@ -16,11 +16,8 @@
       <ul class='articles'>
         {% for post in site.categories.en-articles limit:3 %}<li class='article'>
           <a href='{{ post.url }}'>
-            <h3>{{ post.title }}</h3>
-            <section class='summary'>
-              {{ post.summary }}
-              <p class='read more'>Read more
-            </section>
+            <span class='h3'>{{ post.title }}</span>
+            <span class='read more'>Read more</span>
           </a>
         {% endfor %}
       </ul>
