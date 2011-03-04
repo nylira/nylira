@@ -3,7 +3,9 @@ layout: en-profile
 title: Profile
 ---
 
-As a developer, you're an incredibly creative individual. Turning lines of code into living, breathing applications take an immense amount of mental acuity. So much, perhaps, that your visual design abilities have been neglected. That's why you're here.
+As a developer, you're an incredibly creative individual. 
+
+Turning lines of code into living, breathing applications take an immense amount of mental acuity. So much, perhaps, that your visual design abilities have been neglected. That's why you're here.
 
 I read Hacker News religiously--and possibly too much, for my own good. I know very well the type of designer I am not. The kind who only uses Photoshop and hands you PSDs to slice. I cringe at the word 'slice'. I believe it's incredible waste of developer time. I've done my own 'slicing' of other people's work, and it's laughable how little they understand about how the web works.
 
@@ -18,6 +20,19 @@ I'm a visual designer who codes in vi. All my projects are sandboxed into Ubuntu
 These days, I mostly use Photoshop as a glorified color picker.
 
 ## The creative process
+
+* 1.
+  Research
+* 2.
+  Draw wireframes
+* 3.
+  Make prototypes
+* 4.
+  Test
+* 5.
+  Launch
+* 6.
+  Measure &amp;  optimize
 
 I'm a strict minimalist. A lot of thought should be given to every element placed on a page. If it's not clear how it's useful, it should be removed. The cognitive burden you're placing on your users should be eliminated, so they can focus their attention on what's actually worthwhile.
 
