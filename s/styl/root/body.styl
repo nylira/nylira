@@ -1,10 +1,12 @@
 m = 16px
-txt = #ccc
+sm = 13px
+
+txt = m204
+accent = m85
+edge = w10
 
 hue = 335
-anchor = hsl(hue,100,46)
-
-accent = #888
+anchor = hsl(hue,100,50)
 
 a
   color anchor
@@ -15,10 +17,10 @@ a
 default-font()
   font-family sans
   font-size m
-  line-height 150%
+  line-height 160%
   color txt
 
-/*
+/* since the site isn't center aligned, this isn't necessary
   html>body
     overflow-y scroll
 */
@@ -28,19 +30,58 @@ body
   text-rendering optimizeLegibility
   background m30
 
-code
-  font-family mono
-  font-size 90%
-  background w7
-  padding 0 .4em
 
-pre
-  mar 0 0 m
+#content
+  padding m*4 + 4px + 39px 0 4em
+  cnt()
 
-h2
-  color anchor
-  text-transform uppercase
-  font-size 81.25%
-  font-weight bold
-  text-smoothing()
-  letter-spacing 1px
+  h1
+    font bold 200%/1.5 sans
+    margin 0 0 m*2
+    text-smoothing()
+
+  h2
+    font bold sm sans
+    color anchor
+    text-transform uppercase
+    text-smoothing()
+    letter-spacing 1px
+    mar 0 0 m
+
+  h3
+    font 125% sans
+    line-height m*2
+    a
+      color txt
+      transition
+      bb 1px solid transparent
+      &:hover
+        bc anchor
+
+  code
+    font-family mono
+    font-size 90%
+    background w7
+    padding 0 .4em
+
+  pre
+    display block
+    mar 0 0 m
+    background w5
+    padding .75em 1em
+    code
+      background none
+
+  ul.articles
+    li.article
+      margin 0 0 m*2
+      a
+        display block
+        border 1px solid edge
+        padding 1.5em 2em
+        h3
+          color txt
+        &:hover
+          border-color anchor
+          p
+            color anchor
