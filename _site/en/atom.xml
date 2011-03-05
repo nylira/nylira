@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2011-03-05T17:50:48+01:00</updated>
+ <updated>2011-03-05T17:54:30+01:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -19,7 +19,7 @@
    <id>http://nylira.com/stylus-the-future-of-web-design</id>
    <content type="html">&lt;p&gt;About a month ago, &lt;a href=&quot;http://learnboost.github.com/stylus&quot;&gt;Stylus&lt;/a&gt; was released, to little fanfare.&lt;/p&gt;
 
-&lt;p&gt;It has rapidly become my favorite web development tool. Cleaner and more flexible than &lt;a href=&quot;http://sass-lang.com/&quot;&gt;Sass&lt;/a&gt;, Stylus is by far the best CSS preprocessor in the wild. If you're unfamiliar with preprocessors, just imagine adding variables, functions, and simple arithmetic to CSS. While the additions may seem daunting to beginners, these advanced abstractions were desperately needed by maintainers of dizzyingly complex stylesheets.&lt;/p&gt;
+&lt;p&gt;It's rapidly become my favorite web development tool. Cleaner and more flexible than &lt;a href=&quot;http://sass-lang.com/&quot;&gt;Sass&lt;/a&gt;, Stylus is by far the best CSS preprocessor in the wild. If you're unfamiliar with preprocessors, just imagine adding variables, functions, and simple arithmetic to CSS. While the additions may seem daunting to beginners, these advanced abstractions were desperately needed by maintainers of dizzyingly complex stylesheets.&lt;/p&gt;
 
 &lt;p&gt;Stylus syntax strips away all colons, semicolons, brackets and most parentheses from regular CSS script. The stark simplicity and elegance of it reminds me of Lisp. What's more amazing is that Stylus will also accept regular CSS syntax in the same file, reducing possible friction between multiple contributers.&lt;/p&gt;
 
@@ -32,7 +32,7 @@
     h2
       alt-font()
       color anchor
-      mb  m
+      mb m2
     ul
       ls none
 
@@ -51,7 +51,7 @@
         transition()
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;You'll notice that I've trimmed down many CSS properties: &lt;code&gt;background&lt;/code&gt; is now &lt;code&gt;bg&lt;/code&gt;, &lt;code&gt;border-color&lt;/code&gt; is &lt;code&gt;bc&lt;/code&gt;, &lt;code&gt;margin-left&lt;/code&gt; is &lt;code&gt;ml&lt;/code&gt;, etc. Where I used to use &lt;code&gt;margin 0 0 2em&lt;/code&gt; (fewer characters than typing &lt;code&gt;margin-left 2em&lt;/code&gt;), I now use &lt;code&gt;mb 2em&lt;/code&gt;. The ability to abbreviate properties saves countless amount of typing, and is enough reason alone to use Stylus.&lt;/p&gt;
+&lt;p&gt;You'll notice that I've trimmed down many CSS properties: &lt;code&gt;background&lt;/code&gt; is now &lt;code&gt;bg&lt;/code&gt;, &lt;code&gt;border-color&lt;/code&gt; is &lt;code&gt;bc&lt;/code&gt;, &lt;code&gt;margin-left&lt;/code&gt; is &lt;code&gt;ml&lt;/code&gt;, etc. Where I used to use &lt;code&gt;margin: 0 0 2em;&lt;/code&gt; (fewer characters than &lt;code&gt;margin-bottom: 2em;&lt;/code&gt;), I now use &lt;code&gt;mb m2&lt;/code&gt;. The ability to abbreviate properties saves countless amount of typing, and is reason enough to use Stylus.&lt;/p&gt;
 
 &lt;p&gt;Here's the generated CSS by comparison:&lt;/p&gt;
 
@@ -115,7 +115,7 @@ body.profile #content section.profile section.markdown ul.process li p {
 
 &lt;h2&gt;Convinced yet?&lt;/h2&gt;
 
-&lt;p&gt;I have only grazed the surface of what's possible with the immense power of Stylus, and it makes me excited about what I'll playing with in the near future.&lt;/p&gt;
+&lt;p&gt;I have only grazed the surface of what's possible with the immense power of &lt;a href=&quot;http://learnboost.github.com/stylus/&quot;&gt;Stylus&lt;/a&gt;, and it makes me excited about what I'll playing with in the near future.&lt;/p&gt;
 </content>
  </entry>
  

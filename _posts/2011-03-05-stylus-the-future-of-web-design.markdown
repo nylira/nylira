@@ -6,7 +6,7 @@ title: Stylus, the Revolutionary Successor to CSS
 
 About a month ago, [Stylus](http://learnboost.github.com/stylus) was released, to little fanfare. 
 
-It has rapidly become my favorite web development tool. Cleaner and more flexible than [Sass](http://sass-lang.com/), Stylus is by far the best CSS preprocessor in the wild. If you're unfamiliar with preprocessors, just imagine adding variables, functions, and simple arithmetic to CSS. While the additions may seem daunting to beginners, these advanced abstractions were desperately needed by maintainers of dizzyingly complex stylesheets.
+It's rapidly become my favorite web development tool. Cleaner and more flexible than [Sass](http://sass-lang.com/), Stylus is by far the best CSS preprocessor in the wild. If you're unfamiliar with preprocessors, just imagine adding variables, functions, and simple arithmetic to CSS. While the additions may seem daunting to beginners, these advanced abstractions were desperately needed by maintainers of dizzyingly complex stylesheets.
 
 Stylus syntax strips away all colons, semicolons, brackets and most parentheses from regular CSS script. The stark simplicity and elegance of it reminds me of Lisp. What's more amazing is that Stylus will also accept regular CSS syntax in the same file, reducing possible friction between multiple contributers.
 
@@ -19,7 +19,7 @@ Here's a sample of Stylus, a bit of code that powers this very site:
         h2
           alt-font()
           color anchor
-          mb  m
+          mb m2
         ul
           ls none
 
@@ -37,7 +37,7 @@ Here's a sample of Stylus, a bit of code that powers this very site:
             color #ccc
             transition()
 
-You'll notice that I've trimmed down many CSS properties: `background` is now `bg`, `border-color` is `bc`, `margin-left` is `ml`, etc. Where I used to use `margin 0 0 2em` (fewer characters than typing `margin-left 2em`), I now use `mb 2em`. The ability to abbreviate properties saves countless amount of typing, and is enough reason alone to use Stylus.
+You'll notice that I've trimmed down many CSS properties: `background` is now `bg`, `border-color` is `bc`, `margin-left` is `ml`, etc. Where I used to use `margin: 0 0 2em;` (fewer characters than `margin-bottom: 2em;`), I now use `mb m2`. The ability to abbreviate properties saves countless amount of typing, and is reason enough to use Stylus.
 
 Here's the generated CSS by comparison:
 
@@ -99,4 +99,4 @@ Here's the generated CSS by comparison:
 
 ## Convinced yet?
 
-I have only grazed the surface of what's possible with the immense power of Stylus, and it makes me excited about what I'll playing with in the near future.
+I have only grazed the surface of what's possible with the immense power of [Stylus](http://learnboost.github.com/stylus/), and it makes me excited about what I'll playing with in the near future.
