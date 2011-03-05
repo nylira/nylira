@@ -2,7 +2,7 @@
 <html lang='en' dir='ltr'>
 <head>
   <meta charset='utf-8'>
-  <title>Built with git, vi, and Jekyll. &mdash; Nylira</title>
+  <title>Stylus, the Future of Web Design &mdash; Nylira</title>
   <link rel='stylesheet' href='/s/css/screen.css'>
   <link rel='alternate' title='Nylira Articles' href='/en/atom.xml'>
   <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -40,38 +40,60 @@
 
     <article>
       <header>
-        <h1>Built with git, vi, and Jekyll.</h1>
+        <h1>Stylus, the Future of Web Design</h1>
 
         <menu class='switch'>
           <ul>
             <li class="prev">
-              <a rel='prev' href='/intuition-is-bullshit' title='View Intuition is Bullshit'> &laquo; Previous</a>
+              <a rel='prev' href='/hello-jekyll' title='View Built with git, vi, and Jekyll.'> &laquo; Previous</a>
             
-            <li class="next">
-              <a rel='next' href='/stylus-the-future-of-web-design' title='View Stylus, the Future of Web Design'>Next &raquo;</a>
-            
+            <li class="next">Next &raquo;
           </ul>
         </menu>
 
         <p class='meta'>
-          <time class='timeago' datetime='2011-03-01 00:00:00 +0100'>2011-03-01 00:00:00 +0100</time>
+          <time class='timeago' datetime='2011-03-05 00:00:00 +0100'>2011-03-05 00:00:00 +0100</time>
           by <cite>Peng Zhong</cite>
       </header>
 
       <section class="body markdown">
-        <p>I've migrated this site to <a href="https://github.com/mojombo/jekyll">Jekyll</a>. It seems much easier to use than ExpressionEngine. Of course, you have to be comfortable in text editors and SSH. I can't stand textareas on the web anymore. It feels so slow and unwieldy. Developer notes follow.</p>
+        <p>About a month ago, <a href="http://learnboost.github.com/stylus">Stylus</a> was released, to little fanfare.</p>
 
-<p>March 3rd: Why are post summaries so difficult to pull off? I might have to migrate to Nanoc instead. Update: for the meantime, I've decided to not use post summaries.</p>
+<p>It has quickly become my favorite web development tool. Cleaner and more flexible than <a href="http://sass-lang.com/">Sass</a>, Stylus is by far the best CSS preprocessor in the wild today. If you're unfamiliar with preprocessors, just imagine adding variables, functions, and simple arithmetic to CSS. While the additions may seem daunting to beginners, these advanced abstractions were desperately needed by the maintainers of complex stylesheets.</p>
 
-<h2>Lightboxes fundamentally broken</h2>
+<p>Stylus strips away all colons, semicolons, brackets and most parentheses from regular CSS script. The stark simplicity and elegance reminds me of Lisp. What's more amazing is that Stylus will also accept regular CSS syntax in the same file, reducing possible friction between multiple contributers.</p>
 
-<p>March 4th: A bit of a tangent, but I'm finding that lightbox scripts are fundamentally broken. The popup windows don't respond to keyboard shortcuts, and images never show up until they're 100% loaded. I don't think script writers understand how nice it is to see part of an image as it loads.</p>
+<p>Here's a sample of Stylus, a bit of code that powers this very site:</p>
 
-<p>It lets you decided whether to finish loading or skip ahead to another picture. A loading GIF doesn't give any information at all, and just pisses people off.</p>
+<pre><code>section.markdown
+  aside
+    col 4
+    ml - c4
+    h2
+      alt-font()
+      color anchor
+      mb  m
+    ul
+      list-style none
 
-<p>The popup effect also takes you out of the flow of the original article. Usually, a lightboxed image is in reference to something you're reading. But by clicking on it, you're effectively hiding the content for the picture.</p>
+  ul.process
+    ml -4c
+    clear()
+    li
+      float left
+      mar 0 0 1px 1px
+      p
+        pad m
+        mar 0
+        square c4 - m2 - 1px
+        alt-font()
+        color #ccc
+        transition()
+</code></pre>
 
-<p>It's a pain, and that's why almost all power users open images in new tabs instead. Sure, it can get can confusing trying to link an image tab to what you're reading. But at least it doesn't obscure everything.</p>
+<p>You'll notice that I've trimmed down many CSS properties: <code>background</code> is now <code>bg</code>, <code>border-color</code> is <code>bc</code>, <code>margin-left</code> is <code>ml</code>, etc. Where I used to use <code>margin 0 0 2em</code> (which was less characters than <code>margin-left 2em</code>), I now use <code>mb 2em</code>. This feature alone saves countless amount of wasteful typing.</p>
+
+<p>I have only grazed the surface of what's possible with the immense power of Stylus, and it makes me excited about the future of design.</p>
 
       </section>
 

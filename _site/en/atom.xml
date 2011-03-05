@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2011-03-05T17:15:47+01:00</updated>
+ <updated>2011-03-05T17:18:03+01:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -13,10 +13,10 @@
 
  
  <entry>
-   <title>Stylus & The Future of Web Design</title>
-   <link href="http://nylira.com/a-few-words-on-stylus-and-the-future-of-web-design"/>
+   <title>Stylus, the Future of Web Design</title>
+   <link href="http://nylira.com/stylus-the-future-of-web-design"/>
    <updated>2011-03-05T00:00:00+01:00</updated>
-   <id>http://nylira.com/a-few-words-on-stylus-and-the-future-of-web-design</id>
+   <id>http://nylira.com/stylus-the-future-of-web-design</id>
    <content type="html">&lt;p&gt;About a month ago, &lt;a href=&quot;http://learnboost.github.com/stylus&quot;&gt;Stylus&lt;/a&gt; was released, to little fanfare.&lt;/p&gt;
 
 &lt;p&gt;It has quickly become my favorite web development tool. Cleaner and more flexible than &lt;a href=&quot;http://sass-lang.com/&quot;&gt;Sass&lt;/a&gt;, Stylus is by far the best CSS preprocessor in the wild today. If you're unfamiliar with preprocessors, just imagine adding variables, functions, and simple arithmetic to CSS. While the additions may seem daunting to beginners, these advanced abstractions were desperately needed by the maintainers of complex stylesheets.&lt;/p&gt;
