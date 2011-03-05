@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2011-03-05T03:59:20+01:00</updated>
+ <updated>2011-03-05T04:01:14+01:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -71,27 +71,27 @@
 
 &lt;p&gt;Unfortunately, the design only completely works in Safari. Such is life when developing on the bleeding edge.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;//nylira.com/tumblr/posts/bank-safari-big.jpg&quot;&gt;&lt;img src=&quot;//nylira.com/tumblr/posts/bank-safari.jpg&quot; alt=&quot;Drawar Bank rendered by Safari 4/Win&quot; title=&quot;Drawar Bank rendered by Safari 4/Win&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;//v2.nylira.com/tumblr/posts/bank-safari-big.jpg&quot;&gt;&lt;img src=&quot;//v2.nylira.com/tumblr/posts/bank-safari.jpg&quot; alt=&quot;Drawar Bank rendered by Safari 4/Win&quot; title=&quot;Drawar Bank rendered by Safari 4/Win&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2&gt;Firefox&lt;/h2&gt;
 
 &lt;p&gt;Firefox 3.6+ gets most of the design correct. but has issues displaying the SVG graph and leaves unsightly white margins between actions. Webkit's gradient engine (which powers Safari and Chrome) considers borders part of the &quot;background area&quot; when it renders gradients. Firefox's Gecko engine does not. The discrepancy is quite frustrating when you try to use RGBA/HSLA borders.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;//nylira.com/tumblr/posts/bank-firefox-big.jpg&quot;&gt;&lt;img src=&quot;//nylira.com/tumblr/posts/bank-firefox.jpg&quot; alt=&quot;Drawar Bank rendered by Firefox 3.6/Win&quot; title=&quot;Drawar Bank rendered by Firefox 3.6/Win&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;//v2.nylira.com/tumblr/posts/bank-firefox-big.jpg&quot;&gt;&lt;img src=&quot;//v2.nylira.com/tumblr/posts/bank-firefox.jpg&quot; alt=&quot;Drawar Bank rendered by Firefox 3.6/Win&quot; title=&quot;Drawar Bank rendered by Firefox 3.6/Win&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2&gt;Chrome&lt;/h2&gt;
 
 &lt;p&gt;Chrome has issues rendering all the CSS3 gradients. There's also noticeable color banding in Chrome's gradients, a flaw you don't see with Safari or Firefox. On the upside, Chrome's V8 Javascript engine blows every other browser out of the water when it comes to transitions.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;//nylira.com/tumblr/posts/bank-chrome-big.jpg&quot;&gt;&lt;img src=&quot;//nylira.com/tumblr/posts/bank-chrome.jpg&quot; alt=&quot;Drawar Bank rendered by Chrome 5/Win&quot; title=&quot;Drawar Bank rendered by Chrome 5/Win&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;//v2.nylira.com/tumblr/posts/bank-chrome-big.jpg&quot;&gt;&lt;img src=&quot;//v2.nylira.com/tumblr/posts/bank-chrome.jpg&quot; alt=&quot;Drawar Bank rendered by Chrome 5/Win&quot; title=&quot;Drawar Bank rendered by Chrome 5/Win&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;View the &lt;a href=&quot;//nylira.com/p/bank&quot;&gt;bank mockup&lt;/a&gt; live.&lt;/p&gt;
+&lt;p&gt;View the &lt;a href=&quot;//v2.nylira.com/p/bank&quot;&gt;bank mockup&lt;/a&gt; live.&lt;/p&gt;
 
 &lt;h2&gt;Sass&lt;/h2&gt;
 
 &lt;p&gt;I used this as an opportunity to learn more about &lt;a href=&quot;//sass-lang.com/&quot;&gt;Sass&lt;/a&gt;. Sass is a powerful abstraction layer for CSS. It supports variables, mixins, simple arithmetic, and basic looping functions. Writing Sass is essentially writing CSS without brackets or semicolons.&lt;/p&gt;
 
-&lt;p&gt;Check out the difference in size between the &lt;a href=&quot;//nylira.com/p/bank/css/screen.css&quot;&gt;screen.css&lt;/a&gt; and &lt;a href=&quot;//nylira.com/p/bank/css/sass/screen.sass&quot;&gt;screen.sass&lt;/a&gt; files. screen.css is 675 lines long and weighs in at 22.6 KB. screen.sass is 439 lines long and weighs in at 10.1 KB.&lt;/p&gt;
+&lt;p&gt;Check out the difference in size between the &lt;a href=&quot;//v2.nylira.com/p/bank/css/screen.css&quot;&gt;screen.css&lt;/a&gt; and &lt;a href=&quot;//v2.nylira.com/p/bank/css/sass/screen.sass&quot;&gt;screen.sass&lt;/a&gt; files. screen.css is 675 lines long and weighs in at 22.6 KB. screen.sass is 439 lines long and weighs in at 10.1 KB.&lt;/p&gt;
 
 &lt;p&gt;How is this possible? Most of Sass's power comes from mixins.&lt;/p&gt;
 
@@ -118,7 +118,7 @@ border-radius: 20px;
 -moz-border-radius: 20px;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;It certainly saves a lot of tedious and repetitive typing. This is only the tip of the iceberg, too. Take a look at my default &lt;a href=&quot;//nylira.com/p/bank/css/sass/_mixins.sass&quot;&gt;mixins.sass&lt;/a&gt; file for more examples.&lt;/p&gt;
+&lt;p&gt;It certainly saves a lot of tedious and repetitive typing. This is only the tip of the iceberg, too. Take a look at my default &lt;a href=&quot;//v2.nylira.com/p/bank/css/sass/_mixins.sass&quot;&gt;mixins.sass&lt;/a&gt; file for more examples.&lt;/p&gt;
 
 &lt;h2&gt;A minor gripe&lt;/h2&gt;
 
@@ -135,7 +135,7 @@ border-radius: 20px;
    <id>http://nylira.com/acorn</id>
    <content type="html">&lt;p&gt;Acorn homepage redesign. &lt;a href=&quot;http://flyingmeat.com/acorn&quot;&gt;Acorn&lt;/a&gt; is a Mac image editing program developed by Flying Meat Inc.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://nylira.com/p/acorn/&quot;&gt;&lt;img src=&quot;http://nylira.com/tumblr/posts/acorn.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://v2.nylira.com/p/acorn/&quot;&gt;&lt;img src=&quot;http://v2.nylira.com/tumblr/posts/acorn.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -146,7 +146,7 @@ border-radius: 20px;
    <id>http://nylira.com/analog-turk</id>
    <content type="html">&lt;p&gt;Spurred on by &lt;a href=&quot;http://37signals.com/svn/posts/2229-sortfolio-uses-amazons-mechanical-turk&quot;&gt;SvN's post&lt;/a&gt; about the Amazon Mechanical Turk, this is how I would do it.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://nylira.com/p/turk&quot;&gt;&lt;img src=&quot;http://nylira.com/tumblr/posts/turk.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://v2.nylira.com/p/turk&quot;&gt;&lt;img src=&quot;http://v2.nylira.com/tumblr/posts/turk.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -161,9 +161,9 @@ border-radius: 20px;
 
 &lt;p&gt;I have to say that I really love designing with just a text editor. Photoshop is unwieldy, cumbersome and utterly unsuited for most web design work. Sure, it still comes in handy for more illustration-heavy or textured websites. But for the majority of elegant and clean websites, a text editor works better and is magnitudes faster.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://nylira.com/p/ruby&quot;&gt;&lt;img src=&quot;http://nylira.com/tumblr/posts/ruby.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://v2.nylira.com/p/ruby&quot;&gt;&lt;img src=&quot;http://v2.nylira.com/tumblr/posts/ruby.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Browser notes: this design looks best in Safari/Mac or Firefox 3.6+. I seemed to have broken Chrome's rendering engine with the gradient spammage. If you use IE or Opera, &lt;a href=&quot;http://nylira.com/portfolio/ruby&quot;&gt;here's a picture&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Browser notes: this design looks best in Safari/Mac or Firefox 3.6+. I seemed to have broken Chrome's rendering engine with the gradient spammage. If you use IE or Opera, &lt;a href=&quot;http://v2.nylira.com/portfolio/ruby&quot;&gt;here's a picture&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The &lt;a href=&quot;http://ruby-lang.org&quot;&gt;current ruby-lang.org&lt;/a&gt;, for comparison.&lt;/p&gt;
 </content>
@@ -176,7 +176,7 @@ border-radius: 20px;
    <id>http://nylira.com/a-cleaner-slashdot</id>
    <content type="html">&lt;p&gt;Slashdot's homepage is rather overwhelming. It certainly works well enough on a functional level, but I think it can be done better. This is my attempt to bright things up. Their &lt;a href=&quot;http://slashdot.org&quot;&gt;current website&lt;/a&gt;, for comparison.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://nylira.com/p/slashdot&quot;&gt;&lt;img src=&quot;http://nylira.com/tumblr/posts/slashdot.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://v2.nylira.com/p/slashdot&quot;&gt;&lt;img src=&quot;http://v2.nylira.com/tumblr/posts/slashdot.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
