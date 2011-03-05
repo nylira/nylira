@@ -58,32 +58,38 @@
           by <cite>Peng Zhong</cite>
       </header>
 
-      <section class="body">
-        <p>Bank mockup designed for <a href='//www.drawar.com/forums/84/version2000--online-banking-statements/'>Drawar&#8217;s Version2.001</a>.</p>
+      <section class="body markdown">
+        <p>Bank mockup designed for <a href="//www.drawar.com/forums/84/version2000--online-banking-statements/">Drawar's Version2.001</a>.</p>
 
-<h2 id='safari'>Safari</h2>
+<h2>Safari</h2>
 
 <p>Unfortunately, the design only completely works in Safari. Such is life when developing on the bleeding edge.</p>
-<a href='//nylira.com/tumblr/posts/bank-safari-big.jpg'><img alt='Drawar Bank rendered by Safari 4/Win' src='//nylira.com/tumblr/posts/bank-safari.jpg' title='Drawar Bank rendered by Safari 4/Win' /></a>
-<h2 id='firefox'>Firefox</h2>
 
-<p>Firefox 3.6+ gets most of the design correct. but has issues displaying the SVG graph and leaves unsightly white margins between actions. Webkit&#8217;s gradient engine (which powers Safari and Chrome) considers borders part of the &#8220;background area&#8221; when it renders gradients. Firefox&#8217;s Gecko engine does not. The discrepancy is quite frustrating when you try to use RGBA/HSLA borders.</p>
-<a href='//nylira.com/tumblr/posts/bank-firefox-big.jpg'><img alt='Drawar Bank rendered by Firefox 3.6/Win' src='//nylira.com/tumblr/posts/bank-firefox.jpg' title='Drawar Bank rendered by Firefox 3.6/Win' /></a>
-<h2 id='chrome'>Chrome</h2>
+<p><a href="//nylira.com/tumblr/posts/bank-safari-big.jpg"><img src="//nylira.com/tumblr/posts/bank-safari.jpg" alt="Drawar Bank rendered by Safari 4/Win" title="Drawar Bank rendered by Safari 4/Win"></a></p>
 
-<p>Chrome has issues rendering all the CSS3 gradients. There&#8217;s also noticeable color banding in Chrome&#8217;s gradients, a flaw you don&#8217;t see with Safari or Firefox. On the upside, Chrome&#8217;s V8 Javascript engine blows every other browser out of the water when it comes to transitions.</p>
-<a href='//nylira.com/tumblr/posts/bank-chrome-big.jpg'><img alt='Drawar Bank rendered by Chrome 5/Win' src='//nylira.com/tumblr/posts/bank-chrome.jpg' title='Drawar Bank rendered by Chrome 5/Win' /></a>
-<p>View the <a href='//nylira.com/p/bank'>bank mockup</a> live.</p>
+<h2>Firefox</h2>
 
-<h2 id='sass'>Sass</h2>
+<p>Firefox 3.6+ gets most of the design correct. but has issues displaying the SVG graph and leaves unsightly white margins between actions. Webkit's gradient engine (which powers Safari and Chrome) considers borders part of the "background area" when it renders gradients. Firefox's Gecko engine does not. The discrepancy is quite frustrating when you try to use RGBA/HSLA borders.</p>
 
-<p>I used this as an opportunity to learn more about <a href='//sass-lang.com/'>Sass</a>. Sass is a powerful abstraction layer for CSS. It supports variables, mixins, simple arithmetic, and basic looping functions. Writing Sass is essentially writing CSS without brackets or semicolons.</p>
+<p><a href="//nylira.com/tumblr/posts/bank-firefox-big.jpg"><img src="//nylira.com/tumblr/posts/bank-firefox.jpg" alt="Drawar Bank rendered by Firefox 3.6/Win" title="Drawar Bank rendered by Firefox 3.6/Win"></a></p>
 
-<p>Check out the difference in size between the <a href='//nylira.com/p/bank/css/screen.css'>screen.css</a> and <a href='//nylira.com/p/bank/css/sass/screen.sass'>screen.sass</a> files. screen.css is 675 lines long and weighs in at 22.6 KB. screen.sass is 439 lines long and weighs in at 10.1 KB.</p>
+<h2>Chrome</h2>
 
-<p>How is this possible? Most of Sass&#8217;s power comes from mixins.</p>
+<p>Chrome has issues rendering all the CSS3 gradients. There's also noticeable color banding in Chrome's gradients, a flaw you don't see with Safari or Firefox. On the upside, Chrome's V8 Javascript engine blows every other browser out of the water when it comes to transitions.</p>
 
-<pre><code>// here&#39;s a simple example
+<p><a href="//nylira.com/tumblr/posts/bank-chrome-big.jpg"><img src="//nylira.com/tumblr/posts/bank-chrome.jpg" alt="Drawar Bank rendered by Chrome 5/Win" title="Drawar Bank rendered by Chrome 5/Win"></a></p>
+
+<p>View the <a href="//nylira.com/p/bank">bank mockup</a> live.</p>
+
+<h2>Sass</h2>
+
+<p>I used this as an opportunity to learn more about <a href="//sass-lang.com/">Sass</a>. Sass is a powerful abstraction layer for CSS. It supports variables, mixins, simple arithmetic, and basic looping functions. Writing Sass is essentially writing CSS without brackets or semicolons.</p>
+
+<p>Check out the difference in size between the <a href="//nylira.com/p/bank/css/screen.css">screen.css</a> and <a href="//nylira.com/p/bank/css/sass/screen.sass">screen.sass</a> files. screen.css is 675 lines long and weighs in at 22.6 KB. screen.sass is 439 lines long and weighs in at 10.1 KB.</p>
+
+<p>How is this possible? Most of Sass's power comes from mixins.</p>
+
+<pre><code>// here's a simple example
 =border-radius($r: 5px)
   border-radius: $r
   -webkit-border-radius: $r
@@ -97,21 +103,23 @@ border-radius: 5px;
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 
-// if you want to change the border radius, it&#39;s simple
+// if you want to change the border radius, it's simple
 +border-radius(20px)
 
 // outputs
 border-radius: 20px;
 -webkit-border-radius: 20px;
--moz-border-radius: 20px;</code></pre>
+-moz-border-radius: 20px;
+</code></pre>
 
-<p>It certainly saves a lot of tedious and repetitive typing. This is only the tip of the iceberg, too. Take a look at my default <a href='//nylira.com/p/bank/css/sass/_mixins.sass'>mixins.sass</a> file for more examples.</p>
+<p>It certainly saves a lot of tedious and repetitive typing. This is only the tip of the iceberg, too. Take a look at my default <a href="//nylira.com/p/bank/css/sass/_mixins.sass">mixins.sass</a> file for more examples.</p>
 
-<h2 id='a_minor_gripe'>A minor gripe</h2>
+<h2>A minor gripe</h2>
 
-<p>The only issue I have with Sass is that its compiling speed isn&#8217;t as fast as I would like. I&#8217;m used to saving my CSS file and then reloading my browser to instantly see my changes. With Sass playing middleman, it can take another second before the changes are reflected in the browser.</p>
+<p>The only issue I have with Sass is that its compiling speed isn't as fast as I would like. I'm used to saving my CSS file and then reloading my browser to instantly see my changes. With Sass playing middleman, it can take another second before the changes are reflected in the browser.</p>
 
-<p>If this has piqued your interest, check out the <a href='http://sass-lang.com/'>official Sass website</a> for more information.</p>
+<p>If this has piqued your interest, check out the <a href="http://sass-lang.com/">official Sass website</a> for more information.</p>
+
       </section>
 
     </article>

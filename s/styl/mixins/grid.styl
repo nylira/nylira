@@ -1,9 +1,9 @@
 canvas = 960px
 columns = 12
 
-c = canvas / columns * 1px
-gutter = c / 8
-gut = gutter / 2
+c =   canvas / columns * 1px
+gutter =  c / 8
+gut =  gutter/2
 
 clear()
   &:after
@@ -19,14 +19,14 @@ cnt(arguments = 12)
   pl m*4
   clear()
 
-col()
+col() 
   span arguments
   float left
 
-colm()
-  col arguments - gutter
+colm() 
+  col arguments-gutter
   margin 0 gut
 
 colp()
-  col arguments - gutter
+  col arguments-gutter
   padding 0 gut

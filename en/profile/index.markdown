@@ -7,6 +7,16 @@ As a developer, you're an incredibly creative individual.
 
 Turning lines of code into living, breathing applications take an immense amount of mental acuity. So much, perhaps, that your visual design abilities have been neglected. That's why you're here.
 
+<aside>
+  <h2>I've worked with&hellip;</h2>
+  <ul>
+  <li>Node.js
+  <li>Ruby on Rails
+  <li>Django
+  <li>web.py
+  </ul>
+</aside>
+
 I read Hacker News religiously--and possibly too much, for my own good. I know very well the type of designer I am not. The kind who only uses Photoshop and hands you PSDs to slice. I cringe at the word 'slice'. I believe it's incredible waste of developer time. I've done my own 'slicing' of other people's work, and it's laughable how little they understand about how the web works.
 
 CSS and HTML should be provided by your designers. If they care so much about pixel perfection, they should be laying the bricks themselves. And with a better understanding of what HTML can or cannot do, they gain the ability to bend it to their will. Good designers flourish under creative restraints. Bad designers shirk away.
@@ -21,18 +31,14 @@ These days, I mostly use Photoshop as a glorified color picker.
 
 ## The creative process
 
-* 1.
-  Research
-* 2.
-  Draw wireframes
-* 3.
-  Make prototypes
-* 4.
-  Test
-* 5.
-  Launch
-* 6.
-  Measure &amp;  optimize
+<ul class='process'>
+  <li>1. Research
+  <li>2. Draw wireframes
+  <li>3. Make protypes
+  <li>4. Test
+  <li>5. Launch
+  <li>6. Measure &amp; optimize
+</ul>
 
 I'm a strict minimalist. A lot of thought should be given to every element placed on a page. If it's not clear how it's useful, it should be removed. The cognitive burden you're placing on your users should be eliminated, so they can focus their attention on what's actually worthwhile.
 
@@ -47,3 +53,4 @@ I believe very few designers have the right mindset when designing for the web. 
 Eschewing tradition and any trappings of print design, Nylira fully embraces and takes advantage of new media.
 
 Take a look at [my work](/en/projects) or [say hello](/en/contact).
+

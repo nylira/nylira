@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2011-03-05T03:03:58+01:00</updated>
+ <updated>2011-03-05T03:53:29+01:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -17,19 +17,20 @@
    <link href="http://nylira.com/hello-jekyll"/>
    <updated>2011-03-01T00:00:00+01:00</updated>
    <id>http://nylira.com/hello-jekyll</id>
-   <content type="html">&lt;p&gt;I&amp;#8217;ve migrated this site to &lt;a href='https://github.com/mojombo/jekyll'&gt;Jekyll&lt;/a&gt;. It seems much easier to use than ExpressionEngine. Of course, you have to be comfortable in text editors and SSH. I can&amp;#8217;t stand textareas on the web anymore. It feels so slow and unwieldy. Developer notes follow.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I've migrated this site to &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt;. It seems much easier to use than ExpressionEngine. Of course, you have to be comfortable in text editors and SSH. I can't stand textareas on the web anymore. It feels so slow and unwieldy. Developer notes follow.&lt;/p&gt;
 
-&lt;p&gt;March 3rd: Why are post summaries so difficult to pull off? I might have to migrate to Nanoc instead. Update: for the meantime, I&amp;#8217;ve decided to not use post summaries.&lt;/p&gt;
+&lt;p&gt;March 3rd: Why are post summaries so difficult to pull off? I might have to migrate to Nanoc instead. Update: for the meantime, I've decided to not use post summaries.&lt;/p&gt;
 
-&lt;h2 id='lightboxes_fundamentally_broken'&gt;Lightboxes fundamentally broken&lt;/h2&gt;
+&lt;h2&gt;Lightboxes fundamentally broken&lt;/h2&gt;
 
-&lt;p&gt;March 4th: A bit of a tangent, but I&amp;#8217;m finding that lightbox scripts are fundamentally broken. The popup windows don&amp;#8217;t respond to keyboard shortcuts, and images never show up until they&amp;#8217;re 100% loaded. I don&amp;#8217;t think script writers understand how nice it is to see part of an image as it loads.&lt;/p&gt;
+&lt;p&gt;March 4th: A bit of a tangent, but I'm finding that lightbox scripts are fundamentally broken. The popup windows don't respond to keyboard shortcuts, and images never show up until they're 100% loaded. I don't think script writers understand how nice it is to see part of an image as it loads.&lt;/p&gt;
 
-&lt;p&gt;It lets you decided whether to finish loading or skip ahead to another picture. A loading GIF doesn&amp;#8217;t give any information at all, and just pisses people off.&lt;/p&gt;
+&lt;p&gt;It lets you decided whether to finish loading or skip ahead to another picture. A loading GIF doesn't give any information at all, and just pisses people off.&lt;/p&gt;
 
-&lt;p&gt;The popup effect also takes you out of the flow of the original article. Usually, a lightboxed image is in reference to something you&amp;#8217;re reading. But by clicking on it, you&amp;#8217;re effectively hiding the content for the picture.&lt;/p&gt;
+&lt;p&gt;The popup effect also takes you out of the flow of the original article. Usually, a lightboxed image is in reference to something you're reading. But by clicking on it, you're effectively hiding the content for the picture.&lt;/p&gt;
 
-&lt;p&gt;It&amp;#8217;s a pain, and that&amp;#8217;s why almost all power users open images in new tabs instead. Sure, it can get can confusing trying to link an image tab to what you&amp;#8217;re reading. But at least it doesn&amp;#8217;t obscure everything.&lt;/p&gt;</content>
+&lt;p&gt;It's a pain, and that's why almost all power users open images in new tabs instead. Sure, it can get can confusing trying to link an image tab to what you're reading. But at least it doesn't obscure everything.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -37,11 +38,12 @@
    <link href="http://nylira.com/intuition-is-bullshit"/>
    <updated>2010-09-04T00:00:00+02:00</updated>
    <id>http://nylira.com/intuition-is-bullshit</id>
-   <content type="html">&lt;p&gt;From the &lt;a href='//oed.com'&gt;OED&lt;/a&gt;, &amp;#8220;Intuition is the ability to acquire knowledge without inference or the use of reason.&amp;#8221; The &lt;a href='http://en.wikipedia.org/wiki/Intuition_(knowledge)'&gt;Wikipedia article&lt;/a&gt; states that intuition provides us with unjustifiable beliefs (a common ailment of the human brain) and its popularity in supernatural and New Age writings.&lt;/p&gt;
+   <content type="html">&lt;p&gt;From the &lt;a href=&quot;//oed.com&quot;&gt;OED&lt;/a&gt;, &quot;Intuition is the ability to acquire knowledge without inference or the use of reason.&quot; The &lt;a href='http://en.wikipedia.org/wiki/Intuition_(knowledge)'&gt;Wikipedia article&lt;/a&gt; states that intuition provides us with unjustifiable beliefs (a common ailment of the human brain) and its popularity in supernatural and New Age writings.&lt;/p&gt;
 
-&lt;p&gt;With such dubious company, why are user experience engineers using &amp;#8220;intuitive&amp;#8221; to describe the ideal user interface? UX is a science, not an art. There’s no such thing as knowledge without inference or reason. Don’t update your landing page on a whim because it &amp;#8220;feels right&amp;#8221;. Interface changes need to be backed by hard data, not by your gut instincts.&lt;/p&gt;
+&lt;p&gt;With such dubious company, why are user experience engineers using &quot;intuitive&quot; to describe the ideal user interface? UX is a science, not an art. There’s no such thing as knowledge without inference or reason. Don’t update your landing page on a whim because it &quot;feels right&quot;. Interface changes need to be backed by hard data, not by your gut instincts.&lt;/p&gt;
 
-&lt;p&gt;Almost everything your users do can be tracked, recorded, and graphed by numerous &lt;a href='//kissmetrics.com'&gt;data&lt;/a&gt; &lt;a href='//google.com/analytics'&gt;dissemination&lt;/a&gt; &lt;a href='//mixpanel.com'&gt;services&lt;/a&gt;. Don’t let your graphic designer make these decisions for you: start tracking.&lt;/p&gt;</content>
+&lt;p&gt;Almost everything your users do can be tracked, recorded, and graphed by numerous &lt;a href=&quot;//kissmetrics.com&quot;&gt;data&lt;/a&gt; &lt;a href=&quot;//google.com/analytics&quot;&gt;dissemination&lt;/a&gt; &lt;a href=&quot;//mixpanel.com&quot;&gt;services&lt;/a&gt;. Don’t let your graphic designer make these decisions for you: start tracking.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -51,9 +53,11 @@
    <id>http://nylira.com/dropbox-tip-1</id>
    <content type="html">&lt;p&gt;Want your Vim configuration on another computer? Add this line to your &lt;code&gt;~/.exrc&lt;/code&gt; file.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;source ~/Dropbox/.exrc&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;source ~/Dropbox/.exrc
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Don’t have a Dropbox account yet? Get your &lt;a href='https://www.dropbox.com/referrals/NTQ3MDYyNDY5'&gt;own now&lt;/a&gt;.&lt;/p&gt;</content>
+&lt;p&gt;Don’t have a Dropbox account yet? Get your &lt;a href=&quot;https://www.dropbox.com/referrals/NTQ3MDYyNDY5&quot;&gt;own now&lt;/a&gt;.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -61,31 +65,37 @@
    <link href="http://nylira.com/drawar-bank"/>
    <updated>2010-04-22T00:00:00+02:00</updated>
    <id>http://nylira.com/drawar-bank</id>
-   <content type="html">&lt;p&gt;Bank mockup designed for &lt;a href='//www.drawar.com/forums/84/version2000--online-banking-statements/'&gt;Drawar&amp;#8217;s Version2.001&lt;/a&gt;.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Bank mockup designed for &lt;a href=&quot;//www.drawar.com/forums/84/version2000--online-banking-statements/&quot;&gt;Drawar's Version2.001&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id='safari'&gt;Safari&lt;/h2&gt;
+&lt;h2&gt;Safari&lt;/h2&gt;
 
 &lt;p&gt;Unfortunately, the design only completely works in Safari. Such is life when developing on the bleeding edge.&lt;/p&gt;
-&lt;a href='//nylira.com/tumblr/posts/bank-safari-big.jpg'&gt;&lt;img alt='Drawar Bank rendered by Safari 4/Win' src='//nylira.com/tumblr/posts/bank-safari.jpg' title='Drawar Bank rendered by Safari 4/Win' /&gt;&lt;/a&gt;
-&lt;h2 id='firefox'&gt;Firefox&lt;/h2&gt;
 
-&lt;p&gt;Firefox 3.6+ gets most of the design correct. but has issues displaying the SVG graph and leaves unsightly white margins between actions. Webkit&amp;#8217;s gradient engine (which powers Safari and Chrome) considers borders part of the &amp;#8220;background area&amp;#8221; when it renders gradients. Firefox&amp;#8217;s Gecko engine does not. The discrepancy is quite frustrating when you try to use RGBA/HSLA borders.&lt;/p&gt;
-&lt;a href='//nylira.com/tumblr/posts/bank-firefox-big.jpg'&gt;&lt;img alt='Drawar Bank rendered by Firefox 3.6/Win' src='//nylira.com/tumblr/posts/bank-firefox.jpg' title='Drawar Bank rendered by Firefox 3.6/Win' /&gt;&lt;/a&gt;
-&lt;h2 id='chrome'&gt;Chrome&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;//nylira.com/tumblr/posts/bank-safari-big.jpg&quot;&gt;&lt;img src=&quot;//nylira.com/tumblr/posts/bank-safari.jpg&quot; alt=&quot;Drawar Bank rendered by Safari 4/Win&quot; title=&quot;Drawar Bank rendered by Safari 4/Win&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Chrome has issues rendering all the CSS3 gradients. There&amp;#8217;s also noticeable color banding in Chrome&amp;#8217;s gradients, a flaw you don&amp;#8217;t see with Safari or Firefox. On the upside, Chrome&amp;#8217;s V8 Javascript engine blows every other browser out of the water when it comes to transitions.&lt;/p&gt;
-&lt;a href='//nylira.com/tumblr/posts/bank-chrome-big.jpg'&gt;&lt;img alt='Drawar Bank rendered by Chrome 5/Win' src='//nylira.com/tumblr/posts/bank-chrome.jpg' title='Drawar Bank rendered by Chrome 5/Win' /&gt;&lt;/a&gt;
-&lt;p&gt;View the &lt;a href='//nylira.com/p/bank'&gt;bank mockup&lt;/a&gt; live.&lt;/p&gt;
+&lt;h2&gt;Firefox&lt;/h2&gt;
 
-&lt;h2 id='sass'&gt;Sass&lt;/h2&gt;
+&lt;p&gt;Firefox 3.6+ gets most of the design correct. but has issues displaying the SVG graph and leaves unsightly white margins between actions. Webkit's gradient engine (which powers Safari and Chrome) considers borders part of the &quot;background area&quot; when it renders gradients. Firefox's Gecko engine does not. The discrepancy is quite frustrating when you try to use RGBA/HSLA borders.&lt;/p&gt;
 
-&lt;p&gt;I used this as an opportunity to learn more about &lt;a href='//sass-lang.com/'&gt;Sass&lt;/a&gt;. Sass is a powerful abstraction layer for CSS. It supports variables, mixins, simple arithmetic, and basic looping functions. Writing Sass is essentially writing CSS without brackets or semicolons.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;//nylira.com/tumblr/posts/bank-firefox-big.jpg&quot;&gt;&lt;img src=&quot;//nylira.com/tumblr/posts/bank-firefox.jpg&quot; alt=&quot;Drawar Bank rendered by Firefox 3.6/Win&quot; title=&quot;Drawar Bank rendered by Firefox 3.6/Win&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Check out the difference in size between the &lt;a href='//nylira.com/p/bank/css/screen.css'&gt;screen.css&lt;/a&gt; and &lt;a href='//nylira.com/p/bank/css/sass/screen.sass'&gt;screen.sass&lt;/a&gt; files. screen.css is 675 lines long and weighs in at 22.6 KB. screen.sass is 439 lines long and weighs in at 10.1 KB.&lt;/p&gt;
+&lt;h2&gt;Chrome&lt;/h2&gt;
 
-&lt;p&gt;How is this possible? Most of Sass&amp;#8217;s power comes from mixins.&lt;/p&gt;
+&lt;p&gt;Chrome has issues rendering all the CSS3 gradients. There's also noticeable color banding in Chrome's gradients, a flaw you don't see with Safari or Firefox. On the upside, Chrome's V8 Javascript engine blows every other browser out of the water when it comes to transitions.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;// here&amp;#39;s a simple example
+&lt;p&gt;&lt;a href=&quot;//nylira.com/tumblr/posts/bank-chrome-big.jpg&quot;&gt;&lt;img src=&quot;//nylira.com/tumblr/posts/bank-chrome.jpg&quot; alt=&quot;Drawar Bank rendered by Chrome 5/Win&quot; title=&quot;Drawar Bank rendered by Chrome 5/Win&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;View the &lt;a href=&quot;//nylira.com/p/bank&quot;&gt;bank mockup&lt;/a&gt; live.&lt;/p&gt;
+
+&lt;h2&gt;Sass&lt;/h2&gt;
+
+&lt;p&gt;I used this as an opportunity to learn more about &lt;a href=&quot;//sass-lang.com/&quot;&gt;Sass&lt;/a&gt;. Sass is a powerful abstraction layer for CSS. It supports variables, mixins, simple arithmetic, and basic looping functions. Writing Sass is essentially writing CSS without brackets or semicolons.&lt;/p&gt;
+
+&lt;p&gt;Check out the difference in size between the &lt;a href=&quot;//nylira.com/p/bank/css/screen.css&quot;&gt;screen.css&lt;/a&gt; and &lt;a href=&quot;//nylira.com/p/bank/css/sass/screen.sass&quot;&gt;screen.sass&lt;/a&gt; files. screen.css is 675 lines long and weighs in at 22.6 KB. screen.sass is 439 lines long and weighs in at 10.1 KB.&lt;/p&gt;
+
+&lt;p&gt;How is this possible? Most of Sass's power comes from mixins.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// here's a simple example
 =border-radius($r: 5px)
   border-radius: $r
   -webkit-border-radius: $r
@@ -99,21 +109,23 @@ border-radius: 5px;
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 
-// if you want to change the border radius, it&amp;#39;s simple
+// if you want to change the border radius, it's simple
 +border-radius(20px)
 
 // outputs
 border-radius: 20px;
 -webkit-border-radius: 20px;
--moz-border-radius: 20px;&lt;/code&gt;&lt;/pre&gt;
+-moz-border-radius: 20px;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;It certainly saves a lot of tedious and repetitive typing. This is only the tip of the iceberg, too. Take a look at my default &lt;a href='//nylira.com/p/bank/css/sass/_mixins.sass'&gt;mixins.sass&lt;/a&gt; file for more examples.&lt;/p&gt;
+&lt;p&gt;It certainly saves a lot of tedious and repetitive typing. This is only the tip of the iceberg, too. Take a look at my default &lt;a href=&quot;//nylira.com/p/bank/css/sass/_mixins.sass&quot;&gt;mixins.sass&lt;/a&gt; file for more examples.&lt;/p&gt;
 
-&lt;h2 id='a_minor_gripe'&gt;A minor gripe&lt;/h2&gt;
+&lt;h2&gt;A minor gripe&lt;/h2&gt;
 
-&lt;p&gt;The only issue I have with Sass is that its compiling speed isn&amp;#8217;t as fast as I would like. I&amp;#8217;m used to saving my CSS file and then reloading my browser to instantly see my changes. With Sass playing middleman, it can take another second before the changes are reflected in the browser.&lt;/p&gt;
+&lt;p&gt;The only issue I have with Sass is that its compiling speed isn't as fast as I would like. I'm used to saving my CSS file and then reloading my browser to instantly see my changes. With Sass playing middleman, it can take another second before the changes are reflected in the browser.&lt;/p&gt;
 
-&lt;p&gt;If this has piqued your interest, check out the &lt;a href='http://sass-lang.com/'&gt;official Sass website&lt;/a&gt; for more information.&lt;/p&gt;</content>
+&lt;p&gt;If this has piqued your interest, check out the &lt;a href=&quot;http://sass-lang.com/&quot;&gt;official Sass website&lt;/a&gt; for more information.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -121,8 +133,10 @@ border-radius: 20px;
    <link href="http://nylira.com/acorn"/>
    <updated>2010-04-02T00:00:00+02:00</updated>
    <id>http://nylira.com/acorn</id>
-   <content type="html">&lt;p&gt;Acorn homepage redesign. &lt;a href='http://flyingmeat.com/acorn'&gt;Acorn&lt;/a&gt; is a Mac image editing program developed by Flying Meat Inc.&lt;/p&gt;
-&lt;a href='http://nylira.com/p/acorn/'&gt;&lt;img src='http://nylira.com/tumblr/posts/acorn.jpg' /&gt;&lt;/a&gt;</content>
+   <content type="html">&lt;p&gt;Acorn homepage redesign. &lt;a href=&quot;http://flyingmeat.com/acorn&quot;&gt;Acorn&lt;/a&gt; is a Mac image editing program developed by Flying Meat Inc.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://nylira.com/p/acorn/&quot;&gt;&lt;img src=&quot;http://nylira.com/tumblr/posts/acorn.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -130,8 +144,10 @@ border-radius: 20px;
    <link href="http://nylira.com/analog-turk"/>
    <updated>2010-03-26T00:00:00+01:00</updated>
    <id>http://nylira.com/analog-turk</id>
-   <content type="html">&lt;p&gt;Spurred on by &lt;a href='http://37signals.com/svn/posts/2229-sortfolio-uses-amazons-mechanical-turk'&gt;SvN&amp;#8217;s post&lt;/a&gt; about the Amazon Mechanical Turk, this is how I would do it.&lt;/p&gt;
-&lt;a href='http://nylira.com/p/turk'&gt;&lt;img src='http://nylira.com/tumblr/posts/turk.jpg' /&gt;&lt;/a&gt;</content>
+   <content type="html">&lt;p&gt;Spurred on by &lt;a href=&quot;http://37signals.com/svn/posts/2229-sortfolio-uses-amazons-mechanical-turk&quot;&gt;SvN's post&lt;/a&gt; about the Amazon Mechanical Turk, this is how I would do it.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://nylira.com/p/turk&quot;&gt;&lt;img src=&quot;http://nylira.com/tumblr/posts/turk.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -139,15 +155,18 @@ border-radius: 20px;
    <link href="http://nylira.com/ruby-programming-language"/>
    <updated>2010-03-25T00:00:00+01:00</updated>
    <id>http://nylira.com/ruby-programming-language</id>
-   <content type="html">&lt;p&gt;I redesigned the Ruby Programming Language homepage. Everything that you see&amp;#8211;with the exception of &lt;a href='http://rubyidentity.org/'&gt;the logo&lt;/a&gt;&amp;#8211;consists of just two text files. Cascading stylesheets have come a long way since 1999.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I redesigned the Ruby Programming Language homepage. Everything that you see--with the exception of &lt;a href=&quot;http://rubyidentity.org/&quot;&gt;the logo&lt;/a&gt;--consists of just two text files. Cascading stylesheets have come a long way since 1999.&lt;/p&gt;
 
-&lt;p&gt;My goal for the design was to make a monochromatic &amp;amp; image-less layout look visually striking and pretty. I think I&amp;#8217;ve mostly succeeded.&lt;/p&gt;
+&lt;p&gt;My goal for the design was to make a monochromatic &amp;amp; image-less layout look visually striking and pretty. I think I've mostly succeeded.&lt;/p&gt;
 
 &lt;p&gt;I have to say that I really love designing with just a text editor. Photoshop is unwieldy, cumbersome and utterly unsuited for most web design work. Sure, it still comes in handy for more illustration-heavy or textured websites. But for the majority of elegant and clean websites, a text editor works better and is magnitudes faster.&lt;/p&gt;
-&lt;a href='http://nylira.com/p/ruby'&gt;&lt;img src='http://nylira.com/tumblr/posts/ruby.jpg' /&gt;&lt;/a&gt;
-&lt;p&gt;Browser notes: this design looks best in Safari/Mac or Firefox 3.6+. I seemed to have broken Chrome&amp;#8217;s rendering engine with the gradient spammage. If you use IE or Opera, &lt;a href='http://nylira.com/portfolio/ruby'&gt;here's a picture&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;The &lt;a href='http://ruby-lang.org'&gt;current ruby-lang.org&lt;/a&gt;, for comparison.&lt;/p&gt;</content>
+&lt;p&gt;&lt;a href=&quot;http://nylira.com/p/ruby&quot;&gt;&lt;img src=&quot;http://nylira.com/tumblr/posts/ruby.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Browser notes: this design looks best in Safari/Mac or Firefox 3.6+. I seemed to have broken Chrome's rendering engine with the gradient spammage. If you use IE or Opera, &lt;a href=&quot;http://nylira.com/portfolio/ruby&quot;&gt;here's a picture&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://ruby-lang.org&quot;&gt;current ruby-lang.org&lt;/a&gt;, for comparison.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -155,8 +174,10 @@ border-radius: 20px;
    <link href="http://nylira.com/a-cleaner-slashdot"/>
    <updated>2010-03-18T00:00:00+01:00</updated>
    <id>http://nylira.com/a-cleaner-slashdot</id>
-   <content type="html">&lt;p&gt;Slashdot&amp;#8217;s homepage is rather overwhelming. It certainly works well enough on a functional level, but I think it can be done better. This is my attempt to bright things up. Their &lt;a href='http://slashdot.org'&gt;current website&lt;/a&gt;, for comparison.&lt;/p&gt;
-&lt;a href='http://nylira.com/p/slashdot'&gt;&lt;img src='http://nylira.com/tumblr/posts/slashdot.jpg' /&gt;&lt;/a&gt;</content>
+   <content type="html">&lt;p&gt;Slashdot's homepage is rather overwhelming. It certainly works well enough on a functional level, but I think it can be done better. This is my attempt to bright things up. Their &lt;a href=&quot;http://slashdot.org&quot;&gt;current website&lt;/a&gt;, for comparison.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://nylira.com/p/slashdot&quot;&gt;&lt;img src=&quot;http://nylira.com/tumblr/posts/slashdot.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
  </entry>
  
  
