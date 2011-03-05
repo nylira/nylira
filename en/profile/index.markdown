@@ -18,17 +18,19 @@ Turning lines of code into living, breathing applications take an immense amount
   </ul>
 </aside>
 
-I read Hacker News religiously--and possibly too much, for my own good. I know very well the type of designer I am not. The kind who only uses Photoshop and hands you PSDs to slice. I cringe at the word 'slice'. I believe it's incredible waste of developer time. I've done my own 'slicing' of other people's work, and it's laughable how little they understand about how the web works.
+Hacker News is my favorite hangout. I know very well the type of designer I am not: the kind who only knows Photoshop, and hands you PSDs to slice. I cringe at the word 'slice'. I believe it's an astonishing waste of valuable developer time. I've done 'slicing' of my own, and it's both amusing and frustrating how little PSD designers understand about the architecture of the web.
 
-CSS and HTML should be provided by your designers. If they care so much about pixel perfection, they should be laying the bricks themselves. And with a better understanding of what HTML can or cannot do, they gain the ability to bend it to their will. Good designers flourish under creative restraints. Bad designers shirk away.
+CSS and HTML (or template code) should be provided by your designer. If they care so much about pixel perfection, they should be laying the bricks themselves. And with a better understanding of the limitations of CSS, they gain the ability to bend it to their will. Exceptional designers will flourish under creative restraints. Poor designers shirk away.
 
 Are you looking for someone who cares as much about pixels as you do about code? 
 
-## Say hello to your match
+## Say hello to your match.
 
-I'm a visual designer who codes in vi. All my projects are sandboxed into Ubuntu Virtualbox images, which I access through SSH. You might not believe it, but I design entire sites through terminals. This website, in fact, is a static site powered by Jekyll and maintained with Github.
+I'm a visual designer who codes in vi. All my projects are sandboxed into Ubuntu Virtualbox images, which I access through SSH. You might not believe it, but I design entire sites using only the OS X Terminal. This website, in fact, is a static site powered by Jekyll and maintained with Github.
 
 These days, I mostly use Photoshop as a glorified color picker.
+
+That said, I try avoid writing plain CSS, too. Cascading style sheets are verbose by design, and I do whatever I can to reduce the number of characters I need to type. My current CSS preprocessor of choice is [Stylus](http://learnboost.github.com/stylus/). It's fantastic and will keep away the onset of RSI for another few years.
 
 ## The creative process
 

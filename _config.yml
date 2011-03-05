@@ -4,4 +4,3 @@ permalink: /:title
 exclude: 
   - README.markdown
   - .git
-  - styl
