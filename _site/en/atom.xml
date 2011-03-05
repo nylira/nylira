@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2011-03-05T17:45:41+01:00</updated>
+ <updated>2011-03-05T17:50:48+01:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -13,15 +13,15 @@
 
  
  <entry>
-   <title>Stylus, the Future of Web Design</title>
+   <title>Stylus, the Revolutionary Successor to CSS</title>
    <link href="http://nylira.com/stylus-the-future-of-web-design"/>
    <updated>2011-03-05T00:00:00+01:00</updated>
    <id>http://nylira.com/stylus-the-future-of-web-design</id>
    <content type="html">&lt;p&gt;About a month ago, &lt;a href=&quot;http://learnboost.github.com/stylus&quot;&gt;Stylus&lt;/a&gt; was released, to little fanfare.&lt;/p&gt;
 
-&lt;p&gt;It has quickly become my favorite web development tool. Cleaner and more flexible than &lt;a href=&quot;http://sass-lang.com/&quot;&gt;Sass&lt;/a&gt;, Stylus is by far the best CSS preprocessor in the wild. If you're unfamiliar with preprocessors, just imagine adding variables, functions, and simple arithmetic to CSS. While the additions may seem daunting to beginners, these advanced abstractions were desperately needed by the maintainers of complex stylesheets.&lt;/p&gt;
+&lt;p&gt;It has rapidly become my favorite web development tool. Cleaner and more flexible than &lt;a href=&quot;http://sass-lang.com/&quot;&gt;Sass&lt;/a&gt;, Stylus is by far the best CSS preprocessor in the wild. If you're unfamiliar with preprocessors, just imagine adding variables, functions, and simple arithmetic to CSS. While the additions may seem daunting to beginners, these advanced abstractions were desperately needed by maintainers of dizzyingly complex stylesheets.&lt;/p&gt;
 
-&lt;p&gt;Stylus strips away all colons, semicolons, brackets and most parentheses from regular CSS script. The stark simplicity and elegance reminds me of Lisp. What's more amazing is that Stylus will also accept regular CSS syntax in the same file, reducing possible friction between multiple contributers.&lt;/p&gt;
+&lt;p&gt;Stylus syntax strips away all colons, semicolons, brackets and most parentheses from regular CSS script. The stark simplicity and elegance of it reminds me of Lisp. What's more amazing is that Stylus will also accept regular CSS syntax in the same file, reducing possible friction between multiple contributers.&lt;/p&gt;
 
 &lt;p&gt;Here's a sample of Stylus, a bit of code that powers this very site:&lt;/p&gt;
 
