@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+<head>
+  <meta charset='utf-8'>
+  <title>Stylus, the Revolutionary Successor to CSS &mdash; Nylira</title>
+  <link rel='stylesheet' href='/s/css/screen.css'>
+  <link rel='alternate' title='Nylira Articles' href='/en/atom.xml'>
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12283857-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+<body class='en article'>
+  <header class='index'>
+    <h1 class="index home"><a href='/en'>Nylira</a></h1>
+
+    <nav>
+      <ul>
+        <li class="index profile"><a href='/en/profile'>Profile</a>
+        <li class="index projects"><a href='/en/projects'>Projects</a>
+        <li class="index articles"><a href='/en/articles'>Articles</a>
+        <li class="index contact"><a href='/en/contact'>Contact</a>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div id='content'>
+
+    <article>
+      <header>
+        <h1>Stylus, the Revolutionary Successor to CSS</h1>
+
+        <menu class='switch'>
+          <ul>
+            <li class="prev">
+              <a rel='prev' href='/hello-jekyll' title='View Built with git, vi, and Jekyll.'> &laquo; Previous</a>
+            
+            <li class="next">Next &raquo;
+          </ul>
+        </menu>
+
+        <p class='meta'>
+          <time class='timeago' datetime='2011-03-05 00:00:00 +0100'>2011-03-05 00:00:00 +0100</time>
+          by <cite>Peng Zhong</cite>
+      </header>
+
+      <section class="body markdown">
+        <p>About a month ago, <a href="http://learnboost.github.com/stylus">Stylus</a> was released, to little fanfare.</p>
+
+<p>Cleaner and more flexible than <a href="http://sass-lang.com/">Sass</a>, Stylus is by far the best CSS preprocessor in the wild. It's rapidly become my favorite web development tool. If you're unfamiliar with preprocessors, just imagine adding variables, functions, and simple arithmetic to CSS. While the additions may seem daunting to beginners, these advanced abstractions were desperately needed by maintainers of dizzyingly complex stylesheets.</p>
+
+<p>Stylus syntax strips away all colons, semicolons, brackets and most parentheses from regular CSS script. The stark simplicity and elegance of it reminds me of Lisp. What's more amazing is that Stylus will also accept regular CSS syntax in the same file, reducing possible friction between multiple contributers.</p>
+
+<p>Here's a sample of Stylus, a bit of code that powers this very site:</p>
+
+<pre><code>section.markdown
+  aside
+    col 4
+    ml - c4
+    h2
+      alt-font()
+      color anchor
+      mb m2
+    ul
+      ls none
+
+  ul.process
+    ml -4c
+    clear()
+    li
+      float left
+      mar 0 0 1px 1px
+      p
+        pad m
+        mar 0
+        square c4 - m2 - 1px
+        alt-font()
+        color #ccc
+        transition()
+</code></pre>
+
+<p>You'll notice that I've trimmed down many CSS properties: <code>background</code> is now <code>bg</code>, <code>border-color</code> is <code>bc</code>, <code>margin-left</code> is <code>ml</code>, etc. Where I used to use <code>margin: 0 0 2em;</code> (fewer characters than <code>margin-bottom: 2em;</code>), I now use <code>mb m2</code>. The ability to abbreviate properties saves countless amount of typing, and is reason enough to use Stylus.</p>
+
+<p>Here's the generated CSS by comparison:</p>
+
+<pre><code>body.profile #content section.profile section.markdown aside {
+  width: 320px;
+  float: left;
+  margin-left: -320px;
+}
+body.profile #content section.profile section.markdown aside h2 {
+  font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  color: #555;
+  letter-spacing: 1px;
+  color: #ff006a;
+  margin: 0 0 16px;
+}
+body.profile #content section.profile section.markdown aside ul {
+  list-style: none;
+}
+body.profile #content section.profile section.markdown ul.process {
+  margin-left: -320px;
+}
+body.profile #content section.profile section.markdown ul.process:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+body.profile #content section.profile section.markdown ul.process li {
+  float: left;
+  margin: 0 0 1px 1px;
+  list-style: none;
+}
+body.profile #content section.profile section.markdown ul.process li p {
+  padding: 16px;
+  margin: 0;
+  width: 127px;
+  height: 127px;
+  font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  color: #555;
+  letter-spacing: 1px;
+  color: #ccc;
+  transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+}
+</code></pre>
+
+<dl class='comparison'>
+  <dt>Stylus Character Count</dt>
+  <dd><span>337</span></dd>
+  <dt>CSS Character Count</dt>
+  <dd><span>1369</span></dd>
+</dl>
+
+
+<h2>Convinced yet?</h2>
+
+<p>I have only grazed the surface of what's possible with the immense power of <a href="http://learnboost.github.com/stylus/">Stylus</a>, and it makes me excited about what I'll playing with in the near future.</p>
+
+      </section>
+
+    </article>
+
+    <p class='all articles'><a href='/en/articles'>All Articles</a>
+  </div>
+
+  <footer class='index'>
+    <p class='copyright'>&copy; 2011 <a href='/en'>Nylira, LLC</a>
+    <nav class='index'>
+      <ul>
+        <li>Nylira, LLC is a one-man operation run by Peng Zhong. <a href='/en/contact'>Contact page</a>
+        <li>
+          <a href='mailto:hello@nylira.com'>hello@nylira.com</a> &middot;
+          <a href='//twitter.com/zcpeng'>@zcpeng</a>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'></script>
+  <script src='/s/js/jquery.timeago.js'></script>
+
+  <script>
+    $(document).ready(function() {
+      jQuery('time.timeago').timeago();
+    });
+  </script>
+
