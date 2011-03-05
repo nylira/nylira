@@ -20,15 +20,17 @@ body.profile
           clear()
           mb 1.5em
           li
-            col 2
-            width 159px - m*2
+            float left
             margin 0 0 1px 1px
-            height 159px - m*2
-            padding m
-            alt-font()
-            color #ccc
             list-style none
-            transition()
+            p
+              padding m
+              margin 0
+              width 159px - m*2
+              height 159px - m*2
+              alt-font()
+              color #ccc
+              transition()
 
             &:nth-of-type(1)
               background w2
@@ -42,8 +44,10 @@ body.profile
               background w10
             &:nth-of-type(6)
               background w12
+            
 
-            &:hover
+            &:hover p
+              display block
               background m60
               position relative
               top -15px

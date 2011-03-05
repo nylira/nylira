@@ -33,12 +33,12 @@ These days, I mostly use Photoshop as a glorified color picker.
 ## The creative process
 
 <ul class='process'>
-  <li>1. Research
-  <li>2. Draw wireframes
-  <li>3. Make protypes
-  <li>4. Test
-  <li>5. Launch
-  <li>6. Measure &amp; optimize
+  <li><p>1. Research
+  <li><p>2. Draw wireframes
+  <li><p>3. Make protypes
+  <li><p>4. Test
+  <li><p>5. Launch
+  <li><p>6. Measure &amp; optimize
 </ul>
 
 I'm a strict minimalist. A lot of thought should be given to every element placed on a page. If it's not clear how it's useful, it should be removed. The cognitive burden you're placing on your users should be eliminated, so they can focus their attention on what's actually worthwhile.
