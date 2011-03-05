@@ -21,7 +21,7 @@ Here's a sample of Stylus, a bit of code that powers this very site:
           color anchor
           mb  m
         ul
-          list-style none
+          ls none
 
       ul.process
         ml -4c
