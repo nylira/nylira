@@ -6,7 +6,7 @@ title: Stylus, the Future of Web Design
 
 About a month ago, [Stylus](http://learnboost.github.com/stylus) was released, to little fanfare. 
 
-It has quickly become my favorite web development tool. Cleaner and more flexible than [Sass](http://sass-lang.com/), Stylus is by far the best CSS preprocessor in the wild today. If you're unfamiliar with preprocessors, just imagine adding variables, functions, and simple arithmetic to CSS. While the additions may seem daunting to beginners, these advanced abstractions were desperately needed by the maintainers of complex stylesheets.
+It has quickly become my favorite web development tool. Cleaner and more flexible than [Sass](http://sass-lang.com/), Stylus is by far the best CSS preprocessor in the wild. If you're unfamiliar with preprocessors, just imagine adding variables, functions, and simple arithmetic to CSS. While the additions may seem daunting to beginners, these advanced abstractions were desperately needed by the maintainers of complex stylesheets.
 
 Stylus strips away all colons, semicolons, brackets and most parentheses from regular CSS script. The stark simplicity and elegance reminds me of Lisp. What's more amazing is that Stylus will also accept regular CSS syntax in the same file, reducing possible friction between multiple contributers.
 
