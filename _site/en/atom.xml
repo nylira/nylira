@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2011-03-05T17:19:29+01:00</updated>
+ <updated>2011-03-05T17:42:35+01:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -51,9 +51,71 @@
         transition()
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;You'll notice that I've trimmed down many CSS properties: &lt;code&gt;background&lt;/code&gt; is now &lt;code&gt;bg&lt;/code&gt;, &lt;code&gt;border-color&lt;/code&gt; is &lt;code&gt;bc&lt;/code&gt;, &lt;code&gt;margin-left&lt;/code&gt; is &lt;code&gt;ml&lt;/code&gt;, etc. Where I used to use &lt;code&gt;margin 0 0 2em&lt;/code&gt; (which was less characters than &lt;code&gt;margin-left 2em&lt;/code&gt;), I now use &lt;code&gt;mb 2em&lt;/code&gt;. This feature alone saves countless amount of wasteful typing.&lt;/p&gt;
+&lt;p&gt;You'll notice that I've trimmed down many CSS properties: &lt;code&gt;background&lt;/code&gt; is now &lt;code&gt;bg&lt;/code&gt;, &lt;code&gt;border-color&lt;/code&gt; is &lt;code&gt;bc&lt;/code&gt;, &lt;code&gt;margin-left&lt;/code&gt; is &lt;code&gt;ml&lt;/code&gt;, etc. Where I used to use &lt;code&gt;margin 0 0 2em&lt;/code&gt; (fewer characters than typing &lt;code&gt;margin-left 2em&lt;/code&gt;), I now use &lt;code&gt;mb 2em&lt;/code&gt;. The ability to abbreviate properties saves countless amount of typing, and is enough reason alone to use Stylus.&lt;/p&gt;
 
-&lt;p&gt;I have only grazed the surface of what's possible with the immense power of Stylus, and it makes me excited about the future of design.&lt;/p&gt;
+&lt;p&gt;Here's the generated CSS by comparison:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;body.profile #content section.profile section.markdown aside {
+  width: 320px;
+  float: left;
+  margin-left: -320px;
+}
+body.profile #content section.profile section.markdown aside h2 {
+  font: bold 13px DIN, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  color: #555;
+  letter-spacing: 1px;
+  color: #ff006a;
+  margin: 0 0 16px;
+}
+body.profile #content section.profile section.markdown aside ul {
+  list-style: none;
+}
+body.profile #content section.profile section.markdown ul.process {
+  margin-left: -320px;
+}
+body.profile #content section.profile section.markdown ul.process:after {
+  display: block;
+  clear: both;
+  content: &quot;&quot;;
+}
+body.profile #content section.profile section.markdown ul.process li {
+  float: left;
+  margin: 0 0 1px 1px;
+  list-style: none;
+}
+body.profile #content section.profile section.markdown ul.process li p {
+  padding: 16px;
+  margin: 0;
+  width: 127px;
+  height: 127px;
+  font: bold 13px DIN, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  color: #555;
+  letter-spacing: 1px;
+  color: #ccc;
+  transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;dl class='comparison'&gt;
+  &lt;dt&gt;Stylus Character Count&lt;/dt&gt;
+  &lt;dd&gt;&lt;span&gt;337&lt;/span&gt;&lt;/dd&gt;
+  &lt;dt&gt;CSS Character Count&lt;/dt&gt;
+  &lt;dd&gt;&lt;span&gt;1369&lt;/span&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;h2&gt;Convinced yet?&lt;/h2&gt;
+
+&lt;p&gt;I have only grazed the surface of what's possible with the immense power of Stylus, and it makes me excited about what I'll playing with in the near future.&lt;/p&gt;
 </content>
  </entry>
  

@@ -91,9 +91,71 @@
         transition()
 </code></pre>
 
-<p>You'll notice that I've trimmed down many CSS properties: <code>background</code> is now <code>bg</code>, <code>border-color</code> is <code>bc</code>, <code>margin-left</code> is <code>ml</code>, etc. Where I used to use <code>margin 0 0 2em</code> (which was less characters than <code>margin-left 2em</code>), I now use <code>mb 2em</code>. This feature alone saves countless amount of wasteful typing.</p>
+<p>You'll notice that I've trimmed down many CSS properties: <code>background</code> is now <code>bg</code>, <code>border-color</code> is <code>bc</code>, <code>margin-left</code> is <code>ml</code>, etc. Where I used to use <code>margin 0 0 2em</code> (fewer characters than typing <code>margin-left 2em</code>), I now use <code>mb 2em</code>. The ability to abbreviate properties saves countless amount of typing, and is enough reason alone to use Stylus.</p>
 
-<p>I have only grazed the surface of what's possible with the immense power of Stylus, and it makes me excited about the future of design.</p>
+<p>Here's the generated CSS by comparison:</p>
+
+<pre><code>body.profile #content section.profile section.markdown aside {
+  width: 320px;
+  float: left;
+  margin-left: -320px;
+}
+body.profile #content section.profile section.markdown aside h2 {
+  font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  color: #555;
+  letter-spacing: 1px;
+  color: #ff006a;
+  margin: 0 0 16px;
+}
+body.profile #content section.profile section.markdown aside ul {
+  list-style: none;
+}
+body.profile #content section.profile section.markdown ul.process {
+  margin-left: -320px;
+}
+body.profile #content section.profile section.markdown ul.process:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+body.profile #content section.profile section.markdown ul.process li {
+  float: left;
+  margin: 0 0 1px 1px;
+  list-style: none;
+}
+body.profile #content section.profile section.markdown ul.process li p {
+  padding: 16px;
+  margin: 0;
+  width: 127px;
+  height: 127px;
+  font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  color: #555;
+  letter-spacing: 1px;
+  color: #ccc;
+  transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+}
+</code></pre>
+
+<dl class='comparison'>
+  <dt>Stylus Character Count</dt>
+  <dd><span>337</span></dd>
+  <dt>CSS Character Count</dt>
+  <dd><span>1369</span></dd>
+</dl>
+
+
+<h2>Convinced yet?</h2>
+
+<p>I have only grazed the surface of what's possible with the immense power of Stylus, and it makes me excited about what I'll playing with in the near future.</p>
 
       </section>
 

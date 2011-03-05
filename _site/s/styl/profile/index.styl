@@ -1,0 +1,55 @@
+body.profile
+  #content
+    section.profile
+      col 8
+      pl c*4
+
+      section.markdown
+        aside
+          col 4
+          ml - c*4
+          h2
+            alt-font()
+            color anchor
+            mar 0 0 m
+          ul
+            list-style none
+
+        ul.process
+          ml -320px
+          clear()
+          mb 1.5em
+          li
+            float left
+            margin 0 0 1px 1px
+            list-style none
+            p
+              padding m
+              margin 0
+              width 159px - m*2
+              height 159px - m*2
+              alt-font()
+              color #ccc
+              transition()
+
+            &:nth-of-type(1)
+              background w2
+            &:nth-of-type(2)
+              background w4
+            &:nth-of-type(3)
+              background w6
+            &:nth-of-type(4)
+              background w8
+            &:nth-of-type(5)
+              background w10
+            &:nth-of-type(6)
+              background w12
+            
+
+            &:hover p
+              display block
+              background m60
+              position relative
+              top -15px
+              left -15px
+              box-shadow anchor 1px 1px 0, anchor 2px 2px 0, anchor 3px 3px 0, anchor 4px 4px 0, anchor 5px 5px 0, anchor 6px 6px 0, anchor 7px 7px 0, anchor 8px 8px 0, anchor 9px 9px 0, anchor 10px 10px 0, anchor 11px 11px 0, anchor 12px 12px 0, anchor 13px 13px 0, anchor 14px 14px 0, anchor 15px 15px 0

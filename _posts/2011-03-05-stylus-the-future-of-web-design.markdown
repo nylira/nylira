@@ -37,6 +37,66 @@ Here's a sample of Stylus, a bit of code that powers this very site:
             color #ccc
             transition()
 
-You'll notice that I've trimmed down many CSS properties: `background` is now `bg`, `border-color` is `bc`, `margin-left` is `ml`, etc. Where I used to use `margin 0 0 2em` (which was less characters than `margin-left 2em`), I now use `mb 2em`. This feature alone saves countless amount of wasteful typing.
+You'll notice that I've trimmed down many CSS properties: `background` is now `bg`, `border-color` is `bc`, `margin-left` is `ml`, etc. Where I used to use `margin 0 0 2em` (fewer characters than typing `margin-left 2em`), I now use `mb 2em`. The ability to abbreviate properties saves countless amount of typing, and is enough reason alone to use Stylus.
 
-I have only grazed the surface of what's possible with the immense power of Stylus, and it makes me excited about the future of design. 
+Here's the generated CSS by comparison:
+
+    body.profile #content section.profile section.markdown aside {
+      width: 320px;
+      float: left;
+      margin-left: -320px;
+    }
+    body.profile #content section.profile section.markdown aside h2 {
+      font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+      line-height: 24px;
+      text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+      color: #555;
+      letter-spacing: 1px;
+      color: #ff006a;
+      margin: 0 0 16px;
+    }
+    body.profile #content section.profile section.markdown aside ul {
+      list-style: none;
+    }
+    body.profile #content section.profile section.markdown ul.process {
+      margin-left: -320px;
+    }
+    body.profile #content section.profile section.markdown ul.process:after {
+      display: block;
+      clear: both;
+      content: "";
+    }
+    body.profile #content section.profile section.markdown ul.process li {
+      float: left;
+      margin: 0 0 1px 1px;
+      list-style: none;
+    }
+    body.profile #content section.profile section.markdown ul.process li p {
+      padding: 16px;
+      margin: 0;
+      width: 127px;
+      height: 127px;
+      font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+      line-height: 24px;
+      text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+      color: #555;
+      letter-spacing: 1px;
+      color: #ccc;
+      transition: all 0.15s ease;
+      -webkit-transition: all 0.15s ease;
+      -moz-transition: all 0.15s ease;
+      -o-transition: all 0.15s ease;
+    }
+
+<dl class='comparison'>
+  <dt>Stylus Character Count</dt>
+  <dd><span>337</span></dd>
+  <dt>CSS Character Count</dt>
+  <dd><span>1369</span></dd>
+</dl>
+
+## Convinced yet?
+
+I have only grazed the surface of what's possible with the immense power of Stylus, and it makes me excited about what I'll playing with in the near future.

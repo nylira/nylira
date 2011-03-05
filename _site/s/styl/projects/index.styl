@@ -1,0 +1,80 @@
+body.projects
+  header.index
+    position fixed
+    top 0
+    left 0
+
+  #content
+    padding 0
+    min-width 200%
+
+    section.projects
+
+      menu.past-clients
+        pad m*5 0 0 m*4
+        width 320px
+        float left
+        height 600px + m*4 + 1px
+        bb 1px solid edge
+        h3
+          mar 0 0 m*2
+        ul
+          li
+            color accent
+            a
+              display block
+              color #ccc
+              transition()
+              &:hover
+                color #fff
+                &:after
+                  display inline
+                  content: '\0020\2192'
+            
+
+    ol.projects
+      clear()
+      white-space nowrap
+      
+      li.project
+        display inline-block
+        pad m*5 m*4 m*1.5
+        bl 1px solid edge
+        bb 1px solid edge
+        &:first-of-type
+          pl 0px
+          bl none
+
+        iframe, img
+          display block
+          background m100
+          box-shadow b30 0 3px 10px
+          margin 0 0 m
+          overflow hidden
+
+         h3, time
+          float left
+          font-weight bold
+          font-size m
+          text-smoothing()
+          text-transform uppercase
+          letter-spacing 1px
+          display inline
+
+        time
+          color accent
+          margin-left .3em
+     
+        a
+          display block
+          float right
+          color #555
+          transition()
+          &:after
+            display inline
+            content: '\0020\21B5'
+          &:hover
+            color #fff
+
+  footer.index
+    display none
