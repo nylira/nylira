@@ -37,7 +37,7 @@ Here's a sample of Stylus, a bit of code that powers this very site:
             color #ccc
             transition()
 
-You'll notice that I've trimmed down many CSS properties: `background` is now `bg`, `border-color` is `bc`, `margin-left` is `ml`, etc. Where I used to use `margin: 0 0 2em;` (fewer characters than `margin-bottom: 2em;`), I now use `mb m2`. The ability to abbreviate properties saves countless amount of typing, and is reason enough to use Stylus.
+You'll notice that I've trimmed down many CSS properties: `background` is now `bg`, `border-color` is `bc`, `margin-left` is `ml`, etc. Where I used to use `margin: 0 0 2em;` (fewer characters than `margin-bottom: 2em;`), I now use `mb m2`. The ability to abbreviate properties saves countless amounts of typing, and is reason enough to use Stylus.
 
 Here's the generated CSS by comparison:
 

@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2011-03-05T17:59:07+01:00</updated>
+ <updated>2011-03-05T22:01:23+01:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -51,7 +51,7 @@
         transition()
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;You'll notice that I've trimmed down many CSS properties: &lt;code&gt;background&lt;/code&gt; is now &lt;code&gt;bg&lt;/code&gt;, &lt;code&gt;border-color&lt;/code&gt; is &lt;code&gt;bc&lt;/code&gt;, &lt;code&gt;margin-left&lt;/code&gt; is &lt;code&gt;ml&lt;/code&gt;, etc. Where I used to use &lt;code&gt;margin: 0 0 2em;&lt;/code&gt; (fewer characters than &lt;code&gt;margin-bottom: 2em;&lt;/code&gt;), I now use &lt;code&gt;mb m2&lt;/code&gt;. The ability to abbreviate properties saves countless amount of typing, and is reason enough to use Stylus.&lt;/p&gt;
+&lt;p&gt;You'll notice that I've trimmed down many CSS properties: &lt;code&gt;background&lt;/code&gt; is now &lt;code&gt;bg&lt;/code&gt;, &lt;code&gt;border-color&lt;/code&gt; is &lt;code&gt;bc&lt;/code&gt;, &lt;code&gt;margin-left&lt;/code&gt; is &lt;code&gt;ml&lt;/code&gt;, etc. Where I used to use &lt;code&gt;margin: 0 0 2em;&lt;/code&gt; (fewer characters than &lt;code&gt;margin-bottom: 2em;&lt;/code&gt;), I now use &lt;code&gt;mb m2&lt;/code&gt;. The ability to abbreviate properties saves countless amounts of typing, and is reason enough to use Stylus.&lt;/p&gt;
 
 &lt;p&gt;Here's the generated CSS by comparison:&lt;/p&gt;
 
