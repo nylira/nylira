@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2011-03-07T01:00:04+01:00</updated>
+ <updated>2011-03-07T01:09:47+01:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -67,8 +67,8 @@ iface eth1 inet static
 &lt;p&gt;Save and exit. Run these commands in the console:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;sudo /etc.d/init/networking restart
-sudo ifup eth1
 sudo ifdown eth1
+sudo ifup eth1
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;You're done. At this point, you should be able to SSH into your new virtual machine from the host OS, or mount the virtual drive with your FTP program.&lt;/p&gt;

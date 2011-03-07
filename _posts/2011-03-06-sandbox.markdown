@@ -53,7 +53,7 @@ Interested in setting up a virtual image? Download these first:
 Save and exit. Run these commands in the console:
 
     sudo /etc.d/init/networking restart
-    sudo ifup eth1
     sudo ifdown eth1
+    sudo ifup eth1
 
 You're done. At this point, you should be able to SSH into your new virtual machine from the host OS, or mount the virtual drive with your FTP program.
