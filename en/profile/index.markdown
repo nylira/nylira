@@ -10,15 +10,15 @@ Turning lines of code into living, breathing applications take an immense amount
 <aside>
   <h2>I've worked with</h2>
   <ul>
-  <li>node.js
-  <li>Rails
-  <li>Django
-  <li>web.py
-  <li>git
+  <li>node.js</a>
+  <li><a href='//rubyonrails.org'>Rails</a>
+  <li><a href='//djangoproject.com'>Django</a>
+  <li><a href='//webpy.org'>web.py</a>
+  <li><a href='//git-scm.com'>git</a>
   </ul>
 </aside>
 
-Hacker News is my favorite hangout. I know very well the type of designer I am not: the kind who only knows Photoshop, and hands you PSDs to slice. I cringe at the word 'slice'. I believe it's an astonishing waste of valuable developer time. I've done 'slicing' of my own, and it's both amusing and frustrating how little PSD designers understand about the architecture of the web.
+<a href='//news.ycombinator.com'>Hacker News</a> is my favorite hangout. I know very well the type of designer I am not: the kind who only knows Photoshop, and hands you PSDs to slice. I cringe at the word 'slice'. I believe it's an astonishing waste of valuable developer time. I've done 'slicing' of my own, and it's both amusing and frustrating how little PSD designers understand about the architecture of the web.
 
 CSS and HTML (or template code) should be provided by your designer. If they care so much about pixel perfection, they should be laying the bricks themselves. And with a better understanding of the limitations of CSS, they gain the ability to bend it to their will. Exceptional designers will flourish under creative restraints. Poor designers shirk away.
 
@@ -26,11 +26,11 @@ Are you looking for someone who cares as much about pixels as you do about code?
 
 ## Say hello to your match.
 
-I'm a visual designer who codes in vi. All my projects are sandboxed into Ubuntu Virtualbox images, which I access through SSH. You might not believe it, but I design entire sites using only the OS X Terminal. This website, in fact, is a static site powered by Jekyll and maintained with Github.
+I'm a visual designer who codes in vi. All my projects are sandboxed into Ubuntu Virtualbox images, which I access through SSH. You might not believe it, but I design entire sites using only the OS X Terminal. This website, in fact, was built using those methods. 
 
 These days, I mostly use Photoshop as a glorified color picker.
 
-That said, I try avoid writing plain CSS, too. Cascading style sheets are verbose by design, and I do whatever I can to reduce the number of characters I need to type. My current CSS preprocessor of choice is [Stylus](http://learnboost.github.com/stylus/). It's fantastic and will keep away the onset of RSI for another few years.
+Whenever possible, I try to avoid writing plain CSS. In a verbose and rendundant-by-design language like CSS, anything that reduces the number of keystrokes required increases productivity. I've taken a liking to [Stylus](http://learnboost.github.com/stylus/), an industrial strength CSS preprocessor. Stylus's powerful mixins and variables allow me to design more with less code, not to mention help stave off the onset of RSI.
 
 ## The creative process
 
@@ -43,17 +43,18 @@ That said, I try avoid writing plain CSS, too. Cascading style sheets are verbos
   <li><p>6. Measure &amp; optimize
 </ul>
 
-I'm a strict minimalist. A lot of thought should be given to every element placed on a page. If it's not clear how it's useful, it should be removed. The cognitive burden you're placing on your users should be eliminated, so they can focus their attention on what's actually worthwhile.
+I'm a strict minimalist. Careful consideration should be given to every element placed on a page. When it's unclear how an element is useful, it should be removed. The goal should be to lessen the cognitive burden on your users, so that they're able to focus their attention on what's actually worthwhile. Good interface design is making these sorts of decisions so the user doesn't have to.
 
-Interface design is not just slapping a skin on your application and calling it a day. It's a process of scrutinizing what your application actually does, and faciliating use scenarios for your customers.
+A lot of undesigning goes into my work. Most developers design their apps for people like themselves. Data-fiends and configuration-holics. People who will go through the settings of the app, page-by-page, optimizing the app to their specific use case.
 
-A lot of undesigning goes into my work. Most developers design their apps for themselves, never realizing that the ignorant masses might actually have to use it too. They're not trying to be ignorant though. They've just decided to focus their lives elsewhere, and they find software engineering boring.
+Unfortunately, that doesn't describe the vast majority of humanity. They don't derive satisfaction from tweaking arcane settings: they just want to share their Paris vacation pictures with their friends.
+
+Interface design is the process of bridging that gap in communication.
 
 ## The great wide open
 
-I believe very few designers have the right mindset when designing for the web. The browser is a porthole into an infinite canvas that can be beaten and wrought into an uncountable number of combinations.
+I believe very few designers have the right mindset when designing for the web. Photoshop's arbitrary canvas size does not exist online. The modern browser is a porthole into an infinite canvas that can be beaten and wrought into an uncountable number of combinations.
 
 Eschewing tradition and any trappings of print design, Nylira fully embraces and takes advantage of new media.
 
 Take a look at [my work](/en/projects) or [say hello](/en/contact).
-

@@ -24,6 +24,8 @@ body{font-family:DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;font-size:16px;
 #content ul.articles li.article a:hover{border-color:#ff006a;}
 #content ul.articles li.article a:hover p.read.more,#content ul.articles li.article a:hover span.read.more{color:#ff006a}
 #content .markdown{font-family:Georgia,"serif";-webkit-font-smoothing:antialiased;}
+#content .markdown strong{font-weight:bold}
+#content .markdown em{font-style:italic}
 #content .markdown h2{font:150% / 1.5 DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;color:#ccc;text-transform:none;margin:32px 0 16px;letter-spacing:0;-webkit-font-smoothing:auto}
 #content .markdown p,#content .markdown ul,#content .markdown ol,#content .markdown img,#content .markdown pre,#content .markdown blockquote{margin:0 0 1.5em}
 #content .markdown p:first-of-type{font:150% / 1.5 Georgia,"serif"}
@@ -62,11 +64,14 @@ body.home #content section.articles{width:640px;float:left}
 body.profile #content section.profile{width:640px;float:left;padding-left:320px;}
 body.profile #content section.profile section.markdown aside{width:320px;float:left;margin-left:-320px;}
 body.profile #content section.profile section.markdown aside h2{font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:24px;text-transform:uppercase;-webkit-font-smoothing:antialiased;color:#555;letter-spacing:1px;color:#ff006a;margin:0 0 16px}
-body.profile #content section.profile section.markdown aside ul{list-style:none}
-body.profile #content section.profile section.markdown ul.process{margin-left:-320px;margin-bottom:1.5em;}
+body.profile #content section.profile section.markdown aside ul{list-style:none;font-family:DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;}
+body.profile #content section.profile section.markdown aside ul li{-webkit-font-smoothing:auto;}
+body.profile #content section.profile section.markdown aside ul li a{color:#ccc;}
+body.profile #content section.profile section.markdown aside ul li a:hover{color:#ff006a}
+body.profile #content section.profile section.markdown ul.process{margin:0 0 1.5em -320px;}
 body.profile #content section.profile section.markdown ul.process:after{display:block;clear:both;content:""}
 body.profile #content section.profile section.markdown ul.process li{float:left;margin:0 0 1px 1px;list-style:none;}
-body.profile #content section.profile section.markdown ul.process li p{padding:16px;margin:0;width:127px;height:127px;font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:24px;text-transform:uppercase;-webkit-font-smoothing:antialiased;color:#555;letter-spacing:1px;color:#ccc;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease}
+body.profile #content section.profile section.markdown ul.process li p{padding:16px;margin:0;height:127px;width:127px;font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:24px;text-transform:uppercase;-webkit-font-smoothing:antialiased;color:#555;letter-spacing:1px;color:#ccc;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease}
 body.profile #content section.profile section.markdown ul.process li:nth-of-type(1){background:rgba(255,255,255,0.02)}
 body.profile #content section.profile section.markdown ul.process li:nth-of-type(2){background:rgba(255,255,255,0.04)}
 body.profile #content section.profile section.markdown ul.process li:nth-of-type(3){background:rgba(255,255,255,0.06)}

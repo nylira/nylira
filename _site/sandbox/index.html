@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+<head>
+  <meta charset='utf-8'>
+  <title>Avoid Dependency Hell&mdash;VirtualBox Your Projects &mdash; Nylira</title>
+  <link rel='stylesheet' href='/s/css/screen.css'>
+  <link rel='alternate' title='Nylira Articles' href='/en/atom.xml'>
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12283857-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+<body class='en article'>
+  <header class='index'>
+    <h1 class="index home"><a href='/en'>Nylira</a></h1>
+
+    <nav>
+      <ul>
+        <li class="index profile"><a href='/en/profile'>Profile</a>
+        <li class="index projects"><a href='/en/projects'>Projects</a>
+        <li class="index articles"><a href='/en/articles'>Articles</a>
+        <li class="index contact"><a href='/en/contact'>Contact</a>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div id='content'>
+
+    <article>
+      <header>
+        <h1>Avoid Dependency Hell&mdash;VirtualBox Your Projects</h1>
+
+        <menu class='switch'>
+          <ul>
+            <li class="prev">
+              <a rel='prev' href='/stylus-the-revolutionary-successor-to-css' title='View Stylus, the Revolutionary Successor to CSS'> &laquo; Previous</a>
+            
+            <li class="next">Next &raquo;
+          </ul>
+        </menu>
+
+        <p class='meta'>
+          <time class='timeago' datetime='2011-03-06 00:00:00 +0100'>2011-03-06 00:00:00 +0100</time>
+          by <cite>Peng Zhong</cite>
+      </header>
+
+      <section class="body markdown">
+        <p>As I wrote <a href="/en/profile">on my profile</a>, I manage a separate VirtualBox image for every project I do. What are the benefits of doing so?</p>
+
+<h2>Why Virtualize?</h2>
+
+<p><strong>Avoid dependency hell.</strong> Ever come back to a project 2-3 months later, and not be able to run it because you've already upgraded your libraries to new versions? Debugging these scenarios always take a lot of trial and error. This won't happen anymore if you freeze the entire development environment along with the project code.</p>
+
+<p><strong>Write once, run everywhere</strong> VirtualBox images are extremely portable. VirtualBox can run on every major operating system, which means you can concievably work anywhere. If you develop on a Windows machine and want to collaborate with someone on OS X, you may run into problems with versioning. If both of you run VirtualBox, the problems all disappear.</p>
+
+<p><strong>No more debugging development environments for your developers.</strong> Related to the point above. Have someone joining your project? Instead of handing them a lengthy and error-prone installation guide, just give them a copy of your VirtualBox image. This saves a ridiculous amount of time and gets them up to speed with zero issues. This benefit of VirtualBox goes up the more contributers you have on your project.</p>
+
+<p><strong>Ubuntu is closer to a production environment.</strong> While not exactly the same, a Ubuntu minimal install is much closer to your production server than either Windows or OS X. You'll be able to solve OS-specific issues early, so your live deployment will be certain to go without a hitch.</p>
+
+<h2>Preconceived Doubts</h2>
+
+<p><strong>Is performance severely degraded with virtualization?</strong> This really depends on what you're working on. For standard web development and design tasks, a virtualized Ubuntu is more than enough power. I'm running this on a 13" MacBook Air with 1.86 GHz Core 2 Duo, and I've never had a problem with performance. Compiling might be a bit slower than you're used to.</p>
+
+<p><strong>It's such  waste of hard drive space!</strong> Disk space is cheap these days.  My laptop has a 120 GB HD. That's probably less storage space than most of you are running. Also, installing with the Ubuntu Minimal CD image means you only install only the basic building blocks of the OS, and download what you need through apt-get. My freshly installed images weigh in 1.5 GBs each. Not bad, right?</p>
+
+<p><strong>Doesn't it take a long time to setup your dev environment over and over?</strong> Okay, you've got me there. The actual process of installing Ubuntu doesn't take very long, but getting the right packages and plugins can take a little while. Of course, most of this time is either downloading or compiling, so you're not actually stuck at the computer.</p>
+
+<p><strong>Doesn't this take a lot of system memory?</strong> This is a valid point. If you have under 2 GBs of RAM, performance will definitely be severely degraded with the disc swaps happening every transaction. I've never done virtualization with anything less than 4 GBs, but--then again, my Ubuntu images run just fine with 512mb of allotted RAM each. I have two images running at any one time, along with Chrome and Photoshop, and performance has been fine.</p>
+
+<h2>The Barebones How-To</h2>
+
+<p>Interested in setting up a virtual image? Download these first:</p>
+
+<ul>
+<li>Latest version of <a href="http://www.virtualbox.org/wiki/Downloads">VirtualBox</a></li>
+<li><a href="https://help.ubuntu.com/community/Installation/MinimalCD">Ubuntu 10.10 64-bit Minimal CD</a> (15.6MB)</li>
+<li>An FTP program--I recommend <a href="http://panic.com/transmit/">Transmit</a> for OS X, <a href="http://filezilla-project.org/">FileZilla</a> otherwise</li>
+</ul>
+
+
+<p><strong>Install VirtualBox.</strong> Create a new virtual machine with the default settings for a Ubuntu 64-bit guest OS. 512 MB of ram and 8 GBs of disk space is usually enough. If you have hard drive space to spare, I suggest increasing it to 20 GB. It's possible to increase the virtual disk size later, but it's a pain in the ass.</p>
+
+<p><strong>Select your new virtual disk and open "Settings."</strong> With the Settings window open, click the Network button, and select the Adapter 2 tab. Enable the adapter and choose 'Host-only Adapter' from the dropdown menu. This is the first step in giving your host OS access to Ubuntu.</p>
+
+<p><strong>Boot up the new virtual disk.</strong> Select the Ubunut Minimal CD .iso you downloaded earlier. Ubuntu is straightfoward to install. When it's done, login with your new username and password. The first command you should run is <code>sudo apt-get install openssh-server</code>. This will allow SSH and SFTP connections from your host OS to the new guest.</p>
+
+<p><strong>Using either vi or nano, open</strong> <code>sudo vi /etc/network/interfaces</code>. Add the following lines to the bottom of the file:</p>
+
+<pre><code>auto eth1
+iface eth1 inet static
+  address 192.168.56.101
+  netmask 255.255.255.0
+</code></pre>
+
+<p>Save and exit. Run these commands in the console:</p>
+
+<pre><code>sudo /etc.d/init/networking restart
+sudo ifup eth1
+sudo ifdown eth1
+</code></pre>
+
+<p>You're done. At this point, you should be able to SSH into your new virtual machine from the host OS, or mount the virtual drive with your FTP program.</p>
+
+      </section>
+
+    </article>
+
+    <p class='all articles'><a href='/en/articles'>All Articles</a>
+  </div>
+
+  <footer class='index'>
+    <p class='copyright'>&copy; 2011 <a href='/en'>Nylira, LLC</a>
+    <nav class='index'>
+      <ul>
+        <li>Nylira, LLC is a one-man operation run by Peng Zhong. <a href='/en/contact'>Contact page</a>
+        <li>
+          <a href='mailto:hello@nylira.com'>hello@nylira.com</a> &middot;
+          <a href='//twitter.com/zcpeng'>@zcpeng</a> &middot;
+          <a href='//facebook.com/pages/Nylira/191457124212076'>facebook</a>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'></script>
+  <script src='/s/js/jquery.timeago.js'></script>
+
+  <script>
+    $(document).ready(function() {
+      jQuery('time.timeago').timeago();
+    });
+  </script>
+
