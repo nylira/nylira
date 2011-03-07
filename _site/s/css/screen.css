@@ -119,12 +119,14 @@ body.article #content dl.comparison dt{width:287px;float:left;margin-right:1px}
 body.article #content dl.comparison dd{width:288px;float:left;color:#ccc;}
 body.article #content dl.comparison dd span{display:block;font-size:200%;padding-top:.2em;font-weight:normal}
 body.contact #content section.contact{width:640px;float:left;padding-left:320px;}
-body.contact #content section.contact .details{width:320px;float:left;margin-left:-320px;}
-body.contact #content section.contact .details dl{margin:0 0 16px;}
-body.contact #content section.contact .details dl dt{float:left;display:block;padding-right:.33em;}
-body.contact #content section.contact .details dl dt:after{display:block;clear:both;content:""}
-body.contact #content section.contact .details dl dt:after{display:inline;content:":"}
-body.contact #content section.contact .details dl dd{display:block}
-body.contact #content section.contact .details p{margin:0 0 16px}
+body.contact #content section.contact section.details{width:320px;float:left;margin-left:-320px;}
+body.contact #content section.contact section.details dl{margin:0 0 16px;}
+body.contact #content section.contact section.details dl dt{float:left;display:block;padding-right:.33em;}
+body.contact #content section.contact section.details dl dt:after{display:block;clear:both;content:""}
+body.contact #content section.contact section.details dl dt:after{display:inline;content:":";padding-right:0}
+body.contact #content section.contact section.details dl dd{display:block}
+body.contact #content section.contact section.details section.address{border-top:1px solid rgba(255,255,255,0.1);padding-top:2em;margin-top:2em;width:208px;}
+body.contact #content section.contact section.details section.address p{margin:0 0 16px;font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:24px;text-transform:uppercase;-webkit-font-smoothing:antialiased;color:#555;letter-spacing:1px}
 body.contact #content section.contact .map iframe{display:block;margin-bottom:16px;border:1px solid #999}
-body.contact #content section.contact .map a{color:#ff006a !important}
+body.contact #content section.contact .map a{color:#ff006a !important;}
+body.contact #content section.contact .map a:hover{color:#fff}

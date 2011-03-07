@@ -5,7 +5,7 @@ body.contact
       float left
       pl 320px
 
-      .details
+      section.details
         width 320px
         float left
         ml -320px
@@ -15,16 +15,25 @@ body.contact
             float left
             display block
             clear left
-            padding-right .33em
+            pr .33em
             &:after
               display inline
               content ':'
+              pr 0
 
           dd
             display block
 
-        p
-          margin 0 0 m
+
+        section.address
+          bt 1px solid edge
+          pt 2em
+          mt 2em
+          width 240px - m*2
+
+          p
+            margin 0 0 m
+            alt-font()
 
       .map
         iframe
@@ -33,3 +42,5 @@ body.contact
           border 1px solid #999
         a
           color anchor !important
+          &:hover
+            color #fff
