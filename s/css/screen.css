@@ -108,6 +108,10 @@ body.article #content article header menu.switch ul{float:right;}
 body.article #content article header menu.switch ul li{font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:24px;text-transform:uppercase;-webkit-font-smoothing:antialiased;color:#555;letter-spacing:1px;float:left;}
 body.article #content article header menu.switch ul li.prev:after{content:"|";display:inline-block;width:1em;text-align:center}
 body.article #content article header p.meta{font-size:13px;color:#555}
+body.article #content p.twitter{width:640px;float:left;margin-left:320px;margin-bottom:4em;}
+body.article #content p.twitter a{color:#ccc;display:block;padding:.75em 1em;background:rgba(255,255,255,0.05);transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;}
+body.article #content p.twitter a em{color:#ff006a;font-style:normal}
+body.article #content p.twitter a:hover{background:rgba(255,255,255,0.1)}
 body.article #content p.all.articles{width:640px;float:left;padding-left:320px}
 body.article #content dl.comparison:after{display:block;clear:both;content:""}
 body.article #content dl.comparison dt,body.article #content dl.comparison dd{height:48px;padding:12px 16px;background:rgba(255,255,255,0.05);font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:24px;text-transform:uppercase;-webkit-font-smoothing:antialiased;color:#555;letter-spacing:1px;margin-bottom:1px}
