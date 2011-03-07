@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2011-03-07T01:09:47+01:00</updated>
+ <updated>2011-03-07T01:13:43+01:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -31,9 +31,9 @@
 
 &lt;h2&gt;Preconceived Doubts&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Is performance severely degraded with virtualization?&lt;/strong&gt; This really depends on what you're working on. For standard web development and design tasks, a virtualized Ubuntu is more than enough power. I'm running this on a 13&quot; MacBook Air with 1.86 GHz Core 2 Duo, and I've never had a problem with performance. Compiling might be a bit slower than you're used to.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Isn't system performance severely degraded with virtualization?&lt;/strong&gt; This really depends on what you're working on. For standard web development and design tasks, a virtualized Ubuntu is more than enough power. I'm running this on a 13&quot; MacBook Air with 1.86 GHz Core 2 Duo, and I've never had a problem with performance. Compiling might be a bit slower than you're used to.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;It's such  waste of hard drive space!&lt;/strong&gt; Disk space is cheap these days.  My laptop has a 120 GB HD. That's probably less storage space than most of you are running. Also, installing with the Ubuntu Minimal CD image means you only install only the basic building blocks of the OS, and download what you need through apt-get. My freshly installed images weigh in 1.5 GBs each. Not bad, right?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;But it's such a waste of hard drive space!&lt;/strong&gt; Disk space is cheap these days.  My laptop has a 120 GB HD. That's probably less storage space than most of you are running. Also, installing with the Ubuntu Minimal CD image means you only install only the basic building blocks of the OS, and download what you need through apt-get. My freshly installed images weigh in 1.5 GBs each. Not bad, right?&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Doesn't it take a long time to setup your dev environment over and over?&lt;/strong&gt; Okay, you've got me there. The actual process of installing Ubuntu doesn't take very long, but getting the right packages and plugins can take a little while. Of course, most of this time is either downloading or compiling, so you're not actually stuck at the computer.&lt;/p&gt;
 
