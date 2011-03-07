@@ -43,9 +43,9 @@ Whenever possible, I try to avoid writing plain CSS. In a verbose and rendundant
   <li><p>6. Measure &amp; optimize
 </ul>
 
-I'm a strict minimalist. Careful consideration should be given to every element placed on a page. When it's unclear how an element is useful, it should be removed. The goal should be to lessen the cognitive burden on your users, so that they're able to focus their attention on what's actually worthwhile. Good interface design is making these sorts of decisions so the user doesn't have to.
+I'm a strict minimalist. Careful consideration should be given to every element placed on a page. When it's unclear how an element is useful, it should be removed. The end goal should be to lessen the cognitive burden on your users, so that they're can focus their attention on what's worthwhile. Good interface design is making these decisions for them. As I'm sure you're aware, too many options tends to lead to analysis paralysis.
 
-A lot of undesigning goes into my work. Most developers design their apps for people like themselves. Data-fiends and configuration-holics. People who will go through the settings of the app, page-by-page, optimizing the app to their specific use case.
+A lot of undesigning goes into my work. Most developers design their apps for people like themselves. That is, data-fiends and configuration-aholics. People who will go through the settings of the app, page-by-page, optimizing the app to their specific use case. I admit it: I'm one of you.
 
 Unfortunately, that doesn't describe the vast majority of humanity. They don't derive satisfaction from tweaking arcane settings: they just want to share their Paris vacation pictures with their friends.
 
