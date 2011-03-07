@@ -126,7 +126,8 @@ body.contact #content section.contact section.details dl dt:after{display:block;
 body.contact #content section.contact section.details dl dt:after{display:inline;content:":";padding-right:0}
 body.contact #content section.contact section.details dl dd{display:block}
 body.contact #content section.contact section.details section.address{padding-top:2em;margin-top:2em;width:208px;}
-body.contact #content section.contact section.details section.address p{margin:0 0 16px;font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:24px;text-transform:uppercase;-webkit-font-smoothing:antialiased;color:#555;letter-spacing:1px}
+body.contact #content section.contact section.details section.address ul li a{color:#ccc;}
+body.contact #content section.contact section.details section.address ul li a:hover{color:#ff006a}
 body.contact #content section.contact .map iframe{display:block;margin-bottom:16px;border:1px solid #999}
 body.contact #content section.contact .map a{color:#ff006a !important;}
 body.contact #content section.contact .map a:hover{color:#fff}
