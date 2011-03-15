@@ -10,7 +10,7 @@ Turning lines of code into living, breathing applications take an immense amount
 <aside>
   <h2>I've worked with</h2>
   <ul>
-  <li>node.js</a>
+  <li><a href='//nodejs.com'>node.js</a>
   <li><a href='//rubyonrails.org'>Rails</a>
   <li><a href='//djangoproject.com'>Django</a>
   <li><a href='//webpy.org'>web.py</a>
@@ -37,7 +37,7 @@ Whenever possible, I try to avoid writing plain CSS. In a verbose and rendundant
 <ul class='process'>
   <li><p>1. Research
   <li><p>2. Draw wireframes
-  <li><p>3. Make protypes
+  <li><p>3. Make protoypes
   <li><p>4. Test
   <li><p>5. Launch
   <li><p>6. Measure &amp; optimize
