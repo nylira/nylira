@@ -228,6 +228,9 @@ body {
   letter-spacing: 0;
   -webkit-font-smoothing: auto;
 }
+#content .markdown h2 code {
+  font-size: 100%;
+}
 #content .markdown p,
 #content .markdown ul,
 #content .markdown ol,

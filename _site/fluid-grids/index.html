@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+<head>
+  <meta charset='utf-8'>
+  <title>Responsive Design & Fluid Grids &mdash; Nylira</title>
+  <link rel='stylesheet' href='/s/css/screen.css'>
+  <link rel='alternate' title='Nylira Articles' href='/en/atom.xml'>
+  <link rel="shortcut icon" type='image/png' href='/favicon.png' />
+
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12283857-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+<body class='en article'>
+  <header class='index'>
+    <h1 class="index home"><a href='/en'>Nylira</a></h1>
+
+    <nav>
+      <ul>
+        <li class="index profile"><a href='/en/profile'>Profile</a>
+        <li class="index projects"><a href='/en/projects'>Projects</a>
+        <li class="index articles"><a href='/en/articles'>Articles</a>
+        <li class="index contact"><a href='/en/contact'>Contact</a>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div id='content'>
+
+    <article>
+      <header>
+        <h1>Responsive Design & Fluid Grids</h1>
+
+        <menu class='switch'>
+          <ul>
+            <li class="prev">
+              <a rel='prev' href='/sandbox' title='View Avoid Dependency Hell&mdash;VirtualBox Your Projects'> &laquo; Previous</a>
+            
+            <li class="next">Next &raquo;
+          </ul>
+        </menu>
+
+        <p class='meta'>
+          <time class='timeago' datetime='2011-04-05 00:00:00 +0200'>2011-04-05 00:00:00 +0200</time>
+          by <cite>Peng Zhong</cite>
+      </header>
+
+      <section class="body markdown">
+        <p>Responsive design is about saving time by making flexible elements that can be reused across multiple devices. Here are some tips I've learned while building a <a href="http://nylira.com/en/projects/#guildwork">100% fluid site</a>.</p>
+
+<h2>Make Use of <code>box-sizing: border-box</code></h2>
+
+<p>With the default box model, adding a <code>1px border</code> to two floats with %-based widths (e.g., 30% and 70%) breaks the layout. Your layout is now now <code>100% + 4px</code> wide, which is annoyingly unhelpful. Likewise with adding em-based padding. At this point, most practical coders will sigh and add a internal wrapper <code>div</code> with the border they want.</p>
+
+<p>While adding another <code>div</code> is a fine (albeit hacky) solution, there's a cleaner way to do it. <code>box-sizing: border-box</code> is a CSS3 property that fixes the box model for these use cases. Instead of adding padding and borders to the width of the box, it subtracts the same amounts from the space inside of the box.</p>
+
+<p>Create this mixin in your <a href="http://nylira.com/stylus-the-revolutionary-successor-to-css">CSS preprocessor of choice</a>:</p>
+
+<pre><code>box-sizing(n = border-box)
+  -webkit-box-sizing: n
+  -moz-box-sizing: n
+  -box-sizing: n
+</code></pre>
+
+<p>Now you can do the following to your heart's content:</p>
+
+<pre><code>#announcement
+  border-box()
+  width 40%
+  float left
+  border 1px solid #ddd
+  padding .75em 1em
+</code></pre>
+
+<p>And it will only ever be 40% wide. Nice, right?</p>
+
+<p><strong>Any catches?</strong> While <code>box-sizing</code> is a CSS3 property, all browsers which support CSS2.1 will support <code>box-sizing: border-box</code>. That's every browser except IE6/7.</p>
+
+<h2>There's more to the world than <code>float: left</code></h2>
+
+<p>In the early days of CSS-based design, floats were all we had to achieve creative, tableless layouts. They are--and have always been--a hacky and buggy approach, but they've also been the best tools we've had. Most designers have a <a href="http://en.wikipedia.org/wiki/Stockholm_syndrome">Stockholme syndrome</a> relationship with CSS floats.</p>
+
+<p>Float-based layouts are fragile, prone to breaking, and require content clearing in most cases. Don't even try to do vertical alignment with variable-height floats. You'll need Javascript for that. The finicky nature of floats makes them ill-suited for the flexible, %-based world of web applications. What other options are there?</p>
+
+<h2><code>display: inline-block</code></h2>
+
+<p>Useful for more than horizontal layout menus, <code>display: inline-block</code> can be used in many situations in place of floats. Along with the contents of table cells, inline blocks can be vertically aligned, which leads to intriguing layout possibilities.</p>
+
+<p>One caveat to inline blocks is that whitespace in HTML matters. If there's a space between two <code>display: inline-block</code> elements, it will render on the site.</p>
+
+<p>Inline blocks are supported by all browsers except IE6/7. There is <a href="http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/">a hack available</a> for IE6/7 support.</p>
+
+<h2><code>display: table-cell</code></h2>
+
+<p>Most designers who learned CSS in the days of XHTML validation and web standards instinctively cringe away from anything related to tables. However, the property <code>display: table-cell</code> does not imply any sort of relation between the content and tabular data.</p>
+
+<p>Using <code>display: table-cell</code> turns an element's display type into a <code>&lt;td&gt;</code>, the original <code>box-sizing: border-box</code> element. <code>&lt;td&gt;</code>s will automatically stretch to fill the available horizontal space. It's a great way to create columns of both variable width and height. Take for example an image next to a column of text. This is possible to do with floats, but when you start introducing percentage-based padding</p>
+
+<p>Using <code>display: table</code> will turn all of an element's direct descendants into <code>&lt;td&gt;</code> types. If you're making consistent use of this, consider taking another look at your data: perhaps a real table is in order.</p>
+
+<p>Display table/table-cell is supported by all browsers except IE6/7.</p>
+
+      </section>
+
+    </article>
+
+    <p class='twitter'><a href='//twitter.com/zcpeng'>Comments? Questions? You should follow <em>@zcpeng</em> on Twitter.</a></p>
+
+    <p class='all articles'><a href='/en/articles'>All Articles</a>
+  </div>
+
+  <footer class='index'>
+    <p class='copyright'>&copy; 2011 <a href='/en'>Nylira, LLC</a>
+    <nav class='index'>
+      <ul>
+        <li>Nylira, LLC is a solo operation run by Peng Zhong. <a href='/en/contact'>Contact page</a>
+        <li>
+          <a href='mailto:hello@nylira.com'>hello@nylira.com</a> &middot;
+          <a href='//twitter.com/zcpeng'>@zcpeng</a> &middot;
+          <a href='//facebook.com/pages/Nylira/191457124212076'>facebook</a> &middot;
+          <a href='https://github.com/nylira/'>github</a>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'></script>
+  <script src='/s/js/jquery.timeago.js'></script>
+  <script src='/s/js/jquery.cycle.all.min.js'></script>
+
+  <script>
+    $(document).ready(function() {
+      $('time.timeago').timeago();
+      $('ul.slideshow').cycle({
+        timeout: 8000,
+        pause: 1,
+        fx: 'scrollLeft',
+      });
+    });
+  </script>
+

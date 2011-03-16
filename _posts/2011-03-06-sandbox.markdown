@@ -1,7 +1,6 @@
 ---
 layout: en-article
 category: en-articles
-title: Stylus, the Revolutionary Successor to CSS
 title: Avoid Dependency Hell&mdash;VirtualBox Your Projects
 ---
 

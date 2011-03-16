@@ -4,13 +4,74 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2011-03-16T12:52:41+01:00</updated>
+ <updated>2011-03-16T15:01:30+01:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
    <email>peng@nylira.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Responsive Design & Fluid Grids</title>
+   <link href="http://nylira.com/fluid-grids"/>
+   <updated>2011-04-05T00:00:00+02:00</updated>
+   <id>http://nylira.com/fluid-grids</id>
+   <content type="html">&lt;p&gt;Responsive design is about saving time by making flexible elements that can be reused across multiple devices. Here are some tips I've learned while building a &lt;a href=&quot;http://nylira.com/en/projects/#guildwork&quot;&gt;100% fluid site&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Make Use of &lt;code&gt;box-sizing: border-box&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;With the default box model, adding a &lt;code&gt;1px border&lt;/code&gt; to two floats with %-based widths (e.g., 30% and 70%) breaks the layout. Your layout is now now &lt;code&gt;100% + 4px&lt;/code&gt; wide, which is annoyingly unhelpful. Likewise with adding em-based padding. At this point, most practical coders will sigh and add a internal wrapper &lt;code&gt;div&lt;/code&gt; with the border they want.&lt;/p&gt;
+
+&lt;p&gt;While adding another &lt;code&gt;div&lt;/code&gt; is a fine (albeit hacky) solution, there's a cleaner way to do it. &lt;code&gt;box-sizing: border-box&lt;/code&gt; is a CSS3 property that fixes the box model for these use cases. Instead of adding padding and borders to the width of the box, it subtracts the same amounts from the space inside of the box.&lt;/p&gt;
+
+&lt;p&gt;Create this mixin in your &lt;a href=&quot;http://nylira.com/stylus-the-revolutionary-successor-to-css&quot;&gt;CSS preprocessor of choice&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;box-sizing(n = border-box)
+  -webkit-box-sizing: n
+  -moz-box-sizing: n
+  -box-sizing: n
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now you can do the following to your heart's content:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#announcement
+  border-box()
+  width 40%
+  float left
+  border 1px solid #ddd
+  padding .75em 1em
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And it will only ever be 40% wide. Nice, right?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Any catches?&lt;/strong&gt; While &lt;code&gt;box-sizing&lt;/code&gt; is a CSS3 property, all browsers which support CSS2.1 will support &lt;code&gt;box-sizing: border-box&lt;/code&gt;. That's every browser except IE6/7.&lt;/p&gt;
+
+&lt;h2&gt;There's more to the world than &lt;code&gt;float: left&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;In the early days of CSS-based design, floats were all we had to achieve creative, tableless layouts. They are--and have always been--a hacky and buggy approach, but they've also been the best tools we've had. Most designers have a &lt;a href=&quot;http://en.wikipedia.org/wiki/Stockholm_syndrome&quot;&gt;Stockholme syndrome&lt;/a&gt; relationship with CSS floats.&lt;/p&gt;
+
+&lt;p&gt;Float-based layouts are fragile, prone to breaking, and require content clearing in most cases. Don't even try to do vertical alignment with variable-height floats. You'll need Javascript for that. The finicky nature of floats makes them ill-suited for the flexible, %-based world of web applications. What other options are there?&lt;/p&gt;
+
+&lt;h2&gt;&lt;code&gt;display: inline-block&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Useful for more than horizontal layout menus, &lt;code&gt;display: inline-block&lt;/code&gt; can be used in many situations in place of floats. Along with the contents of table cells, inline blocks can be vertically aligned, which leads to intriguing layout possibilities.&lt;/p&gt;
+
+&lt;p&gt;One caveat to inline blocks is that whitespace in HTML matters. If there's a space between two &lt;code&gt;display: inline-block&lt;/code&gt; elements, it will render on the site.&lt;/p&gt;
+
+&lt;p&gt;Inline blocks are supported by all browsers except IE6/7. There is &lt;a href=&quot;http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/&quot;&gt;a hack available&lt;/a&gt; for IE6/7 support.&lt;/p&gt;
+
+&lt;h2&gt;&lt;code&gt;display: table-cell&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Most designers who learned CSS in the days of XHTML validation and web standards instinctively cringe away from anything related to tables. However, the property &lt;code&gt;display: table-cell&lt;/code&gt; does not imply any sort of relation between the content and tabular data.&lt;/p&gt;
+
+&lt;p&gt;Using &lt;code&gt;display: table-cell&lt;/code&gt; turns an element's display type into a &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;, the original &lt;code&gt;box-sizing: border-box&lt;/code&gt; element. &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;s will automatically stretch to fill the available horizontal space. It's a great way to create columns of both variable width and height. Take for example an image next to a column of text. This is possible to do with floats, but when you start introducing percentage-based padding&lt;/p&gt;
+
+&lt;p&gt;Using &lt;code&gt;display: table&lt;/code&gt; will turn all of an element's direct descendants into &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; types. If you're making consistent use of this, consider taking another look at your data: perhaps a real table is in order.&lt;/p&gt;
+
+&lt;p&gt;Display table/table-cell is supported by all browsers except IE6/7.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Avoid Dependency Hell&mdash;VirtualBox Your Projects</title>
