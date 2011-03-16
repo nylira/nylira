@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2011-03-16T15:22:42+01:00</updated>
+ <updated>2011-03-16T15:29:18+01:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -73,9 +73,9 @@
 
 &lt;h2&gt;Alignment issues?&lt;/h2&gt;
 
-&lt;p&gt;If you're using a CSS reset, you'll most likely encounter alignment issues using either &lt;code&gt;inline-block&lt;/code&gt; or &lt;code&gt;table-cell&lt;/code&gt;. There's no need to panic. &lt;a href=&quot;http://meyerweb.com/eric/tools/css/reset/&quot;&gt;Eric Meyer's Reset CSS&lt;/a&gt; sets all elements to &lt;code&gt;vertical-align: baseline&lt;/code&gt;. That means elements of unequal heights will sit on a baseline instead of hanging from the top, like the floats you're used to.&lt;/p&gt;
+&lt;p&gt;If you're using a CSS reset, you'll most likely encounter alignment issues using either &lt;code&gt;inline-block&lt;/code&gt; or &lt;code&gt;table-cell&lt;/code&gt;. There's no need to panic. &lt;a href=&quot;http://meyerweb.com/eric/tools/css/reset/&quot;&gt;Eric Meyer's Reset CSS&lt;/a&gt; sets all elements to &lt;code&gt;vertical-align: baseline&lt;/code&gt;. That means elements of unequal heights will sit on a baseline instead of hanging from the top like floats.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;How to fix it?&lt;/strong&gt; For &lt;code&gt;display: inline-block&lt;/code&gt;, you'll need to set its parent element to &lt;code&gt;vertical-align: top&lt;/code&gt;. For &lt;code&gt;display: table-cell&lt;/code&gt;, you'll need to it to &lt;code&gt;vertical-align: top&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How to fix it?&lt;/strong&gt; For &lt;code&gt;display: inline-block&lt;/code&gt;, you'll need to set its parent element to &lt;code&gt;vertical-align: top&lt;/code&gt;. For &lt;code&gt;display: table-cell&lt;/code&gt;, you'll need to set it to &lt;code&gt;vertical-align: top&lt;/code&gt;.&lt;/p&gt;
 </content>
  </entry>
  

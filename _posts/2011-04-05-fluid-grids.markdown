@@ -56,6 +56,6 @@ Display table/table-cell is supported by all browsers except IE6/7.
 
 ## Alignment issues?
 
-If you're using a CSS reset, you'll most likely encounter alignment issues using either `inline-block` or `table-cell`. There's no need to panic. [Eric Meyer's Reset CSS](http://meyerweb.com/eric/tools/css/reset/) sets all elements to `vertical-align: baseline`. That means elements of unequal heights will sit on a baseline instead of hanging from the top, like the floats you're used to.
+If you're using a CSS reset, you'll most likely encounter alignment issues using either `inline-block` or `table-cell`. There's no need to panic. [Eric Meyer's Reset CSS](http://meyerweb.com/eric/tools/css/reset/) sets all elements to `vertical-align: baseline`. That means elements of unequal heights will sit on a baseline instead of hanging from the top like floats.
 
-__How to fix it?__ For `display: inline-block`, you'll need to set its parent element to `vertical-align: top`. For `display: table-cell`, you'll need to it to `vertical-align: top`.
+__How to fix it?__ For `display: inline-block`, you'll need to set its parent element to `vertical-align: top`. For `display: table-cell`, you'll need to set it to `vertical-align: top`.
