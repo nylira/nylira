@@ -552,6 +552,7 @@ body.projects #content ol.projects li.project {
   padding: 80px 64px 24px;
   border-left: 1px solid rgba(255,255,255,0.1);
   border-bottom: 1px solid rgba(255,255,255,0.1);
+  vertical-align: top;
 }
 body.projects #content ol.projects li.project:first-of-type {
   padding-left: 0px;

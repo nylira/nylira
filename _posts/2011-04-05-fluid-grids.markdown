@@ -53,3 +53,9 @@ Using `display: table-cell` turns an element's display type into a `<td>`, the o
 Using `display: table` will turn all of an element's direct descendants into `<td>` types. If you're making consistent use of this, consider taking another look at your data: perhaps a real table is in order.
 
 Display table/table-cell is supported by all browsers except IE6/7.
+
+## Alignment issues?
+
+If you're using a CSS reset, you'll most likely encounter alignment issues using either `inline-block` or `table-cell`. There's no need to panic. [Eric Meyer's Reset CSS](http://meyerweb.com/eric/tools/css/reset/) sets all elements to `vertical-align: baseline`. That means elements of unequal heights will sit on a baseline instead of hanging from the top, like the floats you're used to.
+
+__How to fix it?__ For `display: inline-block`, you'll need to set its parent element to `vertical-align: top`. For `display: table-cell`, you'll need to it to `vertical-align: top`.
