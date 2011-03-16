@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2011-03-16T15:29:18+01:00</updated>
+ <updated>2011-03-16T20:42:32+01:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -65,7 +65,7 @@
 
 &lt;p&gt;Most designers who learned CSS in the days of XHTML validation and web standards instinctively cringe away from anything related to tables. However, the property &lt;code&gt;display: table-cell&lt;/code&gt; does not imply any sort of relation between the content and tabular data.&lt;/p&gt;
 
-&lt;p&gt;Using &lt;code&gt;display: table-cell&lt;/code&gt; turns an element's display type into a &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;, the original &lt;code&gt;box-sizing: border-box&lt;/code&gt; element. &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;s will automatically stretch to fill the available horizontal space. It's a great way to create columns of both variable width and height. Take for example an image next to a column of text. This is possible to do with floats, but when you start introducing percentage-based padding&lt;/p&gt;
+&lt;p&gt;Using &lt;code&gt;display: table-cell&lt;/code&gt; turns an element's display type into a &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;, the original &lt;code&gt;box-sizing: border-box&lt;/code&gt; element. &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;s will automatically stretch to fill the available horizontal space. It's a great way to create columns of both variable width and height. Take for example an image next to a column of text. This is possible to do with floats, but when you introduce percentage-based padding, you save time with &lt;code&gt;display: table-cell&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Using &lt;code&gt;display: table&lt;/code&gt; will turn all of an element's direct descendants into &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; types. If you're making consistent use of this, consider taking another look at your data: perhaps a real table is in order.&lt;/p&gt;
 

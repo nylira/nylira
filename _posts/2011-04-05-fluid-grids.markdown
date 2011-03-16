@@ -48,7 +48,7 @@ Inline blocks are supported by all browsers except IE6/7. There is [a hack avail
 ## `display: table-cell`
 Most designers who learned CSS in the days of XHTML validation and web standards instinctively cringe away from anything related to tables. However, the property `display: table-cell` does not imply any sort of relation between the content and tabular data.
 
-Using `display: table-cell` turns an element's display type into a `<td>`, the original `box-sizing: border-box` element. `<td>`s will automatically stretch to fill the available horizontal space. It's a great way to create columns of both variable width and height. Take for example an image next to a column of text. This is possible to do with floats, but when you start introducing percentage-based padding
+Using `display: table-cell` turns an element's display type into a `<td>`, the original `box-sizing: border-box` element. `<td>`s will automatically stretch to fill the available horizontal space. It's a great way to create columns of both variable width and height. Take for example an image next to a column of text. This is possible to do with floats, but when you introduce percentage-based padding, you save time with `display: table-cell`.
 
 Using `display: table` will turn all of an element's direct descendants into `<td>` types. If you're making consistent use of this, consider taking another look at your data: perhaps a real table is in order.
 
