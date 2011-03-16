@@ -17,7 +17,7 @@ Create this mixin in your [CSS preprocessor of choice](http://nylira.com/stylus-
     box-sizing(n = border-box)
       -webkit-box-sizing: n
       -moz-box-sizing: n
-      -box-sizing: n
+      box-sizing: n
 
 Now you can do the following to your heart's content:
 

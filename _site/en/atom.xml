@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2011-03-16T20:42:32+01:00</updated>
+ <updated>2011-03-16T20:43:51+01:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -30,7 +30,7 @@
 &lt;pre&gt;&lt;code&gt;box-sizing(n = border-box)
   -webkit-box-sizing: n
   -moz-box-sizing: n
-  -box-sizing: n
+  box-sizing: n
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Now you can do the following to your heart's content:&lt;/p&gt;
