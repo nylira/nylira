@@ -92,10 +92,16 @@
 
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'></script>
   <script src='/s/js/jquery.timeago.js'></script>
+  <script src='/s/js/jquery.cycle.all.min.js'></script>
 
   <script>
     $(document).ready(function() {
       $('time.timeago').timeago();
+      $('ul.slideshow').cycle({
+        timeout: 8000,
+        pause: 1,
+        fx: 'scrollLeft',
+      });
     });
   </script>
 

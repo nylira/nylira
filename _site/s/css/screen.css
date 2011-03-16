@@ -555,7 +555,7 @@ body.projects #content ol.projects li.project:first-of-type {
   border-left: none;
 }
 body.projects #content ol.projects li.project iframe,
-body.projects #content ol.projects li.project img {
+body.projects #content ol.projects li.project ul.slideshow {
   display: block;
   height: 600px;
   width: 1200px;
@@ -566,9 +566,6 @@ body.projects #content ol.projects li.project img {
   box-shadow: rgba(0,0,0,0.3) 0 3px 10px;
   margin: 0 0 16px;
   overflow: hidden;
-}
-body.projects #content ol.projects li.project iframe {
-  width: 1200px;
 }
 body.projects #content ol.projects li.project h3,
 body.projects #content ol.projects li.project time {
