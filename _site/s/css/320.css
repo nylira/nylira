@@ -40,9 +40,8 @@ header.index{width:300px;margin:0 auto;background:rgba(48,48,48,0.9);border-bott
 header.index:after{display:block;clear:both;content:""}
 header.index a{color:#999;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;border-top:3px solid transparent;margin-top:-3px;}
 header.index a:hover{color:#ccc;border-color:#ff006a}
-header.index h1{width:100px;display:table-cell;vertical-align:top;}
-header.index h1 a{display:block;font:bold 1.5em DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:2em;padding:0 .5em;color:#ccc;text-transform:lowercase}
-header.index nav{display:table-cell;width:200px;}
+header.index h1{background:#1e1e1e;}
+header.index h1 a{display:block;font:bold 1.5em DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:2em;color:#ccc;text-transform:lowercase}
 header.index nav ul:after{display:block;clear:both;content:""}
 header.index nav ul li{width:25%;float:left;}
 header.index nav ul li a{font-weight:bold;display:block;line-height:3em;text-align:center}
@@ -78,7 +77,7 @@ body.projects #content ol.projects:after{display:block;clear:both;content:""}
 body.projects #content ol.projects li.project{margin:0 0 2em;padding:0 0 1em;border-bottom:1px solid rgba(255,255,255,0.1);}
 body.projects #content ol.projects li.project:after{display:block;clear:both;content:""}
 body.projects #content ol.projects li.project:first-of-type{border-left:none}
-body.projects #content ol.projects li.project iframe,body.projects #content ol.projects li.project ul.slideshow{display:block;height:300px;width:600px;background:#646464;-webkit-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;-moz-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;-o-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;box-shadow:rgba(0,0,0,0.3) 0 3px 10px;margin:0 0 16px;overflow:hidden}
+body.projects #content ol.projects li.project iframe,body.projects #content ol.projects li.project ul.slideshow{display:block;height:150px;width:300px;background:#646464;-webkit-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;-moz-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;-o-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;box-shadow:rgba(0,0,0,0.3) 0 3px 10px;margin:0 0 16px;overflow:hidden}
 body.projects #content ol.projects li.project h3,body.projects #content ol.projects li.project time{float:left;font-weight:bold;font-size:16px;-webkit-font-smoothing:antialiased;text-transform:uppercase;letter-spacing:1px;display:inline}
 body.projects #content ol.projects li.project time{color:#555;margin-left:.3em}
 body.projects #content ol.projects li.project a{display:block;float:right;color:#555;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;}
