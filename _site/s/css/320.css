@@ -9,7 +9,7 @@ table{border-collapse:collapse;border-spacing:0}
 @font-face{font-family:DIN;font-weight:bold;src:url("../f/dinb____-webfont.eot");src:url("../f/dinb____-webfont.eot?iefix") format("eot"),url("../f/dinb____-webfont.woff") format("woff"),url("../f/dinb____-webfont.ttf") format("truetype"),url("../f/dinb____-webfont.svg#svgFontName") format("svg")}
 a{color:#ff006a;text-decoration:none;}
 a:hover{color:#fff}
-body{font-family:DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;font-size:16px;line-height:160%;color:#ccc;text-rendering:optimizeLegibility;background:#1e1e1e;width:300px;margin:0 auto;width:640px}
+body{font-family:DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;font-size:16px;line-height:160%;color:#ccc;text-rendering:optimizeLegibility;background:#1e1e1e;width:300px;margin:0 auto;}
 body:after{display:block;clear:both;content:""}
 #content{padding:2em 0 4em;width:300px;margin:0 auto;}
 #content:after{display:block;clear:both;content:""}
@@ -54,7 +54,6 @@ footer.index p.copyright a{color:#ccc;border-bottom:none;}
 footer.index p.copyright a:hover{color:#ff006a;border-bottom:1px solid #ff006a}
 footer.index nav.index{width:200px;float:left}
 body.home #content{padding:2em 0 4em;}
-body.home #content header.main{padding:32px 0;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1);}
 body.home #content header.main aside{padding:96px 0;font:175% / 1 DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;text-align:center;color:#6e6e6e;-webkit-font-smoothing:antialiased;background:#323232;}
 body.home #content header.main aside a{color:#fff;text-decoration:none;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;}
 body.home #content header.main aside a:hover{color:#ff006a}
