@@ -4,19 +4,33 @@ body.profile
 
       section.markdown
         aside
-          display none
-         
+          bg m35
+          pad 1em
+          box-sizing()
+          h2
+            alt-font()
+            color anchor
+            mar 0
+          ul, p
+            ls none
+            font .8em/1.6 serif
+            mar 0
+            li
+              color #999
+              a
+                color txt
+                &:hover
+                  color anchor
+        
         ul.process
           mar 0 0 1.5em
           clear()
           li
-            float left
-            mar 0 0 1px 1px
+            mar 0 0 1px
             ls none
             p
-              pad m
+              pad m*.5 m
               mar 0
-              square c*4 - 1px - m*2
               alt-font()
               color #ccc
               transition()

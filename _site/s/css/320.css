@@ -36,9 +36,9 @@ body:after{display:block;clear:both;content:""}
 #content .markdown img{margin:0 0 1.5em}
 #content .markdown pre{background:rgba(255,255,255,0.05);padding:.75em 1em;}
 #content .markdown pre code{background:none;font:13px / 1 Consolas,"Lucida Console",Monaco,Courier New,monospace;padding:0}
-header.index{width:300px;margin:0 auto;background:rgba(48,48,48,0.9);border-bottom:1px solid rgba(255,255,255,0.1);border-top:3px solid #000;font-size:13px;-webkit-font-smoothing:antialiased;display:table;vertical-align:top;}
+header.index{width:300px;margin:0 auto;background:rgba(48,48,48,0.9);border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1);font-size:13px;-webkit-font-smoothing:antialiased;}
 header.index:after{display:block;clear:both;content:""}
-header.index a{color:#999;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;border-top:3px solid transparent;margin-top:-3px;}
+header.index a{color:#999;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;}
 header.index a:hover{color:#ccc;border-color:#ff006a}
 header.index h1{background:#1e1e1e;}
 header.index h1 a{display:block;font:bold 1.5em DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:2em;color:#ccc;text-transform:lowercase}
@@ -46,7 +46,7 @@ header.index nav ul:after{display:block;clear:both;content:""}
 header.index nav ul li{width:25%;float:left;}
 header.index nav ul li a{font-weight:bold;display:block;line-height:3em;text-align:center}
 header.index menu li{float:left}
-body.home h1.index.home a,body.projects li.index.projects a,body.articles li.index.articles a,body.article li.index.articles a,body.profile li.index.profile a,body.contact li.index.contact a,li.index.active a{border-color:#ff006a}
+body.home h1.index.home a,body.projects li.index.projects a,body.articles li.index.articles a,body.article li.index.articles a,body.profile li.index.profile a,body.contact li.index.contact a,li.index.active a{color:#ff006a}
 footer.index{padding:2em 0;width:300px;margin:0 auto;font-size:13px;border-top:1px solid rgba(255,255,255,0.1);}
 footer.index:after{display:block;clear:both;content:""}
 footer.index p.copyright{width:100px;float:left;}
@@ -59,11 +59,16 @@ body.home #content header.main aside a{color:#fff;text-decoration:none;transitio
 body.home #content header.main aside a:hover{color:#ff006a}
 body.home #content section.about,body.home #content section.articles{padding:2em 0 0}
 body.home #content section.about{display:none}
-body.profile #content section.profile section.markdown aside{display:none}
+body.profile #content section.profile section.markdown aside{background:#232323;padding:1em;}
+body.profile #content section.profile section.markdown aside h2{font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:24px;text-transform:uppercase;-webkit-font-smoothing:antialiased;color:#555;letter-spacing:1px;color:#ff006a;margin:0}
+body.profile #content section.profile section.markdown aside ul,body.profile #content section.profile section.markdown aside p{list-style:none;font:.8em / 1.6 Georgia,"serif";margin:0;}
+body.profile #content section.profile section.markdown aside ul li,body.profile #content section.profile section.markdown aside p li{color:#999;}
+body.profile #content section.profile section.markdown aside ul li a,body.profile #content section.profile section.markdown aside p li a{color:#ccc;}
+body.profile #content section.profile section.markdown aside ul li a:hover,body.profile #content section.profile section.markdown aside p li a:hover{color:#ff006a}
 body.profile #content section.profile section.markdown ul.process{margin:0 0 1.5em;}
 body.profile #content section.profile section.markdown ul.process:after{display:block;clear:both;content:""}
-body.profile #content section.profile section.markdown ul.process li{float:left;margin:0 0 1px 1px;list-style:none;}
-body.profile #content section.profile section.markdown ul.process li p{padding:16px;margin:0;height:67px;width:67px;font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:24px;text-transform:uppercase;-webkit-font-smoothing:antialiased;color:#555;letter-spacing:1px;color:#ccc;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease}
+body.profile #content section.profile section.markdown ul.process li{margin:0 0 1px;list-style:none;}
+body.profile #content section.profile section.markdown ul.process li p{padding:8px 16px;margin:0;font:bold 13px DIN,"Helvetica Neue",Arial,Helvetica,sans-serif;line-height:24px;text-transform:uppercase;-webkit-font-smoothing:antialiased;color:#555;letter-spacing:1px;color:#ccc;transition:all .15s ease;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease}
 body.profile #content section.profile section.markdown ul.process li:nth-of-type(1){background:rgba(255,255,255,0.02)}
 body.profile #content section.profile section.markdown ul.process li:nth-of-type(2){background:rgba(255,255,255,0.04)}
 body.profile #content section.profile section.markdown ul.process li:nth-of-type(3){background:rgba(255,255,255,0.06)}

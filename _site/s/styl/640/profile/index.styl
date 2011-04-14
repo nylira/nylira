@@ -1,10 +1,24 @@
 body.profile
   #content
     section.profile
-
       section.markdown
         aside
-          display none
+          width c*4
+          box-sizing()
+          pl 2em
+          float right
+          h2
+            alt-font()
+            color anchor
+            mar 0 0 m
+          ul, p
+            font .8em/1.6 serif
+            ls none
+            li
+              a
+                color txt
+                &:hover
+                  color anchor
          
         ul.process
           mar 0 0 1.5em
