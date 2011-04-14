@@ -12,11 +12,11 @@ As a developer, you're an incredibly creative individual.
 
 Turning lines of code into living, breathing applications take an immense amount of mental acuity. So much, perhaps, that your visual design abilities have been neglected. That's why you're here.
 
-<a href='//news.ycombinator.com'>Hacker News</a> is my favorite hangout. Despite recent angsty complaints about the quality of the site going downhill, it's still the pulsing heart of the megalomaniacal entrepreneur community.
+<a href='//news.ycombinator.com'>Hacker News</a> is my favorite hangout. Despite recent angsty complaints about the quality of the site going downhill, it's still the pulsing heart of the web entrepreneur community.
 
-There is a specimen of designer (*homo photoshop-usericus*) who only knows Photoshop and hands you PSD files to slice. When you ask them to change the font-size of an element, both of you visibly blanche when thinking about how much time it'll take. That designer is not me. I cringe at the word 'slice'. I believe it's an astonishing waste of valuable developer time. I've done 'slicing' of my own, and it's both amusing and frustrating how little Photoshop jockeys understand about the architecture of the web.
+There is a specimen of designer (*homo photoshop-usericus*) who only knows Photoshop and hands you PSD files to slice. That designer is not me. I believe that slicing PSDs is an astonishing waste of valuable developer time. I've done 'slicing' of my own, and it's disheartening how little PSD designers understand about the fluid architecture of the web.
 
-CSS and HTML (or template code) should be provided by your designer. If they care so much about pixel perfection, they should be laying the bricks themselves. And with a better understanding of the limitations of CSS, they gain the ability to bend it to their will. Exceptional designers flourish under creative restraints. Poor designers are unable the face the truth and spend their entire career in the sandbox that is Photoshop.
+CSS and HTML (or template code) should be provided by your designer. If they care so much about pixel perfection, they should be laying the bricks themselves. And with a better understanding of the limitations of CSS, they gain the ability to bend it to their will. Exceptional designers will flourish under creative restraints. 
 
 Are you looking for someone who cares as much about pixels as you do about code? 
 
