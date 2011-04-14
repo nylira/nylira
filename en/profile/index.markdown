@@ -37,7 +37,9 @@ I'm a visual designer who codes in vi. All my projects are sandboxed into Ubuntu
 
 These days, I mostly use Photoshop as a glorified color picker.
 
-Whenever possible, I try to avoid writing plain CSS. In a verbose and rendundant-by-design language like CSS, anything that reduces the number of keystrokes required increases productivity. I've taken a liking to [Stylus](http://learnboost.github.com/stylus/), an industrial strength CSS preprocessor. Stylus's powerful mixins and variables allow me to design more with less code, not to mention help stave off the onset of RSI.
+Whenever possible, I try to avoid writing plain CSS. In a verbose and rendundant-by-design language like CSS, anything that reduces the number of keystrokes required increases productivity. I've taken a liking to [Stylus](http://learnboost.github.com/stylus/), an industrial-strength CSS preprocessor. Stylus's powerful mixins and variables allow me to design more with less code, not to mention help stave off the onset of RSI.
+
+At this point, you may be worried about the maintainability of Stylus code. I understand you perfectly. Stylus is not popular outside of the node.js community, and I wouldn't want to be stuck hiring Stylus-only designers in the future, either. Let your concerns be eased. I'm comfortable with Sass as well as Stylus, and both languages compile down to clean CSS3.
 
 ## The creative process
 
