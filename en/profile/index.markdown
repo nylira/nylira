@@ -21,13 +21,13 @@ Are you looking for someone who cares as much about pixels as you do about code?
 ## Say hello to your match.
 
 <aside>
-  <h2>I've worked along w/</h2>
+  <h2>I work with</h2>
   <ul>
-  <li><a href='//git-scm.com'>git/github</a>
-  <li><a href='//nodejs.com'>node.js</a>
-  <li><a href='//djangoproject.com'>django</a>
-  <li><a href='//rubyonrails.org'>rails</a>
-  <li><a href='//webpy.org'>web.py</a>
+  <li>Git/Github
+  <li>HTML5 &amp; CSS3
+  <li>Ruby &ndash; Rails, Sinatra
+  <li>Python &ndash; Django, web.py
+  <li>Javascript &ndash; jQuery, Node.js
   </ul>
 </aside>
 
