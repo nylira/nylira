@@ -12,22 +12,20 @@ As a developer, you're an incredibly creative individual.
 
 Turning lines of code into living, breathing applications take an immense amount of mental acuity. So much, perhaps, that your visual design abilities have been neglected. That's why you're here.
 
-<a href='//news.ycombinator.com'>Hacker News</a> is my favorite hangout. Despite recent angsty complaints about the quality of the site going downhill, it's still the pulsing heart of the web entrepreneur community.
-
-I believe that CSS and HTML should be provided by your designer. If designers care so much about pixel perfection, they should be writing the code themselves. Furthermore, with a better understanding of the limitations of CSS, they gain the ability to bend it to their will. Exceptional designers will flourish under creative restraints. 
+My name is Peng Zhong, and I am an interface designer who speaks your language. I believe that CSS and HTML should be provided by the designer. If designers care so much about pixel perfection, they should be writing code. Furthermore, with a better understanding of the limitations of CSS, they'll be able to bend it to their will. There's no need for you to waste your time slicing PSDs. I hate it too. 
 
 Are you looking for someone who cares as much about pixels as you do about code? 
 
 ## Say hello to your match.
 
 <aside>
-  <h2>I work with</h2>
+  <h2>My Tools</h2>
   <ul>
-  <li>Git/Github
   <li>HTML5 &amp; CSS3
-  <li>Ruby &ndash; Rails, Sinatra
-  <li>Python &ndash; Django, web.py
-  <li>Javascript &ndash; jQuery, Node.js
+  <li>Javascript
+  <li>Git/Github
+  <li>Skype/IRC/IM
+  <li>ssh/vim/screen
   </ul>
 </aside>
 
@@ -37,7 +35,7 @@ These days, I mostly use Photoshop as a glorified color picker.
 
 Whenever possible, I try to avoid writing plain CSS. In a verbose and rendundant-by-design language like CSS, anything that reduces the number of keystrokes required increases productivity. I've taken a liking to [Stylus](http://learnboost.github.com/stylus/), an industrial-strength CSS preprocessor. Stylus's powerful mixins and variables allow me to design more with less code, not to mention help stave off the onset of RSI.
 
-At this point, you may be worried about the maintainability of Stylus code. I understand you perfectly. Stylus is not popular outside of the node.js community, and I wouldn't want to be stuck hiring Stylus-only designers in the future, either. Let your concerns be eased. I'm comfortable with Sass as well as Stylus, and both languages compile down to clean CSS3.
+At this point, you may be worried about the maintainability of Stylus. I understand you perfectly. As of 2011-06-01, Stylus is still unpopular outside the node.js community. That said, Stylus is intuitive and fast to pick up for anyone experienced with CSS. If you'd prefer to work with Sass, that's fine too. I'm comfortable both Sass and Stylus, and both languages compile down to clean CSS3.
 
 ## The creative process
 
@@ -50,20 +48,22 @@ At this point, you may be worried about the maintainability of Stylus code. I un
   <li><p>6. Measure &amp; optimize
 </ul>
 
-I'm a strict minimalist. Careful consideration should be given to every element placed on a page. If it's unclear how an element is useful, it should be removed. The goal of UI design is clear communication. 
+I'm a strict minimalist. Careful consideration is given to every element placed on a page. If it's unclear how an element is useful, it should be removed. The goal of UI design is clear and simple communication. 
 
-My goal with my work is to reduce the cognitive burden on your customers, so they can focus their attention on what's important and relevant to them. Leaving too many options open leads to a sub-optimal experience. Depending on your customer's personality, they will either be frustrated or paralyzed by analysis.
+What I strive to achieve with my work is elegant simplicity. While print designers have had thousands of years to perfect the usability of ink on paper, interaction designers have had a half-decade at best. HTML is only 21 years old. The web is still very much a free-for-all, with wild UI experimentation going on even in the stablest of properties (Google still reinvents their home page on a regular basis). No one is exactly sure what works best yet, and anyone telling you differently is selling you false confidence.
 
-A lot of undesigning goes into my work. Most developers tend to design for people like themselves. It's not a bad decision: they're rational, analytical, and will send you bug reports (stack trace and all). Who really knows what appeals to twenty-something mothers? They themselves certainly don't.
+We do have some tools and useful. A/B testing, funnel metrics&mdash;these are great tools to optimize existing designs. The keyword is existing&mdash;the best you can do is reach a local maxima. Testing 41 shades of blue will get you the perfect blue, but it won't tell you that the entire page should be rebuilt.
+
+A lot of undesigning goes into my work. Developers tend to design for people like themselves. It's a logical decision: programmers and web geeks are rational, analytical, and will send you bug reports (stack trace and all). Who really knows what appeals to twenty-something mothers? They themselves certainly don't.
 
 <aside>
   <h2>I do mobile, too.</h2>
   <p>Need a UI designer for your smartphone app? Resize this page and observe the results.</p>
 </aside>
 
-Unfortunately, the vast majority does not derive pleasure from tweaking config files and optimizing build times. They're impulsive, emotion-driven, and almost never read any of the copy you write. The computer is a magical black box (or tablet) that was designed to personally frustrate them. How do you design for these people? Simplify.
+Unfortunately, the vast majority of people do not derive pleasure from tweaking config files and optimizing build times. They're impulsive, emotion-driven, and almost never read any of the copy you write. The computer is a magical black box (or tablet) that was designed to personally frustrate them. How do you design for these people? Simplify.
 
-Interface design is the processing of bridging cutting-edge engineering ingenuity with pictures of your grandmother's homemade cookies.
+Interface design is the process of connecting cutting-edge ingenuity with normal people, looking for a stress-free experience.
 
 ## The great wide open
 
