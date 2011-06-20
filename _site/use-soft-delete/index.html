@@ -2,7 +2,7 @@
 <html lang='en' dir='ltr'>
 <head>
   <meta charset='utf-8'>
-  <title>Analog Turk &mdash; Nylira</title>
+  <title>Use Soft Delete &mdash; Nylira</title>
   <link rel='alternate' title='Nylira Articles' href='/en/atom.xml'>
   <link rel="shortcut icon" type='image/png' href='/favicon.png' />
 
@@ -41,28 +41,42 @@
 
     <article>
       <header>
-        <h1>Analog Turk</h1>
+        <h1>Use Soft Delete</h1>
 
         <menu class='switch'>
           <ul>
             <li class="prev">
-              <a rel='prev' href='/ruby-programming-language' title='View Ruby Programming Language'> &laquo; Previous</a>
+              <a rel='prev' href='/fluid-grids' title='View Responsive Design & Fluid Grids'> &laquo; Previous</a>
             
-            <li class="next">
-              <a rel='next' href='/acorn' title='View Acorn'>Next &raquo;</a>
-            
+            <li class="next">Next &raquo;
           </ul>
         </menu>
 
         <p class='meta'>
-          <time class='timeago' datetime='2010-03-26 00:00:00 +0700'>2010-03-26 00:00:00 +0700</time>
+          <time class='timeago' datetime='2011-06-20 00:00:00 +0700'>2011-06-20 00:00:00 +0700</time>
           by <cite>Peng Zhong</cite>
       </header>
 
       <section class="body markdown">
-        <p>Spurred on by <a href="http://37signals.com/svn/posts/2229-sortfolio-uses-amazons-mechanical-turk">SvN's post</a> about the Amazon Mechanical Turk, this is how I would do it.</p>
+        <p>The situation: Imagine you're using one of the many generic todo list apps on the web. You're feeling great, because you just finished an entire laundry list of tasks. You've opened the web app because it's time for you to delete the 9 tasks from your list.</p>
 
-<p><a href="http://v2.nylira.com/p/turk"><img src="http://v2.nylira.com/tumblr/posts/turk.jpg"></a></p>
+<p>You see in front of you a massive list of tasks, each with its own discrete "Delete" button. This gives you pause. You click "Delete" on the first of your completed tasks, and an unoriginal modal window comes up, asking, "Are you sure you want to permanently delete this task?" Yes / No. You sign inwardly and press "Yes".</p>
+
+<p>You might do this another 8 times, each time getting more and more exasperated at the unnecessary number of hoops you have to jump through to delete a single task. Or, if you're the less patient type, you give up on the todo app altogether, because micromanaging tasks is almost more effort than doing the tasks!</p>
+
+<h2>Be Like Gmail</h2>
+
+<p>Instead of rudely throwing a modal dialog in your user's face, consider using Gmail's method: soft delete. After every user's atomic operation, Gmail displays a nonintrusive status message at the top of the screen. It tells the user what exactly has occured--e.g., "This conversation has been archived."--and a simple "Undo" link.</p>
+
+<p>Why is soft delete better than modal confirmations? For one, this method allows the user to more rapidly perform delete operations by bypassing the modal middleman. Modal windows are intrusive, workflow-breaking, and forces the user to make immediate, uninformed decisions. Inline undos are far more user-friendly because the web app stays responsive. And let's face it--most deleted files are never wanted back.</p>
+
+<h2>Taking It Further</h2>
+
+<p>Native OS filesystems allow clicking and dragging to lasso multiple documents in a folder. We've used this simple operation on our desktop for years, but it has yet to show up online. Select-lassos could work very well for photography-oriented apps.</p>
+
+<h2>Don't Delete Anything</h2>
+
+<p>Disk-space is cheap, and user whims are fickle. If you can absorb the extra costs, I suggest never permanently deleting anything (unless they delete their account). Give your user a history page, where they can restore the state of everything they've ever created or uploaded with your app. When the time comes, they'll love you for it.</p>
 
       </section>
 
