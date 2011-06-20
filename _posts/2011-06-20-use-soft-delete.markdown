@@ -6,9 +6,9 @@ title: Use Soft Delete
 
 The situation: Imagine you're using one of the many generic todo list apps on the web. You're feeling great, because you just finished an entire laundry list of tasks. You've opened the web app because it's time for you to delete the 9 tasks from your list.
 
-You see in front of you a massive list of tasks, each with its own discrete "Delete" button. This gives you pause. You click "Delete" on the first of your completed tasks, and an unoriginal modal window comes up, asking, "Are you sure you want to permanently delete this task?" Yes / No. You sign inwardly and press "Yes".
+You see in front of you a massive list of tasks, each with its own discrete "Delete" button. This gives you pause. You click "Delete" on the first of your completed tasks, and a modal window pop up, "Are you sure you want to permanently delete this task?" Yes / No. You sign inwardly and press "Yes".
 
-You might do this another 8 times, each time getting more and more exasperated at the unnecessary number of hoops you have to jump through to delete a single task. Or, if you're the less patient type, you give up on the todo app altogether, because micromanaging tasks is almost more effort than doing the tasks!
+You might do this another 8 times, each time getting more exasperated at the number of hoops you have to jump through to delete a single task. If you're the less patient type, you may consider give up on the app altogether, because micromanaging tasks is almost more effort than doing the them!
 
 ## Be Like Gmail
 
