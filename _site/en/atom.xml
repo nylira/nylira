@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2011-08-29T09:53:13+02:00</updated>
+ <updated>2011-11-08T19:56:26+09:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>Use Soft Delete</title>
    <link href="http://nylira.com/use-soft-delete"/>
-   <updated>2011-06-20T00:00:00+02:00</updated>
+   <updated>2011-06-20T00:00:00+09:00</updated>
    <id>http://nylira.com/use-soft-delete</id>
    <content type="html">&lt;p&gt;Imagine you're using one of the many todo list apps on the web. You're feeling great, because you just finished an entire laundry list of tasks. You've opened the web app because it's time for you to delete 15 tasks from your list.&lt;/p&gt;
 
@@ -42,7 +42,7 @@
  <entry>
    <title>Responsive Design & Fluid Grids</title>
    <link href="http://nylira.com/fluid-grids"/>
-   <updated>2011-04-05T00:00:00+02:00</updated>
+   <updated>2011-04-05T00:00:00+09:00</updated>
    <id>http://nylira.com/fluid-grids</id>
    <content type="html">&lt;p&gt;Responsive design is about saving time by making flexible elements that can be reused across multiple devices. Here are some tips I've learned while building a &lt;a href=&quot;http://nylira.com/en/projects/#guildwork&quot;&gt;100% fluid site&lt;/a&gt;.&lt;/p&gt;
 
@@ -109,7 +109,7 @@
  <entry>
    <title>Avoid Dependency Hell&mdash;VirtualBox Your Projects</title>
    <link href="http://nylira.com/sandbox"/>
-   <updated>2011-03-06T00:00:00+01:00</updated>
+   <updated>2011-03-06T00:00:00+09:00</updated>
    <id>http://nylira.com/sandbox</id>
    <content type="html">&lt;p&gt;As I wrote &lt;a href=&quot;/en/profile&quot;&gt;on my profile&lt;/a&gt;, I manage a separate VirtualBox image for every project I do. What are the benefits of doing so?&lt;/p&gt;
 
@@ -172,7 +172,7 @@ sudo ifup eth1
  <entry>
    <title>Stylus, the Revolutionary Successor to CSS</title>
    <link href="http://nylira.com/stylus-the-revolutionary-successor-to-css"/>
-   <updated>2011-03-05T00:00:00+01:00</updated>
+   <updated>2011-03-05T00:00:00+09:00</updated>
    <id>http://nylira.com/stylus-the-revolutionary-successor-to-css</id>
    <content type="html">&lt;p&gt;About a month ago, &lt;a href=&quot;http://learnboost.github.com/stylus&quot;&gt;Stylus&lt;/a&gt; was released, to little fanfare.&lt;/p&gt;
 
@@ -279,7 +279,7 @@ body.profile #content section.profile section.markdown ul.process li p {
  <entry>
    <title>Built with git, vi, and Jekyll.</title>
    <link href="http://nylira.com/hello-jekyll"/>
-   <updated>2011-03-01T00:00:00+01:00</updated>
+   <updated>2011-03-01T00:00:00+09:00</updated>
    <id>http://nylira.com/hello-jekyll</id>
    <content type="html">&lt;p&gt;I've migrated this site to &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt;. It seems much easier to use than ExpressionEngine. Of course, you have to be comfortable in text editors and SSH. I can't stand textareas on the web anymore. It feels so slow and unwieldy. Developer notes follow.&lt;/p&gt;
 
@@ -300,7 +300,7 @@ body.profile #content section.profile section.markdown ul.process li p {
  <entry>
    <title>Intuition is Bullshit</title>
    <link href="http://nylira.com/intuition-is-bullshit"/>
-   <updated>2010-09-04T00:00:00+02:00</updated>
+   <updated>2010-09-04T00:00:00+09:00</updated>
    <id>http://nylira.com/intuition-is-bullshit</id>
    <content type="html">&lt;p&gt;From the &lt;a href=&quot;//oed.com&quot;&gt;OED&lt;/a&gt;, &quot;Intuition is the ability to acquire knowledge without inference or the use of reason.&quot; The &lt;a href='http://en.wikipedia.org/wiki/Intuition_(knowledge)'&gt;Wikipedia article&lt;/a&gt; states that intuition provides us with unjustifiable beliefs (a common ailment of the human brain) and its popularity in supernatural and New Age writings.&lt;/p&gt;
 
@@ -313,7 +313,7 @@ body.profile #content section.profile section.markdown ul.process li p {
  <entry>
    <title>Dropbox Tip No. 1</title>
    <link href="http://nylira.com/dropbox-tip-1"/>
-   <updated>2010-07-05T00:00:00+02:00</updated>
+   <updated>2010-07-05T00:00:00+09:00</updated>
    <id>http://nylira.com/dropbox-tip-1</id>
    <content type="html">&lt;p&gt;Want your Vim configuration on another computer? Add this line to your &lt;code&gt;~/.exrc&lt;/code&gt; file.&lt;/p&gt;
 
@@ -327,7 +327,7 @@ body.profile #content section.profile section.markdown ul.process li p {
  <entry>
    <title>Drawar Bank Entry</title>
    <link href="http://nylira.com/drawar-bank"/>
-   <updated>2010-04-22T00:00:00+02:00</updated>
+   <updated>2010-04-22T00:00:00+09:00</updated>
    <id>http://nylira.com/drawar-bank</id>
    <content type="html">&lt;p&gt;Bank mockup designed for &lt;a href=&quot;//www.drawar.com/forums/84/version2000--online-banking-statements/&quot;&gt;Drawar's Version2.001&lt;/a&gt;.&lt;/p&gt;
 
@@ -395,7 +395,7 @@ border-radius: 20px;
  <entry>
    <title>Acorn</title>
    <link href="http://nylira.com/acorn"/>
-   <updated>2010-04-02T00:00:00+02:00</updated>
+   <updated>2010-04-02T00:00:00+09:00</updated>
    <id>http://nylira.com/acorn</id>
    <content type="html">&lt;p&gt;Acorn homepage redesign. &lt;a href=&quot;http://flyingmeat.com/acorn&quot;&gt;Acorn&lt;/a&gt; is a Mac image editing program developed by Flying Meat Inc.&lt;/p&gt;
 
@@ -406,7 +406,7 @@ border-radius: 20px;
  <entry>
    <title>Analog Turk</title>
    <link href="http://nylira.com/analog-turk"/>
-   <updated>2010-03-26T00:00:00+01:00</updated>
+   <updated>2010-03-26T00:00:00+09:00</updated>
    <id>http://nylira.com/analog-turk</id>
    <content type="html">&lt;p&gt;Spurred on by &lt;a href=&quot;http://37signals.com/svn/posts/2229-sortfolio-uses-amazons-mechanical-turk&quot;&gt;SvN's post&lt;/a&gt; about the Amazon Mechanical Turk, this is how I would do it.&lt;/p&gt;
 
@@ -417,7 +417,7 @@ border-radius: 20px;
  <entry>
    <title>Ruby Programming Language</title>
    <link href="http://nylira.com/ruby-programming-language"/>
-   <updated>2010-03-25T00:00:00+01:00</updated>
+   <updated>2010-03-25T00:00:00+09:00</updated>
    <id>http://nylira.com/ruby-programming-language</id>
    <content type="html">&lt;p&gt;I redesigned the Ruby Programming Language homepage. Everything that you see--with the exception of &lt;a href=&quot;http://rubyidentity.org/&quot;&gt;the logo&lt;/a&gt;--consists of just two text files. Cascading stylesheets have come a long way since 1999.&lt;/p&gt;
 
@@ -436,7 +436,7 @@ border-radius: 20px;
  <entry>
    <title>A Cleaner Slashdot</title>
    <link href="http://nylira.com/a-cleaner-slashdot"/>
-   <updated>2010-03-18T00:00:00+01:00</updated>
+   <updated>2010-03-18T00:00:00+09:00</updated>
    <id>http://nylira.com/a-cleaner-slashdot</id>
    <content type="html">&lt;p&gt;Slashdot's homepage is rather overwhelming. It certainly works well enough on a functional level, but I think it can be done better. This is my attempt to bright things up. Their &lt;a href=&quot;http://slashdot.org&quot;&gt;current website&lt;/a&gt;, for comparison.&lt;/p&gt;
 
