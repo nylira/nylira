@@ -16,7 +16,7 @@ If your users get bored reading content, or interacting with your site, you have
 
 Designing for the limited real estate of mobile browsers forces you to focus on providing better content. Eschewing the customary sidebar in the beginning of the design process leaves you with no option but to create engaging content that's able to stand alone.
 
-## Efficiency, efficiency, efficieny
+## Efficiency, efficiency, efficiency
 
 With a mobile site design complete, scaling up for larger screens is a breeze. Since most of the site's CSS is already defined in ems and percentages, changing font size and element width can instantaneously turn a one-column, tightly focused design into a glorious multi-column mess for larger screens.  There's no question that media queries add a lot of complexity to your site's design. Designing mobile first is the only way to take advantage of the way media queries work: a single change in your CSS will be cascaded from 320x480 to 1024x768, 1440x900, and beyond.
 
