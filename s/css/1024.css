@@ -648,6 +648,7 @@ body.article #content article header menu.switch {
 }
 body.article #content article header menu.switch ul {
   float: right;
+  w: 172px;
 }
 body.article #content article header menu.switch ul li {
   font: bold 13px DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
