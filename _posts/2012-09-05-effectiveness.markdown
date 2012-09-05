@@ -6,7 +6,7 @@ title: Effectiveness
 
 As powerful as [Stylus](http://learnboost.github.com/stylus/) is, it's easy to go overboard with mixins.
 
-The CSS proprocessor Stylus makes it incredibily easy to define transparent mixins. With symbols like $ and @ stripped away and : and ; being made unnecessary, it's simple to create your own [DSL](http://en.wikipedia.org/wiki/Domain-specific_language) on top of CSS.
+The CSS proprocessor Stylus makes it [incredibly easy](http://nylira.com/stylus-the-revolutionary-successor-to-css/) to define transparent mixins. With symbols like $ and @ stripped away and : and ; being made unnecessary, it's simple to create your own [DSL](http://en.wikipedia.org/wiki/Domain-specific_language) on top of CSS.
 
 This capability is immensely powerful when working solo, but it can be difficult to debug for someone else coming into your project. If you work with other designers or hand off code to an external team it's a good idea to keep mixin usage in Stylus at a bare minimum.
 
