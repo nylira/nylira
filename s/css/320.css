@@ -123,13 +123,13 @@ table {
 @font-face {
   font-family: DIN;
   src: url("../f/dinr____-webfont.eot");
-  src: url("../f/dinr____-webfont.eot?iefix") format("eot"), url("../f/dinr____-webfont.woff") format("woff"), url("../f/dinr____-webfont.ttf") format("truetype"), url("../f/dinr____-webfont.svg#svgFontName") format("svg");
+  src: url("../f/dinr____-webfont.eot?iefix") format('eot'), url("../f/dinr____-webfont.woff") format('woff'), url("../f/dinr____-webfont.ttf") format('truetype'), url("../f/dinr____-webfont.svg#svgFontName") format('svg');
 }
 @font-face {
   font-family: DIN;
   font-weight: bold;
   src: url("../f/dinb____-webfont.eot");
-  src: url("../f/dinb____-webfont.eot?iefix") format("eot"), url("../f/dinb____-webfont.woff") format("woff"), url("../f/dinb____-webfont.ttf") format("truetype"), url("../f/dinb____-webfont.svg#svgFontName") format("svg");
+  src: url("../f/dinb____-webfont.eot?iefix") format('eot'), url("../f/dinb____-webfont.woff") format('woff'), url("../f/dinb____-webfont.ttf") format('truetype'), url("../f/dinb____-webfont.svg#svgFontName") format('svg');
 }
 a {
   color: #ff006a;
@@ -139,7 +139,7 @@ a:hover {
   color: #fff;
 }
 body {
-  font-family: DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 160%;
   color: #ccc;
@@ -151,7 +151,7 @@ body {
 body:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 #content {
   padding: 2em 0 4em;
@@ -161,15 +161,15 @@ body:after {
 #content:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 #content h1 {
-  font: bold 175%/1.5 DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: bold 175%/1.5 DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   margin: 0 0 32px;
   -webkit-font-smoothing: antialiased;
 }
 #content h2 {
-  font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: bold 13px DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 24px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
@@ -180,7 +180,7 @@ body:after {
 }
 #content h3,
 #content .h3 {
-  font: 150%/1.5 DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: 150%/1.5 DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   display: block;
 }
 #content h3 a,
@@ -193,7 +193,7 @@ body:after {
   border-color: #ff006a;
 }
 #content code {
-  font-family: Consolas, "Lucida Console", Monaco, Courier New, monospace;
+  font-family: Consolas, 'Lucida Console', Monaco, Courier New, monospace;
   font-size: 13px;
   background: rgba(255,255,255,0.05);
   padding: 0 0.2em;
@@ -218,7 +218,7 @@ body:after {
   color: #ff006a;
 }
 #content .markdown {
-  font-family: Georgia, "serif";
+  font-family: Georgia, 'serif';
   -webkit-font-smoothing: antialiased;
 }
 #content .markdown strong {
@@ -228,7 +228,7 @@ body:after {
   font-style: italic;
 }
 #content .markdown h2 {
-  font: 150%/1.5 DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: 150%/1.5 DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   color: #ccc;
   text-transform: none;
   margin: 32px 0 16px;
@@ -247,7 +247,7 @@ body:after {
   margin: 0 0 1.5em;
 }
 #content .markdown p:first-of-type {
-  font: 150%/1.5 Georgia, "serif";
+  font: 150%/1.5 Georgia, 'serif';
 }
 #content .markdown ul {
   list-style: square;
@@ -264,7 +264,7 @@ body:after {
 }
 #content .markdown pre code {
   background: none;
-  font: 13px/1 Consolas, "Lucida Console", Monaco, Courier New, monospace;
+  font: 13px/1 Consolas, 'Lucida Console', Monaco, Courier New, monospace;
   padding: 0;
 }
 header.index {
@@ -279,7 +279,7 @@ header.index {
 header.index:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 header.index a {
   color: #999;
@@ -297,7 +297,7 @@ header.index h1 {
 }
 header.index h1 a {
   display: block;
-  font: bold 1.5em DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: bold 1.5em DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 2em;
   color: #ccc;
   text-transform: lowercase;
@@ -305,7 +305,7 @@ header.index h1 a {
 header.index nav ul:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 header.index nav ul li {
   width: 25%;
@@ -339,7 +339,7 @@ footer.index {
 footer.index:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 footer.index p.copyright {
   width: 100px;
@@ -362,7 +362,7 @@ body.home #content {
 }
 body.home #content header.main aside {
   padding: 96px 0;
-  font: 175%/1 DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: 175%/1 DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   text-align: center;
   color: #6e6e6e;
   -webkit-font-smoothing: antialiased;
@@ -391,7 +391,7 @@ body.profile #content section.profile section.markdown aside {
   padding: 1em;
 }
 body.profile #content section.profile section.markdown aside h2 {
-  font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: bold 13px DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 24px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
@@ -403,7 +403,7 @@ body.profile #content section.profile section.markdown aside h2 {
 body.profile #content section.profile section.markdown aside ul,
 body.profile #content section.profile section.markdown aside p {
   list-style: none;
-  font: 0.8em/1.6 Georgia, "serif";
+  font: 0.8em/1.6 Georgia, 'serif';
   margin: 0;
 }
 body.profile #content section.profile section.markdown aside ul li,
@@ -424,7 +424,7 @@ body.profile #content section.profile section.markdown ul.process {
 body.profile #content section.profile section.markdown ul.process:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 body.profile #content section.profile section.markdown ul.process li {
   margin: 0 0 1px;
@@ -433,7 +433,7 @@ body.profile #content section.profile section.markdown ul.process li {
 body.profile #content section.profile section.markdown ul.process li p {
   padding: 8px 16px;
   margin: 0;
-  font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: bold 13px DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 24px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
@@ -480,7 +480,7 @@ body.projects #content section.projects menu.past-clients {
 body.projects #content ol.projects:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 body.projects #content ol.projects li.project {
   margin: 0 0 2em;
@@ -490,7 +490,7 @@ body.projects #content ol.projects li.project {
 body.projects #content ol.projects li.project:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 body.projects #content ol.projects li.project:first-of-type {
   border-left: none;
@@ -533,7 +533,7 @@ body.projects #content ol.projects li.project a {
 }
 body.projects #content ol.projects li.project a:after {
   display: inline;
-  content: "\0020\21B5";
+  content: '\0020\21B5';
 }
 body.projects #content ol.projects li.project a:hover {
   color: #fff;
@@ -561,7 +561,7 @@ body.article #content article header menu.switch ul {
   float: right;
 }
 body.article #content article header menu.switch ul li {
-  font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: bold 13px DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 24px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
@@ -570,7 +570,7 @@ body.article #content article header menu.switch ul li {
   float: left;
 }
 body.article #content article header menu.switch ul li.prev:after {
-  content: "|";
+  content: '|';
   display: inline-block;
   width: 1em;
   text-align: center;
@@ -599,20 +599,20 @@ body.article #content p.twitter a em {
 body.article #content p.twitter a:hover {
   background: rgba(255,255,255,0.1);
 }
-body.article #content .all.articles:after,
+body.article #content p.all.articles:after,
 body.article #content dl.comparison:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
-body.article #content .all.articles dt,
+body.article #content p.all.articles dt,
 body.article #content dl.comparison dt,
-body.article #content .all.articles dd,
+body.article #content p.all.articles dd,
 body.article #content dl.comparison dd {
   height: 48px;
   padding: 12px 16px;
   background: rgba(255,255,255,0.05);
-  font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: bold 13px DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 24px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
@@ -620,19 +620,19 @@ body.article #content dl.comparison dd {
   letter-spacing: 1px;
   margin-bottom: 1px;
 }
-body.article #content .all.articles dt,
+body.article #content p.all.articles dt,
 body.article #content dl.comparison dt {
   width: 287px;
   float: left;
   margin-right: 1px;
 }
-body.article #content .all.articles dd,
+body.article #content p.all.articles dd,
 body.article #content dl.comparison dd {
   width: 288px;
   float: left;
   color: #ccc;
 }
-body.article #content .all.articles dd span,
+body.article #content p.all.articles dd span,
 body.article #content dl.comparison dd span {
   display: block;
   font-size: 200%;
@@ -650,11 +650,11 @@ body.contact #content section.contact section.details dl dt {
 body.contact #content section.contact section.details dl dt:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 body.contact #content section.contact section.details dl dt:after {
   display: inline;
-  content: ":";
+  content: ':';
   padding-right: 0;
 }
 body.contact #content section.contact section.details dl dd {
