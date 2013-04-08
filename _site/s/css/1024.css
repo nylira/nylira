@@ -123,13 +123,13 @@ table {
 @font-face {
   font-family: DIN;
   src: url("../f/dinr____-webfont.eot");
-  src: url("../f/dinr____-webfont.eot?iefix") format("eot"), url("../f/dinr____-webfont.woff") format("woff"), url("../f/dinr____-webfont.ttf") format("truetype"), url("../f/dinr____-webfont.svg#svgFontName") format("svg");
+  src: url("../f/dinr____-webfont.eot?iefix") format('eot'), url("../f/dinr____-webfont.woff") format('woff'), url("../f/dinr____-webfont.ttf") format('truetype'), url("../f/dinr____-webfont.svg#svgFontName") format('svg');
 }
 @font-face {
   font-family: DIN;
   font-weight: bold;
   src: url("../f/dinb____-webfont.eot");
-  src: url("../f/dinb____-webfont.eot?iefix") format("eot"), url("../f/dinb____-webfont.woff") format("woff"), url("../f/dinb____-webfont.ttf") format("truetype"), url("../f/dinb____-webfont.svg#svgFontName") format("svg");
+  src: url("../f/dinb____-webfont.eot?iefix") format('eot'), url("../f/dinb____-webfont.woff") format('woff'), url("../f/dinb____-webfont.ttf") format('truetype'), url("../f/dinb____-webfont.svg#svgFontName") format('svg');
 }
 a {
   color: #ff006a;
@@ -139,7 +139,7 @@ a:hover {
   color: #fff;
 }
 body {
-  font-family: DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 160%;
   color: #ccc;
@@ -155,15 +155,15 @@ body {
 #content:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 #content h1 {
-  font: bold 200%/1.5 DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: bold 200%/1.5 DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   margin: 0 0 32px;
   -webkit-font-smoothing: antialiased;
 }
 #content h2 {
-  font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: bold 13px DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 24px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
@@ -174,7 +174,7 @@ body {
 }
 #content h3,
 #content .h3 {
-  font: 150%/1.5 DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: 150%/1.5 DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   display: block;
 }
 #content h3 a,
@@ -187,7 +187,7 @@ body {
   border-color: #ff006a;
 }
 #content code {
-  font-family: Consolas, "Lucida Console", Monaco, Courier New, monospace;
+  font-family: Consolas, 'Lucida Console', Monaco, Courier New, monospace;
   font-size: 13px;
   background: rgba(255,255,255,0.05);
   padding: 0 0.2em;
@@ -212,7 +212,7 @@ body {
   color: #ff006a;
 }
 #content .markdown {
-  font-family: Georgia, "serif";
+  font-family: Georgia, 'serif';
   -webkit-font-smoothing: antialiased;
 }
 #content .markdown strong {
@@ -222,7 +222,7 @@ body {
   font-style: italic;
 }
 #content .markdown h2 {
-  font: 150%/1.5 DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: 150%/1.5 DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   color: #ccc;
   text-transform: none;
   margin: 32px 0 16px;
@@ -241,7 +241,7 @@ body {
   margin: 0 0 1.5em;
 }
 #content .markdown p:first-of-type {
-  font: 150%/1.5 Georgia, "serif";
+  font: 150%/1.5 Georgia, 'serif';
 }
 #content .markdown ul {
   list-style: square;
@@ -258,7 +258,7 @@ body {
 }
 #content .markdown pre code {
   background: none;
-  font: 13px/1 Consolas, "Lucida Console", Monaco, Courier New, monospace;
+  font: 13px/1 Consolas, 'Lucida Console', Monaco, Courier New, monospace;
   padding: 0;
 }
 header.index {
@@ -278,7 +278,7 @@ header.index {
 header.index:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 header.index a {
   color: #999;
@@ -299,7 +299,7 @@ header.index h1 {
 }
 header.index h1 a {
   display: block;
-  font: bold 1.5em DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: bold 1.5em DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 2em;
   color: #ccc;
   text-transform: lowercase;
@@ -311,7 +311,7 @@ header.index nav {
 header.index nav ul:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 header.index nav ul li {
   width: 160px;
@@ -322,7 +322,7 @@ header.index nav ul li {
 header.index nav ul li:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 header.index nav ul li a {
   font-weight: bold;
@@ -355,7 +355,7 @@ footer.index {
 footer.index:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 footer.index p.copyright {
   width: 320px;
@@ -383,7 +383,7 @@ body.home #content header.main {
 }
 body.home #content header.main aside {
   padding: 128px 0;
-  font: 200%/1 DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: 200%/1 DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   text-align: center;
   color: #6e6e6e;
   -webkit-font-smoothing: antialiased;
@@ -423,7 +423,7 @@ body.profile #content section.profile section.markdown aside {
   margin-left: -320px;
 }
 body.profile #content section.profile section.markdown aside h2 {
-  font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: bold 13px DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 24px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
@@ -434,7 +434,7 @@ body.profile #content section.profile section.markdown aside h2 {
 }
 body.profile #content section.profile section.markdown aside ul,
 body.profile #content section.profile section.markdown aside p {
-  font: 0.8em/1.6 Georgia, "serif";
+  font: 0.8em/1.6 Georgia, 'serif';
   list-style: none;
 }
 body.profile #content section.profile section.markdown aside ul li a,
@@ -451,7 +451,7 @@ body.profile #content section.profile section.markdown ul.process {
 body.profile #content section.profile section.markdown ul.process:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 body.profile #content section.profile section.markdown ul.process li {
   float: left;
@@ -463,7 +463,7 @@ body.profile #content section.profile section.markdown ul.process li p {
   margin: 0;
   height: 127px;
   width: 127px;
-  font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: bold 13px DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 24px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
@@ -542,7 +542,7 @@ body.projects #content section.projects menu.past-clients ul li a:hover {
 }
 body.projects #content section.projects menu.past-clients ul li a:hover:after {
   display: inline;
-  content: "\0020\2192";
+  content: '\0020\2192';
 }
 body.projects #content ol.projects {
   white-space: nowrap;
@@ -551,7 +551,7 @@ body.projects #content ol.projects {
 body.projects #content ol.projects:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 body.projects #content ol.projects li.project {
   display: inline-block;
@@ -602,7 +602,7 @@ body.projects #content ol.projects li.project a {
 }
 body.projects #content ol.projects li.project a:after {
   display: inline;
-  content: "\0020\21B5";
+  content: '\0020\21B5';
 }
 body.projects #content ol.projects li.project a:hover {
   color: #fff;
@@ -621,7 +621,7 @@ body.articles #content section.articles ul.articles li.article time {
   float: left;
   margin-left: -353px;
   text-align: right;
-  font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: bold 13px DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 24px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
@@ -641,16 +641,17 @@ body.article #content article header h1 {
   margin: 0;
 }
 body.article #content article header menu.switch {
-  width: 240px;
+  width: 250px;
   float: left;
   margin-left: -320px;
   font-size: 13px;
 }
 body.article #content article header menu.switch ul {
   float: right;
+  width: 172px;
 }
 body.article #content article header menu.switch ul li {
-  font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: bold 13px DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 24px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
@@ -659,7 +660,7 @@ body.article #content article header menu.switch ul li {
   float: left;
 }
 body.article #content article header menu.switch ul li.prev:after {
-  content: "|";
+  content: '|';
   display: inline-block;
   width: 1em;
   text-align: center;
@@ -699,14 +700,14 @@ body.article #content p.all.articles {
 body.article #content dl.comparison:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 body.article #content dl.comparison dt,
 body.article #content dl.comparison dd {
   height: 48px;
   padding: 12px 16px;
   background: rgba(255,255,255,0.05);
-  font: bold 13px DIN, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: bold 13px DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 24px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
@@ -751,11 +752,11 @@ body.contact #content section.contact section.details dl dt {
 body.contact #content section.contact section.details dl dt:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 body.contact #content section.contact section.details dl dt:after {
   display: inline;
-  content: ":";
+  content: ':';
   padding-right: 0;
 }
 body.contact #content section.contact section.details dl dd {

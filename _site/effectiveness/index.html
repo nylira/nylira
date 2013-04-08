@@ -2,7 +2,7 @@
 <html lang='en' dir='ltr'>
 <head>
   <meta charset='utf-8'>
-  <title>Acorn &mdash; Nylira</title>
+  <title>Effectiveness &mdash; Nylira</title>
   <link rel='alternate' title='Nylira Articles' href='/en/atom.xml'>
   <link rel="shortcut icon" type='image/png' href='/favicon.png' />
 
@@ -41,28 +41,88 @@
 
     <article>
       <header>
-        <h1>Acorn</h1>
+        <h1>Effectiveness</h1>
 
         <menu class='switch'>
           <ul>
             <li class="prev">
-              <a rel='prev' href='/analog-turk' title='View Analog Turk'> &laquo; Previous</a>
+              <a rel='prev' href='/mobile-first' title='View Mobile First'> &laquo; Previous</a>
             
-            <li class="next">
-              <a rel='next' href='/drawar-bank' title='View Drawar Bank Entry'>Next &raquo;</a>
-            
+            <li class="next">Next &raquo;
           </ul>
         </menu>
 
         <p class='meta'>
-          <time class='timeago' datetime='2010-04-02 00:00:00 +0800'>2010-04-02 00:00:00 +0800</time>
+          <time class='timeago' datetime='2012-09-05 00:00:00 +0800'>2012-09-05 00:00:00 +0800</time>
           by <cite>Peng Zhong</cite>
       </header>
 
       <section class="body markdown">
-        <p>Acorn homepage redesign. <a href="http://flyingmeat.com/acorn">Acorn</a> is a Mac image editing program developed by Flying Meat Inc.</p>
+        <p>As powerful as <a href="http://learnboost.github.com/stylus/">Stylus</a> is, it's easy to go overboard with mixins.</p>
 
-<p><a href="http://v2.nylira.com/p/acorn/"><img src="http://v2.nylira.com/tumblr/posts/acorn.jpg" /></a></p>
+<p>The CSS proprocessor Stylus makes it <a href="http://nylira.com/stylus-the-revolutionary-successor-to-css/">incredibly easy</a> to define transparent mixins. With symbols like $ and @ stripped away and : and ; being made unnecessary, it's simple to create your own <a href="http://en.wikipedia.org/wiki/Domain-specific_language">DSL</a> on top of CSS.</p>
+
+<p>This capability is immensely powerful when working solo, but it can be difficult to debug for someone else coming into your project. If you work with other designers or hand off code to an external team it's a good idea to keep mixin usage in Stylus at a bare minimum.</p>
+
+<p>While this is fine to use on personal projects:</p>
+
+<pre><code>section.markdown
+  aside
+    col 4
+    ml - c4
+    h2
+      font2()
+      c anchor
+      mb x*2
+    ul
+      ls none
+
+  ul.process
+    ml -4c
+    clear()
+    li
+      fl left
+      m 0 0 1px 1px
+      p
+        p x
+        m 0
+        box c4 - x*2 - 1px
+        font2()
+        c #ccc
+        transition()
+</code></pre>
+
+<p>In larger projects, it usually pays to be a little less clever:</p>
+
+<pre><code>section.markdown
+  aside
+    width: col4
+    margin-left: - col4
+    h2
+      font: font2
+      color: anchor
+      margin-bottom: m2
+    ul
+      list-style: none
+
+  ul.process
+    ml -4c
+    margin-left: - col4
+    clearfix()
+    li
+      float: left
+      margin: 0 0 1px 1px
+      p
+        padding: x
+        margin: 0
+        height: col4 - x*2 - 1px
+        width: col4 - x*2 - 1px
+        font: font2
+        color: #ccc
+        transition()
+</code></pre>
+
+<p>While it takes longer to write out the expanded CSS, doing so will save hours of potential headaches in the future. By being a bit more explicit and a bit less obtuse, the efficiency you lose will be made up several times over if anyone else has to edit your code in the future.</p>
 
       </section>
 
