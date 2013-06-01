@@ -648,7 +648,7 @@ body.article #content article header menu.switch {
 }
 body.article #content article header menu.switch ul {
   float: right;
-  width: 172px;
+  width: 184px;
 }
 body.article #content article header menu.switch ul li {
   font: bold 13px DIN, 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -659,11 +659,17 @@ body.article #content article header menu.switch ul li {
   letter-spacing: 1px;
   float: left;
 }
+body.article #content article header menu.switch ul li.prev {
+  width: 102px;
+}
 body.article #content article header menu.switch ul li.prev:after {
   content: '|';
   display: inline-block;
   width: 1em;
   text-align: center;
+}
+body.article #content article header menu.switch ul li.next {
+  width: 80px;
 }
 body.article #content article header p.meta {
   font-size: 13px;

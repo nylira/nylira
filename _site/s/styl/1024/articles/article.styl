@@ -18,15 +18,19 @@ body.article
 
           ul
             float right
-            width 172px
+            width 184px
             li
               alt-font()
               float left
+              &.prev
+                width 102px
               &.prev:after
                 content '|'
                 display inline-block
                 width 1em
                 text-align center
+              &.next
+                width 80px
         p.meta
           font-size sm
           color accent
