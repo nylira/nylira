@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2013-04-08T16:46:57+08:00</updated>
+ <updated>2013-06-02T01:01:44+08:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -17,11 +17,11 @@
    <link href="http://nylira.com/effectiveness"/>
    <updated>2012-09-05T00:00:00+08:00</updated>
    <id>http://nylira.com/effectiveness</id>
-   <content type="html">&lt;p&gt;As powerful as &lt;a href=&quot;http://learnboost.github.com/stylus/&quot;&gt;Stylus&lt;/a&gt; is, it's easy to go overboard with mixins.&lt;/p&gt;
+   <content type="html">&lt;p&gt;As powerful as &lt;a href=&quot;http://learnboost.github.com/stylus/&quot;&gt;Stylus&lt;/a&gt; is, it&#39;s easy to go overboard with mixins.&lt;/p&gt;
 
-&lt;p&gt;The CSS proprocessor Stylus makes it &lt;a href=&quot;http://nylira.com/stylus-the-revolutionary-successor-to-css/&quot;&gt;incredibly easy&lt;/a&gt; to define transparent mixins. With symbols like $ and @ stripped away and : and ; being made unnecessary, it's simple to create your own &lt;a href=&quot;http://en.wikipedia.org/wiki/Domain-specific_language&quot;&gt;DSL&lt;/a&gt; on top of CSS.&lt;/p&gt;
+&lt;p&gt;The CSS proprocessor Stylus makes it &lt;a href=&quot;http://nylira.com/stylus-the-revolutionary-successor-to-css/&quot;&gt;incredibly easy&lt;/a&gt; to define transparent mixins. With symbols like $ and @ stripped away and : and ; being made unnecessary, it&#39;s simple to create your own &lt;a href=&quot;http://en.wikipedia.org/wiki/Domain-specific_language&quot;&gt;DSL&lt;/a&gt; on top of CSS.&lt;/p&gt;
 
-&lt;p&gt;This capability is immensely powerful when working solo, but it can be difficult to debug for someone else coming into your project. If you work with other designers or hand off code to an external team it's a good idea to keep mixin usage in Stylus at a bare minimum.&lt;/p&gt;
+&lt;p&gt;This capability is immensely powerful when working solo, but it can be difficult to debug for someone else coming into your project. If you work with other designers or hand off code to an external team it&#39;s a good idea to keep mixin usage in Stylus at a bare minimum.&lt;/p&gt;
 
 &lt;p&gt;While this is fine to use on personal projects:&lt;/p&gt;
 
@@ -90,37 +90,37 @@
    <link href="http://nylira.com/mobile-first"/>
    <updated>2012-04-03T00:00:00+08:00</updated>
    <id>http://nylira.com/mobile-first</id>
-   <content type="html">&lt;p&gt;Smartphone penetration in the United States is staggering at 48%, up from 18% just two years ago. Among 25-34 year olds, 64% own a smartphone. If you don't design for mobile, you'll be left beind by your competitors.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Smartphone penetration in the United States is staggering at 48%, up from 18% just two years ago. Among 25-34 year olds, 64% own a smartphone. If you don&#39;t design for mobile, you&#39;ll be left behind by your competitors.&lt;/p&gt;
 
 &lt;h2&gt;One column design&lt;/h2&gt;
 
 &lt;p&gt;Sidebars are often thrown onto a site without much thought. Often, the reasoning comes down to finding something (anything!) to fill the rest of formulaic 960 pixels horizontal space. Maybe it was through some misguided belief that flashy social media icons will rocket the site to the top of Alexa 1000. Tag clouds are cool, right?&lt;/p&gt;
 
-&lt;p&gt;If your site requires a sidebar to function, you're most likely doing something wrong. Either the content is not engaging enough or your navigation needs to be rethought completely. Only dense, database-type sites have a legitimate need for the extra level of navigation. In almost all cases, messy everything-including-the-kitchen-sink navigation sidebars only serves to distract the reader from the content.&lt;/p&gt;
+&lt;p&gt;If your site requires a sidebar to function, you&#39;re most likely doing something wrong. Either the content is not engaging enough or your navigation needs to be rethought completely. Only dense, database-type sites have a legitimate need for the extra level of navigation. In almost all cases, messy everything-including-the-kitchen-sink navigation sidebars only serves to distract the reader from the content.&lt;/p&gt;
 
-&lt;p&gt;If your users get bored reading content, or interacting with your site, you have some deep-seated issues that no reworking of the sidebar will ever fix. Providing a solution for your user's wandering eyes does not fix the main problem: poorly presented content. While a sidebar may take 25%-33% of a site's width, its actual importance is rarely as high as the space it consumes.&lt;/p&gt;
+&lt;p&gt;If your users get bored reading content, or interacting with your site, you have some deep-seated issues that no reworking of the sidebar will ever fix. Providing a solution for your user&#39;s wandering eyes does not fix the main problem: poorly presented content. While a sidebar may take 25%-33% of a site&#39;s width, its actual importance is rarely as high as the space it consumes.&lt;/p&gt;
 
-&lt;p&gt;Designing for the limited real estate of mobile browsers forces you to focus on providing better content. Eschewing the customary sidebar in the beginning of the design process leaves you with no option but to create engaging content that's able to stand alone.&lt;/p&gt;
+&lt;p&gt;Designing for the limited real estate of mobile browsers forces you to focus on providing better content. Eschewing the customary sidebar in the beginning of the design process leaves you with no option but to create engaging content that&#39;s able to stand alone.&lt;/p&gt;
 
 &lt;h2&gt;Efficiency, efficiency, efficiency&lt;/h2&gt;
 
-&lt;p&gt;With a mobile site design complete, scaling up for larger screens is a breeze. Since most of the site's CSS is already defined in ems and percentages, changing font size and element width can instantaneously turn a one-column, tightly focused design into a glorious multi-column mess for larger screens.  There's no question that media queries add a lot of complexity to your site's design. Designing mobile first is the only way to take advantage of the way media queries work: a single change in your CSS will be cascaded from 320x480 to 1024x768, 1440x900, and beyond.&lt;/p&gt;
+&lt;p&gt;With a mobile site design complete, scaling up for larger screens is a breeze. Since most of the site&#39;s CSS is already defined in ems and percentages, changing font size and element width can instantaneously turn a one-column, tightly focused design into a glorious multi-column mess for larger screens.  There&#39;s no question that media queries add a lot of complexity to your site&#39;s design. Designing mobile first is the only way to take advantage of the way media queries work: a single change in your CSS will be cascaded from 320x480 to 1024x768, 1440x900, and beyond.&lt;/p&gt;
 
-&lt;p&gt;Trying to force a desktop site's CSS into something that will work for mobile is a horrible experience. Desktop websites are messy creations which are never built with scaling in mind. Even if that new desktop-to-mobile conversion your team worked so hard on seems to display properly, updating anything in main site design will break the mobile site all over again. CSS is not well suited for this.&lt;/p&gt;
+&lt;p&gt;Trying to force a desktop site&#39;s CSS into something that will work for mobile is a horrible experience. Desktop websites are messy creations which are never built with scaling in mind. Even if that new desktop-to-mobile conversion your team worked so hard on seems to display properly, updating anything in main site design will break the mobile site all over again. CSS is not well suited for this.&lt;/p&gt;
 
-&lt;p&gt;Most sane designers, when faced with a mobile design project for a desktop site, will ask to start from a blank slate. This creates its own set of problems. When this new project done, it's often ghettoed to http://m.yoursite.com, updated infrequently and only serving a portion of your site's content. Forcing your mobile users to bolted-on, attaché sites does nothing to improve their disposition to your product. Furthermore, any update you want to make to the site now requires twice the work: once for desktop, and again for mobile. It's not efficient.&lt;/p&gt;
+&lt;p&gt;Most sane designers, when faced with a mobile design project for a desktop site, will ask to start from a blank slate. This creates its own set of problems. When this new project done, it&#39;s often ghettoed to http://m.yoursite.com, updated infrequently and only serving a portion of your site&#39;s content. Forcing your mobile users to bolted-on, attaché sites does nothing to improve their disposition to your product. Furthermore, any update you want to make to the site now requires twice the work: once for desktop, and again for mobile. It&#39;s not efficient.&lt;/p&gt;
 
-&lt;p&gt;If your ever envision your users viewing your site on a mobile browser, you should strongly consider going mobile first from the beginning. It'll save you a lot of future headaches.&lt;/p&gt;
+&lt;p&gt;If your ever envision your users viewing your site on a mobile browser, you should strongly consider going mobile first from the beginning. It&#39;ll save you a lot of future headaches.&lt;/p&gt;
 
 &lt;h2&gt;The mobile experience&lt;/h2&gt;
 
-&lt;p&gt;All innovation has been happening in the mobile space. The new iPad screen has near print quality resolution and it's a joy to behold. Quietly arriving at 2048px &amp;times; 1536px, it blows traditional desktop and latop screens out of the proverbial water. The progress is shocking to think about when the vast majority of LCDs have been topped out at 1920x1080 for nearly a decade. Most users are stuck on less, since they're on stuck laptops and netbooks.&lt;/p&gt;
+&lt;p&gt;All innovation has been happening in the mobile space. The new iPad screen has near print quality resolution and it&#39;s a joy to behold. Quietly arriving at 2048px &amp;times; 1536px, it blows traditional desktop and latop screens out of the proverbial water. The progress is shocking to think about when the vast majority of LCDs have been topped out at 1920x1080 for nearly a decade. Most users are stuck on less, since they&#39;re on stuck laptops and netbooks.&lt;/p&gt;
 
-&lt;p&gt;You can hold this screen in your hand, and the battery life is better than any laptop. Browsing the web on the iPad is an intimate, emotional experience, with direct one-to-one mapping of finger gestures to smooth, pixel-free interface. It's intuitive in a way that remotes, keyboards and mice will never be.&lt;/p&gt;
+&lt;p&gt;You can hold this screen in your hand, and the battery life is better than any laptop. Browsing the web on the iPad is an intimate, emotional experience, with direct one-to-one mapping of finger gestures to smooth, pixel-free interface. It&#39;s intuitive in a way that remotes, keyboards and mice will never be.&lt;/p&gt;
 
 &lt;h2&gt;The bottom line&lt;/h2&gt;
 
-&lt;p&gt;If you don't future-proof with site by designing with smartphones and tablets in mind, it'll cost you where it hurts. The mobile web experience is getting better every day, while desktops have been stagnating for over a decade.&lt;/p&gt;
+&lt;p&gt;If you don&#39;t future-proof with site by designing with smartphones and tablets in mind, it&#39;ll cost you where it hurts. The mobile web experience is getting better every day, while desktops have been stagnating for over a decade.&lt;/p&gt;
 </content>
  </entry>
  
@@ -129,25 +129,25 @@
    <link href="http://nylira.com/use-soft-delete"/>
    <updated>2011-06-20T00:00:00+08:00</updated>
    <id>http://nylira.com/use-soft-delete</id>
-   <content type="html">&lt;p&gt;Imagine you're using one of the many todo list apps on the web. You're feeling great, because you just finished an entire laundry list of tasks. You've opened the web app because it's time for you to delete 15 tasks from your list.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Imagine you&#39;re using one of the many todo list apps on the web. You&#39;re feeling great, because you just finished an entire laundry list of tasks. You&#39;ve opened the web app because it&#39;s time for you to delete 15 tasks from your list.&lt;/p&gt;
 
 &lt;p&gt;You see in front of you a massive list of tasks, each with its own discrete &quot;Delete&quot; button. This gives you pause. You click &quot;Delete&quot; on the first of your completed tasks, and a modal window pop up, &quot;Are you sure you want to permanently delete this task?&quot; Yes / No. You sign inwardly and press &quot;Yes&quot;.&lt;/p&gt;
 
-&lt;p&gt;You might do this another 15 times, each time getting more exasperated at the number of hoops you have to jump through to delete a single task. If you're the less patient type, you may consider give up on the app altogether, because micromanaging tasks is almost more effort than doing the them!&lt;/p&gt;
+&lt;p&gt;You might do this another 15 times, each time getting more exasperated at the number of hoops you have to jump through to delete a single task. If you&#39;re the less patient type, you may consider give up on the app altogether, because micromanaging tasks is almost more effort than doing the them!&lt;/p&gt;
 
 &lt;h2&gt;Be Like Gmail&lt;/h2&gt;
 
-&lt;p&gt;Instead of rudely throwing a modal dialog in your user's face, consider using Gmail's method for atomic operations: soft delete. After every action, Gmail displays a nonintrusive status message at the top of the screen. The message tells the user exactly what's occured--e.g., &quot;This conversation has been archived.&quot;--along with a simple &quot;Undo&quot; link.&lt;/p&gt;
+&lt;p&gt;Instead of rudely throwing a modal dialog in your user&#39;s face, consider using Gmail&#39;s method for atomic operations: soft delete. After every action, Gmail displays a nonintrusive status message at the top of the screen. The message tells the user exactly what&#39;s occured--e.g., &quot;This conversation has been archived.&quot;--along with a simple &quot;Undo&quot; link.&lt;/p&gt;
 
-&lt;p&gt;Why is soft delete better than modal confirmation windows? For one, this method allows the user to delete faster by skipping a step (the modal middleman). Modal windows are intrusive, workflow-breaking, and force users user to make immediate decisions. Inline undos are far more user-friendly because the entire web app stays usable, instead of being backgrounded. Let's face it--most deleted files are never wanted back.&lt;/p&gt;
+&lt;p&gt;Why is soft delete better than modal confirmation windows? For one, this method allows the user to delete faster by skipping a step (the modal middleman). Modal windows are intrusive, workflow-breaking, and force users user to make immediate decisions. Inline undos are far more user-friendly because the entire web app stays usable, instead of being backgrounded. Let&#39;s face it--most deleted files are never wanted back.&lt;/p&gt;
 
 &lt;h2&gt;Taking It Further&lt;/h2&gt;
 
-&lt;p&gt;Native OS filesystems allow clicking and dragging to lasso multiple documents in a folder. We've used this simple operation on our desktop for years, but it has yet to show up online. Select-lassos could work very well for photography-oriented apps.&lt;/p&gt;
+&lt;p&gt;Native OS filesystems allow clicking and dragging to lasso multiple documents in a folder. We&#39;ve used this simple operation on our desktop for years, but it has yet to show up online. Select-lassos could work very well for photography-oriented apps.&lt;/p&gt;
 
-&lt;h2&gt;Don't Delete Anything&lt;/h2&gt;
+&lt;h2&gt;Don&#39;t Delete Anything&lt;/h2&gt;
 
-&lt;p&gt;Disk-space is cheap, and user whims are fickle. If you can absorb the extra costs, I suggest never permanently deleting anything (unless they delete their account). Give your user a history page, where they can restore the state of everything they've ever created or uploaded with your app. When the time comes, they'll love you for it.&lt;/p&gt;
+&lt;p&gt;Disk-space is cheap, and user whims are fickle. If you can absorb the extra costs, I suggest never permanently deleting anything (unless they delete their account). Give your user a history page, where they can restore the state of everything they&#39;ve ever created or uploaded with your app. When the time comes, they&#39;ll love you for it.&lt;/p&gt;
 </content>
  </entry>
  
@@ -156,13 +156,13 @@
    <link href="http://nylira.com/fluid-grids"/>
    <updated>2011-04-05T00:00:00+08:00</updated>
    <id>http://nylira.com/fluid-grids</id>
-   <content type="html">&lt;p&gt;Responsive design is about saving time by making flexible elements that can be reused across multiple devices. Here are some tips I've learned while building a &lt;a href=&quot;http://nylira.com/en/projects/#guildwork&quot;&gt;100% fluid site&lt;/a&gt;.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Responsive design is about saving time by making flexible elements that can be reused across multiple devices. Here are some tips I&#39;ve learned while building a &lt;a href=&quot;http://nylira.com/en/projects/#guildwork&quot;&gt;100% fluid site&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2&gt;Make Use of &lt;code&gt;box-sizing: border-box&lt;/code&gt;&lt;/h2&gt;
 
 &lt;p&gt;With the default box model, adding a &lt;code&gt;1px border&lt;/code&gt; to two floats with %-based widths (e.g., 30% and 70%) breaks the layout. Your layout is now now &lt;code&gt;100% + 4px&lt;/code&gt; wide, which is annoyingly unhelpful. Likewise with adding em-based padding. At this point, most practical coders will sigh and add a internal wrapper &lt;code&gt;div&lt;/code&gt; with the border they want.&lt;/p&gt;
 
-&lt;p&gt;While adding another &lt;code&gt;div&lt;/code&gt; is a fine (albeit hacky) solution, there's a cleaner way to do it. &lt;code&gt;box-sizing: border-box&lt;/code&gt; is a CSS3 property that fixes the box model for these use cases. Instead of adding padding and borders to the width of the box, it subtracts the same amounts from the space inside of the box.&lt;/p&gt;
+&lt;p&gt;While adding another &lt;code&gt;div&lt;/code&gt; is a fine (albeit hacky) solution, there&#39;s a cleaner way to do it. &lt;code&gt;box-sizing: border-box&lt;/code&gt; is a CSS3 property that fixes the box model for these use cases. Instead of adding padding and borders to the width of the box, it subtracts the same amounts from the space inside of the box.&lt;/p&gt;
 
 &lt;p&gt;Create this mixin in your &lt;a href=&quot;http://nylira.com/stylus-the-revolutionary-successor-to-css&quot;&gt;CSS preprocessor of choice&lt;/a&gt;:&lt;/p&gt;
 
@@ -172,7 +172,7 @@
   box-sizing: n
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Now you can do the following to your heart's content:&lt;/p&gt;
+&lt;p&gt;Now you can do the following to your heart&#39;s content:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;#announcement
   border-box()
@@ -184,19 +184,19 @@
 
 &lt;p&gt;And it will only ever be 40% wide. Nice, right?&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Any catches?&lt;/strong&gt; While &lt;code&gt;box-sizing&lt;/code&gt; is a CSS3 property, all browsers which support CSS2.1 will support &lt;code&gt;box-sizing: border-box&lt;/code&gt;. That's every browser except IE6/7.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Any catches?&lt;/strong&gt; While &lt;code&gt;box-sizing&lt;/code&gt; is a CSS3 property, all browsers which support CSS2.1 will support &lt;code&gt;box-sizing: border-box&lt;/code&gt;. That&#39;s every browser except IE6/7.&lt;/p&gt;
 
-&lt;h2&gt;There's more to the world than &lt;code&gt;float: left&lt;/code&gt;&lt;/h2&gt;
+&lt;h2&gt;There&#39;s more to the world than &lt;code&gt;float: left&lt;/code&gt;&lt;/h2&gt;
 
-&lt;p&gt;In the early days of CSS-based design, floats were all we had to achieve creative, tableless layouts. They are--and have always been--a hacky and buggy approach, but they've also been the best tools we've had. Most designers have a &lt;a href=&quot;http://en.wikipedia.org/wiki/Stockholm_syndrome&quot;&gt;Stockholme syndrome&lt;/a&gt; relationship with CSS floats.&lt;/p&gt;
+&lt;p&gt;In the early days of CSS-based design, floats were all we had to achieve creative, tableless layouts. They are--and have always been--a hacky and buggy approach, but they&#39;ve also been the best tools we&#39;ve had. Most designers have a &lt;a href=&quot;http://en.wikipedia.org/wiki/Stockholm_syndrome&quot;&gt;Stockholme syndrome&lt;/a&gt; relationship with CSS floats.&lt;/p&gt;
 
-&lt;p&gt;Float-based layouts are fragile, prone to breaking, and require content clearing in most cases. Don't even try to do vertical alignment with variable-height floats. You'll need Javascript for that. The finicky nature of floats makes them ill-suited for the flexible, %-based world of web applications. What other options are there?&lt;/p&gt;
+&lt;p&gt;Float-based layouts are fragile, prone to breaking, and require content clearing in most cases. Don&#39;t even try to do vertical alignment with variable-height floats. You&#39;ll need Javascript for that. The finicky nature of floats makes them ill-suited for the flexible, %-based world of web applications. What other options are there?&lt;/p&gt;
 
 &lt;h2&gt;&lt;code&gt;display: inline-block&lt;/code&gt;&lt;/h2&gt;
 
 &lt;p&gt;Useful for more than horizontal layout menus, &lt;code&gt;display: inline-block&lt;/code&gt; can be used in many situations in place of floats. Along with the contents of table cells, inline blocks can be vertically aligned, which leads to intriguing layout possibilities.&lt;/p&gt;
 
-&lt;p&gt;One caveat to inline blocks is that whitespace in HTML matters. If there's a space between two &lt;code&gt;display: inline-block&lt;/code&gt; elements, it will render on the site.&lt;/p&gt;
+&lt;p&gt;One caveat to inline blocks is that whitespace in HTML matters. If there&#39;s a space between two &lt;code&gt;display: inline-block&lt;/code&gt; elements, it will render on the site.&lt;/p&gt;
 
 &lt;p&gt;Inline blocks are supported by all browsers except IE6/7. There is &lt;a href=&quot;http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/&quot;&gt;a hack available&lt;/a&gt; for IE6/7 support.&lt;/p&gt;
 
@@ -204,17 +204,17 @@
 
 &lt;p&gt;Most designers who learned CSS in the days of XHTML validation and web standards instinctively cringe away from anything related to tables. However, the property &lt;code&gt;display: table-cell&lt;/code&gt; does not imply any sort of relation between the content and tabular data.&lt;/p&gt;
 
-&lt;p&gt;Using &lt;code&gt;display: table-cell&lt;/code&gt; turns an element's display type into a &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;, the original &lt;code&gt;box-sizing: border-box&lt;/code&gt; element. &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;s will automatically stretch to fill the available horizontal space. It's a great way to create columns of both variable width and height. Take for example an image next to a column of text. This is possible to do with floats, but when you introduce percentage-based padding, you save time with &lt;code&gt;display: table-cell&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Using &lt;code&gt;display: table-cell&lt;/code&gt; turns an element&#39;s display type into a &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;, the original &lt;code&gt;box-sizing: border-box&lt;/code&gt; element. &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;s will automatically stretch to fill the available horizontal space. It&#39;s a great way to create columns of both variable width and height. Take for example an image next to a column of text. This is possible to do with floats, but when you introduce percentage-based padding, you save time with &lt;code&gt;display: table-cell&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Using &lt;code&gt;display: table&lt;/code&gt; will turn all of an element's direct descendants into &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; types. If you're making consistent use of this, consider taking another look at your data: perhaps a real table is in order.&lt;/p&gt;
+&lt;p&gt;Using &lt;code&gt;display: table&lt;/code&gt; will turn all of an element&#39;s direct descendants into &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; types. If you&#39;re making consistent use of this, consider taking another look at your data: perhaps a real table is in order.&lt;/p&gt;
 
 &lt;p&gt;Display table/table-cell is supported by all browsers except IE6/7.&lt;/p&gt;
 
 &lt;h2&gt;Alignment issues?&lt;/h2&gt;
 
-&lt;p&gt;If you're using a CSS reset, you'll most likely encounter alignment issues using either &lt;code&gt;inline-block&lt;/code&gt; or &lt;code&gt;table-cell&lt;/code&gt;. There's no need to panic. &lt;a href=&quot;http://meyerweb.com/eric/tools/css/reset/&quot;&gt;Eric Meyer's Reset CSS&lt;/a&gt; sets all elements to &lt;code&gt;vertical-align: baseline&lt;/code&gt;. That means elements of unequal heights will sit on a baseline instead of hanging from the top like floats.&lt;/p&gt;
+&lt;p&gt;If you&#39;re using a CSS reset, you&#39;ll most likely encounter alignment issues using either &lt;code&gt;inline-block&lt;/code&gt; or &lt;code&gt;table-cell&lt;/code&gt;. There&#39;s no need to panic. &lt;a href=&quot;http://meyerweb.com/eric/tools/css/reset/&quot;&gt;Eric Meyer&#39;s Reset CSS&lt;/a&gt; sets all elements to &lt;code&gt;vertical-align: baseline&lt;/code&gt;. That means elements of unequal heights will sit on a baseline instead of hanging from the top like floats.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;How to fix it?&lt;/strong&gt; For &lt;code&gt;display: inline-block&lt;/code&gt;, you'll need to set its parent element to &lt;code&gt;vertical-align: top&lt;/code&gt;. For &lt;code&gt;display: table-cell&lt;/code&gt;, you'll need to set it to &lt;code&gt;vertical-align: top&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How to fix it?&lt;/strong&gt; For &lt;code&gt;display: inline-block&lt;/code&gt;, you&#39;ll need to set its parent element to &lt;code&gt;vertical-align: top&lt;/code&gt;. For &lt;code&gt;display: table-cell&lt;/code&gt;, you&#39;ll need to set it to &lt;code&gt;vertical-align: top&lt;/code&gt;.&lt;/p&gt;
 </content>
  </entry>
  
@@ -227,23 +227,23 @@
 
 &lt;h2&gt;Why Virtualize?&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Avoid dependency hell.&lt;/strong&gt; Ever come back to a project 2-3 months later, and not be able to run it because you've already upgraded your libraries to new versions? Debugging these scenarios always take a lot of trial and error. This won't happen anymore if you freeze the entire development environment along with the project code.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Avoid dependency hell.&lt;/strong&gt; Ever come back to a project 2-3 months later, and not be able to run it because you&#39;ve already upgraded your libraries to new versions? Debugging these scenarios always take a lot of trial and error. This won&#39;t happen anymore if you freeze the entire development environment along with the project code.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Write once, run everywhere&lt;/strong&gt; VirtualBox images are extremely portable. VirtualBox can run on every major operating system, which means you can concievably work anywhere. If you develop on a Windows machine and want to collaborate with someone on OS X, you may run into problems with versioning. If both of you run VirtualBox, the problems all disappear.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;No more debugging development environments for your developers.&lt;/strong&gt; Related to the point above. Have someone joining your project? Instead of handing them a lengthy and error-prone installation guide, just give them a copy of your VirtualBox image. This saves a ridiculous amount of time and gets them up to speed with zero issues. This benefit of VirtualBox goes up the more contributers you have on your project.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Ubuntu is closer to a production environment.&lt;/strong&gt; While not exactly the same, a Ubuntu minimal install is much closer to your production server than either Windows or OS X. You'll be able to solve OS-specific issues early, so your live deployment will be certain to go without a hitch.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ubuntu is closer to a production environment.&lt;/strong&gt; While not exactly the same, a Ubuntu minimal install is much closer to your production server than either Windows or OS X. You&#39;ll be able to solve OS-specific issues early, so your live deployment will be certain to go without a hitch.&lt;/p&gt;
 
 &lt;h2&gt;Preconceived Doubts&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Isn't system performance severely degraded with virtualization?&lt;/strong&gt; This really depends on what you're working on. For standard web development and design tasks, a virtualized Ubuntu is more than enough power. I'm running this on a 13&quot; MacBook Air with 1.86 GHz Core 2 Duo, and I've never had a problem with performance. Compiling might be a bit slower than you're used to.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Isn&#39;t system performance severely degraded with virtualization?&lt;/strong&gt; This really depends on what you&#39;re working on. For standard web development and design tasks, a virtualized Ubuntu is more than enough power. I&#39;m running this on a 13&quot; MacBook Air with 1.86 GHz Core 2 Duo, and I&#39;ve never had a problem with performance. Compiling might be a bit slower than you&#39;re used to.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;But it's such a waste of hard drive space!&lt;/strong&gt; Disk space is cheap these days.  My laptop has a 120 GB HD. That's probably less storage space than most of you are running. Also, installing with the Ubuntu Minimal CD image means you only install only the basic building blocks of the OS, and download what you need through apt-get. My freshly installed images weigh in 1.5 GBs each. Not bad, right?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;But it&#39;s such a waste of hard drive space!&lt;/strong&gt; Disk space is cheap these days.  My laptop has a 120 GB HD. That&#39;s probably less storage space than most of you are running. Also, installing with the Ubuntu Minimal CD image means you only install only the basic building blocks of the OS, and download what you need through apt-get. My freshly installed images weigh in 1.5 GBs each. Not bad, right?&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Doesn't it take a long time to setup your dev environment over and over?&lt;/strong&gt; Okay, you've got me there. The actual process of installing Ubuntu doesn't take very long, but getting the right packages and plugins can take a little while. Of course, most of this time is either downloading or compiling, so you're not actually stuck at the computer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Doesn&#39;t it take a long time to setup your dev environment over and over?&lt;/strong&gt; Okay, you&#39;ve got me there. The actual process of installing Ubuntu doesn&#39;t take very long, but getting the right packages and plugins can take a little while. Of course, most of this time is either downloading or compiling, so you&#39;re not actually stuck at the computer.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Doesn't this take a lot of system memory?&lt;/strong&gt; This is a valid point. If you have under 2 GBs of RAM, performance will definitely be severely degraded with the disc swaps happening every transaction. I've never done virtualization with anything less than 4 GBs, but--then again, my Ubuntu images run just fine with 512mb of allotted RAM each. I have two images running at any one time, along with Chrome and Photoshop, and performance has been fine.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Doesn&#39;t this take a lot of system memory?&lt;/strong&gt; This is a valid point. If you have under 2 GBs of RAM, performance will definitely be severely degraded with the disc swaps happening every transaction. I&#39;ve never done virtualization with anything less than 4 GBs, but--then again, my Ubuntu images run just fine with 512mb of allotted RAM each. I have two images running at any one time, along with Chrome and Photoshop, and performance has been fine.&lt;/p&gt;
 
 &lt;h2&gt;The Barebones How-To&lt;/h2&gt;
 
@@ -256,11 +256,11 @@
 &lt;/ul&gt;
 
 
-&lt;p&gt;&lt;strong&gt;Install VirtualBox.&lt;/strong&gt; Create a new virtual machine with the default settings for a Ubuntu 64-bit guest OS. 512 MB of ram and 8 GBs of disk space is usually enough. If you have hard drive space to spare, I suggest increasing it to 20 GB. It's possible to increase the virtual disk size later, but it's a pain in the ass.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Install VirtualBox.&lt;/strong&gt; Create a new virtual machine with the default settings for a Ubuntu 64-bit guest OS. 512 MB of ram and 8 GBs of disk space is usually enough. If you have hard drive space to spare, I suggest increasing it to 20 GB. It&#39;s possible to increase the virtual disk size later, but it&#39;s a pain in the ass.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Select your new virtual disk and open &quot;Settings.&quot;&lt;/strong&gt; With the Settings window open, click the Network button, and select the Adapter 2 tab. Enable the adapter and choose 'Host-only Adapter' from the dropdown menu. This is the first step in giving your host OS access to Ubuntu.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Select your new virtual disk and open &quot;Settings.&quot;&lt;/strong&gt; With the Settings window open, click the Network button, and select the Adapter 2 tab. Enable the adapter and choose &#39;Host-only Adapter&#39; from the dropdown menu. This is the first step in giving your host OS access to Ubuntu.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Boot up the new virtual disk.&lt;/strong&gt; Select the Ubunut Minimal CD .iso you downloaded earlier. Ubuntu is straightfoward to install. When it's done, login with your new username and password. The first command you should run is &lt;code&gt;sudo apt-get install openssh-server&lt;/code&gt;. This will allow SSH and SFTP connections from your host OS to the new guest.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Boot up the new virtual disk.&lt;/strong&gt; Select the Ubunut Minimal CD .iso you downloaded earlier. Ubuntu is straightfoward to install. When it&#39;s done, login with your new username and password. The first command you should run is &lt;code&gt;sudo apt-get install openssh-server&lt;/code&gt;. This will allow SSH and SFTP connections from your host OS to the new guest.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Using either vi or nano, open&lt;/strong&gt; &lt;code&gt;sudo vi /etc/network/interfaces&lt;/code&gt;. Add the following lines to the bottom of the file:&lt;/p&gt;
 
@@ -277,7 +277,7 @@ sudo ifdown eth1
 sudo ifup eth1
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;You're done. At this point, you should be able to SSH into your new virtual machine from the host OS, or mount the virtual drive with your FTP program.&lt;/p&gt;
+&lt;p&gt;You&#39;re done. At this point, you should be able to SSH into your new virtual machine from the host OS, or mount the virtual drive with your FTP program.&lt;/p&gt;
 </content>
  </entry>
  
@@ -288,11 +288,11 @@ sudo ifup eth1
    <id>http://nylira.com/stylus-the-revolutionary-successor-to-css</id>
    <content type="html">&lt;p&gt;About a month ago, &lt;a href=&quot;http://learnboost.github.com/stylus&quot;&gt;Stylus&lt;/a&gt; was released, to little fanfare.&lt;/p&gt;
 
-&lt;p&gt;It's rapidly become my favorite web development tool. Cleaner and more flexible than &lt;a href=&quot;http://sass-lang.com/&quot;&gt;Sass&lt;/a&gt;, Stylus is by far the best CSS preprocessor in the wild. If you're unfamiliar with preprocessors, just imagine adding variables, functions, and simple arithmetic to CSS. While the additions may seem daunting to beginners, these advanced abstractions are desperately needed by maintainers of complex stylesheets.&lt;/p&gt;
+&lt;p&gt;It&#39;s rapidly become my favorite web development tool. Cleaner and more flexible than &lt;a href=&quot;http://sass-lang.com/&quot;&gt;Sass&lt;/a&gt;, Stylus is by far the best CSS preprocessor in the wild. If you&#39;re unfamiliar with preprocessors, just imagine adding variables, functions, and simple arithmetic to CSS. While the additions may seem daunting to beginners, these advanced abstractions are desperately needed by maintainers of complex stylesheets.&lt;/p&gt;
 
-&lt;p&gt;Stylus syntax strips away all colons, semicolons, brackets and most parentheses from regular CSS script. The stark simplicity and elegance of it reminds me of Lisp. What's more amazing is that Stylus will also accept regular CSS syntax in the same file, reducing possible friction between multiple contributers.&lt;/p&gt;
+&lt;p&gt;Stylus syntax strips away all colons, semicolons, brackets and most parentheses from regular CSS script. The stark simplicity and elegance of it reminds me of Lisp. What&#39;s more amazing is that Stylus will also accept regular CSS syntax in the same file, reducing possible friction between multiple contributers.&lt;/p&gt;
 
-&lt;p&gt;Here's a sample of Stylus, a bit of code that powers this very site:&lt;/p&gt;
+&lt;p&gt;Here&#39;s a sample of Stylus, a bit of code that powers this very site:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;section.markdown
   aside
@@ -320,9 +320,9 @@ sudo ifup eth1
         transition()
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;You'll notice that I've trimmed down many CSS properties: &lt;code&gt;background&lt;/code&gt; is now &lt;code&gt;bg&lt;/code&gt;, &lt;code&gt;border-color&lt;/code&gt; is &lt;code&gt;bc&lt;/code&gt;, &lt;code&gt;margin-left&lt;/code&gt; is &lt;code&gt;ml&lt;/code&gt;, etc. Where I used to use &lt;code&gt;margin: 0 0 2em;&lt;/code&gt; (fewer characters than &lt;code&gt;margin-bottom: 2em;&lt;/code&gt;), I now use &lt;code&gt;mb m2&lt;/code&gt;. The ability to abbreviate properties saves countless amounts of typing, and is reason enough to use Stylus.&lt;/p&gt;
+&lt;p&gt;You&#39;ll notice that I&#39;ve trimmed down many CSS properties: &lt;code&gt;background&lt;/code&gt; is now &lt;code&gt;bg&lt;/code&gt;, &lt;code&gt;border-color&lt;/code&gt; is &lt;code&gt;bc&lt;/code&gt;, &lt;code&gt;margin-left&lt;/code&gt; is &lt;code&gt;ml&lt;/code&gt;, etc. Where I used to use &lt;code&gt;margin: 0 0 2em;&lt;/code&gt; (fewer characters than &lt;code&gt;margin-bottom: 2em;&lt;/code&gt;), I now use &lt;code&gt;mb m2&lt;/code&gt;. The ability to abbreviate properties saves countless amounts of typing, and is reason enough to use Stylus.&lt;/p&gt;
 
-&lt;p&gt;Here's the generated CSS by comparison:&lt;/p&gt;
+&lt;p&gt;Here&#39;s the generated CSS by comparison:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;body.profile #content section.profile section.markdown aside {
   width: 320px;
@@ -374,7 +374,7 @@ body.profile #content section.profile section.markdown ul.process li p {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;dl class='comparison'&gt;
+&lt;dl class=&#39;comparison&#39;&gt;
   &lt;dt&gt;Stylus Character Count&lt;/dt&gt;
   &lt;dd&gt;&lt;span&gt;337&lt;/span&gt;&lt;/dd&gt;
   &lt;dt&gt;CSS Character Count&lt;/dt&gt;
@@ -384,7 +384,7 @@ body.profile #content section.profile section.markdown ul.process li p {
 
 &lt;h2&gt;Convinced yet?&lt;/h2&gt;
 
-&lt;p&gt;I have only grazed the surface of what's possible with the immense power of &lt;a href=&quot;http://learnboost.github.com/stylus/&quot;&gt;Stylus&lt;/a&gt;, and it makes me excited about what I'll playing with in the near future.&lt;/p&gt;
+&lt;p&gt;I have only grazed the surface of what&#39;s possible with the immense power of &lt;a href=&quot;http://learnboost.github.com/stylus/&quot;&gt;Stylus&lt;/a&gt;, and it makes me excited about what I&#39;ll playing with in the near future.&lt;/p&gt;
 </content>
  </entry>
  
@@ -393,19 +393,19 @@ body.profile #content section.profile section.markdown ul.process li p {
    <link href="http://nylira.com/hello-jekyll"/>
    <updated>2011-03-01T00:00:00+08:00</updated>
    <id>http://nylira.com/hello-jekyll</id>
-   <content type="html">&lt;p&gt;I've migrated this site to &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt;. It seems much easier to use than ExpressionEngine. Of course, you have to be comfortable in text editors and SSH. I can't stand textareas on the web anymore. It feels so slow and unwieldy. Developer notes follow.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I&#39;ve migrated this site to &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt;. It seems much easier to use than ExpressionEngine. Of course, you have to be comfortable in text editors and SSH. I can&#39;t stand textareas on the web anymore. It feels so slow and unwieldy. Developer notes follow.&lt;/p&gt;
 
-&lt;p&gt;March 3rd: Why are post summaries so difficult to pull off? I might have to migrate to Nanoc instead. Update: for the meantime, I've decided to not use post summaries.&lt;/p&gt;
+&lt;p&gt;March 3rd: Why are post summaries so difficult to pull off? I might have to migrate to Nanoc instead. Update: for the meantime, I&#39;ve decided to not use post summaries.&lt;/p&gt;
 
 &lt;h2&gt;Lightboxes fundamentally broken&lt;/h2&gt;
 
-&lt;p&gt;March 4th: A bit of a tangent, but I'm finding that lightbox scripts are fundamentally broken. The popup windows don't respond to keyboard shortcuts, and images never show up until they're 100% loaded. I don't think script writers understand how nice it is to see part of an image as it loads.&lt;/p&gt;
+&lt;p&gt;March 4th: A bit of a tangent, but I&#39;m finding that lightbox scripts are fundamentally broken. The popup windows don&#39;t respond to keyboard shortcuts, and images never show up until they&#39;re 100% loaded. I don&#39;t think script writers understand how nice it is to see part of an image as it loads.&lt;/p&gt;
 
-&lt;p&gt;It lets you decided whether to finish loading or skip ahead to another picture. A loading GIF doesn't give any information at all, and just pisses people off.&lt;/p&gt;
+&lt;p&gt;It lets you decided whether to finish loading or skip ahead to another picture. A loading GIF doesn&#39;t give any information at all, and just pisses people off.&lt;/p&gt;
 
-&lt;p&gt;The popup effect also takes you out of the flow of the original article. Usually, a lightboxed image is in reference to something you're reading. But by clicking on it, you're effectively hiding the content for the picture.&lt;/p&gt;
+&lt;p&gt;The popup effect also takes you out of the flow of the original article. Usually, a lightboxed image is in reference to something you&#39;re reading. But by clicking on it, you&#39;re effectively hiding the content for the picture.&lt;/p&gt;
 
-&lt;p&gt;It's a pain, and that's why almost all power users open images in new tabs instead. Sure, it can get can confusing trying to link an image tab to what you're reading. But at least it doesn't obscure everything.&lt;/p&gt;
+&lt;p&gt;It&#39;s a pain, and that&#39;s why almost all power users open images in new tabs instead. Sure, it can get can confusing trying to link an image tab to what you&#39;re reading. But at least it doesn&#39;t obscure everything.&lt;/p&gt;
 </content>
  </entry>
  
@@ -414,7 +414,7 @@ body.profile #content section.profile section.markdown ul.process li p {
    <link href="http://nylira.com/intuition-is-bullshit"/>
    <updated>2010-09-04T00:00:00+08:00</updated>
    <id>http://nylira.com/intuition-is-bullshit</id>
-   <content type="html">&lt;p&gt;From the &lt;a href=&quot;//oed.com&quot;&gt;OED&lt;/a&gt;, &quot;Intuition is the ability to acquire knowledge without inference or the use of reason.&quot; The &lt;a href='http://en.wikipedia.org/wiki/Intuition_(knowledge)'&gt;Wikipedia article&lt;/a&gt; states that intuition provides us with unjustifiable beliefs (a common ailment of the human brain) and its popularity in supernatural and New Age writings.&lt;/p&gt;
+   <content type="html">&lt;p&gt;From the &lt;a href=&quot;//oed.com&quot;&gt;OED&lt;/a&gt;, &quot;Intuition is the ability to acquire knowledge without inference or the use of reason.&quot; The &lt;a href=&#39;http://en.wikipedia.org/wiki/Intuition_(knowledge)&#39;&gt;Wikipedia article&lt;/a&gt; states that intuition provides us with unjustifiable beliefs (a common ailment of the human brain) and its popularity in supernatural and New Age writings.&lt;/p&gt;
 
 &lt;p&gt;With such dubious company, why are user experience engineers using &quot;intuitive&quot; to describe the ideal user interface? UX is a science, not an art. There’s no such thing as knowledge without inference or reason. Don’t update your landing page on a whim because it &quot;feels right&quot;. Interface changes need to be backed by hard data, not by your gut instincts.&lt;/p&gt;
 
@@ -441,7 +441,7 @@ body.profile #content section.profile section.markdown ul.process li p {
    <link href="http://nylira.com/drawar-bank"/>
    <updated>2010-04-22T00:00:00+08:00</updated>
    <id>http://nylira.com/drawar-bank</id>
-   <content type="html">&lt;p&gt;Bank mockup designed for &lt;a href=&quot;//www.drawar.com/forums/84/version2000--online-banking-statements/&quot;&gt;Drawar's Version2.001&lt;/a&gt;.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Bank mockup designed for &lt;a href=&quot;//www.drawar.com/forums/84/version2000--online-banking-statements/&quot;&gt;Drawar&#39;s Version2.001&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2&gt;Safari&lt;/h2&gt;
 
@@ -451,13 +451,13 @@ body.profile #content section.profile section.markdown ul.process li p {
 
 &lt;h2&gt;Firefox&lt;/h2&gt;
 
-&lt;p&gt;Firefox 3.6+ gets most of the design correct. but has issues displaying the SVG graph and leaves unsightly white margins between actions. Webkit's gradient engine (which powers Safari and Chrome) considers borders part of the &quot;background area&quot; when it renders gradients. Firefox's Gecko engine does not. The discrepancy is quite frustrating when you try to use RGBA/HSLA borders.&lt;/p&gt;
+&lt;p&gt;Firefox 3.6+ gets most of the design correct. but has issues displaying the SVG graph and leaves unsightly white margins between actions. Webkit&#39;s gradient engine (which powers Safari and Chrome) considers borders part of the &quot;background area&quot; when it renders gradients. Firefox&#39;s Gecko engine does not. The discrepancy is quite frustrating when you try to use RGBA/HSLA borders.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;//v2.nylira.com/tumblr/posts/bank-firefox-big.jpg&quot;&gt;&lt;img src=&quot;//v2.nylira.com/tumblr/posts/bank-firefox.jpg&quot; alt=&quot;Drawar Bank rendered by Firefox 3.6/Win&quot; title=&quot;Drawar Bank rendered by Firefox 3.6/Win&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2&gt;Chrome&lt;/h2&gt;
 
-&lt;p&gt;Chrome has issues rendering all the CSS3 gradients. There's also noticeable color banding in Chrome's gradients, a flaw you don't see with Safari or Firefox. On the upside, Chrome's V8 Javascript engine blows every other browser out of the water when it comes to transitions.&lt;/p&gt;
+&lt;p&gt;Chrome has issues rendering all the CSS3 gradients. There&#39;s also noticeable color banding in Chrome&#39;s gradients, a flaw you don&#39;t see with Safari or Firefox. On the upside, Chrome&#39;s V8 Javascript engine blows every other browser out of the water when it comes to transitions.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;//v2.nylira.com/tumblr/posts/bank-chrome-big.jpg&quot;&gt;&lt;img src=&quot;//v2.nylira.com/tumblr/posts/bank-chrome.jpg&quot; alt=&quot;Drawar Bank rendered by Chrome 5/Win&quot; title=&quot;Drawar Bank rendered by Chrome 5/Win&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -469,9 +469,9 @@ body.profile #content section.profile section.markdown ul.process li p {
 
 &lt;p&gt;Check out the difference in size between the &lt;a href=&quot;//v2.nylira.com/p/bank/css/screen.css&quot;&gt;screen.css&lt;/a&gt; and &lt;a href=&quot;//v2.nylira.com/p/bank/css/sass/screen.sass&quot;&gt;screen.sass&lt;/a&gt; files. screen.css is 675 lines long and weighs in at 22.6 KB. screen.sass is 439 lines long and weighs in at 10.1 KB.&lt;/p&gt;
 
-&lt;p&gt;How is this possible? Most of Sass's power comes from mixins.&lt;/p&gt;
+&lt;p&gt;How is this possible? Most of Sass&#39;s power comes from mixins.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;// here's a simple example
+&lt;pre&gt;&lt;code&gt;// here&#39;s a simple example
 =border-radius($r: 5px)
   border-radius: $r
   -webkit-border-radius: $r
@@ -485,7 +485,7 @@ border-radius: 5px;
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 
-// if you want to change the border radius, it's simple
+// if you want to change the border radius, it&#39;s simple
 +border-radius(20px)
 
 // outputs
@@ -498,7 +498,7 @@ border-radius: 20px;
 
 &lt;h2&gt;A minor gripe&lt;/h2&gt;
 
-&lt;p&gt;The only issue I have with Sass is that its compiling speed isn't as fast as I would like. I'm used to saving my CSS file and then reloading my browser to instantly see my changes. With Sass playing middleman, it can take another second before the changes are reflected in the browser.&lt;/p&gt;
+&lt;p&gt;The only issue I have with Sass is that its compiling speed isn&#39;t as fast as I would like. I&#39;m used to saving my CSS file and then reloading my browser to instantly see my changes. With Sass playing middleman, it can take another second before the changes are reflected in the browser.&lt;/p&gt;
 
 &lt;p&gt;If this has piqued your interest, check out the &lt;a href=&quot;http://sass-lang.com/&quot;&gt;official Sass website&lt;/a&gt; for more information.&lt;/p&gt;
 </content>
@@ -520,7 +520,7 @@ border-radius: 20px;
    <link href="http://nylira.com/analog-turk"/>
    <updated>2010-03-26T00:00:00+08:00</updated>
    <id>http://nylira.com/analog-turk</id>
-   <content type="html">&lt;p&gt;Spurred on by &lt;a href=&quot;http://37signals.com/svn/posts/2229-sortfolio-uses-amazons-mechanical-turk&quot;&gt;SvN's post&lt;/a&gt; about the Amazon Mechanical Turk, this is how I would do it.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Spurred on by &lt;a href=&quot;http://37signals.com/svn/posts/2229-sortfolio-uses-amazons-mechanical-turk&quot;&gt;SvN&#39;s post&lt;/a&gt; about the Amazon Mechanical Turk, this is how I would do it.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://v2.nylira.com/p/turk&quot;&gt;&lt;img src=&quot;http://v2.nylira.com/tumblr/posts/turk.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -533,13 +533,13 @@ border-radius: 20px;
    <id>http://nylira.com/ruby-programming-language</id>
    <content type="html">&lt;p&gt;I redesigned the Ruby Programming Language homepage. Everything that you see--with the exception of &lt;a href=&quot;http://rubyidentity.org/&quot;&gt;the logo&lt;/a&gt;--consists of just two text files. Cascading stylesheets have come a long way since 1999.&lt;/p&gt;
 
-&lt;p&gt;My goal for the design was to make a monochromatic &amp;amp; image-less layout look visually striking and pretty. I think I've mostly succeeded.&lt;/p&gt;
+&lt;p&gt;My goal for the design was to make a monochromatic &amp;amp; image-less layout look visually striking and pretty. I think I&#39;ve mostly succeeded.&lt;/p&gt;
 
 &lt;p&gt;I have to say that I really love designing with just a text editor. Photoshop is unwieldy, cumbersome and utterly unsuited for most web design work. Sure, it still comes in handy for more illustration-heavy or textured websites. But for the majority of elegant and clean websites, a text editor works better and is magnitudes faster.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://v2.nylira.com/p/ruby&quot;&gt;&lt;img src=&quot;http://v2.nylira.com/tumblr/posts/ruby.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Browser notes: this design looks best in Safari/Mac or Firefox 3.6+. I seemed to have broken Chrome's rendering engine with the gradient spammage. If you use IE or Opera, &lt;a href=&quot;http://v2.nylira.com/portfolio/ruby&quot;&gt;here's a picture&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Browser notes: this design looks best in Safari/Mac or Firefox 3.6+. I seemed to have broken Chrome&#39;s rendering engine with the gradient spammage. If you use IE or Opera, &lt;a href=&quot;http://v2.nylira.com/portfolio/ruby&quot;&gt;here&#39;s a picture&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The &lt;a href=&quot;http://ruby-lang.org&quot;&gt;current ruby-lang.org&lt;/a&gt;, for comparison.&lt;/p&gt;
 </content>
@@ -550,7 +550,7 @@ border-radius: 20px;
    <link href="http://nylira.com/a-cleaner-slashdot"/>
    <updated>2010-03-18T00:00:00+08:00</updated>
    <id>http://nylira.com/a-cleaner-slashdot</id>
-   <content type="html">&lt;p&gt;Slashdot's homepage is rather overwhelming. It certainly works well enough on a functional level, but I think it can be done better. This is my attempt to bright things up. Their &lt;a href=&quot;http://slashdot.org&quot;&gt;current website&lt;/a&gt;, for comparison.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Slashdot&#39;s homepage is rather overwhelming. It certainly works well enough on a functional level, but I think it can be done better. This is my attempt to bright things up. Their &lt;a href=&quot;http://slashdot.org&quot;&gt;current website&lt;/a&gt;, for comparison.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://v2.nylira.com/p/slashdot&quot;&gt;&lt;img src=&quot;http://v2.nylira.com/tumblr/posts/slashdot.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
