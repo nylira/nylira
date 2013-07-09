@@ -4,7 +4,7 @@
  <title>Nylira Articles</title>
  <link href="http://nylira.com/en/atom.xml" rel="self"/>
  <link href="http://nylira.com"/>
- <updated>2013-07-09T03:43:24+08:00</updated>
+ <updated>2013-07-10T01:55:58+08:00</updated>
  <id>http://nylira.com</id>
  <author>
    <name>Peng Zhong</name>
@@ -73,7 +73,7 @@
 
 &lt;p&gt;Prism Break has only been in existence for a little over a week. It&#39;s a constant work in progress, and updates are pushed live every day. There are bound to be mistakes, but I&#39;ll do my best to fix them quickly. I advise not taking Prism Break as the authoritative resource on privacy, but as a starting point for further exploration into freedom and anonymity.&lt;/p&gt;
 
-&lt;p&gt;If you&#39;re interested in contributing, please do! The source files are available here: https://github.com/nylira/prism-break.&lt;/p&gt;
+&lt;p&gt;If you&#39;re interested in contributing, please do! The source files are available on &lt;a href=&quot;https://github.com/nylira/prism-break&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  

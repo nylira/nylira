@@ -61,4 +61,4 @@ I've always been concerned about my online footprint. Even before PRISM became p
 
 Prism Break has only been in existence for a little over a week. It's a constant work in progress, and updates are pushed live every day. There are bound to be mistakes, but I'll do my best to fix them quickly. I advise not taking Prism Break as the authoritative resource on privacy, but as a starting point for further exploration into freedom and anonymity.
 
-If you're interested in contributing, please do! The source files are available here: https://github.com/nylira/prism-break.
+If you're interested in contributing, please do! The source files are available on [Github](https://github.com/nylira/prism-break).
