@@ -1,8 +1,23 @@
 {
-  "dependencies": {
-    "moment": "2.3.x",
-    "underscore": "1.4.x",
-    "typogr": "0.5.x"
+  "name": "nylira",
+  "version": "0.0.0",
+  "description": "",
+  "main": "test-jade.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "none"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nylira/nylira.git"
+  },
+  "author": "Peng Zhong",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/nylira/nylira/issues"
+  },
+  "homepage": "https://github.com/nylira/nylira",
+  "dependencies": {
+    "graceful-fs": "~2.0.1",
+    "jade": "~1.1.5"
+  }
 }
