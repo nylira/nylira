@@ -2,6 +2,7 @@
 # Prerequisites
 
 require! \jade
+require! \marked
 fs = require \graceful-fs
 
 #----------------------------------------------------------------------
@@ -27,5 +28,7 @@ fs-filename = 'test-jade.html'
 
 jade-options =
   pretty: true
+  md: marked
+  md-content: '# HI MARKED'
 
 jade-render-file jade-template, jade-options, fs-filename
