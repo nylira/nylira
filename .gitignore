@@ -2,6 +2,7 @@
 *~
 *.log
 .*.s[a-w][a-z]
+*.js
 
 log/
 node_modules/
