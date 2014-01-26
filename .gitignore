@@ -1,1 +1,9 @@
 .DS_Store
+*~
+*.log
+.*.s[a-w][a-z]
+
+log/
+node_modules/
+public/
+tmp/
