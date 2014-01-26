@@ -1,37 +1,34 @@
-#----------------------------------------------------------------------
-# Prerequisites
-
 require! \jade
 require! \marked
 fs = require \graceful-fs
 
 #----------------------------------------------------------------------
 # Functions
+#
+markdown-to-html = (template-file, markdown-file, filename) ->
+  err, markdown-string <- fs.read-file markdown-file, \utf8
+  if err then console.error err
+  else set-options template-file, markdown-string, filename
 
-jade-render-file = (template, options, filename) ->
-  err, html-compiled <- jade.render-file template, options
-  if err
-  then console.error err
-  else fs-write-file fs-filename, html-compiled
+set-options = (template-file, markdown-string, filename) ->
+  options = pretty: true, md: marked, md-content: markdown-string
+  render-file template-file, options, filename
+
+render-file = (template-file, options, filename) ->
+  err, rendered-html <- jade.render-file template-file, options
+  if err then console.error err
+  else fs-write-file filename, rendered-html
 
 fs-write-file = (filename, content) ->
   err <- fs.write-file filename, content
-  if err
-  then console.error err
-  else console.log "#fs-filename was saved."
+  if err then console.error err
+  else console.log "#filename was saved."
 
 #----------------------------------------------------------------------
 # Variables
 
-md-file = '../content/first-post.md'
-md-content = fs.read-file md-file, \utf8
+template-file = 'test-jade.jade'
+markdown-file = '../content/first-post.md'
+filename = 'test-jade.html'
 
-jade-template = 'test-jade.jade'
-fs-filename = 'test-jade.html'
-
-jade-options =
-  pretty: true
-  md: marked
-  md-content: '# HI MARKED'
-
-jade-render-file jade-template, jade-options, fs-filename
+markdown-to-html template-file, markdown-file, filename
