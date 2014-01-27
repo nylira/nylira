@@ -1,3 +1,5 @@
 doctype html
 body
-  #content!= md(mdContent)
+  #content
+    .title= meta.title
+    .body!= md(mdContent)

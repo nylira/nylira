@@ -1,9 +1,10 @@
 require! \jade
 require! \marked
-require! \path
 require! \mkdirp
+require! \path
 fs = require \graceful-fs
 {map} = require \prelude-ls
+yaml = require \js-yaml
 
 #----------------------------------------------------------------------
 # Functions
@@ -27,13 +28,16 @@ md-dir-to-html = (md-dir, public-dir, template) ->
 # into perfect html after sending the data through the wringer.
 md-to-html = (md-dir, template, md-file, filename) ->
   markdown-path = path.join md-dir, md-file
-  err, markdown-string <- fs.read-file markdown-path, \utf8
+  err, md-stream <- fs.read-file markdown-path, \utf8
   if err => console.error err
-  else set-options template, markdown-string, filename
+  else set-options template, md-stream, filename
 
 # Takes the Markdown file and puts it into a Jade local variable.
-set-options = (template, markdown-string, filename) ->
-  options = pretty: true, md: marked, md-content: markdown-string
+set-options = (template, md-stream, filename) ->
+  md-split-stream = md-stream.split('---')
+  yaml-part = yaml.load md-split-stream[1]
+  md-part = md-split-stream[2]
+  options = pretty: true, md: marked, md-content: md-part, meta: yaml-part
   render-file template, options, filename
 
 # Renders the Jade template and Markdown mixture.
