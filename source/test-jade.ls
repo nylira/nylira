@@ -55,7 +55,7 @@ fs-write-file = (filename, content) ->
 # Variables
 
 pz-template = 'test-jade.jade'
-pz-md-dir = './content'
-pz-public-dir = './public/'
+pz-md-dir = '../content'
+pz-public-dir = '../public/'
 
 md-dir-to-html pz-md-dir, pz-public-dir, pz-template
