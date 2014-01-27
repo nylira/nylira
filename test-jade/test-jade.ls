@@ -37,7 +37,6 @@ jade-options = (template, md-stream, filename) ->
     md: marked,
     md-content: md-stream.split(\---)[2]
     pretty: true
-
   jade-render-file template, options, filename
 
 # Renders the Jade template and Markdown mixture.
