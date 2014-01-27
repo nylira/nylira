@@ -17,11 +17,14 @@
   },
   "homepage": "https://github.com/nylira/nylira",
   "dependencies": {
-    "graceful-fs": "~2.0.1",
-    "jade": "~1.1.5",
-    "marked": "~0.3.0",
-    "require-dir": "~0.1.0",
-    "prelude-ls": "~1.0.3",
-    "mkdirp": "~0.3.5"
+    "graceful-fs": "~2.0.x",
+    "jade": "~1.1.x",
+    "marked": "~0.3.x",
+    "require-dir": "~0.1.x",
+    "prelude-ls": "~1.0.x",
+    "mkdirp": "~0.3.x",
+    "js-yaml": "~3.0.x",
+    "moment": "~2.5.x",
+    "typogr": "~0.6.x"
   }
 }
