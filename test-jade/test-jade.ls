@@ -55,5 +55,4 @@ pz-template = 'test-jade.jade'
 pz-md-dir = './content'
 pz-public-dir = './public/'
 
-mkdirp pz-public-dir
 md-dir-to-html pz-md-dir, pz-public-dir, pz-template
