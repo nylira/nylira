@@ -1,30 +1,44 @@
 require! \jade
 require! \marked
 require! \path
+require! \mkdirp
 fs = require \graceful-fs
 {map} = require \prelude-ls
 
 #----------------------------------------------------------------------
 # Functions
-#
+
+# turn a markdown.md file into ./public/markdown.html
+html-file = (public-dir, md-file) ->
+  dir = md-file.split('.')[0]
+  pwd = path.join public-dir, dir
+  mkdirp pwd
+  path.join pwd, \index.html
+
+# Turn a directory of markdown files into HTML
+md-dir-to-html = (md-dir, public-dir, template) ->
+  err, files <- fs.readdir md-dir
+  if err => console.log err
+  else map (
+    (it) -> md-to-html md-dir, template, it, html-file(public-dir, it)
+  ), files
 
 # This function turns a Jade template, a Markdown file, and a filename
 # into perfect html after sending the data through the wringer.
-markdown-to-html = (template-file, markdown-file, filename) ->
-  markdown-path = path.join markdown-dir, markdown-file
-  filename = "test" + Math.floor(Math.random! * 100) + ".html"
+md-to-html = (md-dir, template, md-file, filename) ->
+  markdown-path = path.join md-dir, md-file
   err, markdown-string <- fs.read-file markdown-path, \utf8
   if err => console.error err
-  else set-options template-file, markdown-string, filename
+  else set-options template, markdown-string, filename
 
 # Takes the Markdown file and puts it into a Jade local variable.
-set-options = (template-file, markdown-string, filename) ->
+set-options = (template, markdown-string, filename) ->
   options = pretty: true, md: marked, md-content: markdown-string
-  render-file template-file, options, filename
+  render-file template, options, filename
 
 # Renders the Jade template and Markdown mixture.
-render-file = (template-file, options, filename) ->
-  err, rendered-html <- jade.render-file template-file, options
+render-file = (template, options, filename) ->
+  err, rendered-html <- jade.render-file template, options
   if err => console.error err
   else fs-write-file filename, rendered-html
 
@@ -37,12 +51,9 @@ fs-write-file = (filename, content) ->
 #----------------------------------------------------------------------
 # Variables
 
-template-file = 'test-jade.jade'
-filename = 'test-jade.html'
-markdown-dir= './content'
+pz-template = 'test-jade.jade'
+pz-md-dir = './content'
+pz-public-dir = './public/'
 
-err, files <- fs.readdir markdown-dir
-if err => console.log err
-else
-  map ((it) -> markdown-to-html(template-file, it, filename)), files
-
+mkdirp pz-public-dir
+md-dir-to-html pz-md-dir, pz-public-dir, pz-template
