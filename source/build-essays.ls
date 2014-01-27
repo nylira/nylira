@@ -49,7 +49,7 @@ jade-render-file = (template, options, filename) ->
 fs-write-file = (filename, content) ->
   err <- fs.write-file filename, content
   if err => console.error err
-  else console.log "#filename was saved."
+  #else console.log "#filename was saved."
 
 #----------------------------------------------------------------------
 # Variables
@@ -59,3 +59,10 @@ pz-md-dir = './content'
 pz-public-dir = './public/'
 
 md-dir-to-html pz-md-dir, pz-public-dir, pz-template
+
+md-dir-to-links = (md-dir) ->
+  err, files <- fs.readdir md-dir
+  if err => console.log err
+  else console.log map (.split(\.)[0]), files
+
+md-dir-to-links pz-md-dir
