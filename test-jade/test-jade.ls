@@ -32,12 +32,12 @@ md-to-jade = (md-dir, template, md-file, filename) ->
 
 # Takes the Markdown file and puts it into a Jade local variable.
 jade-options = (template, md-stream, filename) ->
-  md-parts = md-stream.split \---
   options = 
-    meta: js-yaml.load md-parts[1]
+    meta: js-yaml.load md-stream.split(\---)[1]
     md: marked,
-    md-content: md-parts[2]
+    md-content: md-stream.split(\---)[2]
     pretty: true
+
   jade-render-file template, options, filename
 
 # Renders the Jade template and Markdown mixture.

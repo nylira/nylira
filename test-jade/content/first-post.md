@@ -1,7 +1,6 @@
 ---
 title: First Post
-author: peng
-date: 2014-01-26 18:27
+date: 2013-02-08
 ---
 
 Oh yeah! First post.
