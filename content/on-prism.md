@@ -3,7 +3,7 @@ title: On PRISM
 date: 2013-06-11
 ---
 
-I've created a site to help you opt of PRISM at [prism-break.org](https://prism-break.org). Below are interview questions I was asked by an Associated Press reporter.
+I've created a site to help you opt of PRISM at [prism-break.org](https://prism-break.org). Below are interview questions I was asked by [Oscar Garcia](https://twitter.com/oskargarcia) from The Associated Press.
 
 ## In broad terms, why did you start prism-break.org? A Slate story you linked to on the site said "last week activists launched" the site — did you do this in collaboration with others or by yourself?
 
