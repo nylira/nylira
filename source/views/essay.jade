@@ -2,5 +2,5 @@ doctype html
 body
   #content
     h1.title= meta.title
-    h2.date= meta.date
+    h2= 'Published on ' + meta.date + ' in the category "' + meta.category + '"'
     .body!= md(mdContent)

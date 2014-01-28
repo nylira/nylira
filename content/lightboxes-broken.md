@@ -1,5 +1,6 @@
 ---
 title: Lightboxes fundamentally broken
+category: design
 date: 2011-03-04
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Responsive Design & Fluid Grids
+category: design
 date: 2011-04-05
 ---
 

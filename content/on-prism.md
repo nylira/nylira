@@ -1,5 +1,6 @@
 ---
 title: On PRISM
+category: politics
 date: 2013-06-11
 ---
 

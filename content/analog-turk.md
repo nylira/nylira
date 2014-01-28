@@ -1,5 +1,6 @@
 ---
 title: Analog Turk
+category: design
 date: 2010-03-26
 ---
 

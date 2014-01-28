@@ -1,7 +1,7 @@
 ---
-layout: en-article
-category: en-articles
 title: Use Soft Delete
+category: design
+date: 2011-06-20
 ---
 
 Imagine you're using one of the many todo list apps on the web. You're feeling great, because you just finished an entire laundry list of tasks. You've opened the web app because it's time for you to delete 15 tasks from your list.

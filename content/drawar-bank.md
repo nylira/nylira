@@ -1,5 +1,6 @@
 ---
 title: Drawar Bank Entry
+category: design
 date: 2010-04-22
 ---
 Bank mockup designed for [Drawar's Version2.001](//www.drawar.com/forums/84/version2000--online-banking-statements/).

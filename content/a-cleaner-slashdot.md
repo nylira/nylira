@@ -1,5 +1,6 @@
 ---
 title: A Cleaner Slashdot
+category: design
 date: 2010-03-18
 ---
 

@@ -1,7 +1,7 @@
 ---
-layout: en-article
-category: en-articles
 title: Intuition is Bullshit
+category: science
+date: 2010-09-04
 ---
 
 From the [OED](//oed.com), "Intuition is the ability to acquire knowledge without inference or the use of reason." The <a href='http://en.wikipedia.org/wiki/Intuition_(knowledge)'>Wikipedia article</a> states that intuition provides us with unjustifiable beliefs (a common ailment of the human brain) and its popularity in supernatural and New Age writings.

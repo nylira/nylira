@@ -1,5 +1,6 @@
 ---
 title: Dropbox Tip No. 1
+category: unix
 date: 2010-07-05
 ---
 

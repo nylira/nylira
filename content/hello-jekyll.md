@@ -1,5 +1,6 @@
 ---
 title: Built with git, vi, and Jekyll.
+category: meta
 date: 2011-03-01
 ---
 
