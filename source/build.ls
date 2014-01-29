@@ -41,7 +41,7 @@ jade-options = (template, md-stream, filename) ->
     depth: '../'
     meta: js-yaml.load md-stream.split(\---)[1]
     md: marked,
-    md-content: typogr.typogrify marked md-stream.split(\---)[2]
+    content: typogr.typogrify marked md-stream.split(\---)[2]
     pretty: true
     typogr: typogr
   render-file template, options, filename
