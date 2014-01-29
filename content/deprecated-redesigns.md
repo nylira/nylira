@@ -1,21 +1,21 @@
+
 ---
-title: Deprecated
+title: Redesigns
 category: design
 date: 2010-04-02
 ---
 
 <ul class="table-of-contents">
-  <li> [Ruby Programming Language](#ruby)
-  <li> [Ruby Programming Language](#ruby)
-  <li> [Ruby Programming Language](#ruby)
-  <li> [Ruby Programming Language](#ruby)
+  <li> [Redesign: Ruby](#ruby) </li>
+  <li> [Redesign: Acorn](#acorn) </li>
+  <li> [Redesign: Drawar Bank ](#drawar) </li>
 </ul>
 
-*Due to data loss, the following linked content is no longer available. Apologies!*
+*Due to accidental data loss, most of the following linked designs are no longer available. Apologies for the inconvenience!*
 
 * * *
 
-# Redesign: Ruby Programming Language Homepage
+<h1 id="ruby">Redesign: Ruby Programming Language Homepage</h1>
 ## date: 2010-03-25
 
 I redesigned the Ruby Programming Language homepage. Everything that you see--with the exception of [the logo](http://rubyidentity.org/)--consists of just two text files. Cascading stylesheets have come a long way since 1999. 
@@ -32,7 +32,7 @@ The <a href="http://ruby-lang.org">current ruby-lang.org</a>, for comparison.
 
 * * *
 
-# Redesign: Acorn
+<h1 id="acorn">Redesign: Acorn</h1>
 ## date: 2010-04-02
 
 Acorn homepage redesign. <a href="http://flyingmeat.com/acorn">Acorn</a> is a Mac image editing program developed by Flying Meat Inc.
@@ -41,7 +41,7 @@ Acorn homepage redesign. <a href="http://flyingmeat.com/acorn">Acorn</a> is a Ma
 
 * * *
 
-# Redesign: Drawar Bank
+<h1 id="drawar-bank">Redesign: Drawar Bank</h1>
 ## date: 2010-04-22
 
 Bank mockup designed for [Drawar's Version2.001](//www.drawar.com/forums/84/version2000--online-banking-statements/).
@@ -103,3 +103,4 @@ It certainly saves a lot of tedious and repetitive typing. This is only the tip 
 The only issue I have with Sass is that its compiling speed isn't as fast as I would like. I'm used to saving my CSS file and then reloading my browser to instantly see my changes. With Sass playing middleman, it can take another second before the changes are reflected in the browser.
 
 If this has piqued your interest, check out the [official Sass website](http://sass-lang.com/) for more information. 
+

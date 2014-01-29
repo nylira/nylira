@@ -3,6 +3,7 @@ require! \marked
 require! \mkdirp
 require! \path
 require! \js-yaml
+require! \typogr
 fs = require \graceful-fs
 {map} = require \prelude-ls
 
@@ -40,8 +41,9 @@ jade-options = (template, md-stream, filename) ->
     depth: '../'
     meta: js-yaml.load md-stream.split(\---)[1]
     md: marked,
-    md-content: md-stream.split(\---)[2]
+    md-content: typogr.typogrify marked md-stream.split(\---)[2]
     pretty: true
+    typogr: typogr
   render-file template, options, filename
 
 # Renders the Jade template and Markdown mixture.
