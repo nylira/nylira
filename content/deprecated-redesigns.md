@@ -8,9 +8,10 @@ date: 2010-04-02
   <li> [Redesign: Ruby](#ruby) </li>
   <li> [Redesign: Acorn](#acorn) </li>
   <li> [Redesign: Drawar Bank ](#drawar) </li>
+  <li> [Redesign: Nylira (Jekyll)](#nylira) </li>
 </ul>
 
-Due to accidental data loss, most of the following linked designs are no longer available. Apologies for the inconvenience!
+Due to data loss (accidental or otherwise), most of the following linked designs are no longer available. Apologies for the inconvenience!
 
 <h2 id="ruby">Redesign: Ruby Programming Language (website)</h2>
 
@@ -98,3 +99,11 @@ The only issue I have with Sass is that its compiling speed isn't as fast as I w
 If this has piqued your interest, check out the [official Sass website](http://sass-lang.com/) for more information. 
 
 *Originally published: 2010-04-22*
+
+<h2 id="nylira">Built with git, vi, and Jekyll.</h2>
+
+I've migrated this site to [Jekyll](https://github.com/mojombo/jekyll). It seems much easier to use than ExpressionEngine. Of course, you have to be comfortable in text editors and SSH. I can't stand textareas on the web anymore. It feels so slow and unwieldy. Developer notes follow.
+
+March 3rd: Why are post summaries so difficult to pull off? I might have to migrate to Nanoc instead. Update: for the meantime, I've decided to not use post summaries.
+
+*Originally published: 2011-03-01*
