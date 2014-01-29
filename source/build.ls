@@ -37,6 +37,7 @@ md-to-jade = (md-dir, template, md-file, filename) ->
 # Takes the Markdown file and puts it into a Jade local variable.
 jade-options = (template, md-stream, filename) ->
   options = 
+    depth: '../'
     meta: js-yaml.load md-stream.split(\---)[1]
     md: marked,
     md-content: md-stream.split(\---)[2]
@@ -68,6 +69,7 @@ pz-output-dir = './tmp/'
 pz-index-template = './source/views/index.jade'
 pz-index-filename = './tmp/index.html'
 pz-index-options =
+  depth: './'
   essays: folder-of-files-to-filenames pz-markdown-dir
   pretty: true
 
