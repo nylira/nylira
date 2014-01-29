@@ -18,14 +18,8 @@
       b 1px solid #ddd
       m 0 1em 1em 0
 
-    p:first-of-type
-      f 1.5em/1.5 serif
-      bb 1px solid #ddd
-      mb 1.5em
-      pb 1.5em
-
-    p, ul, ol, pre, blockquote
-      m 0 0 1.5em
+    h3, h3
+      vertical-align top
 
     h2
       font bold 1.5em/1.5 sans
@@ -35,17 +29,37 @@
     h3
       fw bold
 
-    hr 
-      d block
-      clearfix()
-      mb 4em
+    code
+      font-family mono
+
+    p, ul, ol, pre, blockquote
+      m 0 0 1.5em
+
+    p:first-of-type
+      f 1.5em/1.5 serif
+      bb 1px solid #ddd
+      mb 1.5em
+      pb 1.5em
+
+    p code, h2 code, h3 code
+      p 0 0.25em
+      f 90%/120% mono
+      d inline-block
+
+    p code
+      bg txt
+      c #ddd
+      m 0 0.25em
+
+    h2 code, h3 code
+      b 1px solid #ddd
 
     pre
       border 1px solid #ddd
       padding 1em
+      code
+        lh 1.25em
 
-    code
-      font 1em/1.25 Consolas, Menlo, monospace
 
   .footer
     p.meta
