@@ -1,7 +1,10 @@
-doctype html
-body
-  #content
-    - for essay in essays
-      div.essay
-        a(href='./' + essay + '/')
-          .title= essay
+extends layouts/base
+
+block title
+  Nylira
+
+block container
+  - for essay in essays
+    div.essay
+      a(href='./' + essay + '/')
+        .title= essay

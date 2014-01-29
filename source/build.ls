@@ -62,7 +62,6 @@ pz-essay-template = './source/views/essay.jade'
 pz-markdown-dir = './content'
 pz-output-dir = './tmp/'
 
-
 #----------------------------------------------------------------------
 # Variables: Index
 
@@ -71,7 +70,6 @@ pz-index-filename = './tmp/index.html'
 pz-index-options =
   essays: folder-of-files-to-filenames pz-markdown-dir
   pretty: true
-
 
 #----------------------------------------------------------------------
 # Execute

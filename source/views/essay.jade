@@ -1,6 +1,9 @@
-doctype html
-body
-  #content
-    h1.title= meta.title
-    h2= 'Published on ' + meta.date + ' in the category "' + meta.category + '"'
-    .body!= md(mdContent)
+extends layouts/base
+
+block title
+  = meta.title
+
+block container
+  h1.title= meta.title
+  h2= 'Published on ' + meta.date + ' in the category "' + meta.category + '"'
+  .body!= md(mdContent)
