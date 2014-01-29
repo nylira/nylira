@@ -1,8 +1,49 @@
 ---
-title: Drawar Bank Entry
+title: Deprecated
 category: design
-date: 2010-04-22
+date: 2010-04-02
 ---
+
+<ul class="table-of-contents">
+  <li> [Ruby Programming Language](#ruby)
+  <li> [Ruby Programming Language](#ruby)
+  <li> [Ruby Programming Language](#ruby)
+  <li> [Ruby Programming Language](#ruby)
+</ul>
+
+*Due to data loss, the following linked content is no longer available. Apologies!*
+
+* * *
+
+# Redesign: Ruby Programming Language Homepage
+## date: 2010-03-25
+
+I redesigned the Ruby Programming Language homepage. Everything that you see--with the exception of [the logo](http://rubyidentity.org/)--consists of just two text files. Cascading stylesheets have come a long way since 1999. 
+
+My goal for the design was to make a monochromatic & image-less layout look visually striking and pretty. I think I've mostly succeeded.
+
+I have to say that I really love designing with just a text editor. Photoshop is unwieldy, cumbersome and utterly unsuited for most web design work. Sure, it still comes in handy for more illustration-heavy or textured websites. But for the majority of elegant and clean websites, a text editor works better and is magnitudes faster.
+
+<a href="http://v2.nylira.com/p/ruby"><img src="http://v2.nylira.com/tumblr/posts/ruby.jpg"></a>
+
+Browser notes: this design looks best in Safari/Mac or Firefox 3.6+. I seemed to have broken Chrome's rendering engine with the gradient spammage. If you use IE or Opera, <a href="http://v2.nylira.com/portfolio/ruby">here's a picture</a>.
+
+The <a href="http://ruby-lang.org">current ruby-lang.org</a>, for comparison.
+
+* * *
+
+# Redesign: Acorn
+## date: 2010-04-02
+
+Acorn homepage redesign. <a href="http://flyingmeat.com/acorn">Acorn</a> is a Mac image editing program developed by Flying Meat Inc.
+
+<a href="http://v2.nylira.com/p/acorn/"><img src="http://v2.nylira.com/tumblr/posts/acorn.jpg" /></a>
+
+* * *
+
+# Redesign: Drawar Bank
+## date: 2010-04-22
+
 Bank mockup designed for [Drawar's Version2.001](//www.drawar.com/forums/84/version2000--online-banking-statements/).
 
 ##Safari
