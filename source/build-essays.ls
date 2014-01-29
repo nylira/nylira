@@ -54,15 +54,23 @@ fs-write-file = (filename, content) ->
 #----------------------------------------------------------------------
 # Variables
 
-pz-template = './source/views/essay.jade'
+pz-essay-template = './source/views/essay.jade'
 pz-md-dir = './content'
 pz-public-dir = './public/'
 
-md-dir-to-html pz-md-dir, pz-public-dir, pz-template
+md-dir-to-html pz-md-dir, pz-public-dir, pz-essay-template
 
-md-dir-to-links = (md-dir) ->
-  err, files <- fs.readdir md-dir
-  if err => console.log err
-  else console.log map (.split(\.)[0]), files
+#----------------------------------------------------------------------
+# Index
+#
+folder-of-files-to-filenames = (folder-of-files) ->
+  files = fs.readdir-sync folder-of-files
+  filenames = map (.split(\.)[0]), files
 
-md-dir-to-links pz-md-dir
+pz-index-template = './source/views/index.jade'
+pz-index-filename = './public/index.html'
+pz-index-options =
+  essays: folder-of-files-to-filenames pz-md-dir
+  pretty: true
+
+jade-render-file pz-index-template, pz-index-options, pz-index-filename

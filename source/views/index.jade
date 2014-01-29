@@ -1,0 +1,7 @@
+doctype html
+body
+  #content
+    - for essay in essays
+      div.essay
+        a(href='./' + essay + '/')
+          .title= essay
