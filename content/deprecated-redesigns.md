@@ -1,4 +1,3 @@
-
 ---
 title: Redesigns
 category: design
@@ -11,12 +10,9 @@ date: 2010-04-02
   <li> [Redesign: Drawar Bank ](#drawar) </li>
 </ul>
 
-*Due to accidental data loss, most of the following linked designs are no longer available. Apologies for the inconvenience!*
+Due to accidental data loss, most of the following linked designs are no longer available. Apologies for the inconvenience!
 
-* * *
-
-<h1 id="ruby">Redesign: Ruby Programming Language Homepage</h1>
-## date: 2010-03-25
+<h2 id="ruby">Redesign: Ruby Programming Language (website)</h2>
 
 I redesigned the Ruby Programming Language homepage. Everything that you see--with the exception of [the logo](http://rubyidentity.org/)--consists of just two text files. Cascading stylesheets have come a long way since 1999. 
 
@@ -30,35 +26,32 @@ Browser notes: this design looks best in Safari/Mac or Firefox 3.6+. I seemed to
 
 The <a href="http://ruby-lang.org">current ruby-lang.org</a>, for comparison.
 
-* * *
+*Redesign: Ruby Programming Language (website) was originally published: 2010-03-25*
 
-<h1 id="acorn">Redesign: Acorn</h1>
-## date: 2010-04-02
+<h2 id="acorn">Redesign: Acorn</h2>
+*Originally published: 2010-04-02
 
 Acorn homepage redesign. <a href="http://flyingmeat.com/acorn">Acorn</a> is a Mac image editing program developed by Flying Meat Inc.
 
 <a href="http://v2.nylira.com/p/acorn/"><img src="http://v2.nylira.com/tumblr/posts/acorn.jpg" /></a>
 
-* * *
-
-<h1 id="drawar-bank">Redesign: Drawar Bank</h1>
-## date: 2010-04-22
+<h2 id="drawar-bank">Redesign: Drawar Bank</h2>
 
 Bank mockup designed for [Drawar's Version2.001](//www.drawar.com/forums/84/version2000--online-banking-statements/).
 
-##Safari
+### Safari
 
 Unfortunately, the design only completely works in Safari. Such is life when developing on the bleeding edge.
 
 <a href="//v2.nylira.com/tumblr/posts/bank-safari-big.jpg"><img src="//v2.nylira.com/tumblr/posts/bank-safari.jpg" alt="Drawar Bank rendered by Safari 4/Win" title="Drawar Bank rendered by Safari 4/Win"></a>
 
-##Firefox
+### Firefox
 
 Firefox 3.6+ gets most of the design correct. but has issues displaying the SVG graph and leaves unsightly white margins between actions. Webkit's gradient engine (which powers Safari and Chrome) considers borders part of the "background area" when it renders gradients. Firefox's Gecko engine does not. The discrepancy is quite frustrating when you try to use RGBA/HSLA borders.
 
 <a href="//v2.nylira.com/tumblr/posts/bank-firefox-big.jpg"><img src="//v2.nylira.com/tumblr/posts/bank-firefox.jpg" alt="Drawar Bank rendered by Firefox 3.6/Win" title="Drawar Bank rendered by Firefox 3.6/Win"></a>
 
-##Chrome
+### Chrome
 
 Chrome has issues rendering all the CSS3 gradients. There's also noticeable color banding in Chrome's gradients, a flaw you don't see with Safari or Firefox. On the upside, Chrome's V8 Javascript engine blows every other browser out of the water when it comes to transitions.
 
@@ -66,7 +59,7 @@ Chrome has issues rendering all the CSS3 gradients. There's also noticeable colo
 
 View the <a href="//v2.nylira.com/p/bank">bank mockup</a> live.
 
-##Sass
+### Sass
 
 I used this as an opportunity to learn more about [Sass](//sass-lang.com/). Sass is a powerful abstraction layer for CSS. It supports variables, mixins, simple arithmetic, and basic looping functions. Writing Sass is essentially writing CSS without brackets or semicolons.
 
@@ -98,9 +91,10 @@ How is this possible? Most of Sass's power comes from mixins.
 
 It certainly saves a lot of tedious and repetitive typing. This is only the tip of the iceberg, too. Take a look at my default [mixins.sass](//v2.nylira.com/p/bank/css/sass/_mixins.sass) file for more examples.
 
-##A minor gripe
+### A minor gripe
 
 The only issue I have with Sass is that its compiling speed isn't as fast as I would like. I'm used to saving my CSS file and then reloading my browser to instantly see my changes. With Sass playing middleman, it can take another second before the changes are reflected in the browser.
 
 If this has piqued your interest, check out the [official Sass website](http://sass-lang.com/) for more information. 
 
+*Originally published: 2010-04-22*
