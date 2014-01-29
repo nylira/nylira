@@ -1,9 +1,16 @@
 extends layouts/base
 
 block title
+
   = meta.title
 
 block container
-  h1.title!= typogr.typogrify(meta.title)
-  p.meta= 'Published on ' + meta.date + ' in the category "' + meta.category + '"'
-  .body!= content
+
+  .header
+    h1.title!= typogr.typogrify(meta.title)
+
+  .body
+    != content
+
+  .footer
+    p.meta= 'Published on ' + meta.date + ' in the category "' + meta.category + '"'
