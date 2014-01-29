@@ -1,5 +1,5 @@
 ---
-title: Redesigns
+title: Lost Designs
 category: design
 date: 2010-04-02
 ---
