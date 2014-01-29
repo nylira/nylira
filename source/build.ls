@@ -56,16 +56,15 @@ fs-write-file = (filename, content) ->
   #else console.log "#filename was saved."
 
 #----------------------------------------------------------------------
-# Render: Essays
+# Variables: Essays
 
 pz-essay-template = './source/views/essay.jade'
 pz-markdown-dir = './content'
 pz-output-dir = './tmp/'
 
-markdown-directory-to-html(pz-markdown-dir, pz-output-dir, pz-essay-template)
 
 #----------------------------------------------------------------------
-# Render: Index
+# Variables: Index
 
 pz-index-template = './source/views/index.jade'
 pz-index-filename = './tmp/index.html'
@@ -73,4 +72,10 @@ pz-index-options =
   essays: folder-of-files-to-filenames pz-markdown-dir
   pretty: true
 
+
+#----------------------------------------------------------------------
+# Execute
+
+mkdirp pz-output-dir
 render-file(pz-index-template, pz-index-options, pz-index-filename)
+markdown-directory-to-html(pz-markdown-dir, pz-output-dir, pz-essay-template)
