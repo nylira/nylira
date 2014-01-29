@@ -4,7 +4,6 @@ block title
   Nylira
 
 block container
-  - for essay in essays
-    div.essay
-      a(href='./' + essay + '/')
-        .title= essay
+  ul.link-list
+    - for essay in essays
+      li: a(href='./' + essay + '/')= essay
