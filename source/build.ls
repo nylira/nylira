@@ -9,19 +9,23 @@ fs = require \graceful-fs
 #----------------------------------------------------------------------
 # Functions
 
+folder-of-files-to-filenames = (folder-of-files) ->
+  files = fs.readdir-sync folder-of-files
+  filenames = map (.split(\.)[0]), files
+
 # turn a markdown.md file into ./public/markdown.html
-html-file = (public-dir, md-file) ->
+html-file = (output-dir, md-file) ->
   dir = md-file.split(\.)[0]
-  pwd = path.join public-dir, dir
+  pwd = path.join output-dir, dir
   mkdirp pwd
   path.join pwd, \index.html
 
 # Turn a directory of markdown files into HTML
-md-dir-to-html = (md-dir, public-dir, template) ->
+markdown-directory-to-html = (md-dir, output-dir, template) ->
   err, files <- fs.readdir md-dir
   if err => console.log err
   else map (
-    (it) -> md-to-jade md-dir, template, it, html-file(public-dir, it)
+    (it) -> md-to-jade md-dir, template, it, html-file(output-dir, it)
   ), files
 
 md-to-jade = (md-dir, template, md-file, filename) ->
@@ -37,10 +41,10 @@ jade-options = (template, md-stream, filename) ->
     md: marked,
     md-content: md-stream.split(\---)[2]
     pretty: true
-  jade-render-file template, options, filename
+  render-file template, options, filename
 
 # Renders the Jade template and Markdown mixture.
-jade-render-file = (template, options, filename) ->
+render-file = (template, options, filename) ->
   err, rendered-html <- jade.render-file template, options
   if err => console.error err
   else fs-write-file filename, rendered-html
@@ -52,25 +56,21 @@ fs-write-file = (filename, content) ->
   #else console.log "#filename was saved."
 
 #----------------------------------------------------------------------
-# Variables
+# Render: Essays
 
 pz-essay-template = './source/views/essay.jade'
-pz-md-dir = './content'
-pz-public-dir = './public/'
+pz-markdown-dir = './content'
+pz-output-dir = './tmp/'
 
-md-dir-to-html pz-md-dir, pz-public-dir, pz-essay-template
+markdown-directory-to-html(pz-markdown-dir, pz-output-dir, pz-essay-template)
 
 #----------------------------------------------------------------------
-# Index
-#
-folder-of-files-to-filenames = (folder-of-files) ->
-  files = fs.readdir-sync folder-of-files
-  filenames = map (.split(\.)[0]), files
+# Render: Index
 
 pz-index-template = './source/views/index.jade'
-pz-index-filename = './public/index.html'
+pz-index-filename = './tmp/index.html'
 pz-index-options =
-  essays: folder-of-files-to-filenames pz-md-dir
+  essays: folder-of-files-to-filenames pz-markdown-dir
   pretty: true
 
-jade-render-file pz-index-template, pz-index-options, pz-index-filename
+render-file(pz-index-template, pz-index-options, pz-index-filename)

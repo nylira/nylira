@@ -1,9 +1,8 @@
 LIVESCRIPT_BIN = ./node_modules/.bin/lsc
 
-build-essays:
-	$(LIVESCRIPT_BIN) ./source/build-essays.ls
+build:
+	$(LIVESCRIPT_BIN) ./source/build.ls
+	rm -rf ./public
+	mv ./tmp ./public
 
-build-index:
-	$(LIVESCRIPT_BIN) ./source/build-index.ls
-
-all: build-essays build-index
+all: build
