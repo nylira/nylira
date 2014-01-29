@@ -10,34 +10,48 @@
       font bold 6em/1 sans
       ls -4px
 
+  .body
+    p:first-of-type
+      f 1.5em/1.5 serif
+      bb 1px solid #ddd
+      mb 1.5em
+      pb 1.5em
 
-  ul.table-of-contents
-    fl()
-    w 240px
-    p 1em
-    b 1px solid #ddd
-    m 0 1em 1em 0
+    p, ul, ol
+      m 0 0 1em
 
-  hr 
-    d block
-    clearfix()
-    mb 4em
+    h2
+      font bold 1.5em/1.5 sans
+      mb 1em
+      mt 2em
 
-  p, ul, ol
-    m 0 0 1em
+    ul.table-of-contents
+      fl()
+      w 240px
+      p 1em
+      b 1px solid #ddd
+      m 0 1em 1em 0
 
-  p.meta
-    font italic 16px/1.5 Georgia
-    color #666
+    hr 
+      d block
+      clearfix()
+      mb 4em
 
 
-  h2
-    font 1.5em/1.5 Times New Roman, Times, serif
-    mb 1em
 
-  pre
-    border 1px solid #ddd
-    padding 1em
 
-  code
-    font 1em/1.25 Consolas, Menlo, monospace
+    pre
+      border 1px solid #ddd
+      padding 1em
+
+    code
+      font 1em/1.25 Consolas, Menlo, monospace
+
+  .footer
+    p.meta
+      font italic 16px/1.5 Georgia
+      color #666
+
+
+
+
