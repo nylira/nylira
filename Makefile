@@ -1,3 +1,5 @@
+default: reset-dirs build-css build-html
+
 LIVESCRIPT_BIN = ./node_modules/.bin/lsc
 STYLUS_BIN = ./node_modules/.bin/stylus
 STYLUS_PARAMS = -c -u ./node_modules/nib/
@@ -18,5 +20,3 @@ build-html:
 
 watch-css:
 	$(STYLUS_BIN) $(STYLUS_WATCH_PARAMS)
-
-all: reset-dirs build-css build-html
