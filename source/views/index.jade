@@ -7,5 +7,5 @@ block container
   ul.link-list
     - for essay in essays
       li: a(href='./' + essay.slug + '/')
-        .title= essay.meta.title
+        .title!= essay.meta.title
         .date= essay.meta.date
