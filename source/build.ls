@@ -27,17 +27,20 @@ markdown-to-object = (md-dir, template, md-file, filename) ->
   md-stream = fs.read-file-sync markdown-path, \utf8
   essay-meta = js-yaml.load md-stream.split(\---)[1]
   essay-content = typogr.typogrify marked md-stream.split(\---)[2]
+
   essay-objects.push meta: essay-meta, content: essay-content, slug: slug
   essay-objects := sort-by (.meta.date), essay-objects |> reverse
+
   essay-categories := map (.meta.category), essay-objects |> unique
   essay-categories := map ((it) -> name: it, essays: in-this-category it, essay-objects), essay-categories
+  essay-categories := sort-by (.name), essay-categories
 
 in-this-category = (category-name, db) ->
   list = []
   for essay in db
       if essay.meta.category == category-name
         list.push essay
-  list
+  sort-by (.meta.date), list
 
 #----------------------------------------------------------------------
 # Essay Functions

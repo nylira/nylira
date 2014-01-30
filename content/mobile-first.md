@@ -1,5 +1,5 @@
 ---
-title: Mobile First
+title: Why Design Mobile First?
 category: Interaction Design
 date: 2012-04-03
 ---

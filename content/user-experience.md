@@ -1,5 +1,5 @@
 ---
-title: User Experience
+title: Common User Experience Problems
 category: Interaction Design
 date: 2011-06-20
 ---
