@@ -6,10 +6,9 @@ require! \path
 require! \js-yaml
 require! \typogr
 fs = require \graceful-fs
-{map, reverse, sort-by, unique} = require \prelude-ls
+{filter, map, reverse, sort-by, unique} = require \prelude-ls
 
-essay-categories = []
-essay-objects = []
+pz-essays = []
 
 #----------------------------------------------------------------------
 # Index Functions
@@ -17,30 +16,26 @@ essay-objects = []
 # Turn a directory of markdown files into HTML
 markdown-directory-to-array = (md-dir) ->
   files = fs.readdir-sync md-dir
-  map ((it) -> markdown-objectify md-dir, it), files
+  map ((it) -> markdown-split md-dir, it), files
+  categorize pz-essays
 
-markdown-objectify = (md-dir, markdown-file) ->
-  slug = markdown-file.split(\.)[0]
-
+markdown-split = (md-dir, markdown-file) ->
   file = path.join md-dir, markdown-file
   data = fs.read-file-sync file, \utf8
 
-  essay-meta = js-yaml.load data.split(\---)[1]
-  essay-content = typogr.typogrify marked data.split(\---)[2]
+  meta = js-yaml.load data.split(\---)[1]
+  content = typogr.typogrify marked data.split(\---)[2]
+  slug = markdown-file.split(\.)[0]
 
-  essay-objects.push meta: essay-meta, content: essay-content, slug: slug
+  pz-essays.push meta: meta, content: content, slug: slug
 
 categorize = (essays) ->
   map (.meta.category), essays |> unique
-  |> map ((it) -> name: it, essays: in-this-category it, essay-objects)
+  |> map ((it) -> name: it, essays: of-category it, essays)
   |> sort-by (.name)
 
-in-this-category = (category-name, db) ->
-  list = []
-  for essay in db
-      if essay.meta.category == category-name
-        list.push essay
-  list = sort-by (.meta.date), list
+of-category = (category, db) ->
+  filter ((it) -> it.meta.category == category), db
 
 #----------------------------------------------------------------------
 # Essay Functions
@@ -96,13 +91,11 @@ pz-essay-template = './source/views/essay.jade'
 pz-markdown-dir = './content'
 pz-output-dir = './tmp/'
 
-markdown-directory-to-array(pz-markdown-dir, pz-output-dir, pz-essay-template)
-
 pz-index-template = './source/views/index.jade'
 pz-index-filename = './tmp/index.html'
 pz-index-options =
   depth: './'
-  categories: categorize(essay-objects)
+  categories: markdown-directory-to-array(pz-markdown-dir)
   pretty: true
   moment: moment
 
