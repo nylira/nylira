@@ -1,8 +1,12 @@
 ---
-title: Effectiveness
+title: Collaboration
 category: design
 date: 2012-09-05
 ---
+
+Notes on improving communication and collaboration.
+
+## Succintness vs Explicitness
 
 As powerful as [Stylus](http://learnboost.github.com/stylus/) is, it's easy to go overboard with mixins.
 
