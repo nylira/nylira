@@ -19,3 +19,7 @@ Why is soft delete better than modal confirmation windows? For one, this method 
 ## 3. For power users, allow operating on multiple files
 
 Native file managers allow clicking and dragging to lasso multiple documents. We've used this simple operation on our desktop for years, but it has yet to show up online. Select-lassos could work very well for photo-oriented apps.
+
+## 4. Lightboxes break the usability of the web
+
+Lightboxes break the UI conventions of the user's operating systems. The non-standard chrome tends to difficult to close and impossible to move. Solution: `<a href=image.jpg>` with a magnify icon. Let users decide if they want to open the image in a new window or not.
