@@ -8,44 +8,42 @@ require! \typogr
 fs = require \graceful-fs
 {filter, map, reverse, sort-by, unique} = require \prelude-ls
 
-pz-essays = []
-
 #----------------------------------------------------------------------
 # Index Functions
 
-# Turn a directory of markdown files into HTML
-markdown-directory-to-array = (md-dir) ->
-  fs.readdir-sync md-dir
-  |> map ((it) -> split-file md-dir, it)
-  |> categorize
-
-split-file = (md-dir, markdown-file) ->
-  file = path.join md-dir, markdown-file
+split-markdown-file = (markdown-directory, markdown-file) ->
+  file = path.join markdown-directory, markdown-file
   data = fs.read-file-sync file, \utf8
 
   meta = js-yaml.load data.split(\---)[1]
   content = typogr.typogrify marked data.split(\---)[2]
   slug = markdown-file.split(\.)[0]
 
-  result = meta: meta, content: content, slug: slug
+  meta: meta, content: content, slug: slug
+
+of-category = (category, db) ->
+  filter (.meta.category == category), db
+  |> sort-by (.meta.date)
 
 categorize = (essays) ->
   map (.meta.category), essays |> unique
   |> map ((it) -> name: it, essays: of-category it, essays)
   |> sort-by (.name)
 
-of-category = (category, db) ->
-  filter (.meta.category == category), db
+markdown-directory-to-categorized-data = (markdown-directory) ->
+  fs.readdir-sync markdown-directory
+  |> map ((it) -> split-markdown-file markdown-directory, it)
+  |> categorize
 
 #----------------------------------------------------------------------
 # Essay Functions
 
 # Turn a directory of markdown files into HTML
-markdown-directory-to-html = (md-dir, output-dir, template) ->
-  err, files <- fs.readdir md-dir
+markdown-directory-to-html = (markdown-directory, output-dir, template) ->
+  err, files <- fs.readdir markdown-directory
   if err => console.log err
   else map (
-    (it) -> markdown-to-jade md-dir, template, it, html-file(output-dir, it)
+    (it) -> markdown-to-jade markdown-directory, template, it, html-file(output-dir, it)
   ), files
 
 # turn a markdown.md file into ./public/markdown.html
@@ -55,8 +53,8 @@ html-file = (output-dir, md-file) ->
   mkdirp pwd
   path.join pwd, \index.html
 
-markdown-to-jade = (md-dir, template, md-file, filename) ->
-  markdown-path = path.join md-dir, md-file
+markdown-to-jade = (markdown-directory, template, md-file, filename) ->
+  markdown-path = path.join markdown-directory, md-file
   err, md-stream <- fs.read-file markdown-path, \utf8
   if err => console.error err
   else jade-options template, md-stream, filename
@@ -95,7 +93,7 @@ pz-index-template = './source/views/index.jade'
 pz-index-filename = './tmp/index.html'
 pz-index-options =
   depth: './'
-  categories: markdown-directory-to-array(pz-markdown-dir)
+  categories: markdown-directory-to-categorized-data(pz-markdown-dir)
   pretty: true
   moment: moment
 
