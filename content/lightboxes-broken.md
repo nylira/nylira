@@ -1,5 +1,5 @@
 ---
-title: Lightboxes fundamentally broken
+title: Lightboxes break the web
 category: design
 date: 2011-03-04
 ---
