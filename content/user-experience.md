@@ -1,6 +1,6 @@
 ---
 title: User Experience
-category: design
+category: Interaction Design
 date: 2011-06-20
 ---
 

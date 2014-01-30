@@ -1,6 +1,6 @@
 ---
 title: Responsive Design & Fluid Grids
-category: design
+category: Interaction Design
 date: 2011-04-05
 ---
 

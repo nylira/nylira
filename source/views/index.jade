@@ -4,8 +4,11 @@ block title
   Nylira
 
 block container
-  ul.link-list
-    - for essay in essays
-      li: a(href='./' + essay.slug + '/')
-        .title!= essay.meta.title
-        .date= essay.meta.date
+  - for category in categories
+    .category
+      .category-name= category.name
+      ul.link-list
+        - for essay in category.essays
+          li: a(href='./' + essay.slug + '/')
+            .title!= essay.meta.title
+            .date= moment(essay.meta.date).format("YYYY-DD-MM")

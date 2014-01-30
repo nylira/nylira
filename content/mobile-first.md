@@ -1,6 +1,6 @@
 ---
 title: Mobile First
-category: design
+category: Interaction Design
 date: 2012-04-03
 ---
 

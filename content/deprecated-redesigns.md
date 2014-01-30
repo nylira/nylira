@@ -1,6 +1,6 @@
 ---
 title: Lost Designs
-category: design
+category: Interaction Design
 date: 2010-04-02
 ---
 

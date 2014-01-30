@@ -1,6 +1,6 @@
 ---
 title: Collaboration
-category: design
+category: Development
 date: 2012-09-05
 ---
 

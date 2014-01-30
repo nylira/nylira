@@ -1,7 +1,7 @@
 ---
-title: UNIX Cheat Sheet 1
-category: unix
-date: 2010-07-05
+title: UNIX Cheat Sheet
+category: Development
+date: 2014-01-30 14:12
 ---
 
 Useful terminal snippets I've collected over the years.

@@ -1,6 +1,6 @@
 ---
 title: Stylus, the Revolutionary Successor to CSS
-category: design
+category: Interaction Design
 date: 2011-03-05
 ---
 

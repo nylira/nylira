@@ -1,27 +1,18 @@
 require! \jade
 require! \marked
 require! \mkdirp
+require! \moment
 require! \path
 require! \js-yaml
 require! \typogr
 fs = require \graceful-fs
-{map} = require \prelude-ls
+{map, reverse, sort-by, unique} = require \prelude-ls
 
+essay-categories = []
 essay-objects = []
 
 #----------------------------------------------------------------------
 # Index Functions
-
-folder-of-files-to-filenames = (folder-of-files) ->
-  files = fs.readdir-sync folder-of-files
-  filenames = map (.split(\.)[0]), files
-
-# turn a markdown.md file into ./public/markdown.html
-html-file = (output-dir, md-file) ->
-  dir = md-file.split(\.)[0]
-  pwd = path.join output-dir, dir
-  mkdirp pwd
-  path.join pwd, \index.html
 
 # Turn a directory of markdown files into HTML
 markdown-directory-to-array = (md-dir, output-dir, template) ->
@@ -37,6 +28,16 @@ markdown-to-object = (md-dir, template, md-file, filename) ->
   essay-meta = js-yaml.load md-stream.split(\---)[1]
   essay-content = typogr.typogrify marked md-stream.split(\---)[2]
   essay-objects.push meta: essay-meta, content: essay-content, slug: slug
+  essay-objects := sort-by (.meta.date), essay-objects |> reverse
+  essay-categories := map (.meta.category), essay-objects |> unique
+  essay-categories := map ((it) -> name: it, essays: in-this-category it, essay-objects), essay-categories
+
+in-this-category = (category-name, db) ->
+  list = []
+  for essay in db
+      if essay.meta.category == category-name
+        list.push essay
+  list
 
 #----------------------------------------------------------------------
 # Essay Functions
@@ -48,6 +49,13 @@ markdown-directory-to-html = (md-dir, output-dir, template) ->
   else map (
     (it) -> markdown-to-jade md-dir, template, it, html-file(output-dir, it)
   ), files
+
+# turn a markdown.md file into ./public/markdown.html
+html-file = (output-dir, md-file) ->
+  dir = md-file.split(\.)[0]
+  pwd = path.join output-dir, dir
+  mkdirp pwd
+  path.join pwd, \index.html
 
 markdown-to-jade = (md-dir, template, md-file, filename) ->
   markdown-path = path.join md-dir, md-file
@@ -95,13 +103,15 @@ pz-index-filename = './tmp/index.html'
 pz-index-options =
   depth: './'
   essays: essay-objects
+  categories: essay-categories
   pretty: true
+  moment: moment
 
 #----------------------------------------------------------------------
 # Execute
 
-mkdirp pz-output-dir
-
+# render index
 render-file pz-index-template, pz-index-options, pz-index-filename
 
+# render essays
 markdown-directory-to-html(pz-markdown-dir, pz-output-dir, pz-essay-template)
