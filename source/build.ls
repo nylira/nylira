@@ -15,23 +15,22 @@ essay-objects = []
 # Index Functions
 
 # Turn a directory of markdown files into HTML
-markdown-directory-to-array = (md-dir, output-dir, template) ->
+markdown-directory-to-array = (md-dir) ->
   files = fs.readdir-sync md-dir
-  map (
-    (it) -> markdown-to-object md-dir, template, it, html-file(output-dir, it)
-  ), files
+  map ((it) -> markdown-objectify md-dir, it), files
 
-markdown-to-object = (md-dir, template, md-file, filename) ->
-  slug = md-file.split(\.)[0]
-  markdown-path = path.join md-dir, md-file
-  markdown-read = fs.read-file-sync markdown-path, \utf8
+markdown-objectify = (md-dir, markdown-file) ->
+  slug = markdown-file.split(\.)[0]
 
-  essay-meta = js-yaml.load markdown-read.split(\---)[1]
-  essay-content = typogr.typogrify marked markdown-read.split(\---)[2]
+  file = path.join md-dir, markdown-file
+  data = fs.read-file-sync file, \utf8
+
+  essay-meta = js-yaml.load data.split(\---)[1]
+  essay-content = typogr.typogrify marked data.split(\---)[2]
 
   essay-objects.push meta: essay-meta, content: essay-content, slug: slug
 
-categorized = (essays) ->
+categorize = (essays) ->
   map (.meta.category), essays |> unique
   |> map ((it) -> name: it, essays: in-this-category it, essay-objects)
   |> sort-by (.name)
@@ -74,6 +73,7 @@ jade-options = (template, md-stream, filename) ->
     meta: js-yaml.load md-stream.split(\---)[1]
     md: marked,
     content: typogr.typogrify marked md-stream.split(\---)[2]
+    moment: moment
     pretty: true
     typogr: typogr
   render-file template, options, filename
@@ -88,17 +88,13 @@ render-file = (template, options, filename) ->
 fs-write-file = (filename, content) ->
   err <- fs.write-file filename, content
   if err => console.error err
-  #else console.log "#filename was saved."
 
 #----------------------------------------------------------------------
-# Variables: Essays
+# Variables
 
 pz-essay-template = './source/views/essay.jade'
 pz-markdown-dir = './content'
 pz-output-dir = './tmp/'
-
-#----------------------------------------------------------------------
-# Variables: Index
 
 markdown-directory-to-array(pz-markdown-dir, pz-output-dir, pz-essay-template)
 
@@ -106,7 +102,7 @@ pz-index-template = './source/views/index.jade'
 pz-index-filename = './tmp/index.html'
 pz-index-options =
   depth: './'
-  categories: categorized(essay-objects)
+  categories: categorize(essay-objects)
   pretty: true
   moment: moment
 

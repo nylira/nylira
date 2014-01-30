@@ -13,4 +13,4 @@ block container
     != content
 
   .footer
-    p.meta= 'Published on ' + meta.date + ' in the category "' + meta.category + '"'
+    p.meta= 'Last edited on ' + moment(meta.date).format("YYYY-DD-MM") + '.'
