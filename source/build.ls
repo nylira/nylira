@@ -24,23 +24,24 @@ markdown-directory-to-array = (md-dir, output-dir, template) ->
 markdown-to-object = (md-dir, template, md-file, filename) ->
   slug = md-file.split(\.)[0]
   markdown-path = path.join md-dir, md-file
-  md-stream = fs.read-file-sync markdown-path, \utf8
-  essay-meta = js-yaml.load md-stream.split(\---)[1]
-  essay-content = typogr.typogrify marked md-stream.split(\---)[2]
+  markdown-read = fs.read-file-sync markdown-path, \utf8
+
+  essay-meta = js-yaml.load markdown-read.split(\---)[1]
+  essay-content = typogr.typogrify marked markdown-read.split(\---)[2]
 
   essay-objects.push meta: essay-meta, content: essay-content, slug: slug
-  essay-objects := sort-by (.meta.date), essay-objects |> reverse
 
-  essay-categories := map (.meta.category), essay-objects |> unique
-  essay-categories := map ((it) -> name: it, essays: in-this-category it, essay-objects), essay-categories
-  essay-categories := sort-by (.name), essay-categories
+categorized = (essays) ->
+  map (.meta.category), essays |> unique
+  |> map ((it) -> name: it, essays: in-this-category it, essay-objects)
+  |> sort-by (.name)
 
 in-this-category = (category-name, db) ->
   list = []
   for essay in db
       if essay.meta.category == category-name
         list.push essay
-  sort-by (.meta.date), list
+  list = sort-by (.meta.date), list
 
 #----------------------------------------------------------------------
 # Essay Functions
@@ -105,8 +106,7 @@ pz-index-template = './source/views/index.jade'
 pz-index-filename = './tmp/index.html'
 pz-index-options =
   depth: './'
-  essays: essay-objects
-  categories: essay-categories
+  categories: categorized(essay-objects)
   pretty: true
   moment: moment
 

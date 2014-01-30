@@ -1,5 +1,5 @@
 ---
-title: Collaboration
+title: Notes on Collaboration
 category: Development
 date: 2012-09-05
 ---

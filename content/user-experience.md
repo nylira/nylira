@@ -1,7 +1,7 @@
 ---
-title: Common User Experience Problems
+title: Common UX Problems
 category: Interaction Design
-date: 2011-06-20
+date: 2014-01-30 14:20
 ---
 
 UX problems and possible solutions.

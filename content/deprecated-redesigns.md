@@ -1,7 +1,8 @@
 ---
-title: Lost Designs
+title: Data Loss
 category: Interaction Design
 date: 2010-04-02
+status: closed
 ---
 
 <ul class="table-of-contents">
@@ -11,7 +12,7 @@ date: 2010-04-02
   <li> [Redesign: Nylira (Jekyll)](#nylira) </li>
 </ul>
 
-Due to data loss (accidental or otherwise), most of the following linked designs are no longer available. Apologies for the inconvenience!
+Due to data loss (accidental or otherwise), most of the following linked designs are no longer available. This is a reminder for myself that I should be more vigilant about backups.
 
 <h2 id="ruby">Redesign: Ruby Programming Language (website)</h2>
 

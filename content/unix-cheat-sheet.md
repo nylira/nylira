@@ -1,5 +1,5 @@
 ---
-title: UNIX Cheat Sheet
+title: Useful Unix Commands
 category: Development
 date: 2014-01-30 14:12
 ---
