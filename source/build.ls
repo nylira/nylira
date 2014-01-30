@@ -1,10 +1,4 @@
-require! \jade
-require! \marked
-require! \mkdirp
-require! \moment
-require! \path
-require! \js-yaml
-require! \typogr
+require! {\jade \marked \mkdirp \moment \path \js-yaml \typogr}
 fs = require \graceful-fs
 {filter, map, reverse, sort-by, unique} = require \prelude-ls
 
@@ -38,8 +32,7 @@ markdown-directory-to-categorized-data = (markdown-directory) ->
 #----------------------------------------------------------------------
 # Essay Functions
 
-# turn a markdown.md file into ./public/markdown.html
-html-file = (output-dir, md-file) ->
+file-to-html-directory = (output-dir, md-file) ->
   dir = md-file.split(\.)[0]
   pwd = path.join output-dir, dir
   mkdirp pwd
@@ -66,33 +59,28 @@ markdown-to-jade = (markdown-directory, template, md-file, filename) ->
 
   render-file template, options, filename
 
-markdown-directory-to-html = (markdown-directory, output-dir, template) ->
-  files = fs.readdir-sync markdown-directory
-  map (
-    (it) -> markdown-to-jade markdown-directory, template, it, html-file(output-dir, it)
-  ), files
-
+render-files = (template, input, output) ->
+  files = fs.readdir-sync input
+  map ((it) -> markdown-to-jade input, template, it, file-to-html-directory(output, it)), files
 
 #----------------------------------------------------------------------
 # Variables
 
+pz-essay-input = './content/'
+pz-essay-output = './tmp/'
+
 pz-essay-template = './source/views/essay.jade'
-pz-markdown-dir = './content'
-pz-output-dir = './tmp/'
 
 pz-index-template = './source/views/index.jade'
 pz-index-filename = './tmp/index.html'
 pz-index-options =
+  categories: markdown-directory-to-categorized-data(pz-essay-input)
   depth: './'
-  categories: markdown-directory-to-categorized-data(pz-markdown-dir)
-  pretty: true
   moment: moment
+  pretty: true
 
 #----------------------------------------------------------------------
 # Execute
 
-# render index
 render-file pz-index-template, pz-index-options, pz-index-filename
-
-# render essays
-markdown-directory-to-html(pz-markdown-dir, pz-output-dir, pz-essay-template)
+render-files pz-essay-template, pz-essay-input, pz-essay-output
