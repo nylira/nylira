@@ -38,14 +38,6 @@ markdown-directory-to-categorized-data = (markdown-directory) ->
 #----------------------------------------------------------------------
 # Essay Functions
 
-# Turn a directory of markdown files into HTML
-markdown-directory-to-html = (markdown-directory, output-dir, template) ->
-  err, files <- fs.readdir markdown-directory
-  if err => console.log err
-  else map (
-    (it) -> markdown-to-jade markdown-directory, template, it, html-file(output-dir, it)
-  ), files
-
 # turn a markdown.md file into ./public/markdown.html
 html-file = (output-dir, md-file) ->
   dir = md-file.split(\.)[0]
@@ -53,34 +45,33 @@ html-file = (output-dir, md-file) ->
   mkdirp pwd
   path.join pwd, \index.html
 
-markdown-to-jade = (markdown-directory, template, md-file, filename) ->
-  markdown-path = path.join markdown-directory, md-file
-  err, md-stream <- fs.read-file markdown-path, \utf8
-  if err => console.error err
-  else jade-options template, md-stream, filename
-
-# Takes the Markdown file and puts it into a Jade local variable.
-jade-options = (template, md-stream, filename) ->
-  options = 
-    depth: '../'
-    meta: js-yaml.load md-stream.split(\---)[1]
-    md: marked,
-    content: typogr.typogrify marked md-stream.split(\---)[2]
-    moment: moment
-    pretty: true
-    typogr: typogr
-  render-file template, options, filename
-
 # Renders the Jade template and Markdown mixture.
 render-file = (template, options, filename) ->
   err, rendered-html <- jade.render-file template, options
   if err => console.error err
-  else fs-write-file filename, rendered-html
+  else fs.write-file-sync filename, rendered-html
 
-# Writes the file to filename.
-fs-write-file = (filename, content) ->
-  err <- fs.write-file filename, content
-  if err => console.error err
+markdown-to-jade = (markdown-directory, template, md-file, filename) ->
+  markdown-path = path.join markdown-directory, md-file
+  data = fs.read-file-sync markdown-path, \utf8
+
+  options = 
+    depth: '../'
+    meta: js-yaml.load data.split(\---)[1]
+    md: marked,
+    content: typogr.typogrify marked data.split(\---)[2]
+    moment: moment
+    pretty: true
+    typogr: typogr
+
+  render-file template, options, filename
+
+markdown-directory-to-html = (markdown-directory, output-dir, template) ->
+  files = fs.readdir-sync markdown-directory
+  map (
+    (it) -> markdown-to-jade markdown-directory, template, it, html-file(output-dir, it)
+  ), files
+
 
 #----------------------------------------------------------------------
 # Variables
