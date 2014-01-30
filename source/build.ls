@@ -15,11 +15,11 @@ pz-essays = []
 
 # Turn a directory of markdown files into HTML
 markdown-directory-to-array = (md-dir) ->
-  files = fs.readdir-sync md-dir
-  map ((it) -> markdown-split md-dir, it), files
-  categorize pz-essays
+  fs.readdir-sync md-dir
+  |> map ((it) -> split-file md-dir, it)
+  |> categorize
 
-markdown-split = (md-dir, markdown-file) ->
+split-file = (md-dir, markdown-file) ->
   file = path.join md-dir, markdown-file
   data = fs.read-file-sync file, \utf8
 
@@ -27,7 +27,7 @@ markdown-split = (md-dir, markdown-file) ->
   content = typogr.typogrify marked data.split(\---)[2]
   slug = markdown-file.split(\.)[0]
 
-  pz-essays.push meta: meta, content: content, slug: slug
+  result = meta: meta, content: content, slug: slug
 
 categorize = (essays) ->
   map (.meta.category), essays |> unique
@@ -35,7 +35,7 @@ categorize = (essays) ->
   |> sort-by (.name)
 
 of-category = (category, db) ->
-  filter ((it) -> it.meta.category == category), db
+  filter (.meta.category == category), db
 
 #----------------------------------------------------------------------
 # Essay Functions
