@@ -15,6 +15,7 @@ split-markdown-file = (input-directory, markdown-file) ->
 
 of-category = (category, db) ->
   filter (.meta.category == category), db
+  |> filter (.meta.status != \closed)
   |> sort-by (.meta.date)
 
 categorize = (essays) ->
