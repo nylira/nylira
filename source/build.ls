@@ -35,11 +35,10 @@ htmlize = (output-dir, markdown-file) ->
   mkdirp directory
   path.join directory, \index.html
 
-# Renders the Jade template and Markdown mixture.
 render-file = (template, options, filename) ->
-  err, data <- jade.render-file template, options
+  err, html <- jade.render-file template, options
   if err => console.error err
-  else fs.write-file-sync filename, data
+  else fs.write-file-sync filename, html
 
 markdown-to-jade = (input-directory, template, markdown-file, filename) ->
   file = path.join input-directory, markdown-file
