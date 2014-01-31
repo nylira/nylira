@@ -4,9 +4,9 @@ category: Development
 date: 2014-01-30 14:12
 ---
 
-Useful terminal snippets I've collected over the years.
+Here are some terminal snippets I like to keep at hand. The most useful commands can be easily forgotten because you just don't use them enough.
 
-## Source
+## source
 
 Want your Vim configuration on another computer? Consider checking it into source control. Then, add this line to your `~/.vimrc` file.
 

@@ -4,7 +4,7 @@ category: Interaction Design
 date: 2014-01-30 14:20
 ---
 
-UX problems and possible solutions.
+A list of common UX issues and possible solutions you can use.
 
 ## 1. Permanently deleting user data
 

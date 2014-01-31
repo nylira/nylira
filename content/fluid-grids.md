@@ -4,7 +4,7 @@ category: Interaction Design
 date: 2011-04-05
 ---
 
-Responsive design is about saving time by making flexible elements that can be reused across multiple devices. Here are some tips I've learned while building a [100% fluid site](http://nylira.com/en/projects/#guildwork).
+Responsive design is about saving time by making flexible elements that can be reused across multiple devices. Here are some tips I've learned while building fluid-width websites.
 
 ## Make Use of `box-sizing: border-box`
 

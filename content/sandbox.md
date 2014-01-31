@@ -4,7 +4,7 @@ category: Development
 date: 2011-03-06
 ---
 
-As I wrote [on my profile](/en/profile), I manage a separate VirtualBox image for every project I do. What are the benefits of doing so?
+I manage a separate VirtualBox image for every project I do. What are the benefits of doing so?
 
 ## Why Virtualize?
 
