@@ -5,8 +5,8 @@ fs = require \graceful-fs
 #----------------------------------------------------------------------
 # Index Functions
 
-split-markdown-file = (input-directory, markdown-file) ->
-  data = path.join input-directory, markdown-file 
+split-markdown-file = (input-dir, markdown-file) ->
+  data = path.join input-dir, markdown-file 
   |> (it) -> fs.read-file-sync it, \utf8
 
   meta: js-yaml.load data.split(\---)[1]
@@ -23,9 +23,9 @@ categorize = (essays) ->
   |> map ((it) -> name: it, essays: of-category it, essays)
   |> sort-by (.name)
 
-input-directory-to-categorized-data = (input-directory) ->
-  fs.readdir-sync input-directory
-  |> map ((it) -> split-markdown-file input-directory, it)
+input-dir-to-categorized-data = (input-dir) ->
+  fs.readdir-sync input-dir
+  |> map ((it) -> split-markdown-file input-dir, it)
   |> categorize
 
 #----------------------------------------------------------------------
@@ -41,8 +41,8 @@ render-file = (template, options, filename) ->
   if err => console.error err
   else fs.write-file-sync filename, html
 
-markdown-to-jade = (input-directory, template, markdown-file, filename) ->
-  file = path.join input-directory, markdown-file
+markdown-to-jade = (input-dir, template, markdown-file, filename) ->
+  file = path.join input-dir, markdown-file
   data = fs.read-file-sync file, \utf8
 
   options = 
@@ -70,7 +70,7 @@ pz-essay-output-dir = './tmp/'
 pz-index-template = './source/views/index.jade'
 pz-index-filename = './tmp/index.html'
 pz-index-options =
-  categories: input-directory-to-categorized-data(pz-essay-input-dir)
+  categories: input-dir-to-categorized-data(pz-essay-input-dir)
   depth: './'
   moment: moment
   pretty: true
