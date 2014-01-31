@@ -5,15 +5,13 @@ fs = require \graceful-fs
 #----------------------------------------------------------------------
 # Index Functions
 
-split-markdown-file = (markdown-directory, markdown-file) ->
-  file = path.join markdown-directory, markdown-file
-  data = fs.read-file-sync file, \utf8
+split-markdown-file = (input-directory, markdown-file) ->
+  data = path.join input-directory, markdown-file 
+  |> (it) -> fs.read-file-sync it, \utf8
 
-  meta = js-yaml.load data.split(\---)[1]
-  content = typogr.typogrify marked data.split(\---)[2]
-  slug = markdown-file.split(\.)[0]
-
-  meta: meta, content: content, slug: slug
+  meta: js-yaml.load data.split(\---)[1]
+  content: typogr.typogrify marked data.split(\---)[2]
+  slug: markdown-file.split(\.)[0]
 
 of-category = (category, db) ->
   filter (.meta.category == category), db
@@ -24,29 +22,28 @@ categorize = (essays) ->
   |> map ((it) -> name: it, essays: of-category it, essays)
   |> sort-by (.name)
 
-markdown-directory-to-categorized-data = (markdown-directory) ->
-  fs.readdir-sync markdown-directory
-  |> map ((it) -> split-markdown-file markdown-directory, it)
+input-directory-to-categorized-data = (input-directory) ->
+  fs.readdir-sync input-directory
+  |> map ((it) -> split-markdown-file input-directory, it)
   |> categorize
 
 #----------------------------------------------------------------------
 # Essay Functions
 
-file-to-html-directory = (output-dir, md-file) ->
-  dir = md-file.split(\.)[0]
-  pwd = path.join output-dir, dir
-  mkdirp pwd
-  path.join pwd, \index.html
+htmlize = (output-dir, markdown-file) ->
+  directory = path.join output-dir, markdown-file.split(\.)[0]
+  mkdirp directory
+  path.join directory, \index.html
 
 # Renders the Jade template and Markdown mixture.
 render-file = (template, options, filename) ->
-  err, rendered-html <- jade.render-file template, options
+  err, data <- jade.render-file template, options
   if err => console.error err
-  else fs.write-file-sync filename, rendered-html
+  else fs.write-file-sync filename, data
 
-markdown-to-jade = (markdown-directory, template, md-file, filename) ->
-  markdown-path = path.join markdown-directory, md-file
-  data = fs.read-file-sync markdown-path, \utf8
+markdown-to-jade = (input-directory, template, markdown-file, filename) ->
+  file = path.join input-directory, markdown-file
+  data = fs.read-file-sync file, \utf8
 
   options = 
     depth: '../'
@@ -59,22 +56,21 @@ markdown-to-jade = (markdown-directory, template, md-file, filename) ->
 
   render-file template, options, filename
 
-render-files = (template, input, output) ->
-  files = fs.readdir-sync input
-  map ((it) -> markdown-to-jade input, template, it, file-to-html-directory(output, it)), files
+render-files = (template, input-dir, output-dir) ->
+  files = fs.readdir-sync input-dir, \utf8
+  |> map ((it) -> markdown-to-jade input-dir, template, it, htmlize(output-dir, it))
 
 #----------------------------------------------------------------------
 # Variables
 
-pz-essay-input = './content/'
-pz-essay-output = './tmp/'
-
 pz-essay-template = './source/views/essay.jade'
+pz-essay-input-dir = './content/'
+pz-essay-output-dir = './tmp/'
 
 pz-index-template = './source/views/index.jade'
 pz-index-filename = './tmp/index.html'
 pz-index-options =
-  categories: markdown-directory-to-categorized-data(pz-essay-input)
+  categories: input-directory-to-categorized-data(pz-essay-input-dir)
   depth: './'
   moment: moment
   pretty: true
@@ -82,5 +78,5 @@ pz-index-options =
 #----------------------------------------------------------------------
 # Execute
 
+render-files pz-essay-template, pz-essay-input-dir, pz-essay-output-dir
 render-file pz-index-template, pz-index-options, pz-index-filename
-render-files pz-essay-template, pz-essay-input, pz-essay-output
