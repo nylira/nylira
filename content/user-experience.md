@@ -1,7 +1,7 @@
 ---
 title: Common UX Problems
 category: Interaction Design
-date: 2014-01-30 14:20
+date: 2014-01-30
 ---
 
 A list of common UX issues and possible solutions you can use.

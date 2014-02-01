@@ -11,4 +11,4 @@ block container
         - for essay in category.essays
           li: a(href='./' + essay.slug + '/')
             .title!= essay.meta.title
-            .date= moment(essay.meta.date).format("YYYY-DD-MM")
+            .date= moment(essay.meta.date).format("YYYY-MM-DD")
