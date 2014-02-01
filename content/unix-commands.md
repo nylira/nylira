@@ -17,3 +17,13 @@ Want your Vim configuration on another computer? Consider checking it into sourc
 If you're using zsh, you should know it comes with zmv. Here's how to remove a prefix from a bunch of files.
 
     zmv 'prefix-(*)' '$1'
+
+## recursively delete specific file or folder
+
+For a particular folder:
+
+    find . -type d -name '.git' -print -exec rm -rf {} \;
+
+For a particular file:
+
+    find . -name '.DS_Store' -print -exec rm -rf {} \;
