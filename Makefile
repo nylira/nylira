@@ -15,6 +15,7 @@ build-css:
 	$(STYLUS_BIN) $(STYLUS_PARAMS) <$(STYL) >$(CSS)
 
 build-html:
+	cp -r ./content/images ./tmp/
 	$(LIVESCRIPT_BIN) ./source/build.ls
 	rm -rf ./public && mv ./tmp ./public
 

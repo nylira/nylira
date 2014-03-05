@@ -1,6 +1,6 @@
 ---
 title: Avoid Dependency Hell&mdash;VirtualBox Your Projects
-category: Development
+category: Web Development
 date: 2011-03-06
 ---
 
