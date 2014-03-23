@@ -22,7 +22,7 @@ While I don't have indicators of people changing their computing habits, I do ha
 
 ## Have you changed any of your own computing or other habits as a result of the NSA revelations? If so, what and why? 
 
-I have switched my operating system from Apple OS X to Trisquel GNU/Linux. While Trisquel itself isn't particularly focused on security, the GNU/Linux open source ecosystem is much more conducive to privay and security. Apple's proprietary walled-garden means any number of tracking codes can be in your software without your knowledge.
+I have switched my operating system from Apple OS X to Trisquel GNU/Linux. While Trisquel itself isn't particularly focused on security, the GNU/Linux open source ecosystem is much more conducive to privacy and security. Apple's proprietary walled-garden means any number of tracking codes can be in your software without your knowledge.
 
 I've also switched from Google Search -> Startpage, Google Chrome -> Firefox, Dropbox -> Git Annex Assistant, Google Talk to Adium (w/ OTR), Skype -> Jitsi, and Google Analytics -> Piwik. It's been a surprisingly easy change in every category so far.
 
