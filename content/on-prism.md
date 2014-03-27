@@ -16,7 +16,7 @@ While I started Prism Break on my own, I have gotten lots of great feedback, edi
 
 ## What has the response been? I saw on Twitter that you passed 200K visits — have you seen other indicators of people changing their computing habits? 
 
-The response has been far stronger than I had anticipated. I went to sleep after posting PRISM Break on Reddit, expecting upvotes in the double digits. I woke up to find PRISM Break one of the most popular submissions on the site, and an email from the Free Software Foundation inqiring about my future objectives with the site.
+The response has been far stronger than I had anticipated. I went to sleep after posting PRISM Break on Reddit, expecting upvotes in the double digits. I woke up to find PRISM Break one of the most popular submissions on the site, and an email from the Free Software Foundation inquiring about my future objectives with the site.
 
 While I don't have indicators of people changing their computing habits, I do have PRISM Break anonymized record of outgoing clicks. It shows that GNU/Linux, Bitmessage, Tor Browser Bundle, DuckDuckGo, OwnCloud, and OpenStreetMap are among the most popular topics among visitors. I don't have any hard statistics past this point though. You'll have to get the download data from the software websites themselves. Based on many PRISM Break discussions I've read though, quite a number of people are switching out Google for DuckDuckGo or Startpage, and many of them considering switching their Operating System to GNU/Linux. It's a start. 
 
@@ -30,7 +30,7 @@ I've also switched from Google Search -> Startpage, Google Chrome -> Firefox, Dr
 
 It's easier to talk to than to act. People are lazy, and online privacy is difficult right now. Most of us have grown so reliant on Google and Facebook that these applications become nearly impossible to replace. Even if you're not personally adverse to change, your company or social network may not feel the same way.
 
-For most people, Facebook is going to be the most diffcult app to remove from their life. Facebook has a very strong networking effect. How will you ask your prospective employer to make a new account on your self-hosted social network? How about a new friend? There's no easy answer to this.
+For most people, Facebook is going to be the most difficult app to remove from their life. Facebook has a very strong networking effect. How will you ask your prospective employer to make a new account on your self-hosted social network? How about a new friend? There's no easy answer to this.
 
 However, I'm hoping that people will realize that PRISM is no ordinary privacy breach. Those who understand that every word they type on Facebook or every word they say on Skype may be permanently recorded by the NSA will definitely look into encrypting their communication.
 
