@@ -2,6 +2,7 @@
 title: Stylus, the Revolutionary Successor to CSS
 category: Interaction Design
 date: 2011-03-05
+bodyclass: essay
 ---
 
 About a month ago, [Stylus](http://learnboost.github.com/stylus) was released, to little fanfare. 

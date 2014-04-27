@@ -74,6 +74,7 @@ pz-index-options =
   depth: './'
   moment: moment
   pretty: true
+  meta: {bodyclass: 'home'}
 
 #----------------------------------------------------------------------
 # Execute

@@ -2,6 +2,7 @@
 title: Previous Clients
 category: Interaction Design
 date: 2014-02-01
+bodyclass: essay
 ---
 
 * FtNox

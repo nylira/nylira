@@ -2,6 +2,7 @@
 title: Useful Unix Commands
 category: Web Development
 date: 2014-01-30
+bodyclass: essay
 ---
 
 Here are some terminal snippets I like to keep at hand. The most useful commands can be easily forgotten because you just don't use them enough.

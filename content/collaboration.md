@@ -2,6 +2,7 @@
 title: Notes on Collaboration
 category: Web Development
 date: 2012-09-05
+bodyclass: essay
 ---
 
 Notes on improving communication and collaboration.

@@ -2,6 +2,7 @@
 title: Why Design Mobile First?
 category: Interaction Design
 date: 2012-04-03
+bodyclass: essay
 ---
 
 Smartphone penetration in the United States is staggering at 48%, up from 18% just two years ago. Among 25-34 year olds, 64% own a smartphone. If you don't design for mobile, you'll be left behind by your competitors.

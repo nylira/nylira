@@ -2,6 +2,7 @@
 title: Simple Games
 category: Game Development
 date: 2014-03-05
+bodyclass: essay
 ---
 
 I've been interested in game development ever since I was a kid. I've decided to dedicate some of my time in 2014 to game making: here are the results so far.
