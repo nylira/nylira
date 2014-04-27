@@ -1,6 +1,6 @@
 ---
 title: Artilect
-category: UI Projects
+category: Web UI Projects
 date: 2012-01-02
 bodyclass: images
 ---

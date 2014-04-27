@@ -1,6 +1,6 @@
 ---
 title: Guildwork
-category: UI Projects
+category: Web UI Projects
 date: 2012-04-02
 bodyclass: images
 ---

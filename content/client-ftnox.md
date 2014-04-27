@@ -1,6 +1,6 @@
 ---
 title: FtNox
-category: UI Projects
+category: Web UI Projects
 date: 2014-04-09
 bodyclass: images
 ---
