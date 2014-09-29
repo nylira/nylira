@@ -1,6 +1,6 @@
 ---
 title: Untitled Action RPG
-category: Game Development
+category: game-dev
 date: 2014-04-27
 bodyclass: essay
 ---

@@ -1,6 +1,6 @@
 ---
 title: Data Loss
-category: Interaction Design
+category: interaction-design
 date: 2010-04-02
 status: closed
 bodyclass: essay

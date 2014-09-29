@@ -1,6 +1,6 @@
 ---
 title: Artilect
-category: Projects
+category: projects
 date: 2012-01-02
 bodyclass: images
 ---

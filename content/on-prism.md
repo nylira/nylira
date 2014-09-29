@@ -1,6 +1,6 @@
 ---
 title: On PRISM
-category: Privacy
+category: privacy
 date: 2013-06-11
 bodyclass: essay
 ---

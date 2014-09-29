@@ -1,6 +1,6 @@
 ---
 title: Simple Games
-category: Game Development
+category: game-dev
 date: 2014-03-05
 bodyclass: essay
 ---

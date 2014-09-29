@@ -1,6 +1,6 @@
 ---
 title: Previous Clients
-category: Projects
+category: projects
 date: 2010-01-01
 bodyclass: essay
 ---

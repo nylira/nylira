@@ -1,6 +1,6 @@
 ---
 title: EasyBCD
-category: Projects
+category: projects
 date: 2012-06-02
 bodyclass: images
 ---

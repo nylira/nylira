@@ -33,7 +33,7 @@ input-dir-to-categorized-data = (input-dir) ->
 recent-projects = (input-dir, num) ->
   fs.readdir-sync input-dir
   |> map ((it) -> split-markdown-file input-dir, it)
-  |> filter (.meta.category == 'Projects')
+  |> filter (.meta.category == \projects)
   |> filter (.meta.status != \closed)
   |> sort-by (.meta.date)
   |> reverse
@@ -68,10 +68,11 @@ markdown-to-jade = (input-dir, template, markdown-file, filename) ->
   options = 
     depth: '../'
     meta: js-yaml.load data.split(\---)[1]
-    md: marked,
+    md: marked
     content: typogr.typogrify marked data.split(\---)[2]
     moment: moment
     typogr: typogr
+    pretty: true
 
   render-file template, options, filename
 

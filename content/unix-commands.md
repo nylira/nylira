@@ -1,6 +1,6 @@
 ---
 title: Useful Unix Commands
-category: Web Development
+category: web-dev
 date: 2014-01-30
 bodyclass: essay
 ---

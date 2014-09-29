@@ -1,6 +1,6 @@
 ---
 title: Common UX Problems
-category: Interaction Design
+category: interaction-design
 date: 2014-01-30
 bodyclass: essay
 ---

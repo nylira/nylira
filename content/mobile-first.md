@@ -1,6 +1,6 @@
 ---
 title: Why Design Mobile First?
-category: Interaction Design
+category: interaction-design
 date: 2012-04-03
 bodyclass: essay
 ---

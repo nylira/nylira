@@ -1,6 +1,6 @@
 ---
 title: FtNox
-category: Projects
+category: projects
 date: 2014-04-09
 bodyclass: images
 ---

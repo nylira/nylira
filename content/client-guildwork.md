@@ -1,6 +1,6 @@
 ---
 title: Guildwork
-category: Projects
+category: projects
 date: 2012-04-02
 bodyclass: images
 ---

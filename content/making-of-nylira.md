@@ -1,6 +1,6 @@
 ---
 title: The Making of Nylira v3
-category: Web Development
+category: web-dev
 date: 2014-09-29
 bodyclass: essay
 ---
