@@ -6,14 +6,10 @@ body.essay
       mb 1.5em
       pb 1.5em     
 
-body.home
-  #container
-    .header
-      b 1px solid #333
-      p 1em
-
 #container
+
   clearfix()
+
   .header
     mb 1.5em
 
@@ -22,10 +18,8 @@ body.home
       ls -1px
 
   .body
-    font 16px/1.5 Georgia
-    mb 1.5em
     pb 1.5em
-    bb 1px solid #ddd
+    bb 1px solid txt
 
     ul.table-of-contents
       fl()
@@ -57,11 +51,10 @@ body.home
 
     img
       max-width 100%
+      b 1px solid txt
 
     p, ul, ol, pre, blockquote
       m 0 0 1.5em
-
-
 
     p code, h2 code, h3 code
       p 0 0.25em
@@ -76,8 +69,8 @@ body.home
         lh 1.25em
 
   .footer
-    mb 6em
+    mb 3em
     clearfix()
     p.meta
-      font italic 16px/1.5 Georgia
-      color #666
+      font-size 0.75em
+      line-height 3em

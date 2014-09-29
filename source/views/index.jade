@@ -5,24 +5,38 @@ block title
 
 block container
 
-  .header
-    h1 Interface design for <a href="./about/">developers</a>.
+  .home-header
+    .cell
+      h1 Interface design for <a href="./about/">developers</a>.
 
   .section
-  h2 Recent Projects
-  ul.blocks.projects
-    - for project in projects
-      li: a(href='./' + project.slug + '/')
-        .title!= project.meta.title
-        .date= moment(project.meta.date).format("YYYY-MM-DD")
+    .section-header
+      h2 Recent Projects
+    ul.blocks.projects
+      - for project in projects
+        li: a.block(href='./' + project.slug + '/')
+          .title!= project.meta.title
+          .date= moment(project.meta.date).format("YYYY-MM-DD")
 
   .section
-    h2 Recent Articles
+    .section-header
+      h2 Recent Articles
     ul.blocks.articles
       - for article in articles
-        li: a(href='./' + article.slug + '/')
+        li: a.block(href='./' + article.slug + '/')
           .title!= article.meta.title
           .date= moment(article.meta.date).format("YYYY-MM-DD")
 
-  .contact
-    p Get in touch with Peng at <a href="http://nyliberalen.frihetsfronten.se/">peng@nylira.com</a>.
+  .section
+    .section-header
+      h2 Contact
+    ul.blocks
+      li: a.block(href='mailto:peng@nylira.com')
+        .title peng@nylira.com
+        .sub Email
+      li: .block
+        .title 0x5619950A
+        .sub GPG Key
+      li: a.block(href='https://github.com/nylira')
+        .sub https://github.com/nylira
+        .title GitHub

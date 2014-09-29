@@ -71,7 +71,6 @@ markdown-to-jade = (input-dir, template, markdown-file, filename) ->
     md: marked,
     content: typogr.typogrify marked data.split(\---)[2]
     moment: moment
-    pretty: true
     typogr: typogr
 
   render-file template, options, filename

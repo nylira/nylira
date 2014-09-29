@@ -1,9 +1,17 @@
 ul.blocks
   li
     m 0 0 1em
-    a
+    .block, a.block
       d block
-      p 1em 1.5em
-      b 1px solid #333
+      p 0.75em 1.25em
+      b 1px solid txt
       .title
-        font-size 1.5em
+        font-size 1.25em
+        c anchor
+      .date, .sub
+        c txt
+        font-size 0.75em
+    a.block
+      &:hover
+        border-color link
+
