@@ -1,5 +1,5 @@
 ---
-title: Previous Clients
+title: Clients List
 category: projects
 date: 2010-01-01
 bodyclass: essay
