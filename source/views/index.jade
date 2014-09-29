@@ -1,7 +1,7 @@
 extends layouts/base
 
 block title
-  | Web Interface Design by Peng Zhong - Nylira
+  | Interface Design by Peng Zhong
 
 block container
 
@@ -14,7 +14,7 @@ block container
       h2 Recent Projects
     ul.blocks.projects
       - for project in projects
-        li: a.block(href='./' + project.slug + '/')
+        li: a.block(href=depth + project.slug + '/')
           .title!= project.meta.title
           .date= moment(project.meta.date).format("YYYY-MM-DD")
 
@@ -23,7 +23,7 @@ block container
       h2 Recent Articles
     ul.blocks.articles
       - for article in articles
-        li: a.block(href='./' + article.slug + '/')
+        li: a.block(href=depth + article.slug + '/')
           .title!= article.meta.title
           .date= moment(article.meta.date).format("YYYY-MM-DD")
 

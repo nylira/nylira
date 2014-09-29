@@ -1,0 +1,16 @@
+extends layouts/base
+
+block title
+  | Projects
+
+block container
+
+  .header
+    h1.title Projects
+
+  .body
+    ul.blocks
+      - for project in projects
+        li: a.block(href=depth + project.slug + '/')
+          .title!= project.meta.title
+          .date= moment(project.meta.date).format("YYYY-MM-DD")

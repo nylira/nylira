@@ -9,7 +9,12 @@ STYL = ./source/stylesheets/screen.styl
 CSS = ./tmp/assets/css/screen.css
 
 reset-dirs:
-	rm -rf ./tmp &&	mkdir -p ./tmp/assets/css
+	rm -rf ./tmp
+	mkdir -p ./tmp/assets/css
+	mkdir -p ./tmp/projects
+	mkdir -p ./tmp/about
+	mkdir -p ./tmp/contact
+	mkdir -p ./tmp/articles
 
 build-css:
 	$(STYLUS_BIN) $(STYLUS_PARAMS) <$(STYL) >$(CSS)

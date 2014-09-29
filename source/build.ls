@@ -29,24 +29,34 @@ input-dir-to-categorized-data = (input-dir) ->
   |> map ((it) -> split-markdown-file input-dir, it)
   |> categorize
 
-# return a truncated list of recent projects
-recent-projects = (input-dir, num) ->
+# return the list of all projects
+all-projects = (input-dir) ->
   fs.readdir-sync input-dir
   |> map ((it) -> split-markdown-file input-dir, it)
   |> filter (.meta.category == \projects)
   |> filter (.meta.status != \closed)
   |> sort-by (.meta.date)
   |> reverse
-  |> take 3
 
-# return a truncated list of recently written/updated articles
-recent-articles = (input-dir, num) ->
+# return the list of all projects
+all-articles = (input-dir) ->
   fs.readdir-sync input-dir
   |> map ((it) -> split-markdown-file input-dir, it)
+  |> filter (.meta.category != \projects)
   |> filter (.meta.status != \closed)
   |> sort-by (.meta.date)
   |> reverse
-  |> take 3
+
+# return a truncated list of recent projects
+recent-projects = (input-dir, num) ->
+  all-projects(input-dir)
+  |> take num
+
+# return a truncated list of recently written/updated articles
+recent-articles = (input-dir, num) ->
+  all-articles(input-dir)
+  |> take num
+
 
 #----------------------------------------------------------------------
 # Essay Functions
@@ -88,12 +98,46 @@ pz-article-template = './source/views/article.jade'
 pz-article-input-dir = './content/'
 pz-article-output-dir = './tmp/'
 
+pz-about-template = './source/views/about.jade'
+pz-about-filename = './tmp/about/index.html'
+pz-about-options =
+  depth: './../'
+  moment: moment
+  pretty: true
+  meta: {bodyclass: 'about'}
+
+pz-articles-template = './source/views/articles.jade'
+pz-articles-filename = './tmp/articles/index.html'
+pz-articles-options =
+  articles: all-articles(pz-article-input-dir)
+  depth: './../'
+  moment: moment
+  pretty: true
+  meta: {bodyclass: 'articles'}
+
+pz-contact-template = './source/views/contact.jade'
+pz-contact-filename = './tmp/contact/index.html'
+pz-contact-options =
+  depth: './../'
+  moment: moment
+  pretty: true
+  meta: {bodyclass: 'contact'}
+
+pz-projects-template = './source/views/projects.jade'
+pz-projects-filename = './tmp/projects/index.html'
+pz-projects-options =
+  projects: all-projects(pz-article-input-dir)
+  depth: './../'
+  moment: moment
+  pretty: true
+  meta: {bodyclass: 'projects'}
+
 pz-index-template = './source/views/index.jade'
 pz-index-filename = './tmp/index.html'
 pz-index-options =
   categories: input-dir-to-categorized-data(pz-article-input-dir)
-  articles: recent-articles(pz-article-input-dir)
-  projects: recent-projects(pz-article-input-dir)
+  articles: recent-articles(pz-article-input-dir, 3)
+  projects: recent-projects(pz-article-input-dir, 3)
   depth: './'
   moment: moment
   pretty: true
@@ -104,3 +148,7 @@ pz-index-options =
 
 render-files pz-article-template, pz-article-input-dir, pz-article-output-dir
 render-file pz-index-template, pz-index-options, pz-index-filename
+render-file pz-projects-template, pz-projects-options, pz-projects-filename
+render-file pz-articles-template, pz-articles-options, pz-articles-filename
+render-file pz-about-template, pz-about-options, pz-about-filename
+render-file pz-contact-template, pz-contact-options, pz-contact-filename

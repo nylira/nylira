@@ -1,0 +1,16 @@
+extends layouts/base
+
+block title
+  | Articles
+
+block container
+
+  .header
+    h1.title Articles
+
+  .body
+    ul.blocks
+      - for article in articles
+        li: a.block(href=depth + article.slug + '/')
+          .title!= article.meta.title
+          .date= moment(article.meta.date).format("YYYY-MM-DD")
