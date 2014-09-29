@@ -1,6 +1,6 @@
 ---
 title: Castle.so
-category: Web UI Projects
+category: Projects
 date: 2011-11-09
 bodyclass: images
 ---

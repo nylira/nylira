@@ -1,7 +1,7 @@
 ---
 title: Previous Clients
-category: Interaction Design
-date: 2014-02-01
+category: Projects
+date: 2010-01-01
 bodyclass: essay
 ---
 

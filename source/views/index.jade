@@ -1,14 +1,29 @@
 extends layouts/base
 
 block title
-  | Web &amp; Game Development by Peng Zhong
+  | Web Interface Design by Peng Zhong - Nylira
 
 block container
-  - for category in categories
-    .category
-      .category-name= category.name
-      ul.link-list
-        - for essay in category.essays
-          li: a(href='./' + essay.slug + '/')
-            .title!= essay.meta.title
-            .date= moment(essay.meta.date).format("YYYY-MM-DD")
+
+  .header
+    h1 Interface design for developers.
+
+  .header
+    h2 Recent Projects
+  - for project in projects
+    li: a(href='./' + project.slug + '/')
+      .title!= project.meta.title
+      .date= moment(project.meta.date).format("YYYY-MM-DD")
+
+  .header
+    h2 Recent Articles
+  - for article in articles
+    li: a(href='./' + article.slug + '/')
+      .title!= article.meta.title
+      .date= moment(article.meta.date).format("YYYY-MM-DD")
+
+
+  
+
+  .contact
+    p Get in touch with Peng at <a href="http://nyliberalen.frihetsfronten.se/">peng@nylira.com</a>.

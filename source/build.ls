@@ -1,6 +1,6 @@
 require! {\jade \marked \mkdirp \moment \path \js-yaml \typogr}
 fs = require \graceful-fs
-{filter, map, reverse, sort-by, unique} = require \prelude-ls
+{filter, map, reverse, sort-by, take, unique} = require \prelude-ls
 
 #----------------------------------------------------------------------
 # Index Functions
@@ -17,16 +17,36 @@ of-category = (category, db) ->
   filter (.meta.category == category), db
   |> filter (.meta.status != \closed)
   |> sort-by (.meta.date)
+  |> reverse
 
-categorize = (essays) ->
-  map (.meta.category), essays |> unique
-  |> map ((it) -> name: it, essays: of-category it, essays)
+categorize = (articles) ->
+  map (.meta.category), articles |> unique
+  |> map ((it) -> name: it, articles: of-category it, articles)
   |> sort-by (.name)
 
 input-dir-to-categorized-data = (input-dir) ->
   fs.readdir-sync input-dir
   |> map ((it) -> split-markdown-file input-dir, it)
   |> categorize
+
+# return a truncated list of recent projects
+recent-projects = (input-dir, num) ->
+  fs.readdir-sync input-dir
+  |> map ((it) -> split-markdown-file input-dir, it)
+  |> filter (.meta.category == 'Projects')
+  |> filter (.meta.status != \closed)
+  |> sort-by (.meta.date)
+  |> reverse
+  |> take 3
+
+# return a truncated list of recently written/updated articles
+recent-articles = (input-dir, num) ->
+  fs.readdir-sync input-dir
+  |> map ((it) -> split-markdown-file input-dir, it)
+  |> filter (.meta.status != \closed)
+  |> sort-by (.meta.date)
+  |> reverse
+  |> take 3
 
 #----------------------------------------------------------------------
 # Essay Functions
@@ -60,17 +80,20 @@ render-files = (template, input-dir, output-dir) ->
   files = fs.readdir-sync input-dir, \utf8
   |> map ((it) -> markdown-to-jade input-dir, template, it, htmlize(output-dir, it))
 
+
 #----------------------------------------------------------------------
 # Variables
 
-pz-essay-template = './source/views/essay.jade'
-pz-essay-input-dir = './content/'
-pz-essay-output-dir = './tmp/'
+pz-article-template = './source/views/article.jade'
+pz-article-input-dir = './content/'
+pz-article-output-dir = './tmp/'
 
 pz-index-template = './source/views/index.jade'
 pz-index-filename = './tmp/index.html'
 pz-index-options =
-  categories: input-dir-to-categorized-data(pz-essay-input-dir)
+  categories: input-dir-to-categorized-data(pz-article-input-dir)
+  articles: recent-articles(pz-article-input-dir)
+  projects: recent-projects(pz-article-input-dir)
   depth: './'
   moment: moment
   pretty: true
@@ -79,5 +102,5 @@ pz-index-options =
 #----------------------------------------------------------------------
 # Execute
 
-render-files pz-essay-template, pz-essay-input-dir, pz-essay-output-dir
+render-files pz-article-template, pz-article-input-dir, pz-article-output-dir
 render-file pz-index-template, pz-index-options, pz-index-filename
