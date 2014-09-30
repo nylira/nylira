@@ -30,3 +30,11 @@ Before I show you the code behind the site, I want to go into the reasoning for 
 **The site has to be incredibly easy to update.** I find that a lot of my ideas for articles and blog posts die before I can publish them online, due to the friction involved in web publishing. I want to keep editing and publishing as simple as possible to reduce that friction. Thus I picked a syntax that is pretty much as close to plain text as possible: Markdown.
 
 **The site should showcase my portfolio.** Web design portfolios look best with a dark gray or black background. My site's colors should be subtle in order to better present the work I have done. Thus I'm going back to Nylira v2's color scheme.
+
+## Todo
+
+This redesign is a work in progress, and there are still things I want to do to it. Here's a list of things I still want to add to the site:
+
+* images for the Project index page.
+* proofread & improve the About page.
+* think about adding categories or filter for the Articles page.
