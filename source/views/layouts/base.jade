@@ -2,11 +2,16 @@ doctype html
 html
   head
     include head
+
   body(class=meta.bodyclass + ' ' + meta.category)
+
     include header
+
     #container
       .wrapper
         block container
     #footer
       .wrapper
         include footer
+
+    script(type='text/javascript' src=depth + './assets/js/retina.min.js')
