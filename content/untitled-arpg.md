@@ -2,7 +2,7 @@
 title: Untitled Action RPG
 category: game-dev
 date: 2014-04-27
-bodyclass: essay
+bodyclass: article
 ---
 
 I'm developing an Action RPG from scratch using Unreal Engine 4. I switched from Unity due to UE4's source code access and vastly superior performance. Here's the progress so far.

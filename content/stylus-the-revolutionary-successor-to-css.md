@@ -2,7 +2,7 @@
 title: Stylus, the Revolutionary Successor to CSS
 category: web-dev
 date: 2011-03-05
-bodyclass: essay
+bodyclass: article
 ---
 
 About a month ago, [Stylus](http://learnboost.github.com/stylus) was released, to little fanfare. 

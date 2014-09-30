@@ -2,7 +2,7 @@
 title: Avoid Dependency Hell&mdash;VirtualBox Your Projects
 category: web-dev
 date: 2011-03-06
-bodyclass: essay
+bodyclass: article
 ---
 
 I manage a separate VirtualBox image for every project I do. What are the benefits of doing so?

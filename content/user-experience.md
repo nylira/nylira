@@ -2,7 +2,7 @@
 title: Common UX Problems
 category: interaction-design
 date: 2014-01-30
-bodyclass: essay
+bodyclass: article
 ---
 
 A selection of common UX problem areas and possible solutions.

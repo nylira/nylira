@@ -3,7 +3,7 @@ title: Data Loss
 category: interaction-design
 date: 2010-04-02
 status: closed
-bodyclass: essay
+bodyclass: article
 ---
 
 <ul class="table-of-contents">

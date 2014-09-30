@@ -2,7 +2,7 @@
 title: On PRISM
 category: privacy
 date: 2013-06-11
-bodyclass: essay
+bodyclass: article
 ---
 
 I've created a site to help you opt of PRISM at [prism-break.org](https://prism-break.org). Below are interview questions I was asked by [Oscar Garcia](https://twitter.com/oskargarcia) from The Associated Press.

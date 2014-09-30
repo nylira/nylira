@@ -2,7 +2,7 @@
 title: The Making of Nylira v3
 category: web-dev
 date: 2014-09-29
-bodyclass: essay
+bodyclass: article
 ---
 
 This site seems simple. But how was it built?

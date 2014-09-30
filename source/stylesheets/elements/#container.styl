@@ -1,16 +1,22 @@
-body.essay
+body.article
 body.projects
   #container .body
      > p:first-of-type
       font-size 1.25em
       mb 1.5em
 
-body.essay
+body.article
+  span.project
+    d none
   #container .body
      > p:first-of-type
       bb 1px solid txt
       mb 1em
       pb 1em     
+
+body.projects
+  span.article
+    d none
 
 #container
 
@@ -19,6 +25,10 @@ body.essay
   .header
     mb 1.5em
 
+    p.date
+      c light
+      font-size 0.75em
+      m 0 0 0.5em
     h1
       font 2em/1 sans
       ls -1px

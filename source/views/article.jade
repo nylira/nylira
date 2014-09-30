@@ -6,6 +6,9 @@ block title
 block container
 
   .header
+    p.date
+      span.project= 'Completed ' + moment(meta.date).format("YYYY-MM-DD")
+      span.article= 'Published ' + moment(meta.date).format("YYYY-MM-DD")
     h1.title!= typogr.typogrify(meta.title)
 
   .body
