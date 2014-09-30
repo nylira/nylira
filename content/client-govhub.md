@@ -31,7 +31,7 @@ GovHub is a web startup focused on providing a discussion board for individuals 
 <div class="figure">
   <img src="../assets/images/projects/govhub-04.png" alt="GovHub" />
   <div class="figcaption">
-    <p>The Officials page is designed to be an easily accessible directory of U.S. representative information. The Bills page (offering insight into legislative bills) is designed in a similar fashion.</p>
+    <p>The Officials page is designed to be an easily accessible directory of U.S. representatives. The Bills page (offering insight into legislative bills) is designed in a similar fashion.</p>
   </div>
 </div>
 
