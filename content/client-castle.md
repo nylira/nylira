@@ -5,7 +5,7 @@ date: 2011-11-09
 bodyclass: images
 ---
 
-Castle.so is a web application designed for easy drag and drop file uploads to the web. Nylira developed the visual look and feel of the web app. We then implemented the design into standards-compliant HTML and CSS.
+Castle.so is a web application designed for easy drag and drop file uploads to the web. Nylira developed the visual look and feel of the web app and then implemented the design into standards-compliant HTML and CSS.
 
 <div class="figure">
   <img src="../assets/images/projects/castle-01.png" alt="Castle.so homepage" />
