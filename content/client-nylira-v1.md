@@ -1,11 +1,11 @@
 ---
-title: Nylira 1.0 
+title: Nylira v1.
 category: projects
 date: 2010-03-05
 bodyclass: images
 ---
 
-This was the first version of the Nylira website, launched in early 2010. (http://projects.nylira.com/p/2009/)[Visit demo site.]
+This was the first version of the Nylira website, launched in early 2010. [Visit demo site.](http://projects.nylira.com/p/2009/)
 
 <div class="figure">
   <img src="../assets/images/projects/nylira-v1-01.png" alt="Nylira V1" />
