@@ -1,7 +1,13 @@
 body.essay
+body.projects
   #container .body
-     p:first-of-type
+     > p:first-of-type
       font-size 1.25em
+      mb 1.5em
+
+body.essay
+  #container .body
+     > p:first-of-type
       bb 1px solid txt
       mb 1em
       pb 1em     
@@ -53,8 +59,20 @@ body.essay
       max-width 100%
       b 1px solid txt
 
+    .figure
+      mb 3em
+      img
+        d block
+      .figcaption
+        bg #000
+        p .5em 0.75em
+        p
+          c #fff
+          m 0
+
     p, ul, ol, pre, blockquote
       m 0 0 1.5em
+      max-width 60em
 
     p code, h2 code, h3 code
       p 0 0.25em
