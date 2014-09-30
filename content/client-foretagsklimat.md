@@ -5,7 +5,7 @@ date: 2011-11-09
 bodyclass: images
 ---
 
-Företagsklimat is a project by Svenskt Näringsliv that surveys and ranks Sweden's 290 municipalties by their local business climates. Nylira was approached by [Artilect](../client-artilect/) to collaborate on a new site design for Företagsklimat. I worked with Artilect to establishing a uniform look and feel for the project, along with redesigning the entire site. *Site currently offline.*
+Företagsklimat is a project by Svenskt Näringsliv that surveys and ranks Sweden's 290 municipalties by their local business climates. Nylira was approached by [Artilect](../client-artilect/) to collaborate on a new site design for Företagsklimat. I worked with Artilect to establishing a uniform look and feel for the project, along with redesigning the entire site. *Design currently offline.*
 
 <div class="figure">
   <img src="../assets/images/projects/foretagsklimat-01.png" alt="Företagsklimat home" />

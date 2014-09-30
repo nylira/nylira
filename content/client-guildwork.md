@@ -5,7 +5,7 @@ date: 2012-04-02
 bodyclass: images
 ---
 
-Guildwork provides free guild hosting and social networking for online gamers. Nylira worked with Guildwork to develop a design for the social network portion of the web application. *Site currently offline.*
+Guildwork provides free guild hosting and social networking for online gamers. Nylira worked with Guildwork to develop a design for the social network portion of the web application. *Design currently offline.*
 
 <div class="figure">
   <img src="../assets/images/projects/guildwork-01.png" alt="Guildwork user home" />
