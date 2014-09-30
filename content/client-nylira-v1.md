@@ -1,5 +1,5 @@
 ---
-title: Nylira v1.
+title: Nylira v1
 category: projects
 date: 2010-03-05
 bodyclass: images
