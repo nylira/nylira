@@ -1,39 +1,43 @@
-#header
-  m 0 auto 3em
-  bt 4px solid txt
-  bb 1px solid txt
+.wrapper
+  p 0 2em
 
+#header
   .nav
     ul
       clearfix()
-      ta center
       li
         h 3em
-        br 1px solid txt
-        d inline-block
         &:last-of-type
           br none
         a
-          d block
-          ta center
-          bt 4px solid txt
-          mt -4px
-          lh 3em
+          font-size x
           p 0 1.5em
           c txt
-          &:hover
-            bg #fff
-            border-top-color link
             
-#container
-  .header
-    mb 2em
+section, .section
+  .section-header
+    font-size x
+
+ul.blocks
+  li
+    .block, a.block
+      .title
+        font-size 1.5em
+      .date, .sub
+        font-size 1em
+
+.home-header
+  h 12em
+
+  .cell
     h1
-      font 3em/1 sans
-      ls -2px
+      font-size 2em
 
-  .body
-    p:first-of-type
-      f 1.5em/1.5 serif
-
-
+body.article
+body.projects
+body.contact
+body.about
+  #container
+    .body
+      > p:first-of-type
+        font-size 1.333em

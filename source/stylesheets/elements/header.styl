@@ -7,10 +7,13 @@
     ul
       ta center
       li
-        font-size 0.75em
-        h x*0.75*3 + 4px
         d inline-block
+        &#nav-home
+          a
+            fw bold
+            tt lowercase
         a
+          font-size 0.75em
           ff sans
           d block
           p 0 .5em
@@ -21,9 +24,11 @@
           &:hover
             bg #fff
             border-top-color link
+            c link
 
 body.home #header #nav-home a
 body.about #header #nav-about a
+body.articles #header #nav-articles a
 body.contact #header #nav-contact a
 body.projects #header #nav-projects a
 body.interaction-design #header #nav-articles a

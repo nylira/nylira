@@ -2,18 +2,25 @@ body.article
 body.projects
 body.contact
 body.about
-  #container .body
-     > p:first-of-type
-      font-size 1.25em
-      ff sans
-      mb 1.5em
+  #container
+    .body
+      > p:first-of-type
+        font-size 1.25em
+        ff sans
+        mb 1.5em
+
+body.article
+body.projects
+  #container
+    .body
+      bb 1px solid txt
 
 body.article
 body.about
   span.project
     d none
   #container .body
-     > p:first-of-type
+    > p:first-of-type
       bb 1px solid txt
       mb 1.5em
       pb 1.5em     
@@ -30,20 +37,19 @@ body.projects
   clearfix()
 
   .header
-    mb 2em
+    mb 1.875em
     ta center
 
     p.date
-      m 0 0 0.5em
+      m 0
       ff sans
 
     h1
-      font bold 2em/1 sans
+      font bold 2em/1.25 sans
       ls -1px
 
   .body
     pb 1.5em
-    bb 1px solid txt
 
     ul.table-of-contents
       fl()
@@ -63,8 +69,8 @@ body.projects
       vertical-align top
 
     h2
-      font bold 1.5em/1.5 sans
-      mb 0.5em
+      font bold 1.5em/1.25 sans
+      mb 0.75em
       mt 1.5em
 
     h3
