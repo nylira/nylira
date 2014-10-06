@@ -1,7 +1,7 @@
 body.article
 body.projects
 body.contact
-body.about
+body.profile
   #container
     .body
       > p:first-of-type
@@ -16,7 +16,7 @@ body.projects
       bb 1px solid txt
 
 body.article
-body.about
+body.profile
   span.project
     d none
   #container .body
@@ -50,6 +50,10 @@ body.projects
 
   .body
     pb 1.5em
+
+    p, ul, ol, blockquote, h2, h3, h4, h5, h6, .figure
+      a
+        td underline
 
     ul.table-of-contents
       fl()

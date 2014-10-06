@@ -98,13 +98,13 @@ pz-article-template = './source/views/article.jade'
 pz-article-input-dir = './content/'
 pz-article-output-dir = './tmp/'
 
-pz-about-template = './source/views/about.jade'
-pz-about-filename = './tmp/about/index.html'
-pz-about-options =
+pz-profile-template = './source/views/profile.jade'
+pz-profile-filename = './tmp/profile/index.html'
+pz-profile-options =
   depth: './../'
   moment: moment
   pretty: true
-  meta: {bodyclass: 'about'}
+  meta: {bodyclass: 'profile'}
 
 pz-articles-template = './source/views/articles.jade'
 pz-articles-filename = './tmp/articles/index.html'
@@ -150,5 +150,5 @@ render-files pz-article-template, pz-article-input-dir, pz-article-output-dir
 render-file pz-index-template, pz-index-options, pz-index-filename
 render-file pz-projects-template, pz-projects-options, pz-projects-filename
 render-file pz-articles-template, pz-articles-options, pz-articles-filename
-render-file pz-about-template, pz-about-options, pz-about-filename
+render-file pz-profile-template, pz-profile-options, pz-profile-filename
 render-file pz-contact-template, pz-contact-options, pz-contact-filename

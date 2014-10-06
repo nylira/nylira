@@ -14,7 +14,7 @@ reset-dirs:
 	mkdir -p ./tmp/assets/js
 	mkdir -p ./tmp/assets/fonts
 	mkdir -p ./tmp/projects
-	mkdir -p ./tmp/about
+	mkdir -p ./tmp/profile
 	mkdir -p ./tmp/contact
 	mkdir -p ./tmp/articles
 
