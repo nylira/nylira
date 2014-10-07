@@ -52,22 +52,25 @@ body.contact
 body.article
 body.articles
 body.projects.index
-  .header
-    clearfix()
+  #container
+    .header
+      clearfix()
 
-    .main, .aside
-      fl()
+      .aside
+        w 320px
+        fl()
+        pr 2em
+        ta right
 
-    .aside
-      w 320px
-      ta right
-      ml -320px
-      pr 1em
+        p.date
+          lh 2.5em
+          span.label
+            d inline
 
-    .main
-      w 640px
-      ml 320px
-      ta left
+      .main
+        w 640px
+        ml 320px
+        ta left
 
   .body, .footer
     w 640px

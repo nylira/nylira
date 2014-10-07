@@ -7,7 +7,9 @@ block container
 
   .header
     .aside
-      p.date= moment(meta.date).format("YYYY-MM-DD")
+      p.date
+        span.label Posted on 
+        = moment(meta.date).format("YYYY-MM-DD")
     .main
       h1.title!= typogr.typogrify(meta.title)
 
