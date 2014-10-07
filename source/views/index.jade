@@ -21,6 +21,7 @@ block container
         li: a.block(href=depth + project.slug + '/')
           .title!= project.meta.title
           .date= moment(project.meta.date).format("YYYY-MM-DD")
+          .sub View Project
 
   .section
     .section-header
@@ -32,6 +33,7 @@ block container
         li: a.block(href=depth + article.slug + '/')
           .title!= article.meta.title
           .date= moment(article.meta.date).format("YYYY-MM-DD")
+          .sub Read More
 
   .section
     .section-header

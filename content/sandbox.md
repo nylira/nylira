@@ -1,5 +1,5 @@
 ---
-title: Avoid Dependency Hell&mdash;VirtualBox Your Projects
+title: Avoid Dependency Hell&mdash;Use VirtualBox
 category: web-dev
 date: 2011-03-06
 bodyclass: article

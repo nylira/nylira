@@ -5,6 +5,7 @@ ul.blocks
       d block
       p 0.75em 1.25em
       b 1px solid txt
+      relative()
       .title
         font-size 1.25em
         ff sans
@@ -12,6 +13,16 @@ ul.blocks
       .date, .sub
         c anchor
         font-size 0.75em
+      .date
+        absolute()
+        top 1em
+        right 0
+        w 100px
+        c txt
+        lhh 1.5em
+        ta center
+        bg #eee
+        d none
     a.block
       &:hover
         bg hsl(lhue,lsat,97%)
