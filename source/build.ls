@@ -130,7 +130,7 @@ pz-projects-options =
   depth: './../'
   moment: moment
   pretty: true
-  meta: {bodyclass: 'projects'}
+  meta: {bodyclass: 'projects index'}
 
 pz-index-template = './source/views/index.jade'
 pz-index-filename = './tmp/index.html'

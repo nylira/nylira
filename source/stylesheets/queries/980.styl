@@ -20,16 +20,6 @@
           lh 3em
           p 0
 
-body.home #header #nav-home a
-body.profile #header #nav-profile a
-body.articles #header #nav-articles a
-body.contact #header #nav-contact a
-body.projects #header #nav-projects a
-body.interaction-design #header #nav-articles a
-body.web-dev #header #nav-articles a
-body.game-dev #header #nav-articles a
-body.privacy #header #nav-articles a
-  border-top-color link
 #home-header
   h 14em
   mb 3em
@@ -57,3 +47,25 @@ body.privacy #header #nav-articles a
   .blocks
     ml 320px
 
+body.profile
+body.contact
+body.article
+body.articles
+body.projects.index
+  .header
+    clearfix()
+    p.date, h1
+      fl()
+    p.date
+      w 320px
+      ta right
+      ml -320px
+      pr 1em
+    h1
+      w 640px
+      ml 320px
+      ta left
+
+  .body
+    w 640px
+    ml 320px

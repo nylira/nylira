@@ -175,7 +175,7 @@
     moment: moment,
     pretty: true,
     meta: {
-      bodyclass: 'projects'
+      bodyclass: 'projects index'
     }
   };
   pzIndexTemplate = './source/views/index.jade';

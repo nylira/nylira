@@ -1,18 +1,18 @@
 #header
   m 0 auto 2em
-  bt 4px solid txt
+  bt 3px solid txt
   bb 1px solid txt
 
   .nav
     ul
       ta center
-      mt -4px
+      mt -3px
       vertical-align top
 
       li
         d inline-block
-        bt 4px solid txt
-        h 40px
+        bt 3px solid txt
+        h 39px
         vertical-align top
         &#nav-home
           a
@@ -34,13 +34,16 @@
           lhh 36px
           c txt
 
-body.home #header #nav-home a
-body.profile #header #nav-profile a
-body.articles #header #nav-articles a
-body.contact #header #nav-contact a
-body.projects #header #nav-projects a
-body.interaction-design #header #nav-articles a
-body.web-dev #header #nav-articles a
-body.game-dev #header #nav-articles a
-body.privacy #header #nav-articles a
+body.home #header #nav-home
+body.profile #header #nav-profile
+body.articles #header #nav-articles
+body.contact #header #nav-contact
+body.projects #header #nav-projects
+body.interaction-design #header #nav-articles
+body.web-dev #header #nav-articles
+body.game-dev #header #nav-articles
+body.privacy #header #nav-articles
   border-top-color link
+  &:hover
+    a
+      c txt

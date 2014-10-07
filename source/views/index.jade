@@ -7,11 +7,15 @@ block container
 
   #home-header
     .cell
-      h1 <a href='./about/'>Interface design</a> for the web.
+      h1 
+        a(href=depth+'profile') Interface design
+        |  for the&nbsp;web.
 
   .section
     .section-header
-      h2 Recent Projects
+      h2
+        | Recent 
+        a(href=depth+'projects') Projects
     ul.blocks.projects
       - for project in projects
         li: a.block(href=depth + project.slug + '/')
@@ -20,7 +24,9 @@ block container
 
   .section
     .section-header
-      h2 Recent Articles
+      h2
+        | Recent 
+        a(href=depth+'articles') Articles
     ul.blocks.articles
       - for article in articles
         li: a.block(href=depth + article.slug + '/')
@@ -29,7 +35,9 @@ block container
 
   .section
     .section-header
-      h2 Contact
+      h2
+        | Get in 
+        a(href=depth+'contact') Touch
     ul.blocks
       li: a.block(href='mailto:peng@nylira.com')
         .title peng@nylira.com
