@@ -16,39 +16,49 @@ block container
       h2
         | Recent 
         a(href=depth+'projects') Projects
-    ul.blocks.projects
-      - for project in projects
-        li: a.block(href=depth + project.slug + '/')
-          .title!= project.meta.title
-          .date= moment(project.meta.date).format("YYYY-MM-DD")
-          .sub View Project
+    .body
+      ul.blocks.projects
+        - for project in projects
+          li: a.block(href=depth + project.slug + '/')
+            .title!= project.meta.title
+            .date= moment(project.meta.date).format("YYYY-MM-DD")
+            .sub View Project
+
+      p.bottom
+        | View all the official Nylira projects since 2010 to see my work has evolved over time. 
+        a(href=depth+'projects') Projects List
 
   .section
     .section-header
       h2
         | Recent 
         a(href=depth+'articles') Articles
-    ul.blocks.articles
-      - for article in articles
-        li: a.block(href=depth + article.slug + '/')
-          .title!= article.meta.title
-          .date= moment(article.meta.date).format("YYYY-MM-DD")
-          .sub Read More
+    .body
+      ul.blocks.articles
+        - for article in articles
+          li: a.block(href=depth + article.slug + '/')
+            .title!= article.meta.title
+            .date= moment(article.meta.date).format("YYYY-MM-DD")
+            .sub Read More
+      p.bottom
+        | Browse through a list of all the articles on this site. 
+        a(href=depth+'projects') All Articles
 
   .section
     .section-header
       h2
         | Get in 
         a(href=depth+'contact') Touch
-    ul.blocks
-      li: a.block(href='mailto:peng@nylira.com')
-        .title peng@nylira.com
-        .sub Email
-      li: .block
-        .title 0x5619950A
-        .sub
-          | PGP Key 
-          em: a(href='http://prism-break.org/en/all/#email-encryption') What is PGP?
-      li: a.block(href='https://github.com/nylira')
-        .title github.com/nylira
-        .sub GitHub
+    .body
+      ul.blocks
+        li: a.block(href='mailto:peng@nylira.com')
+          .title peng@nylira.com
+          .sub Email
+        li: .block
+          .title 0x5619950A
+          .sub
+            | PGP Key 
+            em: a(href='http://prism-break.org/en/all/#email-encryption') What is PGP?
+        li: a.block(href='https://github.com/nylira')
+          .title github.com/nylira
+          .sub GitHub
