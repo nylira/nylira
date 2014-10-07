@@ -6,25 +6,33 @@
   .nav
     ul
       ta center
+      mt -4px
+      vertical-align top
+
       li
         d inline-block
+        bt 4px solid txt
+        h 40px
+        vertical-align top
         &#nav-home
           a
             fw bold
             tt lowercase
+            font-size 1em
+            lhh 36px
+
+        &:hover
+          bg #fff
+          border-top-color link
+          a
+            c link
         a
+          p 0 .5em
           font-size 0.75em
           ff sans
           d block
-          p 0 .5em
-          lh 3em
+          lhh 36px
           c txt
-          bt 4px solid txt
-          mt -4px
-          &:hover
-            bg #fff
-            border-top-color link
-            c link
 
 body.home #header #nav-home a
 body.profile #header #nav-profile a

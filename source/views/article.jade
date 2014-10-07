@@ -9,7 +9,7 @@ block container
     p.date= moment(meta.date).format("YYYY-MM-DD")
     h1.title!= typogr.typogrify(meta.title)
 
-  .body
+  .body.text
     != content
 
   .footer

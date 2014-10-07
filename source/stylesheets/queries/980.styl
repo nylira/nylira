@@ -1,6 +1,59 @@
-#container
-  .header
-    mb 3em
+#header
+  mb 3em
+
+  .nav
+    ul
+      clearfix()
+      li
+        d block
+        fl()
+        w 160px
+        bl 1px solid txt
+        
+        &#nav-home
+          w 320px
+          ta left
+          bl none
+          pl .25*x
+
+        a
+          lh 3em
+          p 0
+
+body.home #header #nav-home a
+body.profile #header #nav-profile a
+body.articles #header #nav-articles a
+body.contact #header #nav-contact a
+body.projects #header #nav-projects a
+body.interaction-design #header #nav-articles a
+body.web-dev #header #nav-articles a
+body.game-dev #header #nav-articles a
+body.privacy #header #nav-articles a
+  border-top-color link
+#home-header
+  h 14em
+  mb 3em
+  .cell
     h1
-      font 4em/1 sans
-      ls -3px
+      font-size 2em
+
+
+.wrapper
+  w 960px
+  max-width 960px
+  p 0
+
+.section
+  pt 1.5em
+
+  .section-header
+    m 0
+    w 320px
+    fl()
+    pl .25*x
+    h2
+      mt -1.25em
+
+  .blocks
+    ml 320px
+
