@@ -6,9 +6,11 @@ block title
 block container
 
   .header
-    h1.title Projects
+    .main
+      h1.title Projects
 
   .body
+    p This is select list of my official projects since 2010. Take a look at how my web interfaces have evolved over the years.
     ul.blocks
       - for project in projects
         li: a.block(href=depth + project.slug + '/')
