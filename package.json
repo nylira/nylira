@@ -22,7 +22,7 @@
     "marked": "~0.3.x",
     "require-dir": "~0.1.x",
     "prelude-ls": "~1.1.x",
-    "mkdirp": "~0.5.x",
+    "mkdirp": "~0.3.x",
     "js-yaml": "~3.2.x",
     "typogr": "~0.6.x",
     "LiveScript": "~1.3.0",
