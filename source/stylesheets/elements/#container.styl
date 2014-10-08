@@ -14,7 +14,7 @@ body.article
 body.projects.images
   #container
     .body
-      bb 1px solid txt
+      bb 3px solid bc
 
 body.article
 body.profile
@@ -22,7 +22,7 @@ body.profile
     d none
   #container .body
     > p:first-of-type
-      bb 1px solid txt
+      bb 3px solid bc
       mb 1.5em
       pb 1.5em     
 
@@ -48,8 +48,9 @@ body.projects
         d none
 
     h1
-      font bold 2em/1.25 sans
+      font 2em/1.25 sans
       ls -1px
+      c link
 
 #container
   .body
@@ -65,9 +66,11 @@ body.projects
       vertical-align top
 
     h2
-      font bold 1.5em/1.25 sans
+      font 1.5em/1.25 sans
       mb 0.75em
       mt 1.5em
+      c m150
+      c link
 
     h3
       fw bold
@@ -77,18 +80,36 @@ body.projects
 
     img
       max-width 100%
-      b 1px solid txt
+      b 1px solid bc
+      bb none
 
     .figure
       mb 3em
       img
         d block
       .figcaption
-        bg #000
+        bg bc
         p .5em 0.75em
         p
-          c #fff
+          c txt
           m 0
+    .aside
+      w 240px
+      fl()
+      ml -320px
+      d none
+      h3, .content
+        bg m240
+      h3
+        h x*1.25 + x*2
+        lh 1.25em
+        p x
+        mb 1px
+      .content
+        s 85%
+        p x*0.75 x
+        ul
+          mb 0
 
     p, ul, ol, pre, blockquote
       m 0 0 1.5em
@@ -96,12 +117,13 @@ body.projects
 
     p code, h2 code, h3 code
       p 0 0.25em
-      bg #eee
+      bg bg3
       f 90%/120% mono
       d inline-block
 
     pre
-      border 1px solid #ddd
+      b 1px solid bc
+      bg bg3
       padding 1em
       code
         lh 1.25em

@@ -8,7 +8,7 @@
         d block
         fl()
         w 160px
-        bl 1px solid txt
+        bl 1px solid bc
         
         &#nav-home
           w 320px
@@ -47,6 +47,11 @@
   .body
     ml 320px
 
+#container
+
+  .figure
+    border-width 3px
+
 body.profile
 body.contact
 body.article
@@ -72,6 +77,27 @@ body.projects.index
         ml 320px
         ta left
 
-  .body, .footer
-    w 640px
-    ml 320px
+    .body, .footer
+      w 640px
+      ml 320px
+      .aside
+        d block
+
+#project-process
+  clearfix()
+  w 960px
+  ml -320px !important
+  li
+    w 159px
+    ml 1px
+    fl()
+    h 260px
+    p 0
+    .label
+      bb 1px solid bg1
+      h x*2.5 + x*2
+      p x
+      lh 1.25em
+    .desc
+      s 85%
+      p x*0.75 x
