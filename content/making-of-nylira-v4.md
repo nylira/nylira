@@ -35,6 +35,6 @@ Before I show you the code behind the site, I want to go into the reasoning for 
 
 This redesign is a work in progress, and there are still things I want to do to it. Here's a list of things I still want to add to the site:
 
-* images for the Project index page.
-* proofread & improve the About page.
-* think about adding categories or filter for the Articles page.
+* Logos for the Project index page.
+* Consider adding categories or filters for the Articles page.
+* Next/Previous article buttons for article pages.

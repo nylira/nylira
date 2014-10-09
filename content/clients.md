@@ -5,17 +5,22 @@ date: 2010-01-01
 bodyclass: article
 ---
 
+This is the complete list of Nylira clients. Entries are sorted by date of project completion, newest to oldest.
+
+* Nyliberalen
 * FtNox
 * Scrive
+* EasyBCD
 * GovHub
-* NeoSmart Technologies
-* Artilect
-* Svenskt Näringsliv
-* Castle.so
-* LuckyChat
 * Guildwork
-* Man Enough 2 Care
+* Artilect
+* Castle.so
+* Svenskt Näringsliv
 * iDoneThis
+* Heya? Wanna?
+* LuckyChat
+* HotZing
+* Man Enough 2 Care
 * Crazy Boat
 * Sisterfriends Jeans
 * Three Coins
