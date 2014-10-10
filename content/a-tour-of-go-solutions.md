@@ -1,5 +1,5 @@
 ---
-title: 'A Tour of Go' Exercise Solutions
+title: A Tour of Go - Exercise Solutions
 category: web-dev
 date: 2014-10-10
 bodyclass: article
@@ -7,7 +7,7 @@ bodyclass: article
 
 I'm trying to pick up the basics of the Go programming language. Here are my solutions for the exercises presented in 'A Tour of Go'. 
 
-## [25. Exercise: Loops and Functions](http://tour.golang.org/#25)
+## Exercise: Loops and Functions [#25](http://tour.golang.org/#25)
 
     package main
 
