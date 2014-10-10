@@ -2,7 +2,7 @@ default: reset-dirs build-css build-html
 
 LIVESCRIPT_BIN = ./node_modules/.bin/lsc
 STYLUS_BIN = ./node_modules/.bin/stylus
-STYLUS_PARAMS = -c -u ./node_modules/nib/
+STYLUS_PARAMS = -c -u ./node_modules/nib/ --include-css
 STYLUS_WATCH_PARAMS = -c -w source/stylesheets/screen.styl -u ./node_modules/nib/ -o public/assets/css/ --include-css
 
 STYL = ./source/stylesheets/screen.styl
