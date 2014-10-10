@@ -19,7 +19,7 @@ reset-dirs:
 	mkdir -p ./tmp/articles
 
 build-css:
-	$(STYLUS_BIN) $(STYLUS_PARAMS) <$(STYL) >$(CSS)
+	$(STYLUS_BIN) <$(STYL) >$(CSS) $(STYLUS_PARAMS) 
 
 build-html:
 	cp -r ./images ./tmp/assets/
