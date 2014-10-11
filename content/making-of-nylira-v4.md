@@ -31,10 +31,14 @@ Before I show you the code behind the site, I want to go into the reasoning for 
 
 **The site should showcase my portfolio.** Web design portfolios look best with a dark gray or black background. My site's colors should be subtle in order to better present the work I have done. Thus I'm going back to Nylira v2's color scheme.
 
+## Technical Details
+
+To build my static site generator, I decided to use many of the same node.js libraries I used for [PRISM Break](../on-prism). I would write all the code in LiveScript. The templates would be powered by Jade. The CSS would be pre-processed by Stylus. The content would be written in Markdown.
+
 ## Todo
 
 This redesign is a work in progress, and there are still things I want to do to it. Here's a list of things I still want to add to the site:
 
-* Logos for the Project index page.
-* Consider adding categories or filters for the Articles page.
-* Next/Previous article buttons for article pages.
+* Project logos for the [Projects](../projects/) index page.
+* Consider adding categories or filters for the [Articles](../articles/) page.
+* Next/Previous article buttons for individual article pages.
