@@ -15,6 +15,7 @@ block container
       - for project in projects
         li: a.block(href=depth + project.slug + '/')
           .title!= project.meta.title
-          .thumb: img(src='../assets/images/projects/'+project.meta.slug+'-thumb.png')
+          if project.meta.slug
+            .thumb: img(src='../assets/images/projects/'+project.meta.slug+'-thumb.png')
           .date= moment(project.meta.date).format("YYYY-MM-DD")
           .sub View Project

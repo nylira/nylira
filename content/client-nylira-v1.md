@@ -3,7 +3,7 @@ title: Nylira v1
 category: projects
 date: 2010-03-05
 bodyclass: images
-slug: nylirav1
+slug: nylira-v1
 ---
 
 This was the first version of the Nylira website, launched in early 2010. [Visit demo site.](http://projects.nylira.com/p/2009/)
