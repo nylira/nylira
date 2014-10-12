@@ -3,6 +3,7 @@ title: GovHub
 category: projects
 date: 2012-04-14
 bodyclass: images
+slug: govhub
 ---
 
 GovHub is a web startup focused on providing a discussion board for individuals interested in U.S. politics. Nylira designed and implemented the front-end for the website. Every page is entirely responsive, working on devices from the original iPhone up to large desktop displays. [Visit demo site.](http://projects.nylira.com/govhub/out)

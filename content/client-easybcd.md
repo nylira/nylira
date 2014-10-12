@@ -3,6 +3,7 @@ title: EasyBCD
 category: projects
 date: 2012-06-02
 bodyclass: images
+slug: easybcd
 ---
 
 EasyBCD gives Windows users powerful options for configuring their boot loader. Nylira was contacted by NeoSmart Technologies to increase landing page conversions for their EasyBCD product. I worked to improve their copywriting and to design a more attractive landing page. [Visit client's site.](https://neosmart.net/EasyBCD/)

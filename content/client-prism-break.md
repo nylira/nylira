@@ -3,6 +3,7 @@ title: PRISM Break
 category: projects
 date: 2013-06-04
 bodyclass: images
+slug: prism-break
 ---
 
 [PRISM Break](../on-prism) is an open source project aimed at reducing the impact of government internet surveillance by offering recommendations to popular closed source software and services. Nylira built the initial site from scratch and people around the world have [contributed](https://github.com/nylira/prism-break) to localizations and project recommendations. Every page on the site is entirely responsive, and it's 100% functional without JavaScript. [Visit site.](https://prism-break.org)

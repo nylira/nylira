@@ -2,7 +2,7 @@
 title: Three Coins Cast
 category: projects
 date: 2011-04-17
-bodyclass: images
+slug: threecoinscast
 ---
 
 Three Coins Cast is a cast aluminum furniture company based in Newnan, Georgia, USA. Nylira worked to create a beautiful web presence for the firm based on discussions with the owner. [Visit client's site.](http://threecoins.com/)

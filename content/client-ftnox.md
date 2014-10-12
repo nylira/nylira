@@ -3,6 +3,7 @@ title: FtNox
 category: projects
 date: 2014-04-09
 bodyclass: images
+slug: ftnox
 ---
 
 FtNox offers a cryptocurrency exchange as a service to people wishing to start their own Bitcoin, Litecoin, et. al. exchanges. Nylira worked with FtNox to create a customizable user interface for the service. The colors and branding on the site need the ability to be changed by the user while still looking good. *Design currently offline.*

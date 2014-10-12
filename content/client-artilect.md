@@ -3,6 +3,7 @@ title: Artilect
 category: projects
 date: 2012-01-02
 bodyclass: images
+slug: artilect
 ---
 
 Artilect is an information processing company based in Stockholm, Sweden. Nylira designed and developed a distinctive web presence for Artilect. [Visit client's site.](http://artilect.se/)

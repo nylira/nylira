@@ -3,6 +3,7 @@ title: Guildwork
 category: projects
 date: 2012-04-02
 bodyclass: images
+slug: guildwork
 ---
 
 Guildwork provides free guild hosting and social networking for online gamers. Nylira worked with Guildwork to develop a design for the social network portion of the web application. *Design currently offline.*

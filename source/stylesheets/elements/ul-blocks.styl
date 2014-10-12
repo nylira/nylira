@@ -22,6 +22,20 @@ ul.blocks
         lhh 1.5em
         ta center
         bg bg3
+      .thumb
+        absolute()
+        top -1px
+        left -321px
+        w 320px
+        bg bg3
+        h 86px
+        overflow hidden
+        img
+          w 320px
+          h 86px
+          transition ease 0.1s
+
+      .date, .thumb
         d none
     a.block
       &:hover
@@ -29,3 +43,6 @@ ul.blocks
         .date
           bg link
 
+        .thumb
+          img
+            transform scale(1.25)
