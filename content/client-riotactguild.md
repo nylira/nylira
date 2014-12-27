@@ -11,20 +11,20 @@ Riot Act is a competitive World of Warcraft raiding guild on the Anetheron (US-P
 <div class="figure">
   <img src="../assets/images/projects/riotactguild-01.jpg" alt="Riot Act homepage" />
   <div class="figcaption">
-    <p>The landing page for visitors to Riot Act</p>
+    <p>The landing page for visitors to Riot Act.</p>
   </div>
 </div>
 
 <div class="figure">
   <img src="../assets/images/projects/riotactguild-02.jpg" alt="Guildwork user profile" />
   <div class="figcaption">
-    <p>Index page for boss guides for the 25-man raid dungeon Icecrown Citadel.</p>
+    <p>The index page showing boss guides for the 25-man raid dungeon Icecrown Citadel.</p>
   </div>
 </div>
 
 <div class="figure">
   <img src="../assets/images/projects/riotactguild-03.jpg" alt="About Riot Act Guild" />
   <div class="figcaption">
-    <p>An overview of Riot Act and the current raiders in the guild.</p>
+    <p>An overview about Riot Act and a list of the current raiders in the guild.</p>
   </div>
 </div>
