@@ -26,11 +26,11 @@ I made the game Snake in JavaScript. It plays well on both PC and mobile browser
 
   I made great use out of the following JavaScript libraries:
   
-  * [combokeys](https://github.com/mightyiam/combokeys) for keyboard shortcuts.
-  * [fastclick](https://github.com/ftlabs/fastclick) to remove the 300ms delay on touch input on mobile websites.
-  * [HammerJS](http://http://hammerjs.github.io/) for touch gestures.
-  * [Howler](http://goldfirestudios.com/blog/104/howler.js-Modern-Web-Audio-Javascript-Library) for WebAudio sound. 
-  * [pixi.js](http://www.pixijs.com/) for WebGL rendering wihttp://th a Canvas fallback.
+  * [Combokeys](https://github.com/mightyiam/combokeys) for keyboard shortcuts.
+  * [FastClick](https://github.com/ftlabs/fastclick) to remove the 300ms delay on touch input on mobile websites.
+  * [Hammer.JS](http://http://hammerjs.github.io/) for touch gestures.
+  * [howler.js](http://goldfirestudios.com/blog/104/howler.js-Modern-Web-Audio-Javascript-Library) for WebAudio sound. 
+  * [Pixi.js](http://www.pixijs.com/) for WebGL rendering wihttp://th a Canvas fallback.
 
 ## Source
 
