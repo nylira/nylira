@@ -5,7 +5,7 @@ date: 2015-01-27
 bodyclass: article
 ---
 
-I made the game Snake in JavaScript. It plays well on both PC and mobile browsers. Give it a shot! [snake.nylira.com](http://nylira.com)
+I made the game Snake in JavaScript. It plays well on both PC and mobile browsers. Give it a shot! [snake.nylira.com](http://snake.nylira.com)
 
 <div class="figure">
   <img src="../assets/images/snake/gameplay.png" alt="Snake gameplay" />
