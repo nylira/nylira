@@ -17,5 +17,6 @@ block container
           .title!= project.meta.title
           if project.meta.slug
             .thumb: img(src='../assets/images/projects/'+project.meta.slug+'-thumb.png')
-          .date= moment(project.meta.date).format("YYYY-MM-DD")
-          .sub View Project
+          .sub
+            .date= moment(project.meta.date).format("YYYY-MM-DD")
+            .go View Project
