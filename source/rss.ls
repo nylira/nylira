@@ -45,7 +45,7 @@ create-feed-item = (feed, article) ->
   feed.item(
     title: article.meta.title
     description: article.content
-    url: url + '/' + article.slug
+    url: url + article.slug
     date: moment(article.meta.date).format('MMMM D, YYYY HH:mm:ss ZZ')
   )
 
@@ -66,7 +66,7 @@ create-rss-feed = ->
   feed = new rss(
     title: 'Nylira: Interaction Design & Web Development'
     description: 'The newest articles about interaction design and web development. Brought to you by Nylira.'
-    feed_url: url + '/rss.xml'
+    feed_url: url + 'rss.xml'
     site_url: url
     image_url: url + 'assets/img/favicon.png',
     author: author
