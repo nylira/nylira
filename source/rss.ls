@@ -49,20 +49,7 @@ create-feed-item = (feed, article) ->
     date: moment(article.meta.date).format('MMMM D, YYYY HH:mm:ss ZZ')
   )
 
-#----------------------------------------------------------------------
-# Execute
-
-# returns a list of all articles on the site.
-articles = input-dir-to-categorized-data markdown-directory
-
-# this should show the latest article
-#console.log articles[0]
-
-#----------------------------------------------------------------------
-# RSS
-# Let's start converting it all to RSS.
-
-create-rss-feed = ->
+create-rss-feed = (articles)->
   feed = new rss(
     title: 'Nylira: Interaction Design & Web Development'
     description: 'The newest articles about interaction design and web development. Brought to you by Nylira.'
@@ -83,4 +70,11 @@ create-rss-feed = ->
 
   return feed.xml!
 
-fs.write-file-sync './tmp/rss.xml', create-rss-feed!
+#----------------------------------------------------------------------
+# Execute
+
+# returns a list of all articles on the site.
+articles = input-dir-to-categorized-data markdown-directory
+
+# write the rss file
+fs.write-file-sync './tmp/rss.xml', create-rss-feed(articles)
