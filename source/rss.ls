@@ -83,4 +83,4 @@ create-rss-feed = ->
 
   return feed.xml!
 
-fs.write-file-sync './public/rss.xml', create-rss-feed!
+fs.write-file-sync './tmp/rss.xml', create-rss-feed!

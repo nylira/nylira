@@ -1,7 +1,7 @@
 default: reset-dirs build-css build-html
 
-LIVESCRIPT_BIN = ./node_modules/.bin/lsc
-STYLUS_BIN = ./node_modules/.bin/stylus
+LIVESCRIPT = ./node_modules/.bin/lsc
+STYLUS = ./node_modules/.bin/stylus
 STYLUS_PARAMS = -c -u ./node_modules/nib/ --include-css
 STYLUS_WATCH_PARAMS = -c -w source/stylesheets/screen.styl -u ./node_modules/nib/ -o public/assets/css/ --include-css
 
@@ -19,14 +19,15 @@ reset-dirs:
 	mkdir -p ./tmp/articles
 
 build-css:
-	$(STYLUS_BIN) <$(STYL) >$(CSS) $(STYLUS_PARAMS) 
+	$(STYLUS) <$(STYL) >$(CSS) $(STYLUS_PARAMS) 
 
 build-html:
 	cp -r ./images ./tmp/assets/
 	cp -r ./source/javascript/* ./tmp/assets/js/
 	cp -r ./source/fonts/* ./tmp/assets/fonts/
-	$(LIVESCRIPT_BIN) ./source/build.ls
+	$(LIVESCRIPT) ./source/build.ls
+	$(LIVESCRIPT) ./source/rss.ls
 	rm -rf ./public && mv ./tmp ./public
 
 wcss:
-	$(STYLUS_BIN) $(STYLUS_WATCH_PARAMS)
+	$(STYLUS) $(STYLUS_WATCH_PARAMS)
