@@ -28,5 +28,5 @@ build-html:
 	$(LIVESCRIPT_BIN) ./source/build.ls
 	rm -rf ./public && mv ./tmp ./public
 
-watch-css:
+wcss:
 	$(STYLUS_BIN) $(STYLUS_WATCH_PARAMS)
