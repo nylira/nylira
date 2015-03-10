@@ -1,5 +1,5 @@
 ---
-title: Don't start a project in 2015 without these five libraries
+title: Don't start a project without these essential 5 libraries
 category: web-dev
 date: 2015-03-10
 bodyclass: article

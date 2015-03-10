@@ -6,22 +6,32 @@ ul.blocks
       p 0.75em 1.25em
       b 1px solid bc
       relative()
+
       .title
         font-size 1.25em
         ff sans
         c txt
-      .date, .sub
+
+      .sub
         c anchor
         font-size 0.75em
+
+      .go
+        background hsla(0,0,100%,.1)
+        color #ccc
+        text-transform uppercase
+        font-size 0.66em
+        letter-spacing 1px
+        line-height 2em
+        padding 0 0.33em
+        margin-left 0.5em
+
+      .date, .go
+        display inline-block
+
       .date
-        absolute()
-        top 1em
-        right 0
-        w 100px
-        c txt
-        lhh 1.5em
-        ta center
-        bg bg3
+        c #666
+
       .thumb
         absolute()
         top -1px
@@ -30,18 +40,18 @@ ul.blocks
         bg bg3
         h 86px
         overflow hidden
+        display none
         img
           w 320px
           h 86px
           transition ease 0.1s
 
-      .date, .thumb
-        d none
     a.block
       &:hover
         border-color link
-        .date
+        .go
           bg link
+          color #fff
 
         .thumb
           img

@@ -8,7 +8,7 @@ block container
   #home-header
     .cell
       h1 
-        a(href=depth+'profile') Interface design
+        a(href=depth+'profile') Interaction design
         |  for the&nbsp;web.
 
   .section
@@ -21,8 +21,9 @@ block container
         - for article in articles
           li: a.block(href=depth + article.slug + '/')
             .title!= article.meta.title
-            .date= moment(article.meta.date).format("YYYY-MM-DD")
-            .sub Read More
+            .sub
+              .date= moment(article.meta.date).format("YYYY-MM-DD")
+              .go Read More
       p.bottom
         | Browse through a list of all the articles on this site. 
         a(href=depth+'projects') All Articles
@@ -37,8 +38,9 @@ block container
         - for project in projects
           li: a.block(href=depth + project.slug + '/')
             .title!= project.meta.title
-            .date= moment(project.meta.date).format("YYYY-MM-DD")
-            .sub View Project
+            .sub
+              .date= moment(project.meta.date).format("YYYY-MM-DD")
+              .go View Project
 
       p.bottom
         | View all the official Nylira projects since 2010 to see my work has evolved over time. 
