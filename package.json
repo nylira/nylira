@@ -27,6 +27,7 @@
     "nib": "~1.1.0",
     "prelude-ls": "~1.1.x",
     "require-dir": "~0.1.x",
+    "rss": "^1.1.1",
     "stylus": "~0.50.0",
     "typogr": "^0.6.5"
   }
