@@ -1,4 +1,4 @@
-require! {\jade \marked \mkdirp \moment \path \js-yaml \typogr}
+require! {\jade \marked \mkdirp \moment \path \js-yaml \typogr \rss}
 fs = require \graceful-fs
 {filter, map, reverse, sort-by, take, unique} = require \prelude-ls
 
@@ -6,6 +6,11 @@ fs = require \graceful-fs
 # Variables
 
 markdown-directory = './content/'
+
+url = 'http://nylira.com/'
+author = 'Peng Zhong'
+pubDate = moment().format('MMMM D, YYYY HH:mm:ss ZZ')
+copyright = moment().format('YYYY') + ' ' + author
 
 #----------------------------------------------------------------------
 # Index Functions
@@ -36,6 +41,14 @@ input-dir-to-categorized-data = (input-dir) ->
   |> map ((it) -> split-markdown-file input-dir, it)
   |> filter-articles
 
+create-feed-item = (feed, article) ->
+  feed.item(
+    title: article.meta.title
+    description: article.content
+    url: url + '/' + article.slug
+    date: moment(article.meta.date).format('MMMM D, YYYY HH:mm:ss ZZ')
+  )
+
 #----------------------------------------------------------------------
 # Execute
 
@@ -43,18 +56,31 @@ input-dir-to-categorized-data = (input-dir) ->
 articles = input-dir-to-categorized-data markdown-directory
 
 # this should show the latest article
-console.log articles[0]
+#console.log articles[0]
 
 #----------------------------------------------------------------------
 # RSS
 # Let's start converting it all to RSS.
 
-feed = new RSS(
-  title: 'Nylira Articles'
-  description: 'This feed offers a list of the newest articles about interaction design and web development posted to Nylira'
-  feed_url: 'http://nylira.com/rss.xml'
-  site_url: 'http://nylira.com',
-  image_url: 'http://nylira.com/assets/img/favicon.png',
+create-rss-feed = ->
+  feed = new rss(
+    title: 'Nylira: Interaction Design & Web Development'
+    description: 'The newest articles about interaction design and web development. Brought to you by Nylira.'
+    feed_url: url + '/rss.xml'
+    site_url: url
+    image_url: url + 'assets/img/favicon.png',
+    author: author
+    managingEditor: author
+    webMaster: author
+    copyright: copyright
+    language: 'en',
+    pubDate: pubDate
+    ttl: '60'
+  )
 
-)
+  for i from 1 to 10
+    create-feed-item(feed, articles[i])
 
+  return feed.xml!
+
+fs.write-file-sync './public/rss.xml', create-rss-feed!
