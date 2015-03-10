@@ -23,7 +23,6 @@ block container
             .title!= article.meta.title
             .sub
               .date= moment(article.meta.date).format("YYYY-MM-DD")
-              .go Read More
       p.bottom
         | Browse through a list of all the articles on this site. 
         a(href=depth+'projects') All Articles
@@ -40,7 +39,6 @@ block container
             .title!= project.meta.title
             .sub
               .date= moment(project.meta.date).format("YYYY-MM-DD")
-              .go View Project
 
       p.bottom
         | View all the official Nylira projects since 2010 to see my work has evolved over time. 
