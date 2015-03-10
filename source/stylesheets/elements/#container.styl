@@ -48,7 +48,7 @@ body.projects
         d none
 
     h1
-      font 2em/1.25 sans
+      font 3em/1.25 sans
       ls -1px
       c link
 
@@ -60,7 +60,7 @@ body.projects
 
     p, ul, ol, blockquote, h2, h3, h4, h5, h6, .figure
       a
-        td underline
+        bb 1px solid txt
 
     h3, h3
       vertical-align top
@@ -69,6 +69,8 @@ body.projects
       font bold 1.5em/1.25 sans
       mb 0.75em
       mt 1.5em
+      a
+        bb 2px solid txt
 
     h3
       fw bold
@@ -94,12 +96,14 @@ body.projects
       mb 3em
       img
         d block
+
       .figcaption
-        bg bc
+        bg #000
         p .5em 0.75em
         p
-          c txt
+          c #ddd
           m 0
+
     .aside
       w 240px
       fl()
@@ -124,7 +128,7 @@ body.projects
 
     p code, h2 code, h3 code
       p 0 0.25em
-      bg bg3
+      bg bg2
       f 90%/120% mono
       d inline-block
 
