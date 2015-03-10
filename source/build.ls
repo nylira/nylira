@@ -57,7 +57,6 @@ recent-articles = (input-dir, num) ->
   all-articles(input-dir)
   |> take num
 
-
 #----------------------------------------------------------------------
 # Essay Functions
 
@@ -104,6 +103,7 @@ pz-profile-options =
   depth: './../'
   moment: moment
   pretty: true
+  typogr: typogr
   meta: {bodyclass: 'profile'}
 
 pz-articles-template = './source/views/articles.jade'
@@ -113,6 +113,7 @@ pz-articles-options =
   depth: './../'
   moment: moment
   pretty: true
+  typogr: typogr
   meta: {bodyclass: 'articles'}
 
 pz-contact-template = './source/views/contact.jade'
@@ -121,6 +122,7 @@ pz-contact-options =
   depth: './../'
   moment: moment
   pretty: true
+  typogr: typogr
   meta: {bodyclass: 'contact'}
 
 pz-projects-template = './source/views/projects.jade'
@@ -130,6 +132,7 @@ pz-projects-options =
   depth: './../'
   moment: moment
   pretty: true
+  typogr: typogr
   meta: {bodyclass: 'projects index'}
 
 pz-index-template = './source/views/index.jade'
@@ -141,6 +144,7 @@ pz-index-options =
   depth: './'
   moment: moment
   pretty: true
+  typogr: typogr
   meta: {bodyclass: 'home'}
 
 #----------------------------------------------------------------------

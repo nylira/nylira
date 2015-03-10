@@ -16,6 +16,6 @@ block container
     ul.blocks
       - for article in articles
         li: a.block(href=depth + article.slug + '/')
-          .title!= article.meta.title
+          .title!= typogr.typogrify(article.meta.title)
           .sub
             .date= moment(article.meta.date).format("YYYY-MM-DD")

@@ -1,5 +1,5 @@
 ---
-title: Don't start a project without these essential 5 libraries
+title: Don't start a front end project without these five essential libraries
 category: web-dev
 date: 2015-03-10
 bodyclass: article
