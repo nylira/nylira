@@ -5,7 +5,7 @@ date: 2015-03-10
 bodyclass: article
 ---
 
-I find the following libraries for io.js to be essential to a robust web project in 2015. The JavaScript stack is changing dramatically month by month, but good tools don't come by very often.
+I find the following libraries for [io.js](https://iojs.org/) to be essential to a robust web project in 2015. The JavaScript front end development stack is changing dramatically month by month, but solid, usable tools don't come by very often.
 
 ## Put everything together with Browserify
 
