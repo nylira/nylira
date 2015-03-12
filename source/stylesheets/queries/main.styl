@@ -14,17 +14,22 @@
           lhh 48px
           p 0 .67em
 
+  #container .body.text .figure .figcaption p
+    s 0.8725em
+
 @media (min-width: 414px)
   #header .nav ul li
     &#nav-home a
       s 1.125em
     a
       font-size 1em
-      p 0 .75em
+      p 0 .70em
 
-  #container .body
-    > p:first-of-type
+  #container > .wrapper > .body > p:first-of-type
       s 1.125em
+
+  #container .body.text .figure .figcaption p
+    s 1em
 
 @media (min-width: 480px)
   #header .nav ul li
@@ -52,18 +57,31 @@
 
 @media (min-width: 768px)
 
+  body
+    s 1.25em
+
+  // increase line height of header
+  #header
+    .nav ul
+      li
+        h 64px
+        a
+          lhh 60px
+
   // make the header have more structure
   #header
     mb 3em
     .wrapper
       p 0
     .nav ul li
-      w 128px
+      w 16.666%
       a
         p 0
         bl 1px solid bc
       &#nav-home
-        w 256px
+        w 33.333%
+        ta left
+        pl 1em
         a
           p 0
           bl none
@@ -73,9 +91,9 @@
     p.copyright, ul
       float left
     p.copyright
-      w 256px
+      w 33.3333%
     ul
-      w 512px
+      w 66.6666%
 
   // add more padding to the homepage header
   body.home
@@ -83,14 +101,6 @@
       mb 2.5em
     #home-header
       mb 3em
-
-  // increase 1.25em text to 1.5em
-  #home-header .cell h1
-  ul.blocks li .block .title
-  ul.blocks li a.block .title
-  #container > .wrapper > .body > p:first-of-type
-    s 1.5em
-    ls - 0.025em
 
   // increase padding everywhere to 3em
   body.about
@@ -102,6 +112,9 @@
   body.contact
     #container
       mb 1em + 1em
+
+  section, .section
+    mb 2em + 1em
 
 @media (min-width: 980px)
   body
