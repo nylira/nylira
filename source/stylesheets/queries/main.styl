@@ -1,26 +1,97 @@
 @media (min-width: 375px)
   #header
-    .nav
-      ul
-        li
-          bt 4px solid #000
-          h 48px
-          &#nav-home
-            a
-              lhh 48px
-          a
-            font-size 0.9em
-            lhh 48px
-            p 0 .67em
+    bt 4px solid #000
+    .nav ul
+      margin-top -4px
+      li
+        bt 4px solid #000
+        h 52px
+        &#nav-home a
+          lhh 48px
+          s 1em
+        a
+          s 0.9em
+          lhh 48px
+          p 0 .67em
 
+@media (min-width: 414px)
+  #header .nav ul li
+    &#nav-home a
+      s 1.125em
+    a
+      font-size 1em
+      p 0 .75em
+
+  #container .body
+    > p:first-of-type
+      s 1.125em
+
+@media (min-width: 480px)
+  #header .nav ul li
+    a
+      p 0 1em
+    &#nav-home a
+      s 1.25em
+
+@media (min-width: 568px)
+  #header .nav ul li
+    a
+      p 0 1.25em
+    &#nav-home a
+      p 0 2em
+  
 @media (min-width: 640px)
-  body
-    display block
+  #header .nav ul li
+    a
+      p 0 1.5em
+    &#nav-home a
+      p 0 3.5em
+
+  #container > .wrapper > .body > p:first-of-type
+    s 1.25em
+
+@media (min-width: 768px)
+
+  // make the header have more structure
+  #header
+    mb 3em
+    .wrapper
+      p 0
+    .nav ul li
+      w 128px
+      a
+        p 0
+        bl 1px solid bc
+      &#nav-home
+        w 256px
+        a
+          p 0
+          bl none
+
+  // add more padding to the homepage header
+  body.home
+    #header
+      mb 2.5em
+    #home-header
+      mb 3em
+
+  // increase 1.25em text to 1.5em
+  #home-header .cell h1
+  ul.blocks li .block .title
+  ul.blocks li a.block .title
+    s 1.5em
+
+  // increase padding everywhere to 3em
+  body.about
+    #container
+      mb 0.5em + 1em
+
+  body.clients
+  body.expertise
+  body.contact
+    #container
+      mb 1em + 1em
 
 @media (min-width: 980px)
-  body
-    display block
-
-@media (min-width: 1200px)
   body
     display block
