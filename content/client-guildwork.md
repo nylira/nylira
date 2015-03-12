@@ -1,6 +1,6 @@
 ---
 title: Guildwork
-category: projects
+category: clients
 date: 2012-04-02
 bodyclass: images
 slug: guildwork

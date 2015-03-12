@@ -29,27 +29,27 @@ input-dir-to-categorized-data = (input-dir) ->
   |> map ((it) -> split-markdown-file input-dir, it)
   |> categorize
 
-# return the list of all projects
-all-projects = (input-dir) ->
+# return the list of all clients
+all-clients = (input-dir) ->
   fs.readdir-sync input-dir
   |> map ((it) -> split-markdown-file input-dir, it)
-  |> filter (.meta.category == \projects)
+  |> filter (.meta.category == \clients)
   |> filter (.meta.status != \closed)
   |> sort-by (.meta.date)
   |> reverse
 
-# return the list of all projects
+# return the list of all clients
 all-articles = (input-dir) ->
   fs.readdir-sync input-dir
   |> map ((it) -> split-markdown-file input-dir, it)
-  |> filter (.meta.category != \projects)
+  |> filter (.meta.category != \clients)
   |> filter (.meta.status != \closed)
   |> sort-by (.meta.date)
   |> reverse
 
-# return a truncated list of recent projects
-recent-projects = (input-dir, num) ->
-  all-projects(input-dir)
+# return a truncated list of recent clients
+recent-clients = (input-dir, num) ->
+  all-clients(input-dir)
   |> take num
 
 # return a truncated list of recently written/updated articles
@@ -110,7 +110,7 @@ pz-expertise-options =
   articles: all-articles(pz-article-input-dir)
   depth: './../'
   moment: moment
-  meta: {bodyclass: 'articles'}
+  meta: {bodyclass: 'expertise'}
 
 pz-contact-template = './source/views/contact.jade'
 pz-contact-filename = './tmp/contact/index.html'
@@ -122,17 +122,17 @@ pz-contact-options =
 pz-clients-template = './source/views/clients.jade'
 pz-clients-filename = './tmp/clients/index.html'
 pz-clients-options =
-  projects: all-projects(pz-article-input-dir)
+  clients: all-clients(pz-article-input-dir)
   depth: './../'
   moment: moment
-  meta: {bodyclass: 'projects index'}
+  meta: {bodyclass: 'clients index'}
 
 pz-index-template = './source/views/index.jade'
 pz-index-filename = './tmp/index.html'
 pz-index-options =
   categories: input-dir-to-categorized-data(pz-article-input-dir)
   articles: recent-articles(pz-article-input-dir, 3)
-  projects: recent-projects(pz-article-input-dir, 3)
+  clients: recent-clients(pz-article-input-dir, 3)
   depth: './'
   moment: moment
   meta: {bodyclass: 'home'}

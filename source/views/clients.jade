@@ -10,12 +10,12 @@ block container
       h1.title Clients
 
   .body
-    p This is a select list of my official projects since 2010. Take a look at how my work has evolved over the years.
+    p This is a select list of Nylira's clients since 2010. Take a look at how my work has evolved over the years.
     ul.blocks
-      - for project in projects
-        li: a.block(href=depth + project.slug + '/')
-          .title!= project.meta.title
-          if project.meta.slug
-            .thumb: img(src='../assets/images/projects/'+project.meta.slug+'-thumb.png')
+      - for client in clients
+        li: a.block(href=depth + client.slug + '/')
+          .title!= client.meta.title
+          if client.meta.slug
+            .thumb: img(src='../assets/images/clients/'+client.meta.slug+'-thumb.png')
           .sub
-            .date= moment(project.meta.date).format("YYYY-MM-DD")
+            .date= moment(client.meta.date).format("YYYY-MM-DD")

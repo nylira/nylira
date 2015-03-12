@@ -1,6 +1,6 @@
 ---
 title: GovHub
-category: projects
+category: clients
 date: 2012-04-14
 bodyclass: images
 slug: govhub

@@ -1,6 +1,6 @@
 ---
 title: FtNox
-category: projects
+category: clients
 date: 2014-04-09
 bodyclass: images
 slug: ftnox

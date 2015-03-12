@@ -1,6 +1,6 @@
 ---
 title: EasyBCD
-category: projects
+category: clients
 date: 2012-06-02
 bodyclass: images
 slug: easybcd

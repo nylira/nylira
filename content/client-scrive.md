@@ -1,6 +1,6 @@
 ---
 title: Scrive
-category: projects
+category: clients
 date: 2013-01-06
 bodyclass: images
 slug: scrive

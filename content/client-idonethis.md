@@ -1,6 +1,6 @@
 ---
 title: iDoneThis
-category: projects
+category: clients
 date: 2011-09-24
 bodyclass: images
 slug: idonethis

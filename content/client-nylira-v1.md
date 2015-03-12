@@ -1,6 +1,6 @@
 ---
 title: Nylira v1
-category: projects
+category: clients
 date: 2009-03-05
 bodyclass: images
 slug: nylira-v1

@@ -25,7 +25,7 @@ block container
               .date= moment(article.meta.date).format("YYYY-MM-DD")
       p.bottom
         | Browse through a list of all the articles on this site. 
-        a(href=depth+'projects') All Articles
+        a(href=depth+'clients') All Articles
 
   .section
     .section-header
@@ -33,16 +33,16 @@ block container
         | Recent 
         a(href=depth+'clients') Clients
     .body
-      ul.blocks.projects
-        - for project in projects
-          li: a.block(href=depth + project.slug + '/')
-            .title!= project.meta.title
+      ul.blocks.clients
+        - for client in clients
+          li: a.block(href=depth + client.slug + '/')
+            .title!= client.meta.title
             .sub
-              .date= moment(project.meta.date).format("YYYY-MM-DD")
+              .date= moment(client.meta.date).format("YYYY-MM-DD")
 
       p.bottom
-        | View all the official Nylira projects since 2010 to see my work has evolved over time. 
-        a(href=depth+'projects') Projects List
+        | View all of Nylira's clients since 2010 to see my work has evolved over time. 
+        a(href=depth+'clients') Projects List
 
   .section
     .section-header

@@ -1,6 +1,6 @@
 ---
 title: Företagsklimat
-category: projects
+category: clients
 date: 2011-11-09
 bodyclass: images
 slug: foretagsklimat

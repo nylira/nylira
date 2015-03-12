@@ -1,6 +1,6 @@
 ---
 title: Riot Act
-category: projects
+category: clients
 date: 2010-04-11
 bodyclass: images
 slug: riotactguild

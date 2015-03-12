@@ -27,11 +27,11 @@ split-markdown-file = (input-dir, markdown-file) ->
 
   return content
 
-# filters a list of articles to NOT show projects, NOT show closed articles,
+# filters a list of articles to NOT show clients, NOT show closed articles,
 # and sort by newest first
 filter-articles = (articles) ->
   filter (.meta.status != \closed), articles
-  |> filter (.meta.category != \projects)
+  |> filter (.meta.category != \clients)
   |> sort-by (.meta.date)
   |> reverse
 

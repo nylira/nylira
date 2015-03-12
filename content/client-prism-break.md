@@ -1,6 +1,6 @@
 ---
 title: PRISM Break
-category: projects
+category: clients
 date: 2013-06-04
 bodyclass: images
 slug: prism-break

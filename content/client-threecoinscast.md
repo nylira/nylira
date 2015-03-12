@@ -1,6 +1,6 @@
 ---
 title: Three Coins Cast
-category: projects
+category: clients
 date: 2011-04-17
 slug: threecoinscast
 ---
