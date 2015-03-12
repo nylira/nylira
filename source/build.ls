@@ -68,7 +68,8 @@ htmlize = (output-dir, markdown-file) ->
 render-file = (template, options, filename) ->
   err, html <- jade.render-file template, options
   if err => console.error err
-  else fs.write-file-sync filename, html
+  else fs.write-file-sync filename, typogr.typogrify(html)
+  console.log typogr.typogrify(html)
 
 markdown-to-jade = (input-dir, template, markdown-file, filename) ->
   file = path.join input-dir, markdown-file
@@ -81,7 +82,6 @@ markdown-to-jade = (input-dir, template, markdown-file, filename) ->
     content: typogr.typogrify marked data.split(\---)[2]
     moment: moment
     typogr: typogr
-    pretty: true
 
   render-file template, options, filename
 
@@ -102,18 +102,14 @@ pz-about-filename = './tmp/about/index.html'
 pz-about-options =
   depth: './../'
   moment: moment
-  pretty: true
-  typogr: typogr
   meta: {bodyclass: 'about'}
 
-pz-articles-template = './source/views/expertise.jade'
-pz-articles-filename = './tmp/expertise/index.html'
-pz-articles-options =
+pz-expertise-template = './source/views/expertise.jade'
+pz-expertise-filename = './tmp/expertise/index.html'
+pz-expertise-options =
   articles: all-articles(pz-article-input-dir)
   depth: './../'
   moment: moment
-  pretty: true
-  typogr: typogr
   meta: {bodyclass: 'articles'}
 
 pz-contact-template = './source/views/contact.jade'
@@ -121,18 +117,14 @@ pz-contact-filename = './tmp/contact/index.html'
 pz-contact-options =
   depth: './../'
   moment: moment
-  pretty: true
-  typogr: typogr
   meta: {bodyclass: 'contact'}
 
-pz-projects-template = './source/views/clients.jade'
-pz-projects-filename = './tmp/clients/index.html'
-pz-projects-options =
+pz-clients-template = './source/views/clients.jade'
+pz-clients-filename = './tmp/clients/index.html'
+pz-clients-options =
   projects: all-projects(pz-article-input-dir)
   depth: './../'
   moment: moment
-  pretty: true
-  typogr: typogr
   meta: {bodyclass: 'projects index'}
 
 pz-index-template = './source/views/index.jade'
@@ -143,8 +135,6 @@ pz-index-options =
   projects: recent-projects(pz-article-input-dir, 3)
   depth: './'
   moment: moment
-  pretty: true
-  typogr: typogr
   meta: {bodyclass: 'home'}
 
 #----------------------------------------------------------------------
@@ -152,7 +142,7 @@ pz-index-options =
 
 render-files pz-article-template, pz-article-input-dir, pz-article-output-dir
 render-file pz-index-template, pz-index-options, pz-index-filename
-render-file pz-projects-template, pz-projects-options, pz-projects-filename
-render-file pz-articles-template, pz-articles-options, pz-articles-filename
+render-file pz-clients-template, pz-clients-options, pz-clients-filename
+render-file pz-expertise-template, pz-expertise-options, pz-expertise-filename
 render-file pz-about-template, pz-about-options, pz-about-filename
 render-file pz-contact-template, pz-contact-options, pz-contact-filename
