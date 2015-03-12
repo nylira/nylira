@@ -1,6 +1,6 @@
 ---
 title: Artilect
-category: projects
+category: clients
 date: 2012-01-02
 bodyclass: images
 slug: artilect
