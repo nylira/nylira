@@ -1,11 +1,8 @@
 @media (min-width: 375px)
   #header
-    bt 4px solid #000
     .nav ul
-      margin-top -4px
       li
-        bt 4px solid #000
-        h 52px
+        h 53px
         &#nav-home a
           lhh 48px
           s 1em
@@ -64,8 +61,8 @@
   #header
     .nav ul
       li
-        h 64px
-        a
+        h 63px
+        &#nav-home a, a
           lhh 60px
 
   // make the header have more structure
@@ -117,5 +114,55 @@
     mb 2em + 1em
 
 @media (min-width: 980px)
-  body
-    display block
+  .section
+    pt 1.5em
+
+    .section-header
+      m 0
+      w 320px
+      fl()
+      pl .25*x
+      h2
+        mt -1.25em
+
+    .body
+      ml 320px
+
+  #container
+    .figure
+      &.max
+        w 960px
+        ml -320px
+
+    .body, .body.text
+      h2, h3, p, .p, li, ul.blocks li
+        max-width 50 * x
+        margin-left auto
+        margin-right auto
+
+  body.clients
+    #container .body ul.blocks
+      ml 320px
+      li
+        w 640px
+        ml 0
+        mr 0
+
+        .block, a.block
+          p 0
+          clearfix()
+
+          .thumb
+            d block
+            b 1px solid #ddd
+            br none
+          .title
+            float left
+            lh 84px
+            m 0
+            pl 1em
+            fw bold
+          .sub
+            lh 84px
+            float right
+            pr 1em

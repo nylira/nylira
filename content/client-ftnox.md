@@ -9,14 +9,14 @@ slug: ftnox
 FtNox offers a cryptocurrency exchange as a service to people wishing to start their own Bitcoin, Litecoin, et. al. exchanges. Nylira worked with FtNox to create a customizable user interface for the service. The colors and branding on the site need the ability to be changed by the user while still looking good. *Design currently offline.*
 
 <div class="figure">
-  <a href="../assets/images/projects/ftnox-01@2x.png"><img src="../assets/images/projects/ftnox-01.png" alt="FtNox exchange home"></a>
+  <a href="../assets/images/clients/ftnox-01@2x.png"><img src="../assets/images/clients/ftnox-01.png" alt="FtNox exchange home"></a>
   <div class="figcaption">
     <p>The main exchange page for users of FtNox.</p>
   </div>
 </div>
 
 <div class="figure">
-  <a href="../assets/images/projects/ftnox-02@2x.png"><img src="../assets/images/projects/ftnox-02.png" alt="FtNox user settings"></a>
+  <a href="../assets/images/clients/ftnox-02@2x.png"><img src="../assets/images/clients/ftnox-02.png" alt="FtNox user settings"></a>
   <div class="figcaption">
     <p>An example settings page for a user of FtNox.</p>
   </div>
