@@ -113,26 +113,34 @@
   section, .section
     mb 2em + 1em
 
-@media (min-width: 980px)
+@media (min-width: 996px)
   .section
     pt 1.5em
 
     .section-header
       m 0
-      w 320px
+      33.333%
       fl()
       pl .25*x
       h2
         mt -1.25em
 
     .body
-      ml 320px
+      ml 33.333%
+
+  #home-header
+    .cell
+      b 1px solid #ddd
+      p 2.375em 3em
+      h1
+        s 1.5em
 
   #container
-    .figure
-      &.max
-        w 960px
-        ml -320px
+    .wrapper > .header
+    .wrapper > .footer
+      max-width 50 * x
+      margin-left auto
+      margin-right auto
 
     .body, .body.text
       h2, h3, p, .p, li, ul.blocks li
@@ -142,9 +150,10 @@
 
   body.clients
     #container .body ul.blocks
-      ml 320px
+      pl 320px
+      m 0 auto
       li
-        w 640px
+        ml 320px
         ml 0
         mr 0
 
@@ -161,8 +170,22 @@
             lh 84px
             m 0
             pl 1em
-            fw bold
           .sub
             lh 84px
             float right
             pr 1em
+
+@media (min-width: 1200px)
+  #container .header h1
+    s 3em
+
+  #home-header
+    .cell
+      h1
+        s 1.75em
+        lh 1.75em
+        a
+          bb 3px solid txt
+
+  #container .body ul.blocks li .block .title
+    s 1.5em
