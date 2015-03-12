@@ -37,7 +37,7 @@ filter-articles = (articles) ->
 
 # transforms a directory of markdown files into a list of article objects
 input-dir-to-categorized-data = (input-dir) ->
-  fs.readdir-sync input-dir
+  files = fs.readdir-sync input-dir
   |> map ((it) -> split-markdown-file input-dir, it)
   |> filter-articles
 
@@ -65,7 +65,7 @@ create-rss-feed = (articles)->
     ttl: '60'
   )
 
-  for i from 1 to 10
+  for i from 0 to 9
     create-feed-item(feed, articles[i])
 
   return feed.xml!
