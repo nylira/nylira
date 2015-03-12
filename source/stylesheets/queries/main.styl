@@ -67,6 +67,15 @@
         a
           p 0
           bl none
+  #footer
+    clearfix()
+    ta left
+    p.copyright, ul
+      float left
+    p.copyright
+      w 256px
+    ul
+      w 512px
 
   // add more padding to the homepage header
   body.home
@@ -79,7 +88,9 @@
   #home-header .cell h1
   ul.blocks li .block .title
   ul.blocks li a.block .title
+  #container > .wrapper > .body > p:first-of-type
     s 1.5em
+    ls - 0.025em
 
   // increase padding everywhere to 3em
   body.about
