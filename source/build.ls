@@ -69,7 +69,7 @@ render-file = (template, options, filename) ->
   err, html <- jade.render-file template, options
   if err => console.error err
   else fs.write-file-sync filename, typogr.typogrify(html)
-  console.log typogr.typogrify(html)
+  #console.log typogr.typogrify(html)
 
 markdown-to-jade = (input-dir, template, markdown-file, filename) ->
   file = path.join input-dir, markdown-file
