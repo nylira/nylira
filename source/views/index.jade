@@ -7,9 +7,9 @@ block container
 
   #home-header
     .cell
-      h1 
-        a(href=depth+'profile') Interaction design
-        |  for the&nbsp;web.
+      h1
+        :markdown
+          I build web properties for global [clients](./clients). I share my expertise by writing [articles](./articles) about interaction design. To support the developer community, I maintain open source [tools](https://github.com/nylira) on GitHub.
 
   .section
     .section-header
@@ -31,7 +31,7 @@ block container
     .section-header
       h2
         | Recent 
-        a(href=depth+'projects') Projects
+        a(href=depth+'clients') Clients
     .body
       ul.blocks.projects
         - for project in projects

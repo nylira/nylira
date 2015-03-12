@@ -13,10 +13,10 @@ reset-dirs:
 	mkdir -p ./tmp/assets/css
 	mkdir -p ./tmp/assets/js
 	mkdir -p ./tmp/assets/fonts
-	mkdir -p ./tmp/projects
-	mkdir -p ./tmp/profile
+	mkdir -p ./tmp/clients
+	mkdir -p ./tmp/about
 	mkdir -p ./tmp/contact
-	mkdir -p ./tmp/articles
+	mkdir -p ./tmp/expertise
 
 build-css:
 	$(STYLUS) <$(STYL) >$(CSS) $(STYLUS_PARAMS) 

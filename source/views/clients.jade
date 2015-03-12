@@ -1,16 +1,16 @@
 extends layouts/base
 
 block title
-  | Projects
+  | Clients
 
 block container
 
   .header
     .main
-      h1.title Projects
+      h1.title Clients
 
   .body
-    p This is a select list of my official projects since 2010. Take a look at how my web interfaces have evolved over the years.
+    p This is a select list of my official projects since 2010. Take a look at how my work has evolved over the years.
     ul.blocks
       - for project in projects
         li: a.block(href=depth + project.slug + '/')
