@@ -6,14 +6,10 @@ body.about
   #container
     .body
       > p:first-of-type
+        ff serif
         font-size 1em
         mb 1.5em
 
-body.article
-body.clients.images
-  #container
-    .body
-      bb 1px solid bc
 
 body.article
 body.about
@@ -53,10 +49,10 @@ body.clients
       c link
 
 #container
-  .body
-    pb 1.5em
-
   .body.text
+
+    p, li, .p
+      ff serif
 
     p, ul, ol, blockquote, h2, h3, h4, h5, h6, .figure
       a
@@ -82,8 +78,6 @@ body.clients
 
     img
       max-width 100%
-      b 1px solid bc
-      bb none
 
     ul, ol
       pl 2em
@@ -95,15 +89,17 @@ body.clients
       lst decimal
 
     .figure
-      mb 3em
+      mb 1.5em
       img
         d block
 
       .figcaption
-        bg #000
+        bg txt
         p .5em 0.75em
         p
-          c #ddd
+          s 0.75em
+          c #eee
+          ff sans
           m 0
 
     .aside
@@ -139,8 +135,14 @@ body.clients
         lh 1.25em
 
   .footer
-    mb 3em
     clearfix()
+    bt 1px solid bc
+    ml -1em
+    mr -1em
+    p 0 1em
+    bg bg2
     p.meta
-      font-size 0.75em
-      line-height 3em
+      c dim
+      s 0.75em
+      lh 2em
+      ta center
