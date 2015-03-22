@@ -131,8 +131,8 @@ pz-index-template = './source/views/index.jade'
 pz-index-filename = './tmp/index.html'
 pz-index-options =
   categories: input-dir-to-categorized-data(pz-article-input-dir)
-  articles: recent-articles(pz-article-input-dir, 3)
-  clients: recent-clients(pz-article-input-dir, 3)
+  articles: recent-articles(pz-article-input-dir, 5)
+  clients: recent-clients(pz-article-input-dir, 5)
   depth: './'
   moment: moment
   meta: {bodyclass: 'home'}
