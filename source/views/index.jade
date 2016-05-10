@@ -5,52 +5,50 @@ block title
 
 block container
 
-  #home-header
-    .cell
+  section#section-hero
+    .section-header
+      h2 Welcome #[span.arrow &rarr;]
+    .section-content
       :markdown
-        # Welcome. I'm Peng Zhong.
-        I build web apps for global [clients](./clients). I share my expertise by writing [articles](./expertise) about interaction design and web development. I also maintain open source [tools](https://github.com/nylira) on GitHub.
+        **I'm Peng Zhong.** I build web apps for [clients](./clients) across the globe. I share my expertise by writing [articles](./expertise) about interaction design and development. I also maintain open source [tools](https://github.com/nylira) on GitHub.
 
-  .section
+  section
     .section-header
       h2: a(href=depth+'expertise') Recent Articles
-    .body
-      ul.blocks.articles
-        - for article in articles
-          li: a.block(href=depth + article.slug + '/')
-            .title!= article.meta.title
-            .sub
-              .date= moment(article.meta.date).format("YYYY-MM-DD")
+    .section-content
+      - for article in articles
+        a.block(href=depth + article.slug + '/')
+          .title!= article.meta.title
+          .sub
+            .date= moment(article.meta.date).format("YYYY-MM-DD")
       p.bottom
         | Browse through a list of all the articles on this site. 
         a(href=depth+'expertise') All Articles
 
-  .section
+  section
     .section-header
       h2: a(href=depth+'clients') Featured Clients
-    .body
-      ul.blocks.clients
-        - for client in clients
-          li: a.block(href=depth + client.slug + '/')
-            .title!= client.meta.title
-            .sub
-              .date= moment(client.meta.date).format("YYYY-MM-DD")
+    .section-content
+      - for client in clients
+        a.block(href=depth + client.slug + '/')
+          .title!= client.meta.title
+          .sub
+            .date= moment(client.meta.date).format("YYYY-MM-DD")
 
       p.bottom
         | View all of Nylira's clients since 2010 to see my work has evolved over time. 
         a(href=depth+'clients') Projects List
 
-  .section
+  section
     .section-header
       h2: a(href=depth+'contact') Get in Touch
-    .body
-      ul.blocks
-        li: a.block(href='mailto:peng@nylira.com')
-          .title peng@nylira.com
-          .sub Email
-        li: a.block(href='https://twitter.com/zcpeng')
-          .title @zcpeng
-          .sub Twitter
-        li: a.block(href='https://github.com/nylira')
-          .title github.com/nylira
-          .sub GitHub
+    .section-content
+      a.block(href='mailto:peng@nylira.com')
+        .title peng@nylira.com
+        .sub Email
+      a.block(href='https://twitter.com/zcpeng')
+        .title @zcpeng
+        .sub Twitter
+      a.block(href='https://github.com/nylira')
+        .title github.com/nylira
+        .sub GitHub

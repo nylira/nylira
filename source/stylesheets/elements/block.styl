@@ -1,0 +1,46 @@
+.block, a.block
+  display block
+  relative()
+  border-top 1px solid bc
+
+  padding 0.75*x 0
+
+  &:last-of-type
+    padding-bottom 0.75*x
+    margin-bottom 1.5*x
+
+  .title
+    c txt
+    font-weight 600
+    max-width 60em
+
+  .sub
+    c light
+
+  .thumb
+    absolute()
+    top -1px
+    left -321px
+    w 320px
+    bg bg3
+    h 86px
+    overflow hidden
+    display none
+    img
+      w 320px
+      h 86px
+      transition ease 0.1s
+
+a.block
+  &:hover
+    .title
+      color link
+    .thumb
+      img
+        transform scale(1.25)
+
+@media (min-width: 720px)
+  .block, a.block
+    padding x 0
+    .title
+      font-size 1.25*x

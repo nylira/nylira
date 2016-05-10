@@ -1,7 +1,20 @@
-#footer
-  bt 1px solid bc
-  p 1em 0
-  ta center
+section#section-footer
+
+  .wrapper
+    padding-top x
 
   p, li
-    mb 0.5em
+    margin-bottom 0.5*x
+
+@media (min-width: 768px)
+  section#section-footer
+    .wrapper
+      padding-top 2*x
+
+      display flex
+      width 100%
+
+      p.copyright
+        flex 1
+      ul
+        flex 2
