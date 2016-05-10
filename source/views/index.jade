@@ -8,14 +8,12 @@ block container
   #home-header
     .cell
       :markdown
-        <h1>Welcome. I'm Peng Zhong.</h1>
-        <p> I build web apps for global [clients](./clients). I share my expertise by writing [articles](./expertise) about interaction design and web development. I also maintain open source [tools](https://github.com/nylira) on GitHub.</p>
+        # Welcome. I'm Peng Zhong.
+        I build web apps for global [clients](./clients). I share my expertise by writing [articles](./expertise) about interaction design and web development. I also maintain open source [tools](https://github.com/nylira) on GitHub.
 
   .section
     .section-header
-      h2
-        | Recent 
-        a(href=depth+'expertise') Articles
+      h2: a(href=depth+'expertise') Recent Articles
     .body
       ul.blocks.articles
         - for article in articles
@@ -29,9 +27,7 @@ block container
 
   .section
     .section-header
-      h2
-        | Featured 
-        a(href=depth+'clients') Clients
+      h2: a(href=depth+'clients') Featured Clients
     .body
       ul.blocks.clients
         - for client in clients
@@ -46,9 +42,7 @@ block container
 
   .section
     .section-header
-      h2
-        | Get in 
-        a(href=depth+'contact') Touch
+      h2: a(href=depth+'contact') Get in Touch
     .body
       ul.blocks
         li: a.block(href='mailto:peng@nylira.com')

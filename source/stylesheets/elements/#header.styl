@@ -1,33 +1,34 @@
 #header
-  m 0 auto 2em
-  bt 3px solid #000
-  bb 1px solid bc
+  margin 0 auto 2em
+  border-top 3px solid txt
+  border-bottom 1px solid bc
 
-  .nav
-    ul
-      ta center
-      mt -3px
-      vertical-align top
+  .wrapper
+    display flex
 
-      li
-        d inline-block
-        bt 3px solid #000
-        h 39px
-        vertical-align top
-        &#nav-home
-          a
-            tt lowercase
-            font-weight bold
+  a
+    border-top 3px solid txt
+    margin-top -3px
+    display block
+    padding 0 0.5*x
 
-        &:hover
-          border-top-color bc
+    font-size 0.8*x
+    line-height 2.4*x
+    color txt
 
-        a
-          p 0 .5em
-          font-size 0.8em
-          d block
-          lhh 36px
-          c txt
+    &:hover
+      border-top-color bc
+
+    &#nav-home
+      tt lowercase
+      font-weight 600
+      font-size x
+      padding 0 x
+      flex 1
+      text-align left
+
+  nav
+    display flex
 
 body.home #header
   mb 1.5em
@@ -41,7 +42,35 @@ body.interaction-design #header #nav-expertise
 body.web-dev #header #nav-expertise
 body.game-dev #header #nav-expertise
 body.privacy #header #nav-expertise
-  border-top-color bc
+  border-top-color link
   &:hover
-    a
-      c txt
+    c txt
+
+@media (max-width: 414px)
+  #header .wrapper
+    padding 0
+
+@media (min-width: 414px)
+  #header a
+    border-top 4px solid txt
+    margin-top -4px
+
+    font-size x
+    line-height 3*x
+
+    &#nav-home
+      flex 1
+      font-size 1.25*x
+      line-height 3*x
+
+@media (min-width: 720px)
+  #header 
+    a#nav-home
+      flex 1
+      padding 0
+    nav
+      flex 2
+      a
+        flex 1
+        text-align center
+        border-left 1px solid bc

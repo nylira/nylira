@@ -1,18 +1,42 @@
 section, .section
-  mb 2em
-  bt 2px solid txt
+  border-top 2px solid txt
+  margin-bottom 3*x
 
   .section-header
-    lh 2em
-    m 0 0 1em
+    line-height 3*x
+    margin 0 0 x
 
-    a
-      fw bold
-      &:hover
-        td underline
+    h2
+      font-weight 600
+      a
+        color txt
+        &:hover
+          color hover
+          border-bottom 1px solid hover
 
   .body
     p.bottom
       mb 1em
       a
         bb 1px solid txt
+
+
+@media (min-width: 768px)
+  section, .section
+    margin-bottom 3*x
+
+@media (min-width: 996px)
+  .section
+    padding-top 1.5*x
+
+    .section-header
+      margin 0
+      width 33.3333%
+      float left
+      padding-left 0.25*x
+      h2
+        margin-top -1.25*x
+        t
+
+    .body
+      margin-left 33.333%

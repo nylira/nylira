@@ -1,35 +1,24 @@
 #home-header
-  mb 2em
-  d table
+  margin-bottom 2*x
   w 100%
 
-  .cell
-    h 100%
-    d table-cell
+  h1
+    font-size 2*x
+    margin 0 0 x
+    color txt
+    font-weight 200
+    line-height 1.25
+  p
+    font-size 1.25*x
+    max-width 60*x
 
+@media (min-width: 720px)
+  #home-header
     h1
-      font-size 1.5*x
-      margin 0 0 0.5*x
-      letter-spacing -0.025em
-      color txt
-    p
-      font-size 1.25*x
+      font-size 2.5*x
 
 @media (min-width: 960px)
   #home-header
-    .cell
-      b 1px solid #ddd
-      p 2.375em 3em
-      h1
-        s 1.5em
-
-@media (min-width: 1200px)
-  #home-header
-    .cell
-      h1
-        s 1.75em
-        lh 1.75em
-        a
-          bb 3px solid txt
-
-
+    padding 2*x 0
+    h1
+      font-size 3*x
