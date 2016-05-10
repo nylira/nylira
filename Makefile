@@ -12,7 +12,6 @@ reset-dirs:
 	rm -rf ./tmp
 	mkdir -p ./tmp/assets/css
 	mkdir -p ./tmp/assets/js
-	mkdir -p ./tmp/assets/fonts
 	mkdir -p ./tmp/clients
 	mkdir -p ./tmp/about
 	mkdir -p ./tmp/contact
@@ -24,7 +23,6 @@ build-css:
 build-html:
 	cp -r ./images ./tmp/assets/
 	cp -r ./source/javascript/* ./tmp/assets/js/
-	cp -r ./source/fonts/* ./tmp/assets/fonts/
 	$(LIVESCRIPT) ./source/build.ls
 	$(LIVESCRIPT) ./source/rss.ls
 	rm -rf ./public && mv ./tmp ./public
