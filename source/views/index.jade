@@ -21,7 +21,7 @@ block container
           .title!= article.meta.title
           .sub
             .date= moment(article.meta.date).format("YYYY-MM-DD")
-      p.bottom
+      p
         | Browse through a list of all the articles on this site. 
         a(href=depth+'expertise') All Articles
 
@@ -35,7 +35,7 @@ block container
           .sub
             .date= moment(client.meta.date).format("YYYY-MM-DD")
 
-      p.bottom
+      p
         | View all of Nylira's clients since 2010 to see my work has evolved over time. 
         a(href=depth+'clients') Projects List
 

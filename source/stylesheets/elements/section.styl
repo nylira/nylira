@@ -16,16 +16,6 @@ section
           color hover
           border-bottom 1px solid hover
 
-  .section-content
-    hr
-      border none
-      margin 3*x 0 x
-      height 4px 
-      background bc
-
-    p.bottom
-      mb 1em
-
   &.section-top
     border-top none
 
@@ -92,8 +82,10 @@ section
       .block:first-child:first-of-type
         border-top none
         margin-top x
-      .block:first-of-type
+      .article-body + .block
+        margin-top -1*x
         border-top none
+
 
     &.section-top
       padding-top 4*x
