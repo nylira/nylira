@@ -8,7 +8,28 @@
     d table-cell
 
     h1
-      s 1.25em
-      lh 1.5em
-      ls -0.025em
-      c txt
+      font-size 1.5*x
+      margin 0 0 0.5*x
+      letter-spacing -0.025em
+      color txt
+    p
+      font-size 1.25*x
+
+@media (min-width: 960px)
+  #home-header
+    .cell
+      b 1px solid #ddd
+      p 2.375em 3em
+      h1
+        s 1.5em
+
+@media (min-width: 1200px)
+  #home-header
+    .cell
+      h1
+        s 1.75em
+        lh 1.75em
+        a
+          bb 3px solid txt
+
+
