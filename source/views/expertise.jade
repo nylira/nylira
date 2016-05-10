@@ -5,17 +5,18 @@ block title
 
 block container
 
-  .header
-    .main
-      h1.title Expertise
 
-  .body
+  section#section-top
+    .section-header
+      h2 Expertise
 
-    p Read what I've written about interface design, web development, and other related topics. 
+    .section-content
+      p #[strong Get better at web development.] Read what I've written about interface design, web development, and other related topics. 
 
-    ul.blocks
+      hr
+
       - for article in articles
-        li: a.block(href=depth + article.slug + '/')
+        a.block(href=depth + article.slug + '/')
           .title!= article.meta.title
           .sub
             .date= moment(article.meta.date).format("YYYY-MM-DD")

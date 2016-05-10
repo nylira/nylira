@@ -5,15 +5,15 @@ block title
 
 block container
 
-  .header
-    .main
-      h1.title Clients
+  section#section-top
+    .section-header
+      h2 Clients
 
-  .body
-    p This is a select list of Nylira's clients since 2010. Take a look at how my work has evolved over the years.
-    ul.blocks
+    .section-content
+      p This is a select list of Nylira's clients since 2010. Take a look at how my work has evolved over the years.
+
       - for client in clients
-        li: a.block(href=depth + client.slug + '/')
+        a.block(href=depth + client.slug + '/')
           .title!= client.meta.title
           if client.meta.slug
             .thumb: img(src='../assets/images/clients/'+client.meta.slug+'-thumb.png')
