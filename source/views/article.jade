@@ -5,16 +5,12 @@ block title
 
 block container
 
-  .header
-    .aside
-      p.date
-        span.label Posted on 
-        = moment(meta.date).format("YYYY-MM-DD")
-    .main
-      h1.title!= meta.title
+  .article-header
+    h2= moment(meta.date).format("YYYY-MM-DD")
+    h1.title!= meta.title
 
-  .body.text
+  .article-body
     != content
 
-  .footer
+  .article-footer
     p.meta= 'Edited ' + moment(meta.date).format("YYYY-MM-DD")

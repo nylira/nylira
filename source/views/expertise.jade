@@ -6,14 +6,14 @@ block title
 block container
 
 
-  section#section-top
+  section.section-top
     .section-header
       h2 Expertise
 
     .section-content
-      p #[strong Get better at web development.] Read what I've written about interface design, web development, and other related topics. 
-
-      hr
+      .article-body
+        :markdown
+          **Get better at web development.** Read what I've written about interface design, web development, and other related topics. 
 
       - for article in articles
         a.block(href=depth + article.slug + '/')

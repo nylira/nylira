@@ -5,13 +5,14 @@ block title
 
 block container
 
-  section#section-top
+  section.section-top
     .section-header
       h2 Clients
 
     .section-content
-      :markdown
-        ** This is a select list of my clients since 2010.** Take a look at how my work has evolved over the years.
+      .article-body
+        :markdown
+          ** This is a select list of my clients since 2010.** Take a look at how my work has evolved over the years.
 
       - for client in clients
         a.block-client(href=depth + client.slug + '/')

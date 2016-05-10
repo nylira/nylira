@@ -26,7 +26,18 @@ section
     p.bottom
       mb 1em
 
-  &#section-top
+  &.section-top
+    border-top none
+
+    .section-header
+      padding x 0 0
+
+    .section-content
+       p
+        max-width 60em
+        margin 0 0 1.5em
+
+  &#section-hero
     border-top none
 
     .section-header
@@ -40,10 +51,6 @@ section
         color txt
         line-height 1
 
-      p
-        max-width 60em
-        margin 0 0 1.5em
-
 @media (min-width: 720px)
   section
     margin-bottom 3*x
@@ -54,10 +61,12 @@ section
         span.arrow
           color light
 
-    &#section-top
+    &.section-top
       .section-header
         padding-top 1.5*x
 
+
+    &#section-hero
       .section-content
         h1
           font-size 2.5*x
@@ -86,7 +95,7 @@ section
       .block:first-of-type
         border-top none
 
-    &#section-top
+    &.section-top
       padding-top 4*x
 
       .section-header
