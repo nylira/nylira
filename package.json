@@ -17,18 +17,18 @@
   },
   "homepage": "https://github.com/nylira/nylira",
   "dependencies": {
-    "graceful-fs": "~4.1.x",
-    "jade": "~1.9.x",
-    "js-yaml": "~3.2.x",
     "livescript": "^1.4.0",
+    "graceful-fs": "~4.1.x",
+    "jade": "~1.11.x",
+    "js-yaml": "~3.6.x",
     "marked": "~0.3.x",
     "mkdirp": "~0.5.x",
-    "moment": "~2.9.0",
+    "moment": "~2.13.0",
     "nib": "~1.1.0",
     "prelude-ls": "~1.1.x",
-    "require-dir": "~0.2.x",
-    "rss": "^1.1.1",
-    "stylus": "~0.50.0",
-    "typogr": "^0.6.5"
+    "require-dir": "~0.3.x",
+    "rss": "^1.2.1",
+    "stylus": "~0.54.5",
+    "typogr": "^0.6.6"
   }
 }
