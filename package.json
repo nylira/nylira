@@ -11,16 +11,16 @@
     "url": "git://github.com/nylira/nylira.git"
   },
   "author": "Peng Zhong",
-  "license": "GPLv3",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/nylira/nylira/issues"
   },
   "homepage": "https://github.com/nylira/nylira",
   "dependencies": {
-    "LiveScript": "~1.3.1",
-    "graceful-fs": "~3.0.x",
+    "graceful-fs": "~4.1.x",
     "jade": "~1.9.x",
     "js-yaml": "~3.2.x",
+    "livescript": "^1.4.0",
     "marked": "~0.3.x",
     "mkdirp": "~0.5.x",
     "moment": "~2.9.0",
