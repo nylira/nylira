@@ -14,19 +14,6 @@ block container
 
   section
     .section-header
-      h2: a(href=depth+'expertise') Recent Articles
-    .section-content
-      - for article in articles
-        a.block(href=depth + article.slug + '/')
-          .title!= article.meta.title
-          .sub
-            .date= moment(article.meta.date).format("YYYY-MM-DD")
-      p
-        | Browse through a list of all the articles on this site. 
-        a(href=depth+'expertise') All Articles
-
-  section
-    .section-header
       h2: a(href=depth+'clients') Featured Clients
     .section-content
       - for client in clients
@@ -41,7 +28,20 @@ block container
 
   section
     .section-header
-      h2: a(href=depth+'contact') Get in Touch
+      h2: a(href=depth+'expertise') Recent Articles
+    .section-content
+      - for article in articles
+        a.block(href=depth + article.slug + '/')
+          .title!= article.meta.title
+          .sub
+            .date= moment(article.meta.date).format("YYYY-MM-DD")
+      p
+        | Browse through a list of all the articles on this site. 
+        a(href=depth+'expertise') All Articles
+
+  section
+    .section-header
+      h2: a(href=depth+'contact') Contact
     .section-content
       a.block(href='mailto:peng@nylira.com')
         .title peng@nylira.com
