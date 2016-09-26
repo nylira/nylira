@@ -6,7 +6,7 @@ bodyclass: images
 slug: tendermint-platform
 ---
 
-Tendermint Platform is a web-based interface for managing a custom blockchain. Nylira worked with Tendermint to build the the entire front end and interface for the project. [View demo.](https://tmui.nylira.com.com)
+Tendermint Platform is a web-based interface for managing a custom blockchain. Nylira worked with Tendermint to build the the entire front end and interface for the project. [View demo.](https://tmui.nylira.com)
 
 <div class="figure">
   <a href="../assets/images/clients/tmui-home@2x.png"><img src="../assets/images/clients/tmui-home.png" alt="Tendermint Platform homepage"></a>
