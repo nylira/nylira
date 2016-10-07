@@ -1,7 +1,7 @@
 ---
 title: Guildwork
 category: clients
-date: 2012-04-02
+date: 2011-03-19
 bodyclass: images
 slug: guildwork
 ---
