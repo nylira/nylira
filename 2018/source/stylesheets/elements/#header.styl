@@ -1,0 +1,73 @@
+#header
+  margin 0 auto
+
+  .wrapper
+    display flex
+
+  a
+    border-bottom 4px solid bc
+    margin-bottom -4px
+    display block
+    padding 0 0.5*x
+
+    font-size 0.8*x
+    line-height 2.4*x
+    color txt
+
+    &:hover
+      border-bottom-color link
+      color link
+
+    &#nav-home
+      tt lowercase
+      font-weight 600
+      font-size x
+      padding 0 x
+      flex 1
+      text-align left
+
+  nav
+    display flex
+
+body.about #header #nav-about
+body.expertise #header #nav-expertise
+body.contact #header #nav-contact
+body.clients #header #nav-clients
+body.interaction-design #header #nav-expertise
+body.web-dev #header #nav-expertise
+body.game-dev #header #nav-expertise
+body.privacy #header #nav-expertise
+  border-bottom-color dim
+  cursor default
+  &:hover
+    color txt
+    border-bottom-color dim
+
+@media (max-width: 414px)
+  #header .wrapper
+    padding 0
+
+@media (min-width: 414px)
+  #header a
+    border-top 4px solid txt
+    margin-top -4px
+
+    font-size x
+    line-height 3*x
+
+    &#nav-home
+      flex 1
+      font-size 1.25*x
+      line-height 3*x
+
+@media (min-width: 720px)
+  #header 
+    a#nav-home
+      flex 1
+      padding 0
+    nav
+      flex 2
+      a
+        flex 1
+        border-left 1px solid bc
+        padding 0 x

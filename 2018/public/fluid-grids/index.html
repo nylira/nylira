@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Design &amp; Fluid Grids - Nylira
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Peng Zhong">
+    <meta name="google-site-verification" content="dNkvEdCJ_ySdQ7k0B08Q0U36k6qWecsrcu5SoWw39k0">
+    <meta name="p:domain_verify" content="0fa3efb06ef5537a031f9c75d44c6ba2">
+    <link rel="stylesheet" href="../assets/css/screen.css">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/images/favicon.png">
+    <link rel="shortcut icon" href="../assets/images/favicon.png">
+    <link rel="icon" href="../assets/images/favicon.png">
+  </head>
+  <body class="article interaction-design">
+    <div id="header">
+      <div class="wrapper">
+        <div class="nav">
+          <ul>
+            <li id="nav-home"><a href="../">Nylira</a></li>
+            <li id="nav-profile"><a href="../profile/">Profile</a></li>
+            <li id="nav-projects"><a href="../projects/">Projects</a></li>
+            <li id="nav-articles"><a href="../articles/">Articles</a></li>
+            <li id="nav-contact"><a href="../contact/">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <div class="wrapper">
+        <div class="header">
+          <div class="aside">
+            <p class="date"><span class="label">Posted on </span>2011-04-04
+            </p>
+          </div>
+          <div class="main">
+            <h1 class="title">Responsive Design <span class="amp">&amp;</span> Fluid<span class="widont">&nbsp;</span>Grids</h1>
+          </div>
+        </div>
+        <div class="body text"><p>Responsive design is about saving time by making flexible elements that can be reused across multiple devices. Here are some tips I&#39;ve learned while building fluid-width<span class="widont">&nbsp;</span>websites.</p>
+<h2 id="make-use-of-box-sizing-border-box">Make Use of <code>box-sizing: border-box</code></h2>
+<p>With the default box model, adding a <code>1px border</code> to two floats with %-based widths (e.g., 30% and 70%) breaks the layout. Your layout is now now <code>100% + 4px</code> wide, which is annoyingly unhelpful. Likewise with adding em-based padding. At this point, most practical coders will sigh and add a internal wrapper <code>div</code> with the border they<span class="widont">&nbsp;</span>want.</p>
+<p>While adding another <code>div</code> is a fine (albeit hacky) solution, there&#39;s a cleaner way to do it. <code>box-sizing: border-box</code> is a <span class="caps">CSS3</span> property that fixes the box model for these use cases. Instead of adding padding and borders to the width of the box, it subtracts the same amounts from the space inside of the<span class="widont">&nbsp;</span>box. </p>
+<p>Create this mixin in your <a href="http://nylira.com/stylus-the-revolutionary-successor-to-css"><span class="caps">CSS</span> preprocessor of choice</a>:</p>
+<pre><code>box-sizing(n = border-box)
+  -webkit-box-sizing: n
+  -moz-box-sizing: n
+  box-sizing: n
+</code></pre><p>Now you can do the following to your heart&#39;s<span class="widont">&nbsp;</span>content:</p>
+<pre><code>#announcement
+  border-box()
+  width 40%
+  float left
+  border 1px solid #ddd
+  padding .75em 1em
+</code></pre><p>And it will only ever be 40% wide. Nice,<span class="widont">&nbsp;</span>right?</p>
+<p><strong>Any catches?</strong> While <code>box-sizing</code> is a <span class="caps">CSS3</span> property, all browsers which support <span class="caps">CSS2</span>.1 will support <code>box-sizing: border-box</code>. That&#39;s every browser except<span class="widont">&nbsp;</span><span class="caps">IE6</span>/7.</p>
+<h2 id="there-s-more-to-the-world-than-float-left">There&#39;s more to the world than <code>float: left</code></h2>
+<p>In the early days of <span class="caps">CSS</span>-based design, floats were all we had to achieve creative, tableless layouts. They are&#8211;and have always been&#8211;a hacky and buggy approach, but they&#39;ve also been the best tools we&#39;ve had. Most designers have a <a href="http://en.wikipedia.org/wiki/Stockholm_syndrome">Stockholme syndrome</a> relationship with <span class="caps">CSS</span><span class="widont">&nbsp;</span>floats.</p>
+<p>Float-based layouts are fragile, prone to breaking, and require content clearing in most cases. Don&#39;t even try to do vertical alignment with variable-height floats. You&#39;ll need Javascript for that. The finicky nature of floats makes them ill-suited for the flexible, %-based world of web applications. What other options are<span class="widont">&nbsp;</span>there?</p>
+<h2 id="display-inline-block"><code>display: inline-block</code></h2>
+<p>Useful for more than horizontal layout menus, <code>display: inline-block</code> can be used in many situations in place of floats. Along with the contents of table cells, inline blocks can be vertically aligned, which leads to intriguing layout<span class="widont">&nbsp;</span>possibilities.</p>
+<p>One caveat to inline blocks is that whitespace in <span class="caps">HTML</span> matters. If there&#39;s a space between two <code>display: inline-block</code> elements, it will render on the<span class="widont">&nbsp;</span>site.</p>
+<p>Inline blocks are supported by all browsers except <span class="caps">IE6</span>/7. There is <a href="http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/">a hack available</a> for <span class="caps">IE6</span>/7<span class="widont">&nbsp;</span>support.</p>
+<h2 id="display-table-cell"><code>display: table-cell</code></h2>
+<p>Most designers who learned <span class="caps">CSS</span> in the days of <span class="caps">XHTML</span> validation and web standards instinctively cringe away from anything related to tables. However, the property <code>display: table-cell</code> does not imply any sort of relation between the content and tabular<span class="widont">&nbsp;</span>data.</p>
+<p>Using <code>display: table-cell</code> turns an element&#39;s display type into a <code>&lt;td&gt;</code>, the original <code>box-sizing: border-box</code> element. <code>&lt;td&gt;</code>s will automatically stretch to fill the available horizontal space. It&#39;s a great way to create columns of both variable width and height. Take for example an image next to a column of text. This is possible to do with floats, but when you introduce percentage-based padding, you save time with <code>display: table-cell</code>.</p>
+<p>Using <code>display: table</code> will turn all of an element&#39;s direct descendants into <code>&lt;td&gt;</code> types. If you&#39;re making consistent use of this, consider taking another look at your data: perhaps a real table is in<span class="widont">&nbsp;</span>order.</p>
+<p>Display table/table-cell is supported by all browsers except<span class="widont">&nbsp;</span><span class="caps">IE6</span>/7.</p>
+<h2 id="alignment-issues-">Alignment issues?</h2>
+<p>If you&#39;re using a <span class="caps">CSS</span> reset, you&#39;ll most likely encounter alignment issues using either <code>inline-block</code> or <code>table-cell</code>. There&#39;s no need to panic. <a href="http://meyerweb.com/eric/tools/css/reset/">Eric Meyer&#39;s Reset <span class="caps">CSS</span></a> sets all elements to <code>vertical-align: baseline</code>. That means elements of unequal heights will sit on a baseline instead of hanging from the top like<span class="widont">&nbsp;</span>floats.</p>
+<p><strong>How to fix it?</strong> For <code>display: inline-block</code>, you&#39;ll need to set its parent element to <code>vertical-align: top</code>. For <code>display: table-cell</code>, you&#39;ll need to set it to <code>vertical-align: top</code>.</p>
+
+        </div>
+        <div class="footer">
+          <p class="meta">Last edited on 2011-04-04.</p>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="wrapper">
+        <p class="copyright"><a href="/">Nylira, LLC</a> &copy; 2010&mdash;</p>
+        <ul>
+          <li>
+             
+            Nylira is a design studio by Peng Zhong. <a href="../contact">Say hello.</a>
+          </li>
+          <li><a href="mailto:peng@nylira.com">peng@nylira.com</a> &middot; <a href="//twitter.com/zcpeng">@zcpeng</a> &middot; <a href="https://github.com/nylira/">github</a></a>
+            <!--| &middot;-->
+            <!--a(href='nylira.com/en/atom.xml'>rss</a>-->
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript" src=".././assets/js/retina.min.js"></script>
+    <script type="text/javascript" src=".././assets/js/highlight.pack.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

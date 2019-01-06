@@ -1,0 +1,54 @@
+extends layouts/base
+
+block title
+  | Front-end development & interface design consultancy by Peng Zhong
+
+block container
+
+  section.section-top#section-hero
+    .section-header
+      h2 Welcome #[span.arrow &rarr;]
+    .section-content
+      :markdown
+        **I'm Peng Zhong.** I build web apps for [clients](./clients) across the globe. I share my expertise by writing [articles](./expertise) about interaction design and development. I also maintain open source [tools](https://github.com/nylira) on GitHub.
+
+  section
+    .section-header
+      h2: a(href=depth+'clients') Featured Clients
+    .section-content
+      - for client in clients
+        a.block(href=depth + client.slug + '/')
+          .title!= client.meta.title
+          .sub
+            .date= moment(client.meta.date).format("YYYY-MM-DD")
+
+      p
+        | View all of Nylira's clients since 2010 to see my work has evolved over time. 
+        a(href=depth+'clients') Projects List
+
+  section
+    .section-header
+      h2: a(href=depth+'expertise') Recent Articles
+    .section-content
+      - for article in articles
+        a.block(href=depth + article.slug + '/')
+          .title!= article.meta.title
+          .sub
+            .date= moment(article.meta.date).format("YYYY-MM-DD")
+      p
+        | Browse through a list of all the articles on this site. 
+        a(href=depth+'expertise') All Articles
+
+  section
+    .section-header
+      h2: a(href=depth+'contact') Contact
+    .section-content
+      a.block(href='mailto:peng@nylira.com')
+        .title peng@nylira.com
+        .sub Email
+      a.block(href='https://twitter.com/zcpeng')
+        .title @zcpeng
+        .sub Twitter
+      a.block(href='https://github.com/nylira')
+        .title github.com/nylira
+        .sub GitHub

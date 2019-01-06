@@ -1,0 +1,16 @@
+{% include en-html-head.html %}
+<body class='en articles'>
+{% include en-header.html %}
+    <section class='articles'>
+      <h1>Articles</h1>
+      <ul class='articles'>
+        {% for post in site.categories.en-articles %}<li class='article'>
+          <a href='{{ post.url }}'>
+            <span class='h3'>{{ post.title }}</span>
+            <time class='timeago' datetime='{{ post.date }}'>{{ post.date }}</time>
+            <span class='read more'>Read more
+          </a>
+        {% endfor %}
+      </ul>
+    </section>
+{% include en-footer.html %}

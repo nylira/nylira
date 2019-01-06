@@ -1,0 +1,27 @@
+{% include en-html-head.html %}
+<body class='en home'>
+{% include en-header.html %}
+
+    <header class='main'>
+      <aside>Interface design for <a href='/en/profile'>developers</a>.</aside>
+    </header>
+
+    <section class='about'>
+      <h2>About Nylira</h2>
+      <p>I build interfaces. <a href='/en/profile'>Learn more</a></p>
+    </section>
+
+    <section class='articles'>
+      <h2>Latest articles</h2>
+      <ul class='articles'>
+        {% for post in site.categories.en-articles limit:3 %}<li class='article'>
+          <a href='{{ post.url }}'>
+            <span class='h3'>{{ post.title }}</span>
+            <span class='read more'>Read more</span>
+          </a>
+        {% endfor %}
+      </ul>
+      <p class='all articles'><a href='/en/articles'>All Articles</a>
+    </section>
+
+{% include en-footer.html %}

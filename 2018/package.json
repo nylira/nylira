@@ -1,0 +1,34 @@
+{
+  "name": "nylira",
+  "version": "4.0.0",
+  "description": "",
+  "main": "test-jade.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nylira/nylira.git"
+  },
+  "author": "Peng Zhong",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/nylira/nylira/issues"
+  },
+  "homepage": "https://github.com/nylira/nylira",
+  "dependencies": {
+    "livescript": "^1.4.0",
+    "graceful-fs": "~4.1.x",
+    "jade": "~1.11.x",
+    "js-yaml": "~3.6.x",
+    "marked": "~0.3.x",
+    "mkdirp": "~0.5.x",
+    "moment": "~2.13.0",
+    "nib": "~1.1.0",
+    "prelude-ls": "~1.1.x",
+    "require-dir": "~0.3.x",
+    "rss": "^1.2.1",
+    "stylus": "~0.54.5",
+    "typogr": "^0.6.6"
+  }
+}

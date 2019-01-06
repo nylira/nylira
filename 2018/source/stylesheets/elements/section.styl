@@ -1,0 +1,105 @@
+section
+  border-top 4px solid bc
+  margin-bottom 2*x
+
+  .section-header
+    padding 0 0 x
+
+    h2
+      font-size 0.875*x
+      line-height 3*x
+      text-transform uppercase
+      font-weight 600
+      a
+        color txt
+        &:hover
+          color hover
+          border-bottom 1px solid hover
+
+  &.section-top
+    border-top none
+
+    .section-header
+      padding x 0 0
+
+    .section-content
+       p
+        max-width 60em
+        margin 0 0 1.5em
+
+  &#section-hero
+    border-top none
+
+    .section-header
+      padding x 0 0
+
+    .section-content
+      h1
+        margin-bottom x
+
+        font-size 2*x
+        color txt
+        line-height 1
+
+@media (min-width: 720px)
+  section
+    margin-bottom 3*x
+
+    .section-header
+      h2
+        font-size x
+        span.arrow
+          color light
+
+    &.section-top
+      .section-header
+        padding-top 1.5*x
+
+    &#section-hero
+      border 1px solid bc
+      padding 0 1.5*x
+
+      margin 3*x 0
+
+      .section-content
+        h1
+          font-size 2.5*x
+          font-weight 600
+        p
+          font-size 1.25*x
+          margin 0
+
+@media (max-width: 959px)
+  section#section-top
+    h2 span.arrow
+      display none
+
+@media (min-width: 960px)
+  section
+    display flex
+
+    .section-header
+      flex 1
+      padding-top 0.5*x
+
+    .section-content
+      flex 2
+      .block:first-child:first-of-type
+        border-top none
+        margin-top x
+      .article-body + .block
+        margin-top -1*x
+        border-top none
+
+    &.section-top
+      padding-top 4*x
+
+      .section-header
+        padding 0
+        h2
+          line-height 1.5*1.25*x
+    &#section-hero
+      padding 4.5*x 2*x
+      .section-header
+        padding-top 0
+

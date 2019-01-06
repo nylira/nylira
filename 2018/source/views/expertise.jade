@@ -1,0 +1,22 @@
+extends layouts/base
+
+block title
+  | Articles
+
+block container
+
+
+  section.section-top
+    .section-header
+      h2 Expertise
+
+    .section-content
+      .article-body
+        :markdown
+          **Get better at web development.** Read what I've written about interface design, web development, and other related topics. 
+
+      - for article in articles
+        a.block(href=depth + article.slug + '/')
+          .title!= article.meta.title
+          .sub
+            .date= moment(article.meta.date).format("YYYY-MM-DD")
