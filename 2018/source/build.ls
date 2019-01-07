@@ -75,7 +75,7 @@ markdown-to-jade = (input-dir, template, markdown-file, filename) ->
   file = path.join input-dir, markdown-file
   data = fs.read-file-sync file, \utf8
 
-  options = 
+  options =
     depth: '../'
     meta: js-yaml.load data.split(\---)[1]
     md: marked
